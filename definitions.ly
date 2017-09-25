@@ -56,7 +56,7 @@ kneeBeam = \once \override Beam.auto-knee-gap = #0
 % mp = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "mp")))
 % p = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "p")))
 % pp = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "pp")))
-% ffE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "ff")))
+ffE = #(make-dynamic-script (markup (#:dynamic "ff") #:musicglyph "pedal.*"))
 % fE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "f")))
 % mfE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mf")))
 % mpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mp")))
@@ -70,6 +70,12 @@ kneeBeam = \once \override Beam.auto-knee-gap = #0
 
 mvTr = \once \override TextScript.X-offset = #2
 mvTrr = \once \override TextScript.X-offset = #3
+lh = \change Staff = "LH"
+rh = \change Staff = "RH"
+
+crescTextCrescMolto = { \set crescendoText = \markup { \italic { cresc. molto } } \set crescendoSpanner = #'text }
+
+spanRallATempo = { \override TextSpanner.bound-details.left.text = "rall." \override TextSpanner.bound-details.right.text = "a tempo" }
 
 tempoMarkup =
 	#(define-music-function
@@ -90,6 +96,7 @@ tempoI = \tempoMarkup "Kräftig belebt"
 		\Score
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
+		markFormatter = #format-mark-box-numbers
 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
