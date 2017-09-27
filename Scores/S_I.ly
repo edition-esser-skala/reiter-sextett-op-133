@@ -55,7 +55,7 @@
 				>>
 				\new PianoStaff <<
 					\set PianoStaff.instrumentName = "Klavier"
-					\new Staff = "RH" << \textSpannerDown \IPianoR >>
+					\new Staff = "RH" << \IPianoR >>
 					\new Staff = "LH" << \IPianoL >>
 				>>
 			>>

@@ -76,6 +76,8 @@ rh = \change Staff = "RH"
 crescTextCrescMolto = { \set crescendoText = \markup { \italic { cresc. molto } } \set crescendoSpanner = #'text }
 
 spanRallATempo = { \override TextSpanner.bound-details.left.text = "rall." \override TextSpanner.bound-details.right.text = "a tempo" }
+spanRallMoltoATempo = { \override TextSpanner.bound-details.left.text = "rall. molto" \override TextSpanner.bound-details.right.text = "a tempo" }
+spanUnPocoRitATempo = { \override TextSpanner.bound-details.left.text = "un poco rit." \override TextSpanner.bound-details.right.text = "a tempo" }
 
 tempoMarkup =
 	#(define-music-function
