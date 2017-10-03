@@ -17,7 +17,7 @@ IPianoR = {
 			<f b, f>( <g b, g> <f b, f> <es a, es>
 			<d f, d>) <d' f, d>( <a d, a> <b d, b>)
 			<f b, f>( <g b, g> <f b, f> <d f, d>)
-			\mark \default r \tuplet 3/2 4 { f'8( g f e f e es f es)
+			\mark #1 r \tuplet 3/2 4 { f'8( g f e f e es f es)
 			\ottava #1 d( g f cis a f' d g f) } c'?16(\sp b g e %10
 			f8) r f16-. f( g f e-.) e( f e es)-. es( f es)
 			es( d cis d) f( cis a cis) g'( f d f) \tuplet 6/4 4 { c'?16(\sp b a g f e) }
@@ -25,7 +25,7 @@ IPianoR = {
 			a'\< a, a' a, a' a, a' a, a' a, a' a, a' a, a' a,
 			a'\f b a b g b g b f a f a e a e a %15
 			<a d,>8 r <g d>4 <b e, d b>-^ <cis, a g>-^
-			\mark \default \ottava #0 <d a f>8 f,([-.\mf f-. f-.)] f(-> e) e(-. e-.)
+			\mark #2 \ottava #0 <d a f>8 f,([-.\mf f-. f-.)] f(-> e) e(-. e-.)
 			e(-> d) d(-. d-.) << { g,(-> f) <f a>(-. q-.) } \\ { a4 s } >>
 			<d, a'>8 r d,16 f a d f, a d f a, d f a
 			d, f a d f, a d f a, d f a d, f a d %20
@@ -37,13 +37,13 @@ IPianoR = {
 			\crescTextCresc e'\< e, e' e, e' e, e' e, e' e, e' e, e' e, e' e,
 			e'\f f e f d f d f c e c e h e h e
 			<e a,>8 r <a, d>4-^ <f a h f'>-^ <d e gis>-^
-			\mark \default <c e a>8 r a''16 e c a e' c a e c' a e c
+			\mark #3 <c e a>8 r a''16 e c a e' c a e c' a e c
 			a' e c a a' d, c a a' d, c a c' a fis d %30
 			<d g h>8 r \ottava #1 h''16 g e h g' e h g e' h g e \ottava #0
 			h' g e h e' a, g e e' a, g e e' a, g e
 			<fis h d>8 r f'?16\p h, e h e8 r e16 a, d a
 			\tuplet 3/2 4 { d8 h g e' h g e' c a fis' d a' }
-			\mark \default <g h>8 r h16\f g d h g' d h g dis' h g dis %35
+			\mark #4 <g h>8 r h16\f g d h g' d h g dis' h g dis %35
 			h' g e h g' e h g e' h g e cis' a g e
 			<d fis d'>8 r \ottava #1 d'''16 a fis d a' fis d a fis' d ais fis \ottava #0
 			d'h fis d h' fis d h fis' d h fis gis' e d h
@@ -53,7 +53,7 @@ IPianoR = {
 			h' g e h g' e h g e' h g e cis' a g e
 			<d fis d'>8 r \ottava #1 d'''16 a fis d a' fis d a fis' d ais fis \ottava #0
 			d' h fis d h' fis d h fis' d h fis gis' e d h
-			\mark \default <a cis a'>8 r <c es f a>4-^\ff q-^ <es f a c>-^ %45
+			\mark #5 <a cis a'>8 r <c es f a>4-^\ff q-^ <es f a c>-^ %45
 			<es g b es>-^ q-^ q-^ <g b es g>-^
 			<a c es f>-^ a,16\p f es c a' f es c a' f es c
 			a' f es c a' f es c a' f es c a' f es c
@@ -67,7 +67,7 @@ IPianoR = {
 			f es c \lh f, es c \rh f, es c \lh \clef bass f, es c \rh }
 			es''16 c a f es' c a f es' c a f es' c a f
 			\crescTextCrescMolto f'\< es c a f' es c a f' es c a f' es c a
-			\mark \default as'\f f d b as' f d b as' f d b as' f d b
+			\mark #6 as'\f f d b as' f d b as' f d b as' f d b
 			as' f d b as' f d b as' f d b as' f d b %60
 			\lh b,,, d f as \rh \clef bass b d f as \lh \clef treble b d f as \rh \clef treble b d f as
 			b as f d \lh b as f d \rh \clef bass b as f d \lh \clef bass b as f d \rh
@@ -79,7 +79,7 @@ IPianoR = {
 			\lh h,,, d g h \rh d g h d \lh \clef treble d, g h d \rh g h d g
 			\lh \clef bass a,,,,, d fis a \rh \clef bass d fis a d \lh d, fis a d \rh \clef treble fis a d fis
 			\lh h,,, d g h \rh d g h d \lh \clef treble d, g h d \rh g h d g %70
-			\mark \default a, fis d\> a a' fis d a a' fis d a a' fis d a
+			\mark #7 a, fis d\> a a' fis d a a' fis d a a' fis d a
 			a'\p fis d a a' fis d a a' fis d a a' fis d a
 			a' fis d a a' fis d a a' fis d a a' fis d a
 			a' fis d a d( cis d cis) d4 a'16 fis d a
@@ -100,7 +100,7 @@ IPianoR = {
 			d' a fis d fis' d fis, d' \crescTextCresc fis\< d fis, d' fis d fis, d'
 			fis\f d fis, d' fis d fis, d' fis d fis, d' fis d fis, d' %90
 			\lh \clef bass e,,,, gis h d \rh \clef bass e gis h d \lh \clef treble e gis h d \rh \clef treble e gis h d
-			\mark \default <d fis>8\sf r \crescHairpin d,(\mf\< cis h\! a gis <d fis h>\>
+			\mark #8 <d fis>8\sf r \crescHairpin d,(\mf\< cis h\! a gis <d fis h>\>
 			<d e>4)\! r r2
 			r4 e,8(\< fis gis a h cis
 			d4)\! r r2 %95
@@ -113,8 +113,8 @@ IPianoR = {
 			R1
 			\lh \clef bass a,,16 cis e g \rh a cis e g \lh \clef treble a cis e g \rh \clef treble a cis e g
 			<g h>8 r g( fis e d cis <g h e>\> %105
-			\mark \default <g a>4)\! r r2
-			R1*4 %110
+			<g a>4)\! r r2
+			\mark #9 R1*4 %110
 			r4 c'4(-.\p c-. c-.)
 			\textSpannerDown \spanRallATempo c(-.\startTextSpan c-. c-. c-.)
 			<a c>(-.\stopTextSpan q-. q-. q-.)
@@ -126,7 +126,7 @@ IPianoR = {
 			q(-. q-. q-. q-.)
 			q(-. q-. q-. q-.) %120
 			\crescTextCresc <e, c'>(-.\< <f c'>-. q-. q-.)
-			\mark \default <es'! f>(\f-. <es f>-. q-. q-.)
+			\mark #10 <es'! f>(\f-. <es f>-. q-. q-.)
 			q(-. q-. q-. q-.)
 			q(-. q-. q-. q-.)
 			<c es f>8( f, <b d> f <b d> f' d b) %125
@@ -137,7 +137,7 @@ IPianoR = {
 			c4) e8( d c4) e8( d %130
 			c-.) c-. e( d c-.) c-. e( d
 			c) g' e d c b'( g f
-			\mark \default e) d'( b a g f e d)
+			\mark #11 e) d'( b a g f e d)
 			c( h c d c h c d)
 			c(\< d b c g c a c %135
 			b\! c a c b c a c)
@@ -145,7 +145,7 @@ IPianoR = {
 			g c f, c' e, c' d, c')
 			\dynamicUp c,(\< c' h, c' c, c' h, c'\! \dynamicDown
 			\textSpannerUp c,) \spanUnPocoRitATempo h'(\startTextSpan c d c d c b) %140
-			\mark \default \mvTrr a\stopTextSpan-\mf-\markup { \remark "gebunden" }-2 c c' c, a c c' c,
+			\mark #12 \mvTrr a\stopTextSpan-\mf-\markup { \remark "gebunden" }-2 c c' c, a c c' c,
 			a c c' c, a c c' c,
 			a c c' c, a c c' c,
 			a c c' c, a c c' c,
@@ -158,7 +158,7 @@ IPianoR = {
 			es f <c' f> f, es f <c' f> f,
 			es f <c' f> f, es f <c' f> f,
 			<c' es>( f, <b d> f <b d> f' d b)
-			\mark \default c(\< a f a c\! h c d
+			\mark #13 c(\< a f a c\! h c d
 			c d c d c\> d c a)\! %155
 			d, a fis a d b g b
 			c g e g c a f a
@@ -170,7 +170,7 @@ IPianoR = {
 			a(\sp c b c) c( c' c, c')
 			f,( c f, c') << { c2 } \\ { gis8\sp a gis a } >>
 			<< { c2 } \\ { a8\sp b a b } >> c( c' c, c') %165
-			R1*3
+			\mark #14 R1*3
 			r2\mf \crescTextCresc c,,4-^-\< c'-^
 			c'16\f b g e \lh \clef treble c b g e \rh \clef bass c b g e \lh \clef bass c g c, g' \rh %170
 			c8(\p f c' f, c f c' f,)
@@ -185,7 +185,7 @@ IPianoR = {
 				\dimTextDim c(\> f c' f, c f c' f,)
 				c( f c' f, c f c' f,)
 				f4\! r r2
-				\mark \default R1*3 %182
+				\mark #15 R1*3 %182
 				\clef treble <f a f'>4-^\f <f' a f'>-^ r2
 				R1*2 %185
 				f4-^ <f f'>-^ r2
@@ -197,7 +197,7 @@ IPianoR = {
 				f,-. f'-. f,8 <f, f'>-^ <g g'>-^ <a a'>-^
 				<b d b'>4-^\! <b' d b'>-^ r2 %193
 			} {
-				\clef bass c,,8(\> f c' f,) c( f c' f,)\!
+				\clef bass c,,8(\> f c' f, c f c' f,)\!
 				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195
 				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
 			}
