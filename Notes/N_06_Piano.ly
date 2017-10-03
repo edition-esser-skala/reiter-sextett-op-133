@@ -197,7 +197,7 @@ IPianoR = {
 				f,-. f'-. f,8 <f, f'>-^ <g g'>-^ <a a'>-^
 				<b d b'>4-^\! <b' d b'>-^ r2 %193
 			} {
-				\clef bass c,,8(\> f c' f, c f c' f,)\!
+				\clef bass c,,8( f c'\> f, c f c' f,)\!
 				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195
 				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
 			}
@@ -403,4 +403,7 @@ IPianoL = {
 			
 	}
 % 	TODO T 85 pf
+% 	     mark 6 gut gehalten?
+% 	     T 177 text?
+	
 }

@@ -34,7 +34,7 @@ IViolinoI = {
 			r4 g-. dis(-> e)
 			h(-> c) h8(\< c h c\!
 			e) r e4( h c) %25
-			gis(\< a h c)\!
+			gis(\< a h c)
 			c(\sp h a gis
 			a-.) <a' h, d,>\f-^ <a d, d,>-^ <gis h, e,>-^
 			\mark #3 \tuplet 3/2 4 { a8\mf( c,) c'-. c( c,) c'-. c( c,) c'-. c( c,-.) c'-.
@@ -64,7 +64,7 @@ IViolinoI = {
 			f)\! g'8(\mf f es d c h)
 			c( es c b a b a g
 			f4) es'(--\mf es-- es--) %55
-			es(\< d c b
+			es( d\< c b
 			a)\! c8( b a4 g)
 			f( es\< d c
 			\mark #6 b)\! f''8(\f cis d a b e,)
@@ -83,7 +83,7 @@ IViolinoI = {
 			R1*4 %75
 			r2 r8 d,,-.\p a'-. d-.
 			\crescTextCresc a'-. d,-. a'-.\< d-. a-. d,-. a-. d-.
-			a-. d,-. a'-. d-. a-. d,-. a-. a-.
+			a-. d,-. a'-. d-. a-. d,-. a-. a-.\!
 			d4\f r r d''8.(\mf d,16)
 			\crescHairpin fis4(\< g a\! cis %80
 			d) r r8 d-. d( d,)
@@ -167,7 +167,7 @@ IViolinoI = {
 			b c b c) dis( e dis e
 			\crescTextCresc dis e dis e dis\< e dis e)\!
 			dis( e dis e dis e dis e) %170
-			f( c a g f g a c)
+			f(\p c a g f g a c)
 			a( g f c a c f g)
 			f( c a g a c f g)
 			f( c a g a c f g)
@@ -183,13 +183,13 @@ IViolinoI = {
 				r2 ges8(\mf es f ges)
 				a( f c f) b(\< ges a f)
 				b( ges a f) des'( b c a)
-				des( b c a) a(\p f a f)\< %190
-				c'( a c a) es'( c es c)
+				des( b c a) a(\p f a f) %190
+				c'(\< a c a) es'( c es c)
 				f( es f es f)\f f-^ g-^ a-^
 				b r b,4( a as)
 			} {
-				\dimTextDim f8(\> c f c f c f c\!
-				\spanRallMoltoATempo f\startTextSpan c f c g' e g e)
+				\dimTextDim f8( c f\> c f c f c\!
+				\spanRallMoltoATempo \textSpannerUp f\startTextSpan c f c g' e g e)
 				a(\p\stopTextSpan g fis e d e fis g)
 			}
 		}

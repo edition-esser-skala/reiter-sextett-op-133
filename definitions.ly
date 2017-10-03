@@ -7,7 +7,7 @@
 
 
 \paper {
-	indent = 2.5\cm
+	indent = 2\cm
 	top-margin = 1\cm
 	bottom-margin = 1\cm
 	head-separation = 0\cm
@@ -50,19 +50,12 @@ extraNat = \once \override Accidental.restore-first = ##t
 kneeBeam = \once \override Beam.auto-knee-gap = #0
 
 
-% ff = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "ff")))
-% "f" = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "f")))
-% mf = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "mf")))
-% mp = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "mp")))
-% p = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "p")))
-% pp = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "pp")))
-ffE = #(make-dynamic-script (markup (#:dynamic "ff") #:musicglyph "pedal.*"))
+ffE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "ff") (#:normal-text "]") ))
 % fE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "f")))
 % mfE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mf")))
 % mpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mp")))
-% pE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "p")))
+pE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "p") (#:normal-text "]") ))
 % ppE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "pp")))
-% fp = #(make-dynamic-script (markup #:line (#:normal-text #:large #:bold "fp")))
 % fpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "fp")))
 % piuF = #(make-dynamic-script (markup #:line (#:normal-text #:small "più" #:normal-text #:large #:bold "f")))
 % piuFE = #(make-dynamic-script (markup #:line (#:normal-text #:small #:italic "più" #:normal-text #:large #:bold #:italic "f")))
