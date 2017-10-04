@@ -38,9 +38,9 @@ IViolinoII = {
 			f2(\sp e
 			c4-.) <d' f, a,>-^ <f a, d,>-^ <d e,>-^
 			\mark #3 <c e, a,>8->( e,) e(-> d) d(-> c) c(-> h)
-			h-.\< h-. a-. a-.\! g-. g-. a-.\> a-.\! %30
+			h-.\< h-.\! a-. a-. g-. g-. a-.\> a-.\! %30
 			\kneeBeam h( g'') g(-> fis) fis(-> e) e(-> d)
-			d-.\< d-. cis-. cis-.\! h-.\> h-. cis-. cis-.\!
+			d-.\< d-.\! cis-. cis-. h-. h-. cis-.\> cis-.\!
 			<d fis>\mp r <d h'> r <c e> r <c a'> r
 			h-.\p h-. e-. e-. a-. a-. c,-. c-.
 			\mark #4 h r d,\f( g h g h dis) %35
@@ -104,7 +104,7 @@ IViolinoII = {
 			R1*2
 			r8 e,(\mf gis h e) gis,( fis gis) %95
 			d'(-> cis) r h-. h(-> a) r gis
-			gis2~-> gis4. r8
+			fis2~-> gis4. r8
 			fis'1~\f
 			fis8 r r4 r2
 			r4 e,(--\p e-- e--) %100

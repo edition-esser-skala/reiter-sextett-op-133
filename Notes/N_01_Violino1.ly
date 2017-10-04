@@ -40,7 +40,7 @@ IViolinoI = {
 			\mark #3 \tuplet 3/2 4 { a8\mf( c,) c'-. c( c,) c'-. c( c,) c'-. c( c,-.) c'-.
 			c c c \crescTextCresc c\< c c d d d c c c\! %30
 			h( g) g'-. g( g,) g'-. g( g,) g'-. g( g,) g'-.
-			\crescHairpin g\< g g g g g\! a\> a a g g g }
+			\crescHairpin g\< g g\! g g g a a a g\> g g\! }
 			fis-.\mp fis-. r h,-. r e-. r a,-.
 			d,-.\p d-. g-. g-. c-. c-. fis,-. fis-.
 			\mark #4 g r h,(\f d g d g h) %35
@@ -163,8 +163,8 @@ IViolinoI = {
 			f( c f, c') c4( c'~
 			c c,) e8( c e c) %165
 			\mark #14 dis(\p e dis e) fis( g fis g
-			fis g fis g) b( c b c
-			b c b c) dis( e dis e
+			fis g fis g) h?( c h c
+			h c h c) dis( e dis e
 			\crescTextCresc dis e dis e dis\< e dis e)\!
 			dis( e dis e dis e dis e) %170
 			f(\p c a g f g a c)

@@ -106,7 +106,7 @@ IPianoR = {
 			d4)\! r r2 %95
 			R1*2
 			\lh \clef bass e,,16\f gis h d \rh\clef bass e gis h d \lh \clef treble e gis h d \rh \clef treble e gis h d
-			<d fis>8 r <d, fis>(\mf\< <cis e> <h d>\! <ais cis> <h d> <d fis h>\>
+			<d fis>8 r <d, fis>(\mf\< <cis e> <h d>\! <ais cis> <h d>\> <d fis h>
 			<d e>4)\! r r2 %100
 			\clef bass r4 \once\slurDashed a,,8(\< h cis d e fis
 			g4\!) r r2
@@ -194,8 +194,8 @@ IPianoR = {
 				f,-. f'-. f,-. f'-.
 				f,-. f'-. f,-.\p f'-. %190
 				f,-.\< f'-. f,-. f'-.
-				f,-. f'-. f,8 <f, f'>-^ <g g'>-^ <a a'>-^
-				<b d b'>4-^\! <b' d b'>-^ r2 %193
+				f,-. f'-. f,8\fE <f, f'>-^ <g g'>-^ <a a'>-^
+				<b d b'>4-^ <b' d b'>-^ r2 %193
 			} {
 				\clef bass c,,8( f c'\> f, c f c' f,)\!
 				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195

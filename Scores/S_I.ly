@@ -40,7 +40,7 @@
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "Bratsche"
-						\set Staff.midiInstrument = #"viola"
+						\set Staff.midiInstrument = #"violin"
 						\IViola
 					}
 					\new Staff {

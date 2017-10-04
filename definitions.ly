@@ -51,7 +51,7 @@ kneeBeam = \once \override Beam.auto-knee-gap = #0
 
 
 ffE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "ff") (#:normal-text "]") ))
-% fE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "f")))
+fE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "f") (#:normal-text "]") ))
 % mfE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mf")))
 % mpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mp")))
 pE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "p") (#:normal-text "]") ))
