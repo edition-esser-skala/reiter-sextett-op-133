@@ -83,7 +83,7 @@ IViolinoI = {
 			R1*4 %75
 			r2 r8 d,,-.\p a'-. d-.
 			\crescTextCresc a'-. d,-. a'-.\< d-. a-. d,-. a-. d-.
-			a-. d,-. a'-. d-. a-. d,-. a-. a-.\!
+			a-. d,-. a'-. d-. a-. d,-. a-. a-.
 			d4\f r r d''8.(\mf d,16)
 			\crescHairpin fis4(\< g a\! cis %80
 			d) r r8 d-. d( d,)
@@ -92,7 +92,7 @@ IViolinoI = {
 			fis( d e fis) gis( e gis h)
 			a4-- a( gis fis) %85
 			e( d8 cis) d4( gis,)
-			a r r8 d16 a^\critnote fis d fis a
+			a r r8 d16\p a^\critnote fis d fis a
 			\tuplet 3/2 4 { fis8( d) d'-. g,( d) d'-. cis-. a-. cis-. e-. cis-. a-. }
 			d4( fis2.)~\<
 			fis4\! <fis a,, d,>-^\f q-^ q-^ %90
@@ -165,7 +165,7 @@ IViolinoI = {
 			\mark #14 dis(\p e dis e) fis( g fis g
 			fis g fis g) h?( c h c
 			h c h c) dis( e dis e
-			\crescTextCresc dis e dis e dis\< e dis e)\!
+			\crescTextCresc dis e dis e dis\< e dis e)
 			dis( e dis e dis e dis e) %170
 			f(\p c a g f g a c)
 			a( g f c a c f g)

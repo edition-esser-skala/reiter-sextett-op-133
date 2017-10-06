@@ -95,7 +95,7 @@ IPianoR = {
 			fis' d h gis fis' d h gis gis' d h gis gis' d h gis
 			a' fis cis a a' fis cis a gis' cis, a gis fis' cis a fis %85
 			e' cis a e cis' a fis cis d' a fis d gis e d h
-			a' e cis a a'' fis d a a' fis d a a' fis d a
+			a' e cis a a''\p fis d a a' fis d a a' fis d a
 			a' fis d a g' d h g fis' cis a fis e' cis a e
 			d' a fis d fis' d fis, d' \crescTextCresc fis\< d fis, d' fis d fis, d'
 			fis\f d fis, d' fis d fis, d' fis d fis, d' fis d fis, d' %90

@@ -37,7 +37,7 @@ IViola = {
 			r4 c\mf( gis a) %25
 			h(\< c d e)
 			e(\sp d c h
-			a-.) <h' d,>-^ <f a,>-^ <gis h, e,>-^
+			a-.) <h' d,>-^\f <f a,>-^ <gis h, e,>-^
 			\mark #3 <a e c>8(-> c) c(-> h) h(-> a) a(-> g)
 			g-.\< g-.\! fis-. fis-. e-. e-. fis-.\> fis-.\! %30
 			g( h) h(-> a) a(-> g) g(-> fis)
@@ -96,7 +96,7 @@ IViola = {
 			d--) d( cis h)
 			a1-- %85
 			a4( cis) fis( h,)
-			a c(-- c-- c--)
+			a c(--\p c-- c--)
 			c8 c( h) h( a) a( g) g(
 			fis4) d''(-- d-- d--
 			d--) <d fis, a,>-^\f q-^ q-^ %90
@@ -146,15 +146,15 @@ IViola = {
 			R1*7 %140
 			\mark #12 R1*2
 			r8 f(\mf e f gis a h c
-			\crescHairpin f-.) f(\< e f\! b\> a g f)\!
+			\crescHairpin f-.) f(\< e f\! b a g\> f)\!
 			fis4(-> g-.) g-. g-. %145
 			g-\parenthesize-. r r2
 			R1
-			r8 e(\< dis e\! a\> g f e)\!
+			r8 e(\< dis e\! a g f\> e)\!
 			gis4(-> a-.) a-. a-.
 			a-. r r2 %150
 			r8 f,( e f gis a h c
-			f-.) a( gis a es'!-.) es( d c)
+			\crescTextCresc f-.) a( gis\< a es'!-.) es( d c)\!
 			c4(-> b) b(\> d)
 			\mark #13 c,1~\p
 			c %155
@@ -171,7 +171,7 @@ IViola = {
 			\mark #14 gis(\p a gis a) h?( c h c
 			h c h c) dis( e dis e
 			dis e dis e) fis( g fis g
-			fis g fis g \crescTextCresc fis\< g fis g)\!
+			fis g fis g \crescTextCresc fis\< g fis g)
 			fis( g fis g fis g fis g) %170
 			f,,4-.\p g-. a-. c-.
 			f-. g-. a-. c-.
@@ -191,7 +191,7 @@ IViola = {
 				ges2( b %185
 				a4) r b( ges
 				a) r es8( ges f es)
-				a( f c f) b4(\< c8 f,)
+				\crescTextCresc a( f c f) b4(\< c8 f,)
 				b4( c8 f,) des'( c4 f,8)
 				des'( c4 f,8) <a c,>\p q q q %190
 				q\< q q q <c es,> q q q

@@ -57,6 +57,7 @@ fE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "f") (#:normal
 pE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "p") (#:normal-text "]") ))
 % ppE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "pp")))
 % fpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "fp")))
+spE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "sp") (#:normal-text "]") ))
 % piuF = #(make-dynamic-script (markup #:line (#:normal-text #:small "più" #:normal-text #:large #:bold "f")))
 % piuFE = #(make-dynamic-script (markup #:line (#:normal-text #:small #:italic "più" #:normal-text #:large #:bold #:italic "f")))
 
