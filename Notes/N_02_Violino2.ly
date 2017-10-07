@@ -189,7 +189,7 @@ IViolinoII = {
 				ges'( es f c) <es f,>\p q q q %190
 				q\< q q q <f a,> q q q
 				q q q q q\f f-^ g-^ a-^
-				<b b, d,> r b,2.\mf
+				<b b, d,> r \once \lvTieDashed \extendLV #7 b,2.\mf\laissezVibrer
 			} {
 				\dimTextDim a8( g a\> g a g a g\!
 				\spanRallMoltoATempo \textSpannerUp a\startTextSpan g a g e' a, e' a,) %195

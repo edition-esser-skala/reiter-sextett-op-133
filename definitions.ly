@@ -27,19 +27,24 @@
 
 	evenFooterMarkup = \markup { }
 	print-first-page-number = ##t
-	system-separator-markup = \slashSeparator
-	system-system-spacing = #'((basic-distance . 20) (minimum-distance . 8) (padding . 1) (stretchability . 600))
+	system-separator-markup = \markup { % \slashSeparator with larger space between lines
+		\center-align
+		\vcenter \combine
+		\beam #2.0 #0.5 #0.48
+		\raise #1.0 \beam #2.0 #0.5 #0.48
+	}
+	system-system-spacing = #'((basic-distance . 30) (minimum-distance . 8) (padding . 1) (stretchability . 600))
 	last-bottom-spacing = #'((basic-distance . 1) (minimum-distance . 0) (padding . 1) (stretchability . 10000))
 	print-first-page-number = ##t
 }
 
 #(define-markup-command (remark layout props text) (markup?)
   (interpret-markup layout props
-    #{\markup \small \upright #text #}))
+    #{\markup \small \italic #text #}))
 
 #(define-markup-command (remarkE layout props text) (markup?)
   (interpret-markup layout props
-    #{\markup \small \italic #text #}))
+		#{\markup \small \italic { [#text] } #}))
 %
 %
 
@@ -52,26 +57,43 @@ kneeBeam = \once \override Beam.auto-knee-gap = #0
 
 ffE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "ff") (#:normal-text "]") ))
 fE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "f") (#:normal-text "]") ))
-% mfE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mf")))
-% mpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "mp")))
-pE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "p") (#:normal-text "]") ))
-% ppE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "pp")))
-% fpE = #(make-dynamic-script (markup #:line (#:normal-text #:italic #:large #:bold "fp")))
-spE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "sp") (#:normal-text "]") ))
-% piuF = #(make-dynamic-script (markup #:line (#:normal-text #:small "più" #:normal-text #:large #:bold "f")))
-% piuFE = #(make-dynamic-script (markup #:line (#:normal-text #:small #:italic "più" #:normal-text #:large #:bold #:italic "f")))
+mfE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "mf") (#:normal-text "]") ))
+mpE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "mp") (#:hspace -.5) (#:normal-text "]") ))
+pE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "p") (#:hspace -.5) (#:normal-text "]") ))
+ppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "pp") (#:hspace -.5) (#:normal-text "]") ))
+fpE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "fp") (#:hspace -.5) (#:normal-text "]") ))
+spE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "sp") (#:hspace -.5) (#:normal-text "]") ))
 
 
 mvTr = \once \override TextScript.X-offset = #2
 mvTrr = \once \override TextScript.X-offset = #3
 lh = \change Staff = "LH"
 rh = \change Staff = "RH"
+extendLV = #(define-music-function (parser location further) (number?) 
+	#{
+		\once \override LaissezVibrerTie  #'X-extent = #'(0 . 0)
+		\once \override LaissezVibrerTie  #'details #'note-head-gap = #(/ further -2)
+		\once \override LaissezVibrerTie  #'extra-offset = #(cons (/ further 2) 0)
+	#})
+lvTieDashed = \override LaissezVibrerTie.dash-definition = #'((0 1 0.4 0.75))
 
-crescTextCrescMolto = { \set crescendoText = \markup { \italic { cresc. molto } } \set crescendoSpanner = #'text }
+crescTextCrescMolto = {
+	\set crescendoText = "cresc. molto"
+	\set crescendoSpanner = #'text
+}
 
-spanRallATempo = { \override TextSpanner.bound-details.left.text = "rall." \override TextSpanner.bound-details.right.text = "a tempo" }
-spanRallMoltoATempo = { \override TextSpanner.bound-details.left.text = "rall. molto" \override TextSpanner.bound-details.right.text = "a tempo" }
-spanUnPocoRitATempo = { \override TextSpanner.bound-details.left.text = "un poco rit." \override TextSpanner.bound-details.right.text = "a tempo" }
+spanRallATempo = {
+	\override TextSpanner.bound-details.left.text = "rall."
+	\override TextSpanner.bound-details.right.text = "a tempo"
+}
+spanRallMoltoATempo = {
+	\override TextSpanner.bound-details.left.text = "rall. molto"
+	\override TextSpanner.bound-details.right.text = "a tempo"
+}
+spanUnPocoRitATempo = {
+	\override TextSpanner.bound-details.left.text = "un poco rit."
+	\override TextSpanner.bound-details.right.text = "a tempo"
+}
 
 tempoMarkup =
 	#(define-music-function
@@ -93,7 +115,7 @@ tempoI = \tempoMarkup "Kräftig belebt"
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
 		markFormatter = #format-mark-box-numbers
-		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+% 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -112,6 +134,10 @@ tempoI = \tempoMarkup "Kräftig belebt"
 		\override InstrumentName.font-shape = #'italic
 		\accidentalStyle neo-modern-voice
 		extraNatural = ##t
+		\override DynamicTextSpanner.style = #'none % uncomment to show spanner dashes
+		\override DynamicTextSpanner.font-size = #-1
+		\override TextSpanner.style = #'none % uncomment to show spanner dashes
+		\override TextSpanner.font-size = #-1
 	}
 	\context {
 		\Voice

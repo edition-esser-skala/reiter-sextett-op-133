@@ -24,7 +24,7 @@ IVioloncello = {
 			f-. f2.~
 			f1
 			g2(\< a %15
-			b4)-. g-^\f e-^ a-^
+			b4)-.\! g-^\f e-^ a-^
 			\mark #2 d,-^ r r2
 			R1
 			r4 d8\mf r f r a r
@@ -47,7 +47,7 @@ IVioloncello = {
 			e8)\sp r g r h r a4(\<
 			d,8\sp) r d,4(\< fis8)\sp r ais4(\<
 			h8)\sp r d r fis r e4(
-			a,8)\sp r f'\sp r d r e r
+			a,8)\sp r f'\p r d r e r
 			a,-. a-. c-. c-. d-. d-. d'-. d-. %40
 			g, r g,4(\f\< h8)\sp r dis4(\<
 			e8)\sp r g r h r a4(\<
@@ -86,7 +86,7 @@ IVioloncello = {
 			a( d-.) d-. d-. d( a'-.) a-. a-. %75
 			a( d-.) r4 r8 d,,-. a'-. d-.
 			a'-. d,-. a'-.\< d-. a-. d,-. a-. d-.
-			a'-. d,-. a'-. d-. a-. d,-. a-. a-.
+			a'-. d,-. a'-. d-. a-. d,-. a-. a-.\!
 			d4\f r r8 d-.\p fis-. d-.
 			g( fis) g-. e-. a-. gis-. a-. a-. %80
 			d,4 r r8 d-. fis-. d-.
@@ -202,11 +202,11 @@ IVioloncello = {
 				ges'( es f c) b'( ges a! c,)
 				b'( ges a! c,) c(\p a c a) %190
 				\clef bass a(\< f a f) f( es f es)
-				es( c es c) c\f f,-^ g-^ a-^
+				es( c es c)\! c f,-^\f g-^ a-^
 				b r b'4(\mf c d)
 			} {
 				\dimTextDim f,,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-.
+				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. %195
 				r\stopTextSpan a\p d a'
 			}
 		}

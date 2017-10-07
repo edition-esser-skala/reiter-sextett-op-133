@@ -6,8 +6,8 @@
 
 IViola = {
 	\relative c' {
-		\clef treble
-% 		\clef alto
+% 		\clef treble
+		\clef alto
 		\key b \major \time 4/4 \tempoI
 		<b d>4-^\f d(\mf es f)
 		\repeat volta 2 {

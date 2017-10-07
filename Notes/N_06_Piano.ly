@@ -100,7 +100,7 @@ IPianoR = {
 			d' a fis d fis' d fis, d' \crescTextCresc fis\< d fis, d' fis d fis, d'
 			fis\f d fis, d' fis d fis, d' fis d fis, d' fis d fis, d' %90
 			\lh \clef bass e,,,, gis h d \rh \clef bass e gis h d \lh \clef treble e gis h d \rh \clef treble e gis h d
-			\mark #8 <d fis>8\sf r \crescHairpin d,(\mf\< cis h\! a gis <d fis h>\>
+			\mark #8 <d fis>8\sf r \crescHairpin d,(\mf\< cis h\! a gis\> <d fis h>
 			<d e>4)\! r r2
 			r4 e,8(\< fis gis a h cis
 			d4)\! r r2 %95
@@ -112,7 +112,7 @@ IPianoR = {
 			g4\!) r r2
 			R1
 			\lh \clef bass a,,16 cis e g \rh a cis e g \lh \clef treble a cis e g \rh \clef treble a cis e g
-			<g h>8 r g( fis e d cis <g h e>\> %105
+			<g h>8 r g( fis e d cis\> <g h e> %105
 			<g a>4)\! r r2
 			\mark #9 R1*4 %110
 			r4 c'4(-.\p c-. c-.)
@@ -136,7 +136,7 @@ IPianoR = {
 			<f a,>4) r r e8(\mf d
 			c4) e8( d c4) e8( d %130
 			c-.) c-. e( d c-.) c-. e( d
-			c) g' e d c b'( g f
+			c) \once \slurDashed g'( e d c) b'( g f
 			\mark #11 e) d'( b a g f e d)
 			c( h c d c h c d)
 			c(\< d b c g c a c %135
@@ -158,7 +158,7 @@ IPianoR = {
 			es f <c' f> f, es f <c' f> f,
 			es f <c' f> f, es f <c' f> f,
 			<c' es>( f, <b d> f <b d> f' d b)
-			\mark #13 c(\< a f a c\! h c d
+			\mark #13 c(\< a f a\! c h c d
 			c d c d c\> d c a)\! %155
 			d, a fis a d b g b
 			c g e g c a f a
@@ -403,7 +403,6 @@ IPianoL = {
 			
 	}
 % 	TODO T 85 pf
-% 	     mark 6 gut gehalten?
 % 	     T 177 text?
 	
 }

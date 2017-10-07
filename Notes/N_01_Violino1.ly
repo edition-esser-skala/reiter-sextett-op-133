@@ -83,7 +83,7 @@ IViolinoI = {
 			R1*4 %75
 			r2 r8 d,,-.\p a'-. d-.
 			\crescTextCresc a'-. d,-. a'-.\< d-. a-. d,-. a-. d-.
-			a-. d,-. a'-. d-. a-. d,-. a-. a-.
+			a-. d,-. a'-. d-. a-. d,-. a-. a-.\!
 			d4\f r r d''8.(\mf d,16)
 			\crescHairpin fis4(\< g a\! cis %80
 			d) r r8 d-. d( d,)
@@ -102,12 +102,12 @@ IViolinoI = {
 			e2~ e8 e( dis e) %95
 			h'(-> a) r gis-. gis(-> fis) r e
 			dis2(-> e4.) r8
-			fis'16\f e d cis h a gis fis e d cis h a gis fis e
+			\set subdivideBeams = ##t fis'16[\f e d cis h a gis fis e d cis h a gis fis e] \set subdivideBeams = ##f
 			R1*2 %100
 			<a' a,>4--(\mf q-- q-- q--)
 			q--( q-- q-- q--)
 			q--( q-- q-- q--)
-			h16\f a g fis e d cis h e d cis h a g fis e
+			\set subdivideBeams = ##t h16[\f a g fis e d cis h e d cis h a g fis e] \set subdivideBeams = ##f
 			R1*2 %106
 			\mark #9 <c'' c,>4--(\f q-- q-- q--)
 			q--( q-- q-- q--)
@@ -158,9 +158,9 @@ IViolinoI = {
 			a( g f d) g( f d h)
 			g'( c, f c e c d c) %160
 			\crescHairpin c-.\< c( d c e c g' c,)
-			f(\p c f, c') c4( c'~
+			f(\p c f, c') \shape #'((0 . -2) (0 . 1) (0 . 1) (0 . -2)) Slur c4( c'~
 			c c,) e8( c e c)
-			f( c f, c') c4( c'~
+			f( c f, c') \shape #'((0 . -2) (0 . 1) (0 . 1) (0 . -2)) Slur c4( c'~
 			c c,) e8( c e c) %165
 			\mark #14 dis(\p e dis e) fis( g fis g
 			fis g fis g) h?( c h c
