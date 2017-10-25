@@ -7,7 +7,7 @@
 IPianoR = {
 	\relative c' {
 		\clef treble
-		\key b \major \time 4/4 \tempoI
+		\key b \major \time 4/4 \tempoI \set Score.skipTypesetting = ##t
 		<b' d, b>4-^\f <b' d, b>-^ r2
 		\repeat volta 2 {
 			R1
@@ -201,7 +201,143 @@ IPianoR = {
 				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195
 				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
 			}
-		}
+		} \set Score.skipTypesetting = ##f
+		\crescTextCresc \clef treble d, d' e,\< e' fis, fis' a, a'
+		d, d' e, e' fis, fis' a, a'
+		d,\f d' a, a' fis, fis' e, e'
+		\dimTextDim d, d' a,\> a' fis, fis' e, e' %200
+		d, d' a, a' \clef bass fis, fis' e, e'
+		<d d,>4\p\> a <d d,> a
+		<d d,> a <d d,> a\!
+		\mark #16 \clef treble fis'8-1 a-2 a' a, fis a a' a,
+		fis a a' a, fis a a' a, %205
+		fis a a' a, fis a a' a,
+		fis a a' a, fis a a' a,
+		fis a a' a, fis a a' a,
+		\crescHairpin fis a a'\< d, a' d, ais' e?\!
+		d-2 fis-1 fis'-5 fis, d fis fis' fis, %210
+		d fis fis' fis, d fis fis' fis,
+		eis cis' eis cis eis, cis' eis cis
+		\ottava #1 gis gis' a, a' gis, gis' his, his'
+		cis, gis' cis gis cis, gis' cis gis \ottava #0
+		\dimTextDim cis,,\> gis' cis gis cis, gis' cis gis %215
+		\mark #17 \ottava #1 ais\pp fis' ais fis ais, fis' ais fis
+		ais, fis' ais fis ais, fis' ais fis
+		ais, fis' ais fis ais, fis' ais fis
+		ais, fis' ais fis ais, fis' ais fis
+		ais, fis' ais fis ais, fis' ais fis \ottava #0 %220
+		\crescHairpin ais,([ fis)] eis(\p fis g\cresc gis a ais
+		h)\sp r \ottava #1 h'(\p g h, g' h g)
+		h, g' h g h, g' h g
+		h, g' h g h, g' h g \ottava #0
+		\crescHairpin h,([ g)] fis(\< g gis a ais h %225
+		\mark #18 c)\sp r r4 r2
+		R1
+		r4 f,,,16\f a c f a, c f a c, f a c
+		f, a c f a, c f a c, f a c f, a c f
+		<des b>8 r \lh b16 \rh des f des \lh f, \rh b des b \lh des, \rh f b f %230
+		\lh b, \rh des f des \lh f, \rh b des b \lh des, \rh f b f \lh \clef bass des, \rh f' ces' f,
+		<ges b>8 r ges,16 b des ges b, des ges b des, ges b des
+		ges, b des ges b, des ges b des, ges b des ges, b des ges
+		<d h>8 r \lh h16 \rh d fis d \lh fis, \rh h d h \lh d, \rh fis h fis
+		\lh h, \rh d fis d \lh fis, \rh h d h \lh d, \rh fis h fis \lh \clef bass d, \rh fis' c'! fis, %235
+		<g h>8 r g,16 h d g h, d g h d, g h d
+		g, h d g h, d g h d, g h d g, h d g
+		<es! c>8 r \lh c16 \rh es g es \lh g, \rh c es c \lh es, \rh g c g
+		\lh es \rh as c as \lh c, \rh es as es \lh as, \rh c es c \lh es, \rh as c as
+		\lh as \rh c f c \lh f, \rh as c as \lh c, \rh f as f \lh as, \rh c f c %240
+		\lh \clef bass des \rh f as f\lh as, \rh des f des \lh f, \rh as des as \lh des, \rh f as f
+		\mark #19 es'\p ges as es' es, ges as es' es, ges as es' es, ges as es'
+		es, ges as c es, ges as c es, ges as c es, ges as c
+		es, ges as es' es, ges as es' es, ges as es' es, ges as es'
+		\crescTextCresc es,\< ges as c es, ges as c es, ges as es' es, ges as es' %245
+		as,\p c es as as, c es as as, c es as as, c es as
+		as, c es as as, c es as as, c es as as, c es as
+		as, c es as as, c es as as, c es as as, c es as
+		as, c es as as, c es as as, c es as as, c es as
+		f,\p as b f' f, as b f' f, as b f' f, as b f' %250
+		f, as b d f, as b d f, as b d f, as b d
+		f, as b f' f, as b f' f, as b f' f, as b f'
+		\crescTextCresc f,\< as b d f, as b d f, as b f' f, as b f'
+		b,\p d f b b, d f b b, d f b b, d f b
+		b, d f b b, d f b b, d f b b, d f b %255
+		b, d f b b, d f b b, d f b b, d f b
+		\crescTextCresc b,\< d f b b, d f b b, d f b b, d f b
+		h,\mf d e h' h, d e h' h, d e h' h, d e h'
+		\crescTextCresc h,\< d e h' h, d e h' h, d e h' h, d e h'
+		b,\p d f b b, d f b b, d f b b, d f b %260
+		\crescTextCresc b,\< d f b b, d f b b, d f b b, d f b
+		h,\mf d e h' h, d e h' h, d e h' h, d e h'
+		h, d e h' h, d e h' h, d e h' h, d e h'
+		\mark #20 R1*2 %265
+		r4 \lh h16\p \rh d e d \lh gis, \rh h d h \lh e, \rh gis h gis
+		\lh d \rh e gis e \lh h \rh d e d \lh gis, \rh h d h \lh e, \rh gis h gis
+		<h cis>8 <h cis gis'>[\p^\markup { \remark "staccato" } q q] q <ais h fis'> q q
+		q <gis h eis> q q q <ais h fis'> q q
+		<h cis gis'> r \lh h'16 \rh cis eis cis \lh gis \rh h cis h \lh eis, \rh gis h gis %270
+		\lh cis, \rh eis gis eis \lh h \rh cis eis cis \lh gis \rh h cis h \lh eis, \rh gis h gis
+		b8 r \lh b'!16 \rh d f! d \lh f,! \rh b d b \lh d, \rh f b f
+		\lh ges \rh b es b \lh es, \rh ges b ges \lh b, \rh es ges es \lh ges, \rh b es b
+		\lh <b b'>\f \rh d' f d \lh <f, f,> \rh b d b \lh <d, d,> \rh f b f \lh <b, b,> \rh d f d
+		\lh <ges ges,> \rh b es b \lh <es, es,> \rh ges b ges \lh <b, b,> \rh es ges es \lh <ges, ges,> \rh b es b %275
+		\mark #21 r\ff h' h' h, r fis fis' fis, r dis dis' dis, r h h' h,
+		r fis' fis' fis, r dis dis' dis, r h h' h, r fis fis' fis,
+		r dis' dis' dis, r h h' h, r fis fis' fis, r dis dis' dis,
+		\dimTextDim r h'\> h' h, r fis fis' fis, r dis dis' dis, r h h' h,
+		\mark #22 \clef bass dis\mf h fis dis dis' h fis dis dis' h fis dis dis' h fis dis %280
+		dis' h fis dis dis' h fis dis dis' h fis dis dis' h fis dis
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		dis' h fis dis dis' h fis dis dis' h fis dis dis' h fis dis
+		dis' h fis dis dis' h fis dis dis' h fis dis dis' h fis dis %285
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b %290
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b
+		\crescTextCrescMolto b'\< ges es b b' ges es b b' ges es b b' ges es b
+		b' ges es b b' ges es b b' ges es b b' ges es b %295
+		\mark #23 <b es ges b>8\ff r r4 r2
+		R1
+		r2 r4 r8. <es es'>16\ff
+		q4.. <ges ges'>16 q4.. <b b'>16
+		\clef treble q4.. <c c'>16 q4.. <es es'>16 %300
+		q4.. <ges ges'>16 q4.. <b b'>16
+		q4.. <c c'>16 q4.. <es es'>16
+		q4-^ <c c'>-^ <b b'>-^ <c c'>-^
+		<es es'>-^ <ges ges'>-^ <b b'>-^ <c c'>-^
+		\mark #24 <d b' d>-^ r r2 %305
+		R1*3
+		r4 \tuplet 3/2 4 { d8(\mf f, d a' d, a b' d, b)
+		f'( b, f g' b, g f' b, f es' a, es } %310
+		<d f d'>4) \tuplet 3/2 4 { d''8( f, d a' d, a b' d, b)
+		f'( b, f g' b, g f' b, f d' f, d) }
+		<f a f'>4-^ \tuplet 3/2 4 { f''8( g f e f e es f es)
+		\ottava #1 d( g f cis a f' d g f) } c'16(\sp b g e)
+		f8 r f16-. f( g f) e-. e( f e) es-. es( f es) %315
+		es( d cis d) f( cis a cis) g'( f d f) \tuplet 6/4 4 { c'16(\sp b a g f e) }
+		\mark #25 f8-. a-. a16 a, a' a, a' a, a' a, a' a, a' a,
+		\crescTextCresc a'\< a, a' a, a' a, a' a, a' a, a' a, a' a, a' a,
+		a'\f b a b g b g b f a f a e a e a
+		<d, a'>8 r <d g>4-^ <b d e b'>-^ <g a cis>-^ \ottava #0 %320
+		<f a d>8 f[-.\mf f-. f-.] \tuplet 3/2 8 { f16([\sp a f } e8-.) e-. e-.]
+		\tuplet 3/2 8 { e16([\sp a e } d8-.) d-. d-.] \tuplet 3/2 8 { a16([\sp d a } f8) <f a>-. q-.]
+		<d a'> r \clef bass d,16 f a d f, a d f a, d f a
+		\clef treble d, f a d f, a d f a, d f a d, f a d
+		<f, g h>8 d'[-. d-. d-.] \tuplet 3/2 8 { d16([ f d } c8-.) c-. c-.] %325
+		\tuplet 3/2 8 { c16([ f c } h8-.) h-. h-.] h-. <f a>-. <e g>-. <d f>-.
+		\mark #26 <c e> r \clef bass r16 e,, g c e, g c e g, c e g
+		\clef treble c, e g c e, g c e g, c e g c, e g c
+		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e,
+		\crescTextCresc e'\< e, e' e, e' e, e' e, e' e, e' e, e' e, e' e, %330
+		e'\f f e f d f d f c e c e h? e h e
+		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^
+		<cis e a>8 r r4 \tuplet 3/2 8 { a'16(\sp e' a, } b8) r4
+		\tuplet 3/2 8 { b16(\sp e b } a8) r4 r r16 a,( h cis
+		d8) s s2. %335
 	}
 }
 
@@ -377,7 +513,7 @@ IPianoL = {
 			f,( c' f c f, c' f c)
 			f,( c' f c f, c' f c) %175
 			f,( c' f c f, c' f c)
-		}
+		} 
 		\alternative {
 			{
 				f,( c' f c f, c' f c) %177
@@ -400,7 +536,11 @@ IPianoL = {
 				d, d' e, e' fis, fis' g, g'
 			}
 		}
-			
+		s1*33 %229
+		\clef treble s1*4 %233
+		\clef treble s1*4 %237
+		\clef treble s1*28 %265
+		\clef treble s1*10
 	}
 % 	TODO T 85 pf
 % 	     T 177 text?

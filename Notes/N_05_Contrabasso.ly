@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 IContrabasso = {
-	\relative c {
+	\relative c, {
 		\clef bass
 		\key b \major \time 4/4 \tempoI
 		b4-^\f b'2.~\mf

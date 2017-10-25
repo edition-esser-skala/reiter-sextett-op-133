@@ -24,35 +24,35 @@
 			subtitle = \markup { \vspace #3 \normal-text \larger \larger "1. Satz" }
 			composer = \markup { \larger "Riedegg, 17. August 1921" }
 		}
-		\paper { systems-per-page = #2 }
+% 		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<
 					\new GrandStaff <<
 						\new Staff {
 							\set Staff.instrumentName = "1. Geige"
-% 							\set Staff.midiInstrument = #"violin"
+							\set Staff.midiInstrument = #"violin"
 							\IViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2. Geige"
-% 							\set Staff.midiInstrument = #"violin"
+							\set Staff.midiInstrument = #"violin"
 							\IViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "Bratsche"
-% 						\set Staff.midiInstrument = #"violin"
+						\set Staff.midiInstrument = #"violin"
 						\IViola
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Violoncell"
-% 						\set Staff.midiInstrument = #"cello"
+						\set Staff.midiInstrument = #"cello"
 						\IVioloncello
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Baß"
-% 						\set Staff.midiInstrument = #"contrabass"
+						\set Staff.midiInstrument = #"contrabass"
 						\IContrabasso
 					}
 				>>
@@ -63,7 +63,7 @@
 				>>
 			>>
 			\layout { }
-			\midi { \tempo 4 = 100 }
+% 			\midi { \tempo 4 = 100 }
 		}
 	}
 }

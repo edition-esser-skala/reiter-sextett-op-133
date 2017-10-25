@@ -115,7 +115,7 @@ tempoI = \tempoMarkup "Kräftig belebt"
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
 		markFormatter = #format-mark-box-numbers
-% 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -134,9 +134,9 @@ tempoI = \tempoMarkup "Kräftig belebt"
 		\override InstrumentName.font-shape = #'italic
 		\accidentalStyle neo-modern-voice
 		extraNatural = ##t
-		\override DynamicTextSpanner.style = #'none % uncomment to show spanner dashes
+% 		\override DynamicTextSpanner.style = #'none % uncomment to show spanner dashes
 		\override DynamicTextSpanner.font-size = #-1
-		\override TextSpanner.style = #'none % uncomment to show spanner dashes
+% 		\override TextSpanner.style = #'none % uncomment to show spanner dashes
 		\override TextSpanner.font-size = #-1
 	}
 	\context {
