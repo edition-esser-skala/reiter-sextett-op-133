@@ -189,9 +189,163 @@ IViolinoI = {
 				b r b,4( a as)
 			} {
 				\dimTextDim f8( c f\> c f c f c\!
-				\spanRallMoltoATempo \textSpannerUp f\startTextSpan c f c g' e g e)
+				\spanRallMoltoATempo \textSpannerUp f\startTextSpan c f c g' e g e) %195
 				a(\p\stopTextSpan g fis e d e fis g)
 			}
 		}
+		a( g fis e d e fis g)
+		a( g fis e d e fis g)
+		a( g fis e d e fis g)
+		a( g fis g a g fis g) %200
+		fis( e d e fis e d e)
+		\dimTextDim d( a d\> a d a d a)
+		d( a d a d a d a)\!
+		\mark #16 R1
+		r2 r4 a(\mf %205
+		a'-.)\sp a2-- a4-.
+		a( fis d e
+		fis-.) fis8( eis fis e d e
+		fis4-.) fis8( eis fis eis ais fis
+		h4-.) r r2 %210
+		R1*5 %215
+		\mark #17 R1*2
+		r2 r8 cis,(\mp his cis)
+		cis'(-> h) r ais-. ais(-> gis) r fis-.
+		eis2( fis~ %220
+		fis4) r r2
+		r r8 d,(\mf cis d)
+		d'(-> c!) r h-. h(-> a) r g-.
+		fis2( g~
+		g4) r r2 %225
+		\mark #18 \mvTr as8-.\f-\markup { \remark "staccato" } es'-. es-. es-. es-. des-. des-. des-.
+		des c c c c b as ges
+		f r a( c f c f a)
+		c( a c a') f( es des c
+		des) f,-. des'4~ des8 f,-. f'4~ %230
+		f8 des( b f b des es as,
+		ges) r b,( des ges des ges b)
+		des( b des b') ges( fes eses des
+		d) fis,-. d'4~ d8 fis,-. fis'4~
+		fis8 d( h fis h d c! a %235
+		g) r h,( d g d g h)
+		d( h d h') g( f! es! d)
+		es( g es c g es g c)
+		es( as es c as es as c)
+		\dimTextDim c( f c\> as f c f as) %240
+		as( des as f des as des f
+		\mark #19 es)\p r as, r es''4.( des8)
+		des(-> c) r b-\parenthesize-. b(-> as) r as-.
+		\crescTextCresc g( as b as ges\< f es f
+		es des c des c b as g %245
+		ges4)\! r r2
+		R1*3
+		f'8\mp r b, r f''4.( es8) %250
+		es(-> d!) r c-\parenthesize-. c(-> b) r b-.
+		\crescTextCresc a( b c b as\< g f g
+		f es d es d c b a!
+		as4)\! r r2
+		R1*3 %257
+		r2 r8 h'(\mf cis dis)
+		\crescTextCresc \once \override Script.script-priority = #-100 \afterGrace
+			e1\<\trill^\markup { \tiny \sharp } { dis16 e }
+		b!4-.\! r r2 %260
+		R1
+		r2 r8 h(\mf cis dis)
+		\crescTextCresc \once \override Script.script-priority = #-100 \afterGrace
+			e1\<\trill^\markup { \tiny \sharp } { dis16 e }
+		\mark #20 r8\! h-.\p h-. h-. h-. a-. a-. a-.
+		a-. gis-. gis-. gis-. gis-. a-. a-. a-. %265
+		h r d( cis h e, h' a)
+		gis( e gis fis e fis gis d'
+		cis) r r4 r2
+		R1
+		r4 h8(\p ais gis cis, gis' fis) %270
+		eis( cis eis dis cis dis eis h'
+		b) f[-. f-. f-.] d-. d-. b-. b-.
+		b'-. b-. ges-. ges-. es-. es-. b-. b-.
+		\mvTr f'\f-\markup { \remark "staccato" } f d d b b d d
+		b' b ges ges es es b b %275
+		\mark #21 fis''\ff fis dis dis h h fis fis
+		dis' dis h h fis fis dis dis
+		h' h fis fis dis dis h h
+		\dimTextDim fis' fis dis\> dis h h fis fis
+		\mark #22 dis4\p r r2 %280
+		R1*13 %293
+		\crescTextCrescMolto \tuplet 3/2 4 { r8 c\f es ges\< es ges b ges b c b c
+		es c es ges es ges b ges b c b c } %295
+		\mark #23 es\ff r c16\p c b b ges ges b b c c b b
+		\crescTextCrescMolto c\< c b b ges ges b b c c b b ges ges b b
+		c c b b ges ges b b c c b b ges ges b b
+		c\ff c b b ges ges b b c c b b ges ges b b
+		c c b b ges ges b b c c b b ges ges b b %300
+		c c b b ges ges b b c c b b ges ges b b
+		c c b b ges ges b b c c b b ges ges b b
+		c c b b ges ges b b c c b b ges ges b b
+		c c b b ges ges b b c c b b ges ges b b
+		\mark #24 d!8\ff r b4(\mf a! as) %305
+		as8( g fis g) es'( c a f)
+		r4 \tuplet 3/2 4 { b8( c b a b a as b as) }
+		as( g fis g) es'( c f a,)
+		r4 d2.--
+		f4( b, f' es %310
+		d) d(\f a b)
+		f( g f d)
+		<f a,>-^ f2.~\mf
+		f( g4
+		a) f2.~ %315
+		f( g4
+		\mark #25 a) \tuplet 3/2 4 { a8( a, a' e a, e' f a, f')
+		\crescHairpin cis(\< a cis d a d e a, e' f a, f')
+		f(\sp b, f' e b e d a d cis a cis) }
+		d8-. d'-. r <d,, e' d'> r <d g' d'> r <a' cis'> %320
+		<d, f' d'>4 r r2
+		r4 d''-. gis,(-> a)
+		e8([ f)] a,( d f d f a)
+		d( a d e) f( e d c
+		h) r r4 r2 %325
+		R1
+		\mark #26 r4 g-. dis(-> e)
+		\crescHairpin h(-> c) h8(\< c h c
+		e)\! r \tuplet 3/2 4 { e8( e, e' h e, h' c e, c')
+		\crescHairpin gis(\< e gis a e a h e, h' c e, c') %330
+		c(\sp f, c' h f h a e a gis e gis) }
+		\mark #27 a8-.\f a'-. r <d,, h' a'> r q r <e h' gis'>
+		<e cis' a'>-. a'-. a-. a-. a(\sp b!-.) b-. b-.
+		b( a-.) a-. a-. a-. g-. f-. e-.
+		d-. d'-. d-. d-. d(\sp es!-.) es-. es-. %335
+		es(\sp d-.) d-. d-. d-. c-. b-. a-.
+		g r r4 r2
+		r8 es-.\ff es-. es-. es-. es-. es-. es-.
+		es r r4 r2
+		r8 b-. b-. b-. b-. b-. b-. b-. %340
+		\mark #28 b1-\markup { \remark "gehalten" }
+		g-\markup { \remark "gehalten" }
+		c,4 r r2
+		R1
+		\mark #29 r4 a''(\mf f f'~ %345
+		f8) a4( f es8 c a
+		f4) c'8( h c h c h)
+		\crescTextCresc c( d b\< c a c g c
+		f,4)\! c'( a f'~
+		f8) c'4( a f8 es c %350
+		f,4) es'8( d es d es d)
+		\crescTextCresc es( f d\< es c es b es
+		a,4)\! c8( b a b g a)
+		f(\< g es f d es c d
+		\mark #30 b4)\! f''(\f b, b'~ %355
+		b8) c4 b as8( f d
+		b4) f'8( e f e f e)
+		f( g es f d es c d
+		b4) b8( a b a b c
+		d4) d8( cis d cis d es) %360
+		\crescTextCrescMolto f( d b d) f(\< d b d)
+		f( d) f( d) as'( f) as( f)
+		<a a,, d,>\ff r a4-- a( fis)
+		d( h g h
+		a8) r a4-- a( fis) %365
+		d( h g h)
+		\mark #31 <a' d, d,>8 r r4 r2
+		R1
+		r2 r4 d8.(\mf d,16)
 	}
 }
