@@ -337,7 +337,133 @@ IPianoR = {
 		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^
 		<cis e a>8 r r4 \tuplet 3/2 8 { a'16(\sp e' a, } b8) r4
 		\tuplet 3/2 8 { b16(\sp e b } a8) r4 r r16 a,( h cis
-		d8) s s2. %335
+		d8) r r4 \tuplet 3/2 8 { d'16(\sp a' d, } es8) r4 %335
+		\tuplet 3/2 8 { es?16( a es } d8) r4 r r16 b,!( c! d
+		es!8) <g b es g>[\ff-. q-. q-.] q-. q-. q-. q-.
+		q r r4 r2
+		r8 <es g c es>-. q-. q-. q-. q-. q-. q-.
+		q r r4 r2 %340
+		\mark #28 g'16 f es d c b a g f es d c b a g fis
+		g f es d \clef bass c b a g f es d c b a g fis
+		f8 r \clef treble a''16\p f es c a' f es c a' f es c
+		a' f es c a' f es c a' f es c a' f es c
+		\mark #29 a' f es c a' f es c a' f es c a' f es c %345
+		a' f es c a' f es c a' f es c a' f es c
+		\lh \clef bass \tuplet 3/2 4 { f,,8 a c \rh \clef bass f a c \lh \clef treble f a c\rh \clef treble f a c
+		f es c \lh f, es c \rh f, es c \lh \clef bass f, es c \rh }
+		c''16 a f es c' a f es c' a f es c' a f es
+		c' a f es c' a f es c' a f es c' a f es %350
+		\tuplet 3/2 4 { \lh f,,8 c' es \rh \clef bass g c es \lh \clef treble g c es \rh \clef treble g c es
+		f es c \lh f, es c \rh f, es c \lh \clef bass f, es c \rh }
+		f'1\trill
+		\crescTextCrescMolto f'\trill\<
+		\mark #30 as16\! f d b as' f d b as' f d b as' f d b %355
+		as' f d b as' f d b as' f d b as' f d b
+		\lh \clef bass b,,, d f as \rh \clef bass b d f as \lh \clef treble b d f as \rh \clef treble b d f as
+		b as f d \lh b as f d \rh \clef bass b as f d \lh \clef bass b as f d \rh
+		r4 \clef treble b''16-\critnote d f as d, f as b f as b d
+		as b d f d, f as b f as b d as b d f %360
+		\crescTextCrescMolto as f d b as'\< f d b as' f d b as' f d b
+		as' f d b as' f d b as' f d b as' f d b
+		<a d fis a>8\ff r \clef bass d,,16 fis a d \lh \clef bass d, fis a d \rh \clef treble fis a d fis
+		\lh \clef bass h,,, d g h \rh d g h d \lh \clef treble d, g h d \rh g h d g
+		\lh \clef bass a,,,,, d fis a \rh \clef bass d fis a d \lh d, fis a d \rh \clef treble fis a d fis %365
+		\lh \clef bass h,,, d g h \rh d g h d \lh \clef treble d, g h d \rh g h d g
+		\mark #31 <a, d fis a>8 r a16\p fis d a a' fis d a a' fis d a
+		d' a fis d d' a fis d d' a fis d d' a fis d
+		\ottava #1 a'' d, c! d a' d, c d a' d, c d h' fis d fis
+		a-\critnote d, c d g d h d fis cis a cis e a, g a %370
+		d a fis a a' d, c d a' d, c d h' fis d fis
+		\crescHairpin \dimHairpin a d, c d g d h d fis\< cis e cis\! dis\> cis e cis\!
+		d a fis a fis' d a d fis d a d fis d a d
+		fis d h d fis d h d gis d h d gis d h d
+		a' cis, a cis a' cis, a cis gis' cis, a cis fis cis a cis %375
+		e cis a cis cis a fis a d a fis a gis e d e
+		a e cis e a' d, c d a' d, c d h' fis d fis
+		a d, c d g d h d fis cis a cis e a, g a
+		\crescTextCresc d a fis a fis'\< d fis, d' fis d fis, d' fis d fis, d'
+		fis\f d fis, d' fis d fis, d' fis d fis, d' fis d fis, d' \ottava #0 %380
+		\mark #32 \lh \clef bass e,,,, gis h d \rh \clef bass e gis h d \lh \clef treble e gis h d \rh \clef treble e gis h d
+		\crescHairpin \dimHairpin <d fis>8 r d,8(\mf\< cis h a\! gis\> <d fis h>
+		<d e>4)\! q\p(-- q-- q--)
+		q(-- q-- q-- q--)
+		q(-- q-- q-- q--) %385
+		q(-- q-- q-- q--)
+		q(-- q-- q-- q--)
+		<gis h cis gis'>(--\mf q-- q-- q--)
+		q(-- q-- q-- q--)
+		\crescTextCresc q(--\< q-- q-- q--) %390
+		<a cis gis'>--\f q <a cis fis>-- q--
+		\crescTextCresc q\< q q <a cis g' a>
+		\mark #33 <a d fis a>-^\ff q-^ q-^ q-^
+		q-^ q-^ q-^ q-^
+		<cis a' cis>-^ q-^ <h g' h>-^ q-^ %395
+		<h e? g h>-\parenthesize-^ <h e g h>-\parenthesize-^ q-\parenthesize-^ q-\parenthesize-^
+		q-^ q-^ q-^ q-^
+		q-^ q-^ q-^ q-^
+		<d e g d'>-^ q-^ <c e b' c>-^ q-^
+		\crescTextCresc q-^\< q-^ q-^ q-^ %400
+		\mark #34 q8\sp r r4 r2
+		R1*10 %411
+		r8 \mvTr g'\p-\markup { \remark "gebunden" } f e f g f e
+		f-\markup { \remark "un poco rit." } g f g f g f es
+		\mark #35 d-2-\markup { \remarkE "a tempo" } f-1 f' f, d f f' f,
+		d f f' f, d f f' f, %415
+		d f f' f, d f f' f,
+		d f f' f, d f f' f,
+		<gis h>( <f f'> <a c> <f f'> <a c> <f f'> <a c> <f f'>)
+		es f <c' f> f, es f <c' f> f,
+		es f <c' f> f, es f <c' f> f, %420
+		es f <c' f> f, es f <c' f> f,
+		<a cis>( <f f'> <b d> <f f'> <b d> <f f'> <b d> <f f'>)
+		\ottava #1 as d <f b> d as d <f b> d
+		as d <f b> d as d <f b> d
+		as d <f b> d as d <f b> d %425
+		\mark #36 <f as b> b, <es g> b \ottava #0 g' b, g es
+		\crescHairpin f(\< d b d f e\! f g
+		\dimHairpin f g f g f\> g f d)\!
+		g-\markup { \remark "gebunden" } d h d g es c es
+		f c a c f d b d %430
+		<g, c> b <g c> b <g c> b <g c> b
+		<g c> b <g c> b <g c> b <g c> b
+		es! f f' f, es f f' f,
+		\crescHairpin es f f' f, es\< f g a\!
+		b d, b d cis\sp f d f %435
+		d( f es f) f( f' f, f')
+		b,( f b, f') << f2 \\ { cis8\sp d cis d } >>
+		<< f2 \\ { d8\sp es d es } >> f( f' f, f')
+		\mark #37 R1*3 %441
+		\clef bass r4\mf f,,,-^-2 r \clef treble f''-^-2
+		f'16->\f es c a r4 \clef bass f,16 es c a r4-\critnote
+		\mark #38 \clef treble b8\p b' c, c' d, d' f, f'
+		b, b' c, c' d, d' f, f' %445
+		b, b' f, f' d, d' c, c'
+		b, b' f, f' d, d' f, f'
+		d,\mf d' f, f' b, b' c, c'
+		d, d' f, f' b, b' c, c'
+		\crescTextCresc d,\< d' c, c' b, b' f, f' %450
+		d, d' c, c' b, b' f, f'
+		<b, d b'>4-^\fE <c f>-^ <d g b>-^ <es a c>-^
+		<b d b'>4-^ <c f>-^ <d g b>-^ <es a c>-^
+		\crescTextCresc <d b'>8 <c f> <d b'> <f c'> <d b'>\< <c f> <d b'> <f c'>
+		<d b'> <c f> <d b'> <f c'> <d b'> <c f> <d b'> <b' d> %455
+		\mark #39 \mvTrr <g b c>\ff-\markup { \remark "staccatissimo" } <e g b c> q q q q q q
+		q q q q q q q q
+		q q q q q q q q
+		<e fis ais cis> q q q q q q q
+		<dis fis h dis> q q q q q q q %460
+		<f! a! c! f!> <f a c f> q q q q q q
+		\mark #40 \ottava #1 <f b f'> q q q <fis b fis'> q q q
+		<g b es g> q q q <b g' b> q q q
+		<d b' d> q q q <c c'> q <b b'> q
+		<f f'>4-^ <d' d'>-^ <es es'>-^ <a, a'>-^ %465
+		<b b'> d16 d' d, d' b, b' b, b' f, f' f, f'
+		d, d' d, d' b b' b, b' f, f' f, f' d, d' d, d' \ottava #0
+		b, b' b, b' f f' f, f' d, d' d, d' b, b' b, b'
+		f, f' f, f' d d' d, d' b, b' b, b' f, f' f, f'
+		<b, b'>4-^ r r2 %470
+		<f a c f>4.-\parenthesize-^ r8 r2
+		<b d f b>4.-\parenthesize-^ r8 r2 \bar "|."
 	}
 }
 
@@ -540,7 +666,7 @@ IPianoL = {
 		\clef treble s1*4 %233
 		\clef treble s1*4 %237
 		\clef treble s1*28 %265
-		\clef treble s1*10
+		\clef treble s1*150
 	}
 % 	TODO T 85 pf
 % 	     T 177 text?

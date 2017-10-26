@@ -44,7 +44,7 @@
 
 #(define-markup-command (remarkE layout props text) (markup?)
   (interpret-markup layout props
-		#{\markup \small \italic { [#text] } #}))
+		#{\markup \small { [ \italic #text ] } #}))
 %
 %
 
