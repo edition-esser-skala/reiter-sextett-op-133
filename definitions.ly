@@ -77,6 +77,10 @@ extendLV = #(define-music-function (parser location further) (number?)
 	#})
 lvTieDashed = \override LaissezVibrerTie.dash-definition = #'((0 1 0.4 0.75))
 
+crescTextCrescE = {
+	\set crescendoText = "[cresc.]"
+	\set crescendoSpanner = #'text
+}
 crescTextCrescMolto = {
 	\set crescendoText = "cresc. molto"
 	\set crescendoSpanner = #'text
