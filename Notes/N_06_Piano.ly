@@ -201,7 +201,7 @@ IPianoR = {
 				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195
 				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
 			}
-		} %\set Score.skipTypesetting = ##f
+		} \set Score.skipTypesetting = ##f
 		\crescTextCresc \clef treble d, d' e,\< e' fis, fis' a, a'
 		d, d' e, e' fis, fis' a, a'
 		d,\f d' a, a' fis, fis' e, e'
@@ -331,7 +331,7 @@ IPianoR = {
 		\tuplet 3/2 8 { c16([ f c } h8-.) h-. h-.] h-. <f a>-. <e g>-. <d f>-.
 		\mark #26 <c e> r \clef bass r16 e,, g c e, g c e g, c e g
 		\clef treble c, e g c e, g c e g, c e g c, e g c
-		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e, \set Score.skipTypesetting = ##f
+		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e, %\set Score.skipTypesetting = ##f
 		\crescTextCresc e'\< e, e' e, e' e, e' e, e' e, e' e, e' e, e' e, %330
 		e'\f f e f d f d f c e c e h? e h e
 		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^

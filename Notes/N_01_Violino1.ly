@@ -347,5 +347,102 @@ IViolinoI = {
 		\mark #31 <a' d, d,>8 r r4 r2
 		R1
 		r2 r4 d8.(\mf d,16)
+		fis4( g a cis %370
+		d) r r8 d-. d( d,)
+		fis( d g d) a'( fis cis' a)
+		d4 fis8( e d a d e)
+		fis( d e fis) gis( e gis h)
+		a4-- a( gis fis) %375
+		e( d8 cis) d4( gis,)
+		a r r8 d16 a fis d fis h
+		\tuplet 3/2 4 { fis8( d) d'-. g,( d) d'-. cis-. a-. cis-. e-. cis-. a-. }
+		\crescHairpin d4( fis2.~)\<
+		fis4\! <fis a,, d,>-^\f q-^ q-^ %380
+		\mark #32 fis16 e d cis h a gis fis e d cis h a gis fis e
+		R1
+		r2 h''~\mf
+		h8 ais16 h cis h ais? h d cis h a gis fis e dis
+		fis8( e dis e) d( cis d h) %385
+		a2(-> gis4.) r8
+		R1*6 %392
+		\mark #33 <a a'>2--\ff d'4. e8
+		fis-- e-- d-- e-- fis-- e-- d-- cis--
+		<cis, cis'>2( <h h'>4.) r8 %395
+		R1
+		<h h'>2\ff e'4. fis8
+		g-- fis-- e-- fis-- g-- fis-- e-- d--
+		<d, d'>2( <c c'>4.) r8
+		R1 %400
+		\mark #34 r8 d'(\p b a g) b( g f
+		e) g( e d c) g'( e d
+		c) g'( e d c) e( c b
+		g b g b e, g e g)
+		R1*2 %406
+		b2.--\p es4-.
+		c-. f2-- f4-.
+		es-. g-. f-. a-.
+		g-. b-. a-. f-. %410
+		a-. f-. a-. c-.
+		f-. r r2
+		R1
+		\mark #35 R
+		r2 r4 b,8(\p f) %415
+		f4 f8( b,) b4 b8( f)
+		f( b, f' b f' b, f' b)
+		f1~--
+		f8 r r4 r c'8( f,)
+		f4 f8( c) c4 c8( f,) %420
+		f( c f c' f c f c')
+		f,1~--
+		f8 r r4 r b8( f)
+		f4 f8( b,) b4 b8( f)
+		f( b, f' b f' b, f' b) %425
+		\mark #36 b2.( g8 es)
+		f4( d b4. b'8)
+		b2. b8( d)
+		g(\mf f es d) f( es d c)
+		f( es d c) es( d c b) %430
+		d( c b g e g b c)
+		d( c b g) c( b g e)
+		c'( f, b f a f g f)
+		\crescHairpin f-. f(\< g f a f c' f,)
+		b(\p f b, f') f4( f'~ %435
+		f f,) a8( f a f)
+		b( f b, f') f4( f'~
+		f f,) a8( f a f)
+		\mark #37 gis,(\p a gis a) h( c h c
+		es f) gis,( a h c es f %440
+		gis a) h,( c es f gis a)
+		\crescTextCresc \tuplet 3/2 4 { h( c h c\< h c h c h c h c) }
+		\crescTextMolto es16\< f es f es f es f es f es f es f es f
+		\mark #38 d16\p d c c b b f f d d c c b b f f
+		d d f f b b c c d d f f b b c c %445
+		d d c c b b f f d d c c b b f f
+		d d f f b b c c d d f f b b c c
+		f\mf f es es d d c c b b es, es d d c c
+		b b c c d d es es f f c' c d d es es
+		\crescTextCresc f\< f es es d d c c b b es, es d d c c %450
+		b b c c d d es es f f c' c d d f f
+		d\f d d d c c c c d d d d f f f f
+		d d d d c c c c d d d d f f f f
+		\crescTextCresc d d c c d d f f d\< d c c d d f f
+		d d c c d d f f d d c c d d f f %455
+		\mark #39 g8\ff r r4 r2
+		r8 c,,,16 c d d e e f f g g a a b! b
+		\crescHairpin h\< h c c d d e e f f g g a a b b
+		cis8\sp r r4 r2
+		\crescTextCresc dis,,16 dis e e fis\< fis gis gis ais ais h h cis cis dis dis %460
+		f f g g a a b b c c d d es! es e e\!
+		\mark #40 f f f f f f f f fis fis fis fis fis fis fis fis
+		g g g g g g g g b, b b b b b b b
+		d d d d d d d d c c c c b b b b
+		f f f f d' d d d es es es es a, a a a %465
+		<b b, d,>4 d16 d f d b b d b f f b f
+		d d f d b' b d b f f b f d d f d
+		b b d b f' f b f d d f d b b d b
+		f f b f d' d f d b b d b f f f f
+		f4-^ r r2 %470
+		<a f'>4.-^ r8 r2
+		<d, b' b'>4.-^ r8 r2 \bar "|." %472 finis
 	}
 }

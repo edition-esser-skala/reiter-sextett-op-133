@@ -81,6 +81,10 @@ crescTextCrescMolto = {
 	\set crescendoText = "cresc. molto"
 	\set crescendoSpanner = #'text
 }
+crescTextMolto = {
+	\set crescendoText = "molto"
+	\set crescendoSpanner = #'text
+}
 
 spanRallATempo = {
 	\override TextSpanner.bound-details.left.text = "rall."
