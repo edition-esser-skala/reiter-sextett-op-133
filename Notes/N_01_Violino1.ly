@@ -292,12 +292,12 @@ IViolinoI = {
 		f( g f d)
 		<f a,>-^ f2.~\mf
 		f( g4
-		a) f2.~ %315
+		a-.) f2.~ %315
 		f( g4
 		\mark #25 a) \tuplet 3/2 4 { a8( a, a' e a, e' f a, f')
 		\crescHairpin cis(\< a cis d a d e a, e' f a, f')
 		f(\sp b, f' e b e d a d cis a cis) }
-		d8-. d'-. r <d,, e' d'> r <d g' d'> r <a' cis'> %320
+		d8-.\f d'-. r <d,, e' d'> r <d g' d'> r <a' cis'> %320
 		<d, f' d'>4 r r2
 		r4 d''-. gis,(-> a)
 		e8([ f)] a,( d f d f a)
@@ -311,7 +311,7 @@ IViolinoI = {
 		c(\sp f, c' h f h a e a gis e gis) }
 		\mark #27 a8-.\f a'-. r <d,, h' a'> r q r <e h' gis'>
 		<e cis' a'>-. a'-. a-. a-. a(\sp b!-.) b-. b-.
-		b( a-.) a-. a-. a-. g-. f-. e-.
+		b(\spE a-.) a-. a-. a-. g-. f-. e-.
 		d-. d'-. d-. d-. d(\sp es!-.) es-. es-. %335
 		es(\sp d-.) d-. d-. d-. c-. b-. a-.
 		g r r4 r2

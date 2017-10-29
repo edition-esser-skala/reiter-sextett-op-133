@@ -233,7 +233,7 @@ IPianoR = {
 		\crescHairpin h,([ g)] fis(\< g gis a ais h %225
 		\mark #18 c)\sp r r4 r2
 		R1
-		r4 f,,,16\f a c f a, c f a c, f a c
+		r4 f,,,16\f a! c f a, c f a c, f a c
 		f, a c f a, c f a c, f a c f, a c f
 		<des b>8 r \lh b16 \rh des f des \lh f, \rh b des b \lh des, \rh f b f %230
 		\lh b, \rh des f des \lh f, \rh b des b \lh des, \rh f b f \lh \clef bass des, \rh f' ces' f,
@@ -331,7 +331,7 @@ IPianoR = {
 		\tuplet 3/2 8 { c16([ f c } h8-.) h-. h-.] h-. <f a>-. <e g>-. <d f>-.
 		\mark #26 <c e> r \clef bass r16 e,, g c e, g c e g, c e g
 		\clef treble c, e g c e, g c e g, c e g c, e g c
-		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e, %\set Score.skipTypesetting = ##f
+		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e, \set Score.skipTypesetting = ##f
 		\crescTextCresc e'\< e, e' e, e' e, e' e, e' e, e' e, e' e, e' e, %330
 		e'\f f e f d f d f c e c e h? e h e
 		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^
@@ -925,5 +925,8 @@ IPianoL = {
 	}
 }
 
-% 	TODO T 85 pf
-% 	     T 177 text?
+% TODO
+% 85 pf
+% 177 text?
+% 329 vl 1 slur
+% 435ff slur
