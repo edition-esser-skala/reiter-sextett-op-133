@@ -217,7 +217,7 @@ IViolinoII = {
 		\dimTextDim r gis[ r cis\> r gis' r cis] %215
 		\mark #17 cis4\pp r r2
 		R1
-		cis'4.(\mp^\markup { \remark "leger (?)" } fis,8) fis2~
+		cis'4.(\mp^\markup { \remark "Bogen" } fis,8) fis2~
 		fis cis
 		ais1~ %220
 		ais4 r r2
@@ -243,7 +243,7 @@ IViolinoII = {
 		\once \slurDashed des( f des as f des f as~)
 		\mark #19 as\p r r4 r2
 		R1*7 %249
-		b!8 r r4 r2 %250
+		b!8\p r r4 r2 %250
 		R1*7 %257
 		e,4.(\f h8) h'4.( e,8)
 		\crescHairpin e'( h e, h') e(\< h e h')\!
@@ -382,7 +382,7 @@ IViolinoII = {
 		\mark #35 R
 		r2 r4 f8(\p b,) %415
 		b4 b8( f) f4 f8( b,)
-		\crescHairpin \dimHairpin b4.(\< f'8\! b\> f b f'\!)
+		b4.( f'8 b f b f')
 		es,2-> es4-. es-.
 		es r r f'8( c)
 		c4 c8( f,) f4 f8( c) %420
@@ -405,8 +405,8 @@ IViolinoII = {
 		f( b, f b) f4( f'~
 		f f,) c'8( es c es)
 		\mark #37 es,(\p f es f) gis( a gis a
-		h c) es,( f gis a h c %440
-		es f) gis,( a h c es f)
+		h[ c)] es,( f gis a h c %440
+		es[ f)] gis,( a h c es f)
 		\crescTextCresc \tuplet 3/2 4 { gis( a gis a\< gis a gis a gis a gis a) }
 		\crescTextMolto h16(\< c h c h c h c h c h c h c h c)
 		\mark #38 b\p b f f d d c c b b f f d d c c
@@ -437,6 +437,6 @@ IViolinoII = {
 		d d f d b' b d b f f b f f f f f
 		b4-^ r r2 %470
 		<c f, a,>4.-^ r8 r2
-		<d f, b,>4.-^ r8 r2 \bar "|." %472
+		<d f, b,>4.-^ r8 r2 \bar "|." %472 finis
 	}
 }

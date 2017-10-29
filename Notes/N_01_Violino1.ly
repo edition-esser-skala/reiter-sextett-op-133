@@ -411,8 +411,8 @@ IViolinoI = {
 		b( f b, f') f4( f'~
 		f f,) a8( f a f)
 		\mark #37 gis,(\p a gis a) h( c h c
-		es f) gis,( a h c es f %440
-		gis a) h,( c es f gis a)
+		es[ f)] gis,( a h c es f %440
+		gis[ a)] h,( c es f gis a)
 		\crescTextCresc \tuplet 3/2 4 { h( c h c\< h c h c h c h c) }
 		\crescTextMolto es16\< f es f es f es f es f es f es f es f
 		\mark #38 d16\p d c c b b f f d d c c b b f f

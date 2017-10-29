@@ -24,7 +24,7 @@
 			subtitle = \markup { \vspace #3 \normal-text \larger \larger "1. Satz" }
 			composer = \markup { \larger "Riedegg, 17. August 1921" }
 		}
-% 		\paper { systems-per-page = #2 }
+		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<
