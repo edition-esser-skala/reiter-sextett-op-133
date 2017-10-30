@@ -403,12 +403,12 @@ IViola = {
 		c-. r r2
 		R1
 		\mark #35 R1*2 %415
-		\crescHairpin r8 b,(\< a b cis d e f\!
+		\crescHairpin r8 b,(\mfE\< a b cis d e f\!
 		\dimHairpin b-.) b(\< a b\! es\> d c b\!)
 		h4(-> c-.) c-. c-.
 		c-. r r2
-		r8 f,,( e f gis a h c %420
-		\crescHairpin \dimHairpin f-.) a(\< gis a\! d\> c b a\!)
+		\crescHairpin r8 \parenthesizedHairpin f,,(\< e f gis a h c %420
+		\dimHairpin f-.)\! a(\< gis a\! d\> c b a\!)
 		cis4(-> d-.) d-. d-.
 		d-. r r2
 		\crescHairpin r8 b,(\< a b cis d e f\!

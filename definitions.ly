@@ -90,6 +90,24 @@ crescTextMolto = {
 	\set crescendoSpanner = #'text
 }
 
+hairpinBetweenText =
+#(define-music-function (parser location leftText rightText) (markup? markup?)
+   #{
+     \once \override Hairpin.stencil =
+     #(lambda (grob)
+        (ly:stencil-combine-at-edge
+         (ly:stencil-combine-at-edge
+          (ly:stencil-aligned-to (grob-interpret-markup grob leftText) Y CENTER)
+          X RIGHT
+          (ly:stencil-aligned-to (ly:hairpin::print grob) Y CENTER)
+          0)
+         X RIGHT
+         (ly:stencil-aligned-to (grob-interpret-markup grob rightText) Y CENTER)
+         0.6))
+   #})
+
+parenthesizedHairpin = \hairpinBetweenText \markup "[" \markup "]"
+
 spanRallATempo = {
 	\override TextSpanner.bound-details.left.text = "rall."
 	\override TextSpanner.bound-details.right.text = "a tempo"

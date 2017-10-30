@@ -336,9 +336,9 @@ IPianoR = {
 		e'\f f e f d f d f c e c e h? e h e
 		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^
 		<cis e a>8 r r4 \tuplet 3/2 8 { a'16(\sp e' a, } b8) r4
-		\tuplet 3/2 8 { b16(\sp e b } a8) r4 r r16 a,( h cis
+		\tuplet 3/2 8 { b16(\sp e b } a8) r4 r r8 \tuplet 3/2 8 { a,16( h cis }
 		d8) r r4 \tuplet 3/2 8 { d'16(\sp a' d, } es8) r4 %335
-		\tuplet 3/2 8 { es?16( a es } d8) r4 r r16 b,!( c! d
+		\tuplet 3/2 8 { es?16( a es } d8) r4 r r8 \tuplet 3/2 8 { b,!16( c! d }
 		es!8) <g b es g>[\ff-. q-. q-.] q-. q-. q-. q-.
 		q r r4 r2
 		r8 <es g c es>-. q-. q-. q-. q-. q-. q-.
@@ -796,9 +796,9 @@ IPianoL = {
 		c d c d h d h d a e' a, e' gis, e' gis, e'
 		<f,! a e'>8 r <d f a>4-^ <h f' a>-^ <e h'>-^
 		<a, e' g!>8 r r4 \tuplet 3/2 8 { a'16( e' a, } b8) r4
-		\tuplet 3/2 8 { b16( e b } a8) r4 r r16 a,( h cis
+		\tuplet 3/2 8 { b16( e b } a8) r4 r r8 \tuplet 3/2 8 { a,16( h cis }
 		d8) r r4 \tuplet 3/2 8 { d'16( a' d, } es8) r4 %335
-		\tuplet 3/2 8 { es?16( a es } d8) r4 r r16 b,!( c! d
+		\tuplet 3/2 8 { es?16( a es } d8) r4 r r8 \tuplet 3/2 8 { b,!16( c! d }
 		es!8) <es b' es>[-. q-. q-.] q-. q-. q-. q-.
 		q r r4 r2
 		r8 <c g' c>-. q-. q-. q-. q-. q-. q-.
@@ -927,6 +927,7 @@ IPianoL = {
 
 % TODO
 % 85 pf
+% end of exposition vorzeichen!!
 % 177 text?
 % 329 vl 1 slur
 % 435ff slur
