@@ -6,23 +6,17 @@
 
 \include "../definitions.ly"
 
-\paper { first-page-number = #1 }
+\paper { first-page-number = #73 }
 
 #(set-global-staff-size 14.14)
 
 \book {
 	\bookpart {
 		\header {
-			title = \markup {
-				\medium \center-column {
-					\normal-text \larger \larger \line { Sextett op. 113 }
-					\smaller \smaller \smaller \italic \line { Per aspera ad astra }
-				}
-			}
-			subtitle = \markup { \vspace #3 \normal-text \larger \larger "1. Satz" }
-			composer = \markup { \larger "Riedegg, 17. August 1921" }
+			subtitle = \markup { \vspace #3 \normal-text \larger \larger "2. Satz" }
+			composer = \markup { \larger " " }
 		}
-		\paper { systems-per-page = #2 }
+% 		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<
@@ -30,34 +24,34 @@
 						\new Staff {
 							\set Staff.instrumentName = "1. Geige"
 							\set Staff.midiInstrument = #"violin"
-							\IViolinoI
+							\IIViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2. Geige"
 							\set Staff.midiInstrument = #"violin"
-							\IViolinoII
+							\IIViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "Bratsche"
 						\set Staff.midiInstrument = #"violin"
-						\IViola
+						\IIViola
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Violoncell"
 						\set Staff.midiInstrument = #"cello"
-						\IVioloncello
+						\IIVioloncello
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Baß"
 						\set Staff.midiInstrument = #"cello"
-						\IContrabasso
+						\IIContrabasso
 					}
 				>>
 				\new PianoStaff <<
 					\set PianoStaff.instrumentName = "Klavier"
-					\new Staff = "RH" << \IPianoR >>
-					\new Staff = "LH" << \IPianoL >>
+					\new Staff = "RH" << \IIPianoR >>
+					\new Staff = "LH" << \IIPianoL >>
 				>>
 			>>
 			\layout { }

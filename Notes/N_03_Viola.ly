@@ -460,3 +460,11 @@ IViola = {
 		<d b' f'>4.-\parenthesize-^ r8 r2 \bar "|." %472 finis
 	}
 }
+
+IIViola = {
+	\relative c' {
+		\clef treble
+% 		\clef alto
+		\key g \major \time 4/4 \tempoII
+	}
+}

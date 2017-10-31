@@ -925,4 +925,31 @@ IPianoL = {
 	}
 }
 
+IIPianoR = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoII
+		R1*3
+		\time 2/4 << { e'8([ d c h)] } \\ { h4(\mp gis) } >>
+		\mark #1 \time 4/4
+		R1*3
+		r2 << {
+			e'8( d c h) a2~ a16 h( c cis d gis a ais)
+		} \\ {
+			a,4(\p gis)
+			e( g fis!16) s-\markup { \remark "un poco rit." } s8 s4
+		} >>
+		h'16\p^\markup { \remark "a tempo" } d-\markup { \remark "sehr ruhig fließend" } g, h e, <d g> \grace d8 c16 h h' a gis a d c a d,
+		e' d cis d g d c h h a gis h e d c d,
+	}
+}
+
+IIPianoL = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoII
+		R1*3
+	}
+}
+
 % TODO

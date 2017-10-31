@@ -473,3 +473,10 @@ IVioloncello = {
 		b4.-\parenthesize-^ r8 r2 \bar "|." %472 finis
 	}
 }
+
+IIVioloncello = {
+	\relative c {
+		\clef bass
+		\key g \major \time 4/4 \tempoII
+	}
+}

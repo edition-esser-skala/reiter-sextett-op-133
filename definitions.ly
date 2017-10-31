@@ -131,6 +131,7 @@ tempoMarkup =
 %
 
 tempoI = \tempoMarkup "Kräftig belebt"
+tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 
 
 #(define afterGraceFraction (cons 7 8))

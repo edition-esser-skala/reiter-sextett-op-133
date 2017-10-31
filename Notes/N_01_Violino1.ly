@@ -445,3 +445,10 @@ IViolinoI = {
 		<d, b' b'>4.-^ r8 r2 \bar "|." %472 finis
 	}
 }
+
+IIViolinoI = {
+	\relative c' {
+		\clef treble
+		\key g \major \time 4/4 \tempoII
+	}
+}
