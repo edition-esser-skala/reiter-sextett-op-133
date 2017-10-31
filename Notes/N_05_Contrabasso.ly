@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 IContrabasso = {
-% 	\relative c {
+	\relative c {
 		\clef bass
 		\key b \major \time 4/4 \tempoI
 		b4-^\f b'2.~\mf
@@ -120,9 +120,7 @@ IContrabasso = {
 			c(\< h c dis e dis e fis)
 			g( fis g h c h c e %110
 			g4)\sp r r2
-			\textSpannerDown \spanRallATempo R1\startTextSpan
-			R\stopTextSpan
-			R1*2 %115
+			R1*4 %115
 			r2 f4(\p f,)
 			c'( c,-.) c-. c-.
 			\crescHairpin c h8(\mf\< c dis e fis g\!
@@ -177,7 +175,7 @@ IContrabasso = {
 		}
 		\alternative {
 			{
-				\dimTextDim f-.\> c'-. f,-. c'-.
+				\mark \critnote \dimTextDim f-.\> c'-. f,-. c'-.
 				f,-. c'-. f,-. c'-.
 				f,-.\! f'-. r2
 				\mark #15 R1*12 %191
@@ -185,7 +183,7 @@ IContrabasso = {
 				b r \once \lvTieDashed \extendLV #7 b'2.\mf\laissezVibrer
 			} {
 				\dimTextDim f,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. %195
+				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. \noBreak %195
 				r\stopTextSpan a\p d a'
 			}
 		}

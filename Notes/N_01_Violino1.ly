@@ -114,8 +114,7 @@ IViolinoI = {
 			q--( q-- q-- q--)
 			q--( q-- q-- q--) %110
 			q\sp r r2
-			\textSpannerDown \spanRallATempo R1\startTextSpan
-			R\stopTextSpan
+			R1*2
 			r2 r4 f8(\p c)
 			c4 c8( f,) f4 f8( c) %115
 			c( f, c' f c' f, c' f
@@ -163,8 +162,8 @@ IViolinoI = {
 			f( c f, c') \shape #'((0 . -2) (0 . 1) (0 . 1) (0 . -2)) Slur c4( c'~
 			c c,) e8( c e c) %165
 			\mark #14 dis(\p e dis e) fis( g fis g
-			fis g fis g) h?( c h c
-			h c h c) dis( e dis e
+			fis g fis g) b( c b c
+			b c b c) dis( e dis e
 			\crescTextCresc dis e dis e dis\< e dis e)
 			dis( e dis e dis e dis e) %170
 			f(\p c a g f g a c)
@@ -176,7 +175,7 @@ IViolinoI = {
 		}
 		\alternative {
 			{
-				\dimTextDim f(\> c f c f c f c %177
+				\mark \critnote \dimTextDim f(\> c f c f c f c %177
 				f c f c f c f c
 				f4)\! r r2
 				\mark #15 R1*7 %186
@@ -189,7 +188,7 @@ IViolinoI = {
 				b r b,4( a as)
 			} {
 				\dimTextDim f8( c f\> c f c f c\!
-				\spanRallMoltoATempo \textSpannerUp f\startTextSpan c f c g' e g e) %195
+				\spanRallMoltoATempo \textSpannerUp f\startTextSpan c f c g' e g e) \noBreak %195
 				a(\p\stopTextSpan g fis e d e fis g)
 			}
 		}
@@ -306,7 +305,7 @@ IViolinoI = {
 		R1
 		\mark #26 r4 g-. dis(-> e)
 		\crescHairpin h(-> c) h8(\< c h c
-		e)\! r \tuplet 3/2 4 { e8( e, e' h e, h' c e, c')
+		e)\! r \tuplet 3/2 4 { \shape #'((0 . -2) (0 . 4) (0 . 4) (0 . -2)) Slur e8( e, e' h e, h' c e, c')
 		\crescHairpin gis(\< e gis a e a h e, h' c e, c') %330
 		c(\sp f, c' h f h a e a gis e gis) }
 		\mark #27 a8-.\f a'-. r <d,, h' a'> r q r <e h' gis'>
@@ -406,7 +405,7 @@ IViolinoI = {
 		d( c b g) c( b g e)
 		c'( f, b f a f g f)
 		\crescHairpin f-. f(\< g f a f c' f,)
-		b(\p f b, f') f4( f'~ %435
+		b(\p f b, f') \shape #'((0 . -2) (0 . 1) (0 . 1) (0 . -2)) Slur f4( f'~ %435
 		f f,) a8( f a f)
 		b( f b, f') f4( f'~
 		f f,) a8( f a f)

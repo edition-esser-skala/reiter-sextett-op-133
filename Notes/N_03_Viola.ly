@@ -121,9 +121,7 @@ IViola = {
 			q(-- q-- q-- q--)
 			q(-- q-- q-- q--) %110
 			q\sp r r2
-			\textSpannerDown \spanRallATempo R1\startTextSpan
-			R\stopTextSpan
-			R1
+			R1*3
 			r4 e,8(\p f gis a h c %115
 			\crescHairpin f4) e8(\< f\! b a g\> f)\!
 			fis4(-> g-.) g-. g-.
@@ -168,8 +166,8 @@ IViola = {
 			c c,) b'8(\< c d e)\!
 			a,(\< b h c)\! c,4( c'~
 			c c,) b'8(\< c d e)\! %165
-			\mark #14 gis(\p a gis a) h?( c h c
-			h c h c) dis( e dis e
+			\mark #14 gis(\p a gis a) b( c b c
+			b c b c) dis( e dis e
 			dis e dis e) fis( g fis g
 			fis g fis g \crescTextCresc fis\< g fis g)
 			fis( g fis g fis g fis g) %170
@@ -182,7 +180,7 @@ IViola = {
 		}
 		\alternative {
 			{
-				\dimTextDim f-.\> c'-. f,-. c'-.
+				\mark \critnote \dimTextDim f-.\> c'-. f,-. c'-.
 				f,-. c'-. f,-. c'-.
 				f,-.\! f' r2
 				\mark #15 R1*3 %182
@@ -199,7 +197,7 @@ IViola = {
 				<b d,> r d,4(\mf es f)
 			} {
 				\dimTextDim f,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f,-.\startTextSpan c'-. a-. e'-. %195
+				\spanRallMoltoATempo \textSpannerUp f,-.\startTextSpan c'-. a-. e'-. \noBreak %195
 				d,8\stopTextSpan(\p e fis g a g fis e)
 			}
 		}
@@ -325,8 +323,8 @@ IViola = {
 		R1
 		\mark #26 r4 c8 r g r e r
 		c r r4 r2
-		r4 \tuplet 3/2 4 { c8( e, c' gis e gis a e a)
-		\crescHairpin h(\< e, h' c e, c' d e, d' e e, e') %330
+		r4 \tuplet 3/2 4 { \shape #'((0 . -2) (0 . 2) (0 . 2) (0 . -2)) Slur c8( e, c' gis e gis a e a)
+		\crescHairpin \shape #'((0 . -2) (0 . 2) (0 . 2) (0 . -2)) Slur h(\< e, h' c e, c' d e, d' e e, e') %330
 		e(\sp f e d f d c e c h e h) }
 		\mark #27 a-.\f a'-. r <d, h'> r <a f'> r <e h' gis'>
 		<a g'>-. g'-. g-. g-. g4\sp g8-. g-.

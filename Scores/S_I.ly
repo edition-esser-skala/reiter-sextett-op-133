@@ -52,7 +52,7 @@
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Baß"
-						\set Staff.midiInstrument = #"contrabass"
+						\set Staff.midiInstrument = #"cello"
 						\IContrabasso
 					}
 				>>
@@ -62,8 +62,8 @@
 					\new Staff = "LH" << \IPianoL >>
 				>>
 			>>
-% 			\layout { }
-			\midi { \tempo 4 = 100 }
+			\layout { }
+% 			\midi { \tempo 4 = 120 }
 		}
 	}
 }

@@ -119,9 +119,7 @@ IViolinoII = {
 			q(-- q-- q-- q--)
 			q(-- q-- q-- q--) %110
 			q\sp r r2
-			\textSpannerDown \spanRallATempo R1\startTextSpan
-			R\stopTextSpan
-			R1*3 %116
+			R1*5 %116
 			b,2\mf-> b4-. b-.
 			b-. r r2
 			R1*2 %120
@@ -164,11 +162,11 @@ IViolinoII = {
 			c c,) g'8( b g b)
 			c( f, c f) c4( c'~
 			c c,) g'8( b g b) %165
-			\mark #14 h?(\p c h c) dis( e dis e
+			\mark #14 b(\p c b c) dis( e dis e
 			dis e dis e) fis( g fis g
-			fis g fis g) h?( c h c
-			h c h c h\< c h c)
-			h( c h c h c h c) %170
+			fis g fis g) b( c b c
+			b c b c b\< c b c)
+			b( c b c b c b c) %170
 			a(\p g f c a c f g)
 			f( c a g f g a c)
 			a( g f c f g a c)
@@ -178,7 +176,7 @@ IViolinoII = {
 		}
 		\alternative {
 			{
-				\dimTextDim a(\> g a g a g a g
+				\mark \critnote \dimTextDim a(\> g a g a g a g
 				a g a g a g a g
 				a4)\! r r2
 				\mark #15 R1*6 %185
@@ -192,7 +190,7 @@ IViolinoII = {
 				<b b, d,> r \once \lvTieDashed \extendLV #7 b,2.\mf\laissezVibrer
 			} {
 				\dimTextDim a8( g a\> g a g a g\!
-				\spanRallMoltoATempo \textSpannerUp a\startTextSpan g a g e' a, e' a,) %195
+				\spanRallMoltoATempo \textSpannerUp a\startTextSpan g a g e' a, e' a,) \noBreak %195
 				fis'(\pE\stopTextSpan e d a fis a d e)
 			}
 		}

@@ -125,8 +125,7 @@ IVioloncello = {
 			e'(\< dis e fis g fis g h)
 			c( h c dis e dis e g %110
 			b4)\spE r r2
-			\textSpannerDown \spanRallATempo R1\startTextSpan
-			R\stopTextSpan
+			R1*2
 			\crescHairpin r4 e,,,8(\mf\< f gis a h c\!
 			f4) r r2 %115
 			r4 gis8(\< a\! d c b\> a)\!
@@ -187,7 +186,7 @@ IVioloncello = {
 		}
 		\alternative {
 			{
-				\dimTextDim f-.\> c'-. f,-. c'-.
+				\mark \critnote \dimTextDim f-.\> c'-. f,-. c'-.
 				f,-. c'-. f,-. c'-.
 				f,-.\! f'-. r2
 				\mark #15 \clef "treble_8" \crescHairpin f'1~\mf\< %180
@@ -206,7 +205,7 @@ IVioloncello = {
 				b r b'4(\mf c d)
 			} {
 				\dimTextDim f,,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. %195
+				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. \noBreak %195
 				r\stopTextSpan a\p d a'
 			}
 		}

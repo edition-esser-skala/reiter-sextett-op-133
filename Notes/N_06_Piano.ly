@@ -7,7 +7,7 @@
 IPianoR = {
 	\relative c' {
 		\clef treble
-		\key b \major \time 4/4 \tempoI \set Score.skipTypesetting = ##t
+		\key b \major \time 4/4 \tempoI
 		<b' d, b>4-^\f <b' d, b>-^ r2
 		\repeat volta 2 {
 			R1
@@ -116,7 +116,7 @@ IPianoR = {
 			<g a>4)\! r r2
 			\mark #9 R1*4 %110
 			r4 c'4(-.\p c-. c-.)
-			\textSpannerDown \spanRallATempo c(-.\startTextSpan c-. c-. c-.)
+			\textSpannerDown \spanRallATempo c(-.\startTextSpan c-. c-. c-.) \noBreak
 			<a c>(-.\stopTextSpan q-. q-. q-.)
 			q(-. q-. q-. q-.)
 			q(-. q-. q-. q-.) %115
@@ -198,10 +198,10 @@ IPianoR = {
 				<b d b'>4-^ <b' d b'>-^ r2 %193
 			} {
 				\clef bass c,,8( f c'\> f, c f c' f,)\!
-				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a %195
+				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a \noBreak %195
 				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
 			}
-		} \set Score.skipTypesetting = ##f
+		}
 		\crescTextCresc \clef treble d, d' e,\< e' fis, fis' a, a'
 		d, d' e, e' fis, fis' a, a'
 		d,\f d' a, a' fis, fis' e, e'
@@ -331,7 +331,7 @@ IPianoR = {
 		\tuplet 3/2 8 { c16([ f c } h8-.) h-. h-.] h-. <f a>-. <e g>-. <d f>-.
 		\mark #26 <c e> r \clef bass r16 e,, g c e, g c e g, c e g
 		\clef treble c, e g c e, g c e g, c e g c, e g c
-		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e, \set Score.skipTypesetting = ##f
+		<e e,>8 r e16 e, e' e, e' e, e' e, e' e, e' e,
 		\crescTextCresc e'\< e, e' e, e' e, e' e, e' e, e' e, e' e, e' e, %330
 		e'\f f e f d f d f c e c e h? e h e
 		\mark #27 <a, e'>8 r <a d>4-^ <f a h f'>-^ <d e gis>-^
@@ -642,7 +642,7 @@ IPianoL = {
 		}
 		\alternative {
 			{
-				f,( c' f c f, c' f c) %177
+				\mark \critnote f,( c' f c f, c' f c) %177
 				f,( c' f c f, c' f c)
 				<f, f'>4 r r2
 				R1*3 %182
@@ -926,8 +926,3 @@ IPianoL = {
 }
 
 % TODO
-% 85 pf
-% end of exposition vorzeichen!!
-% 177 text?
-% 329 vl 1 slur
-% 435ff slur
