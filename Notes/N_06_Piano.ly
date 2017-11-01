@@ -927,20 +927,147 @@ IPianoL = {
 
 IIPianoR = {
 	\relative c' {
-		\clef treble
+		\clef treble \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
 		R1*3
 		\time 2/4 << { e'8([ d c h)] } \\ { h4(\mp gis) } >>
-		\mark #1 \time 4/4
-		R1*3
+		\mark #1 \time 4/4 R1*3 %7
 		r2 << {
-			e'8( d c h) a2~ a16 h( c cis d gis a ais)
+			e'8( d c h)
+			a2~ a16 h( c cis d gis a ais)
 		} \\ {
-			a,4(\p gis)
+			\mark #2 a,4(\p gis)
 			e( g fis!16) s-\markup { \remark "un poco rit." } s8 s4
 		} >>
-		h'16\p^\markup { \remark "a tempo" } d-\markup { \remark "sehr ruhig fließend" } g, h e, <d g> \grace d8 c16 h h' a gis a d c a d,
+		h'16\p^\markup { \remark "a tempo" } d-\markup { \remark "sehr ruhig fließend" } g, h e, <d g> \grace d8 c16 h h' a gis a d c a d, %10
 		e' d cis d g d c h h a gis h e d c d,
+		d' e d cis d g, d' dis << { e, <h' e> e, <gis d'> d <e c'?> d <g h> } \\ { e8 e d d } >>
+		\mark #3 \time 2/4 << { h'4 e, } \\ { \crescHairpin \dimHairpin <e e'>16\mf\< <f f'> <e e'> <d d'>\! <c c'>\> <h h'> <ais ais'> <h h'>\! } >>
+		\time 4/4 c'16 e a, c e, a d, \grace e8 c16 c' h ais h e d h e,
+		f' e dis e a e d c c h ais h f' e d e, %15
+		e' f e dis e a, e' g a f c a g f g a
+		\dimTextDim f f' f, f' f d b d \subdivE e32 f e f d\> e d e \subdivE c d c d h? c h c
+		\mark #4 \crescHairpin \dimHairpin \mvTr b64\p-\markup { \remark "legato" } g \dynamicUp  e\< cis b[ \lh \clef treble g e cis] b cis e g \rh b[ cis e g] b\f\> g e cis b[ \lh g e cis] b cis e g \rh \tuplet 5/4 16 { b[ cis e g\! b] } \dynamicNeutral h16\p gis f d f gis h c
+		\dimTextDim r cis[\> r d r dis r e] r8 f(-. d-. e-.)
+		f\!-\markup { \remark "rall." } r r4 r2\fermata %20
+		\mark #5 \ottava #1 \repeat percent 4 { \subdivT  \mvTr <dis fis>64\p-\markup { \remark "a tempo" } gis <dis fis> gis <dis fis> gis <dis fis> gis }
+			\repeat percent 4 { \subdivT <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
+		\repeat percent 4 { \subdivT  <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis }
+			\repeat percent 4 { \subdivT <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
+		\repeat percent 4 { \subdivT  <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis }
+			\repeat percent 4 { \subdivT <d g> a' <d, g> a' <d, g> a' <d, g> a' }
+		\repeat percent 4 { \subdivT <c, g'> a' <c, g'> a' <c, g'> a' <c, g'> a' }
+			\repeat percent 2 { \subdivT <h, g'> a' <h, g'> a' <h, g'> a' <h, g'> a' }
+			\ottava #0 \tuplet 14/16 4 { g f e d c h a g f e d c h a }
+		\mark #6 <e g>4-^\ff <e g e'>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
+		<f g>8.[ <dis g>16 <e g>8-^ <g e'>-^] <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^]
+		<g e'>-^ <g f'>-^ <g e'>-^ <g d'>-^ <g cis>-^ <b cis>-^ <a cis>-^ <g cis>-^
+		<d f a>4-^ <f a f'>-^ <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
+		q8.[ <e a>16 <f a>8-^ <a f'>-^] <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
+		<a h>8.[ <a h g'>16 <a h fis'>8-^-\critnote <a h>-^] <fis gis h>8.[ <dis gis h>16 <e gis h>8-\parenthesize-^ <d gis h>-\parenthesize-^] %30
+		<g a>8.[ <g a fis'!>16 <g a fis'>8-^ <g a>-^] <e f a>8.[ <cis f a>16 <d f a>8-^ <c f a>-^]
+		\mark #7 <b es g>[-^ <d d'>-^ <es es'>-^ <fis fis'>-^] <g g'>[-^ <a a'>-^ <b b'>-^ <d d'>-^]
+		<es es'>8. <d, d'>16 <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'> <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'>
+		<es es'>8 r16 <es, b' es>8 q16 r <es, b' es>[ q8] r16 \clef bass <es, b' es> q8-^ q-^
+		q4 r r2 %35
+		\mark #8 R1*4
+		r2\fermata \mvTr r16\p-\markup { \remark "a tempo" } <e! e'> q q <f f'>8->( <e e'>) %40
+		r16 q q q <f f'>8->( <e e'>) r16 \clef treble <d' e> q q << { f8->( e) } \\ { d4-\markup { \remark "rall." } } >>
+		\mark #9 r16-\markup { \remark "a tempo" } <a' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >> r16 <a c e> q q << { dis8(-> e) } \\ { <a, c>4 } >>
+		r16 <f a d> q q << { cis'8(-> d) } \\ { <f, a>4 } >> r16 <e h'> q q << { e'16( d c? h) } \\ { h8 gis } >>
+		r16 <a c e> q q << { f'8(-> e) } \\ { <a, c>4 } >> r16 <a c e> q q << { dis8(-> e) } \\ { <a, c>4 } >>
+		r16 <a h> q q r <f a d> q q r <c a'> r <d a'> r <h f' a> r <d gis> %45
+		<c a'>( e <h g'> e) fis( e dis h) r <gis h e>[ r <gis h f'> r <a c e> r <gis d' e>]
+		\mark #10 r16 <a' c e> q q << { dis8(-> e) } \\ { <a, c>4 } >> r16 <a c e> q q << { f'8(-> e) } \\ { <a, c>4 } >>
+		r16 <f a d> q q << { cis'8(-> d) } \\ { <f, a>4 } >> r16 <e h'> q q << { e'16( d c? h) } \\ { h8 gis } >>
+		r16 <a c e> q q << { dis8(-> e) } \\ { <a, c>4 } >> r16 <a c e> q q << { f'8(-> e) } \\ { <a, c>4 } >>
+		r16 <a h> q q r <f a d> q q \once \set PianoStaff.connectArpeggios = ##t <e a e'>\arpeggio r r8 r4 %50
+		\mark #11 R1
+		<< { g'16 c f, c' e, g d g c, g' h, g' a, d g, d' } \\ { c4-\markup { \remark "gebunden" } c8 h a g f?4 } >>
+		\time 2/4 << {
+			d'4.( e16 d
+			\time 4/4 \oneVoice <c e,>8) r r4 r2
+		} \\ {
+			f,2
+			s1
+		} \\ {
+			\voiceFour a16 g a g a g f8
+			s1
+		} >>
+		r16 <f' c'> q q << { h8(-> c) } \\ { f,4 } >> r16 <f c' f> q q << { <e e'>8(-> <f f'>) } \\ { c'4 } >> %55
+		r2 << {
+			c16( f g, f b d, e s
+			\mark #12 <f a, f>) <c, f a> q q q q q q r <c f c'> q q q q q q
+		} \\ {
+			f'8 s d16 b <a c> <g b>
+			s1
+		} >>
+		r16 <f f'> q q q8 q r16 <c' f c'> q q <c e c'> q q q
+		<c f a> <c, f a> q q r <e a c> q q r <a, d f> q q r <c e g> q q
+		r <c f a>[ r <e a c> r <a, d f> r <c e g>] r <c f a>[ r <b e g> r <a d f> r <g cis e>] %60
+		r <d'' f a> q q << { gis8(-> a) } \\ { <d, f>4 } >> r16 <d f a> q q << { b'8(-> a) } \\ { <d, f>4 } >>
+		r16 <b d g> q q << { fis'8(-> g) } \\ { <b, d>4 } >> r16 <a e'> q q << { a'16( g f? e) } \\ { e8 cis } >>
+		\mark #13 r16 <d f a> q q << { gis8(-> a) } \\ { <d, f>4 } >> r16 <d f a> q q << { b'8(-> a) } \\ { <d, f>4 } >>
+		<< { d16 <a' d> d, <g d'> cis, <g' cis> cis, <a' cis> } \\ { d,8 d cis cis } >> d'16 b f d a' f d a
+		d b f d a' f d a gis h d f gis h d f %65
+		d' b f d a' f d a gis h d f gis h gis e
+		gis f d h f' d h gis r2
+		\mark #14 \crescTextCresc e16(\mf\< cis' a e' cis a' e cis' e cis a e)\! r4
+		e,16(\mf cis' a e' cis a' e cis' e cis a e) r4
+		r <eis, cis'>16(\p <cis gis'> <eis cis'> <cis gis'> <fis cis'> <cis a'> <fis cis'> <cis a'>) <gis' e'>( <e h'> <gis e'> <e h'> %70
+		\time 1/4 <a e'> <e cis'> <a e'> <e cis'>)
+		\time 4/4 <eis cis'>( <cis gis'> <eis cis'> <cis gis'> <fis cis'> <cis a'> <fis cis'> <cis a'>) <gis' e'>( <e h'> <gis e'> <e h'> <a e'> <e a> <a e'> <e a>)
+		\mark #15 \mvTrr e'\mf-\markup { \remark "staccato" } a, cis d e g h a h a fis d e' d a fis
+		\crescTextCrescMolto <a a'> <g g'> <e e'> <d d'> <h h'> <g g'> <h h'> <d d'> <cis cis'>\< <a a'> <cis cis'> <d d'> <e e'> <fis fis'> <g g'> <gis gis'>
+		\mark #16 \ottava #1
+			\subdivE <d' fis a>32\ff a <d fis a> a <d fis a> a <d fis a> a
+			\subdivE <d fis a> a <d fis a> a <d fis a> a <d fis a> a
+			\subdivE <e' a> a, <e' a> a, <d a'> a <d a'> a
+			\subdivE <cis a'> a <cis a'> a <d a'> a <d a'> a %75
+		\subdivE <fis' a> a, <fis' a> a, <e' g> g, <e' g> g, \subdivE <dis' fis> fis, <dis' fis> fis, <e' g> g, <e' g> g, <h g' h>16 q <a fis' a> <g e' g> <fis dis' fis> q <g e' g> <a fis' a>
+		<a fis' a> q <g e' g> <fis d' fis> <e cis' e> q <fis d' fis> <g e' g> <fis d' fis> <fis fis'> <e e'> <d d'> <a' a'> <fis fis'> <e e'> <d d'>
+		\time 2/4 <fis fis'> q <e e'> <d d'> <a' a'> <fis fis'> <e e'> <d d'> \ottava #0
+		\mark #17 \time 4/4 \dimTextDim \subdivE g'32 e h g e h g h \subdivE e g h e g e h g \subdivE cis\> a fis cis fis a cis a \subdivE cis g e cis e g cis g
+		\subdivE d'\p a fis d a fis d fis \subdivE d' ais fis d fis ais d ais \subdivE d h g d g h d h \subdivE g' d h g h d g d %80
+		\time 2/4 \subdivE a' e d a d e a e \subdivE a e cis a cis e a e
+		\time 4/4 \subdivE d' a fis d a d fis a \subdivE d ais fis d ais d fis ais \subdivE d h g d h d g h \subdivE g' d h g e g h d
+		\subdivE a' e d a d e a e \subdivE a e cis a cis e a e \subdivE fis a fis d d fis d a \subdivE a d a fis fis a fis d
+		\subdivE a' e d a d e a e \subdivE a e cis a cis e a e \subdivE fis a fis d d fis d a \subdivE a d a fis fis a fis d
+		\mark #18 \subdivE fis a, d fis a d, fis a \dimTextDim \subdivE d\> fis, a d fis a, d fis\! \dimHairpin \subdivE a\> d, fis a d fis, a d \subdivE fis a, d fis a d, fis a %85
+		h16\ppp r r8 r4 r2\fermata
+		\crescTextCresc \subdivE d,32\p e d e d\< e d e \subdivE d e d e d e d e \subdivE c!-> d c d, a'-> d a d,-\critnote \subdivE fis-> d' fis, d e-> d' e, d\!
+		\dimTextDim \subdivE d d' d, cis d\> d' d, cis \subdivE d d' d, cis d d' d, cis \subdivE d d' d,-\markup { \remark "rall." } d' d, d' d, d' \subdivE d, d' d, d' d, d' d, d'
+		\mark #19 \subdivE \mvTr <g, h>\p-\markup { \remark "a tempo" } d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE d c a d, a' c d c
+		<g h> d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE e d c a d, a' c d %90
+		<< { \subdivE e, <h' e> e, <h' e> f <h f'> f <h f'> \subdivE e, <h' e> e, <h' e> d, <a' d> d, <a' d> \subdivE c, <gis' c> c, <gis' c> h, <gis' h> h, <gis' h> \subdivE ais, <gis' ais> ais, <gis' ais> h, <gis' h> h, <gis' h> } \\ { e16 e f f e e d d c c h h ais ais h h } >>
+		\time 2/4 <fis' cis' fis>16-^\f <g cis g'>-^ <fis cis' fis>-^ <g cis g'>-^ <fis cis' fis>-^ <e h' e>-^ <d ais' d>-^ <cis ais' cis>-\parenthesize-^
+		\mark #20 \time 4/4 \subdivE <h' d>32\pp fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE fis e cis fis, cis' e fis e
+		\subdivE <h d> fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE g fis e cis fis, cis' e fis
+		\subdivE <g, d'> g' <g, d'> g' <fis, cis'> fis' <fis, cis'> fis' \subdivE <e, h'> e' <e, h'> e' <dis, h'> dis' <dis, h'> dis' \subdivE <e, h'> e' <e, h'> e' <d, g> d' <d, g> d' \subdivE <c, g'> c' <c, g'> c' <h, f'> h' <h, f'> h' %95
+		\time 2/4 \subdivE <d, f gis> d' <d, f gis> d' <e, a> c' <e, a> c' \subdivE <d, f?> h' <d, f?> h' <c, e> a' <c, e> a'
+		\time 4/4 << {
+			\mark #21 \subdivE d,32 <g d'> d <g d'> c, <g' c> c, <g' c> \subdivE h, <e h'> h <e h'> a, <e' a> a, <e' a> \subdivE g, <c g'> g <c g'> fis, <c' fis> fis, <c' fis> \oneVoice \subdivE g g' a, a' h, h' c, c' \voiceOne
+			\subdivE d, <g d'> d <g d'> c, <g' c> c, <g' c> \subdivE h, <e h'> h <e h'> a, <e' a> a, <e' a> \subdivE g, <c g'> g <c g'> fis, <c' fis> fis, <c' fis> \subdivE e, <a e'> e <a e'> d, <a' d> d, <a' d>
+			\time 2/4 \subdivQ cis,16[^\markup { \remark "smorz. e dim." } <a' cis>-. d, <a' d>-. e <c' e>-. fis, <c' fis>-.]
+		} \\ {
+			\dimTextDim d16\mf d c c h h a a g g fis fis s4\>
+			d'16\pp d c c h h a a g g fis fis e e d d
+			cis8([ d e fis)]
+		} >>
+		\mark #22 \time 4/4 \mvTr g'16(\p-\markup { \remark "a tempo, sehr ruhig" } d h a) g( a h g) d d( d') d( d') d( d,) d %100
+		g( d h a) g( a h g) d d( d') d( d') \once \slurDashed d( d,) d(
+		d') d( d,) d( d') d( d,) d( d') \once\slurDashed d( d,) d( d') d( e fis)
+		g( d h a) r4 h'16( a g e) r4
+		g16( d h a) r4 h'16( a g e) r4
+		e16( c) c( a) a( e) e( c) << { s4. fis8 } \\ { e16( c e c e c h a) } >> %105
+		\mark #23 <g h d g>4(-. <h e g h>-. <d g h d>-. <g a c e g>-.)
+		<h d g h>16 d,( g a h g h c d g, e' d c a c e)
+		g( h) \lh \clef treble g,([ h)] \rh g,( h) \lh g,([ h)] \rh \clef bass g,( h) \lh \clef treble g'([ h)] \rh \clef treble g'( h) \lh g'([ h)]
+		\rh g'( h) \lh \clef treble g,([ h)] \rh g,( h) \lh g,([ h)] \rh \clef bass g,( h) \lh \clef treble g'([ h)] \rh \clef treble g'( h) \lh g'([ h)]
+		\mark #24 \rh <g' h>8 r r4 r2 %110
+		R1*3
+		<g,, h d g>8(-.\ppp r r4 r2
+		<g' h d g>8-.) r r4 r2 \bar "|." %115 finis
 	}
 }
 
@@ -949,6 +1076,18 @@ IIPianoL = {
 		\clef bass
 		\key g \major \time 4/4 \tempoII
 		R1*3
+		\time 2/4 <gis' e'>4( <e d'>)
+		\time 4/4 R1*3
+		r2 \clef treble << {
+			c'8( f e d)
+			\clef bass c2.
+		} \\ {
+			e,2
+			a2( d,4)
+		} >> r4
+		\clef treble g'16 fis e d c h a g a' fis eis fis a fis d fis
+		c' h ais h d h a g g fis eis fis a fis d fis
+		s1*99
 	}
 }
 

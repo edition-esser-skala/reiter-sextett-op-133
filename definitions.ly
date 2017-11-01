@@ -121,6 +121,24 @@ spanUnPocoRitATempo = {
 	\override TextSpanner.bound-details.right.text = "a tempo"
 }
 
+subdivQ = {  % subdivide to quarters
+	\once \set subdivideBeams = ##t
+	\once \set baseMoment = #(ly:make-moment 1/4)
+	\once \set beatStructure = #'(2 2)
+}
+
+subdivE = {  % subdivide to eighths
+	\once \set subdivideBeams = ##t
+	\once \set baseMoment = #(ly:make-moment 1/8)
+	\once \set beatStructure = #'(2 2 2 2)
+}
+
+subdivT = {  % subdivide to thirty-seconds
+	\once \set subdivideBeams = ##t
+	\once \set baseMoment = #(ly:make-moment 1/16)
+	\once \set beatStructure = #'(2 2 2 2 2 2 2 2)
+}
+
 tempoMarkup =
 	#(define-music-function
 		(parser location arg)
@@ -142,7 +160,7 @@ tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
 		markFormatter = #format-mark-box-numbers
-% 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -161,9 +179,9 @@ tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 		\override InstrumentName.font-shape = #'italic
 		\accidentalStyle neo-modern-voice
 		extraNatural = ##t
-		\override DynamicTextSpanner.style = #'none % comment to show spanner dashes
+% 		\override DynamicTextSpanner.style = #'none % comment to show spanner dashes
 		\override DynamicTextSpanner.font-size = #-1
-		\override TextSpanner.style = #'none % comment to show spanner dashes
+% 		\override TextSpanner.style = #'none % comment to show spanner dashes
 		\override TextSpanner.font-size = #-1
 	}
 	\context {
