@@ -940,8 +940,8 @@ IIPianoR = {
 			e( g fis!16) s-\markup { \remark "un poco rit." } s8 s4
 		} >>
 		h'16\p^\markup { \remark "a tempo" } d-\markup { \remark "sehr ruhig fließend" } g, h e, <d g> \grace d8 c16 h h' a gis a d c a d, %10
-		e' d cis d g d c h h a gis h e d c d,
-		d' e d cis d g, d' dis << { e, <h' e> e, <gis d'> d <e c'?> d <g h> } \\ { e8 e d d } >>
+		e' d cis d g d c h h a gis a e' d c d,
+		d' e d cis d g, d' dis << { e, <h' e> e, <gis d'> d <e c'?> d <gis h> } \\ { e8 e d d } >>
 		\mark #3 \time 2/4 << { h'4 e, } \\ { \crescHairpin \dimHairpin <e e'>16\mf\< <f f'> <e e'> <d d'>\! <c c'>\> <h h'> <ais ais'> <h h'>\! } >>
 		\time 4/4 c'16 e a, c e, a d, \grace e8 c16 c' h ais h e d h e,
 		f' e dis e a e d c c h ais h f' e d e, %15
@@ -964,11 +964,11 @@ IIPianoR = {
 		<g e'>-^ <g f'>-^ <g e'>-^ <g d'>-^ <g cis>-^ <b cis>-^ <a cis>-^ <g cis>-^
 		<d f a>4-^ <f a f'>-^ <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
 		q8.[ <e a>16 <f a>8-^ <a f'>-^] <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
-		<a h>8.[ <a h g'>16 <a h fis'>8-^-\critnote <a h>-^] <fis gis h>8.[ <dis gis h>16 <e gis h>8-\parenthesize-^ <d gis h>-\parenthesize-^] %30
-		<g a>8.[ <g a fis'!>16 <g a fis'>8-^ <g a>-^] <e f a>8.[ <cis f a>16 <d f a>8-^ <c f a>-^]
+		<a h>8.[ <a h g'>16 <a h fis'>8-^-\critnote <a h>-^] <fis g h>8.[ <dis g h>16 <e g h>8-\parenthesize-^ <d g h>-\parenthesize-^] %30
+		<g a>8.[ <g a fis'!>16 <g a e'>8-^-\critnote <g a>-^] <e f a>8.[ <cis f a>16 <d f a>8-^ <c f a>-^]
 		\mark #7 <b es g>[-^ <d d'>-^ <es es'>-^ <fis fis'>-^] <g g'>[-^ <a a'>-^ <b b'>-^ <d d'>-^]
 		<es es'>8. <d, d'>16 <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'> <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'>
-		<es es'>8 r16 <es, b' es>8 q16 r <es, b' es>[ q8] r16 \clef bass <es, b' es> q8-^ q-^
+		<es es'>8 r16 <es, b' es>[-\critnote q8] r16 <es, b' es>[ q8] r16 \clef bass <es, b' es> q8-^ q-^
 		q4 r r2 %35
 		\mark #8 R1*4
 		r2\fermata \mvTr r16\p-\markup { \remark "a tempo" } <e! e'> q q <f f'>8->( <e e'>) %40
@@ -1008,7 +1008,7 @@ IIPianoR = {
 		r <d'' f a> q q << { gis8(-> a) } \\ { <d, f>4 } >> r16 <d f a> q q << { b'8(-> a) } \\ { <d, f>4 } >>
 		r16 <b d g> q q << { fis'8(-> g) } \\ { <b, d>4 } >> r16 <a e'> q q << { a'16( g f? e) } \\ { e8 cis } >>
 		\mark #13 r16 <d f a> q q << { gis8(-> a) } \\ { <d, f>4 } >> r16 <d f a> q q << { b'8(-> a) } \\ { <d, f>4 } >>
-		<< { d16 <a' d> d, <g d'> cis, <g' cis> cis, <a' cis> } \\ { d,8 d cis cis } >> d'16 b f d a' f d a
+		<< { \subdivQ d16[ <a' d> d, <g d'> cis, <g' cis> cis, <a' cis>] } \\ { d,8 d cis cis } >> d'16 b f d a' f d a
 		d b f d a' f d a gis h d f gis h d f %65
 		d' b f d a' f d a gis h d f gis h gis e
 		gis f d h f' d h gis r2
@@ -1043,7 +1043,7 @@ IIPianoR = {
 		\time 2/4 <fis' cis' fis>16-^\f <g cis g'>-^ <fis cis' fis>-^ <g cis g'>-^ <fis cis' fis>-^ <e h' e>-^ <d ais' d>-^ <cis ais' cis>-\parenthesize-^
 		\mark #20 \time 4/4 \subdivE <h' d>32\pp fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE fis e cis fis, cis' e fis e
 		\subdivE <h d> fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE g fis e cis fis, cis' e fis
-		\subdivE <g, d'> g' <g, d'> g' <fis, cis'> fis' <fis, cis'> fis' \subdivE <e, h'> e' <e, h'> e' <dis, h'> dis' <dis, h'> dis' \subdivE <e, h'> e' <e, h'> e' <d, g> d' <d, g> d' \subdivE <c, g'> c' <c, g'> c' <h, f'> h' <h, f'> h' %95
+		\subdivE <g, d'>\f g' <g, d'> g' <fis, c'> fis' <fis, c'> fis' \subdivE <e, h'> e' <e, h'> e' <dis, h'> dis' <dis, h'> dis' \subdivE <e, h'> e' <e, h'> e' <d, g> d' <d, g> d' \subdivE <c, g'> c' <c, g'> c' <h, f'> h' <h, f'> h' %95
 		\time 2/4 \subdivE <d, f gis> d' <d, f gis> d' <e, a> c' <e, a> c' \subdivE <d, f?> h' <d, f?> h' <c, e> a' <c, e> a'
 		\time 4/4 << {
 			\mark #21 \subdivE d,32 <g d'> d <g d'> c, <g' c> c, <g' c> \subdivE h, <e h'> h <e h'> a, <e' a> a, <e' a> \subdivE g, <c g'> g <c g'> fis, <c' fis> fis, <c' fis> \oneVoice \subdivE g g' a, a' h, h' c, c' \voiceOne
@@ -1059,7 +1059,7 @@ IIPianoR = {
 		d') d( d,) d( d') d( d,) d( d') \once\slurDashed d( d,) d( d') d( e fis)
 		g( d h a) r4 h'16( a g e) r4
 		g16( d h a) r4 h'16( a g e) r4
-		e16( c) c( a) a( e) e( c) << { s4. fis8 } \\ { e16( c e c e c h a) } >> %105
+		e16( c) c( a) a( e) e( c) << { s4. fis8 } \\ { \subdivQ e16([ c e c e c h a)] } >> %105
 		\mark #23 <g h d g>4(-. <h e g h>-. <d g h d>-. <g a c e g>-.)
 		<h d g h>16 d,( g a h g h c d g, e' d c a c e)
 		g( h) \lh \clef treble g,([ h)] \rh g,( h) \lh g,([ h)] \rh \clef bass g,( h) \lh \clef treble g'([ h)] \rh \clef treble g'( h) \lh g'([ h)]
@@ -1073,11 +1073,11 @@ IIPianoR = {
 
 IIPianoL = {
 	\relative c {
-		\clef bass
+		\clef bass \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
 		R1*3
 		\time 2/4 <gis' e'>4( <e d'>)
-		\time 4/4 R1*3
+		\time 4/4 R1*3 %7
 		r2 \clef treble << {
 			c'8( f e d)
 			\clef bass c2.
@@ -1085,9 +1085,105 @@ IIPianoL = {
 			e,2
 			a2( d,4)
 		} >> r4
-		\clef treble g'16 fis e d c h a g a' fis eis fis a fis d fis
+		\clef treble g'16 fis e d c h a g g' fis eis fis a fis d fis %10
 		c' h ais h d h a g g fis eis fis a fis d fis
-		s1*99
+		ais8.([ c!16 h8 g)] d'( h gis e)
+		\time 2/4 <gis h>16 <a c> <gis h> <f a> << { gis4 } \\ { e16 d cis d } >>
+		\time 4/4 a' g f e d c h a a' gis fisis gis h gis e gis
+		d' c h c e c h a a gis fisis gis h gis e gis %15
+		h8. d16 c8 e f e d c
+		c16 es c cis d b d f << { a4 gis } \\ { c,8 f e d } >>
+		s2 gis,16 f d h d f gis a
+		ais8 h c! cis d4( f)
+		d2( f)\fermata %20
+		\override Script.script-priority = #-100 fis2\trill^\markup { \tiny \sharp } fis\trill
+		fis!\trill^\markup { \tiny \sharp } fis\trill
+		fis\trill^\markup { \tiny \sharp } f\trill^\markup { \tiny \natural }
+		e\trill^\markup { \tiny \natural } \revert Script.script-priority d4\trill <f d g,>16 r r8
+		\clef bass <c,, e g>4-^-\critnote <e g>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
+		<f g>8.[ <dis g>16 <e g>8-^ <g e'>-^] <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^]
+		<b c e>-^ q-^ q-^ q-^ <a e'>-^ <g e'>-^ <f e'>-^ <e e'>-^
+		<d f a>4-^ <f a>-^ <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
+		q8.[ <e a>16 <f a>8-^ <a f'>-^] <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
+		\clef treble <a h>8.[ <a h g'>16 <a h fis'>8-^ <a h>-^] \clef bass <g h>-^ q-^ q-^ q-^ %30
+		<g a>8.[ <g a fis'!>16 <g a e'>8-^ <g a>-^] <f a>-^ q-^ q-^ <d f>-^
+		<g, b es g> q q q q q q q
+		q8. q16 q q q q q q q q q q q q
+		q8 r16 \clef treble <g'' b>[ q8] r16 <g, b>[ q8] r16 \clef bass <g,, g'> q8-^ q-^
+		q4 r r2 %35
+		R1*4
+		r2\fermata <d' d'>4 r16 q q q %40
+		<c c'>4 r16 q q q <h h'>4 r16 q q <e, e'>
+		<a a'> \noBeam <a'' c e> q q << { dis8(-> e) } \\ { <a, c>4 } >> <c,, c'>16 \noBeam <a'' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >>
+		<h,, h'>16 \noBeam <f'' a d> q q << { cis'8(-> d) } \\ { <f, a>4 } >> <e, e'>16 \noBeam <e' gis> q q <gis e'>8( <e d'>)
+		a,16 \noBeam <a' c e> q q << { dis8(-> e) } \\ { <a, c>4 } >> c,16 \noBeam <a' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >>
+		d,16 d' d d h, h' h h e, r f r d r e r %45
+		a, r c r h r r8 <e, e'>8( <d! d'!> <c c'> <h h'>)
+		<a a'>16 \noBeam <a'' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >> c,16 \noBeam <a' c e> q q << { dis8(-> e) } \\ { <a, c>4 } >>
+		h,16 \noBeam <f' a d> q q << { cis'8(-> d) } \\ { <f, a>4 } >> e,16 \noBeam <e' gis> q q <gis e'>8( <e d'>)
+		a,16 \noBeam <a' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >> c,16 \noBeam <a' c e> q q << { dis8(-> e) } \\ { <a, c>4 } >>
+		d,16 d' d d h, h' h h <e, c'>\arpeggio r r8 r4 %50
+		R1
+		\clef treble <e' g>8 a g f e d c h
+		\time 2/4 \subdivQ c16[ h c h c h a h]
+		\time 4/4 c8 r r4 r2
+		\clef bass <f,, f,>16 \noBeam \clef treble <f'' a> q q << { gis8(-> a) } \\ { f4 } >> r16 <a c> q q << { c4 } \\ { gis8(-> a) } >> %55
+		r2 c,8( <d a' d> <g, f'> c)
+		f, r \clef bass <f f,> r <a, a,> r <a a'> r
+		<b b'> r <d d'> r <c c'> r <c c,> r
+		<f f,> r r4 r2
+		R1 %60
+		\clef treble r16 <d' f a> q q << { b'8(-> a) } \\ { <d, f>4 } >> \clef bass <f,, f,>16 \noBeam \clef treble <d'' f a> q q << { gis8(-> a) } \\ { <d, f>4 } >>
+		\clef bass <e,, e,>16 \noBeam \clef treble <b'' d g> q q << { fis'8(-> g) } \\ { <b, d>4 } >> \clef bass <a, a,>16 \noBeam \clef treble <a' cis> q q <cis a'>8( <a g'>)
+		\clef bass <d,, d,>16 \noBeam \clef treble <d'' f a> q q << { b'8(-> a) } \\ { <d, f>4 } >> \clef bass <f,, f,>16 \noBeam \clef treble <d'' f a> q q << { gis8(-> a) } \\ { <d, f>4 } >>
+		\subdivQ d16[ a' d, g f a a, a'] b f d b f' d a f
+		\clef bass b f d b f' d a f e d' f gis h d f gis %65
+		\clef treble b f d b f' d a f e d' f gis h d h gis
+		h gis f d gis f d h r2
+		e,16( cis' a e' cis a' e cis' e cis a e)\! r4
+		e,16(\mf cis' a e' cis a' e cis' e cis a e) r4
+		\clef bass r4 <cis, h'>( <fis a>) <e! d'>( %70
+		\time 1/4 <a cis>)
+		\time 4/4 <cis, h'>( <fis a>) <e! d'>( <a cis>)
+		<g! a cis e>16 <g a cis e> q q q q q q <fis a d> q q q q q q q
+		<e g h d> q q q q q q q <g a cis> q q <a h> <a cis> <a d> <a e'> <a eis'>
+		\subdivE <fis a d>32 fis' <fis, a d> fis' <fis, a d> fis' <fis, a d> fis' \subdivE <fis, a d> fis' <fis, a d> fis' <fis, a d> fis' <fis, a d> fis' \subdivE <fis, a> fis' <fis, a> fis' <fis, a> fis' <fis, a> fis' \subdivE <fis, a> fis' <fis, a> fis' <fis, a> fis' <fis, a> fis' %75
+		\subdivE <g, h> fis' <g, h> fis' <g, h> e' <g, h> e' \subdivE <g, h> dis' <g, h> dis' <g, h> e' <g, h> e' \clef treble \subdivE <a, cis> g' <a, cis> g' <a, cis> g' <a, cis> g' \subdivE <h, dis> a' <h, dis> a' <h, dis> a' <h, dis> a'
+		\clef bass \subdivE <e, h'> e' <e, h'> e' <e, h'> e' <e, h'> e' \subdivE <a, e'> g'! <a, e'> g' <a, e'> g' <a, e'> g' \subdivE <gis, d'> e' <gis, d'> e' <gis, d'> e' <gis, d'> e' \subdivE <a, d> fis' <a, d> fis' <a, d> fis' <a, d> fis'
+		\time 2/4 \subdivE <gis, d'> e' <gis, d'> e' <gis, d'> e' <gis, d'> e' \subdivE <a, d> fis' <a, d> fis' <a, d> fis' <a, d> fis'
+		\time 4/4 \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <a, e'> g' <a, e'> g' <a, e'> g' <a, e'> g' \subdivE <a, e'> g' <a, e'> g' <a, e'> g' <a, e'> g'
+		<c! c,!>2 <h h,>4 <e, e,> %80
+		\time 2/4 \subdivE a,32 e' g a g e a, e' \subdivE a, e' g a g e a, e'
+		\time 4/4 <d d'>4 <c! c'!> <h h'> <e, e'>
+		\clef treble \subdivE a'32 e' g a g e a, e' \subdivE a, e' g a g e a, e' \clef bass \subdivE d fis d a a d a fis \subdivE fis a fis d d fis d a
+		\subdivE a e' g a g e a, e' \subdivE a, e' g a g e a, e' \subdivE a d a fis fis a fis d \subdivE d fis d a a d a fis
+		\subdivE a d, fis a d fis, a d \subdivE fis a, d fis a d, fis a \subdivE d fis, a d fis a, d fis \clef treble \subdivE a d, fis a d fis, a d %85
+		fis16 r r8 r4 r2\fermata
+		R1*2
+		\subdivE h,32 d a d g, h fis h \subdivE e, g d g c, d h d \subdivE h' d a d gis, d' a d c16-. a-. fis-. a-.
+		\subdivE h32 d a d g, h fis h \subdivE e, g d g c, d h d \subdivE h' d a d gis, d' a d c16-. a-. fis-. a-. %90
+		\subdivE gis32 h gis h a h a h \subdivE gis h gis h f a f a \subdivE e gis e gis d gis d gis \subdivE cis, gis' cis, gis' d gis d gis
+		\time 2/4 \subdivE ais cis h cis ais cis h cis <ais cis>16-. <g h>-^ <fis ais>-^ <e fis ais>-^
+		\time 4/4 \subdivE d'32 fis cis fis h, d a d \subdivE g, h fis h e, fis d fis\subdivE d' fis cis fis h, fis' cis fis e16-. cis-. ais-. cis-. %95
+		\subdivE d32 fis cis fis h, d a d \subdivE g, h fis h e, fis d fis\subdivE d' fis cis fis h, fis' cis fis e16-. cis-. ais-. cis-.
+		<h d>8 <a c dis> <g h> <fis h> <g h> <f g h> <e g> <d f gis> %95
+		\time 2/4 << { <gis h>[ <a c> gis a] } \\ { c,2 } >>
+		<< { <c g'>4 <a e'> \clef bass <d, c'> } \\ { f'8( e d c) h([ a)] } >> \clef treble h16( c d e)
+		<< { <c g'>4 <a e'> \clef bass <d, c'>2 } \\ { f'8( e d c) h( a g fis) } >>
+		\time 2/4 << { <d c'>2 } \\ { eis8([ fis g a)] } >>
+		\time 4/4 \clef treble h'16( a g d) h( c d h) d, d( d') d( d') d( d,) d %100
+		h'( a g d) h( c d h) d, d( d') d( d') d( d,) d(
+		d') d( d,) d( d') d( d,) d( d') d( d,) d( d') \once \slurDashed d( e fis)
+		g( d h a) r4 h'16( a g e) r4
+		g16( d h a) r4 h'16( a g e) r4
+		fis16( e) e( c) c( g) g( e) \subdivQ g([ e g e g e d c)] %105
+		\mvTrr <g h e>4(-.-\markup { \remark "mit Pedal" } \clef bass <e g h e>-. <h d g h>-. <a c e g a>-.)
+		<g h d g> r r2
+		\clef treble s1-\markup { \remark "mit Pedal" }
+		s
+		R1*4 %113
+		\clef treble \mvTrr <g' h d>8(-.-\markup { \remark "Pedal" } r r4 r2
+		<g' h d>8-.) r r4 r2 \bar "|." %115 finis
 	}
 }
 

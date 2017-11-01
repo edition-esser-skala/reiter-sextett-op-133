@@ -438,7 +438,7 @@ IContrabasso = {
 
 IIContrabasso = {
 	\relative c {
-		\clef bass
+		\clef bass \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
 	}
 }

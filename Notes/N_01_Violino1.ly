@@ -448,7 +448,7 @@ IViolinoI = {
 
 IIViolinoI = {
 	\relative c' {
-		\clef treble
+		\clef treble \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
 	}
 }

@@ -465,6 +465,6 @@ IIViola = {
 	\relative c' {
 		\clef treble
 % 		\clef alto
-		\key g \major \time 4/4 \tempoII
+		\key g \major \numericTimeSignature \time 4/4 \tempoII
 	}
 }
