@@ -478,5 +478,118 @@ IIVioloncello = {
 	\relative c {
 		\clef bass \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
+		\crescHairpin d2(\mf\< e4 fis)\!
+		d2(\< e4 fis)\!
+		g,8(\< fis g4)\! gis4(\f e)
+		\time 2/4 R2
+		\mark #1 \time 4/4 e'4(\mf\< f fis gis)\! %5
+		e2(\< fis!4 gis)\!
+		a,8( gis a4) << { \oneVoice a2 } \\ { s4\< s\! } >>
+		\dimHairpin b4(\> d)\! r2
+		\mark #2 r4 a'(\p^\markup { \remark "un poco rit." } d,2)
+		\crescHairpin \dimHairpin d8(\mf\<^\markup { \remark "a tempo" } cis d dis)\! e(\> g fis d)\! %10
+		d2 e8(\> g\! fis\> d\!)
+		g,(\< fis g4)\! gis4(\f e)
+		\mark #3 \time 2/4 R2
+		\time 4/4 \crescHairpin \dimHairpin e'8(\<  dis e f)\! fis(\> a gis e)\!
+		e2 fis!8(\< a\! gis\> e\!) %15
+		a,( gis a4) << { \oneVoice a2 } \\ { s4\< s\! } >>
+		b4(\> d)\! << { \oneVoice e2 } \\ { s8 s4.-\markup { \remark "dim." } } >>
+		\mark #4 e2(\pp f~)
+		\dimTextDimE f1~\>
+		f\!\fermata %20
+		\mark #5 \clef "treble_8" dis'8(\p cis h dis) e( dis cis e)
+		dis( cisis dis his) e( dis cis e)
+		\crescTextCresc dis(\< cis h dis) d( c \crescTextPoco h\< d)
+		\crescTextAPoco e(\< d c e) d( c h a)
+		\mark #6 \crescHairpin \dimHairpin \clef bass g-^\ff h,-^ a-^ g-^ a'(\< c\! h\> g\!) %25
+		c,-^ h-^ a-^ g-^ a'(\< c\! h\> g\!)
+		b-^ g-^ b-^ e!-^ a,-^ g-^ f-^ e-^
+		\crescHairpin \dimHairpin d-^ c-^ b-^ a-^ h'!(\< d\! cis\> a)\!
+		d,-^ cis-^ d-^ b-^ h'!(\< d\! cis\> a)\!
+		cis(\< e\! dis\> h)\! h,-\critnote h h h %30
+		h'(\< d\! cis\> a)\! a, a a a
+		\mark #7 g g g g g g g g
+		g8. <b es>16 q q q q q q q q q q q q
+		q r r8 r4 r2
+		R1 %35
+		\mark #8 r16 g\p g g g8 g r16 f f f f8 f
+		r16 cis cis cis cis8 cis8 r16 d d d d8 d
+		r16 e e e e8 e r16 fis! fis fis fis8 fis
+		\dimHairpin r16 gis gis gis r a a a r e\> e e e8 e
+		r16\!-\markup { \remark "rall." } e e e e8 e\fermata r2-\markup { \remark "a tempo" } %40
+		R1
+		\mark #9 R1*2
+		\crescHairpin e'4(\mf\<^\markup { \remark "gesangsvoll hervortretend" } c')\! h4(-> a8 e')
+		\crescHairpin \dimHairpin h(\< f'\! d\> h\!) e,(\p f d e) %45
+		a,( c) h16( fis! h8 e,) r r4
+		\mark #10 R1*2
+		\crescHairpin e'4(\mf\< c')\! h4(-> a8 e')
+		h( f' d h) e,(\p f e4) %50
+		\mark #11 e2 f
+		g1~
+		\time 2/4 g2
+		\time 4/4 b4(\p c2.~)
+		c16 r r8 f, r a, r a' r %55
+		b4( d) c8( d g, c,)
+		\mark #12 f, r r4 r2
+		R1
+		f'4( a d, c)
+		f8( a d, c) f,( g a4) %60
+		d,8 r r4 r2
+		R1
+		\mark #13 \crescHairpin a'4(\mf\< f')\! e(-> d8 a')
+		c( b a g) f4( a)
+		d8( c16 b a4) gis8( f' e16 d cis d) %65
+		d8( c16 b a gis a d) gis,8( f' e f)
+		\dimHairpin \subdivQ g!16([\sp f e f e d cis d)] cis4(\> d)
+		\mark #14 a,16[\p r cis r e r a] r cis[ r a] r fis'8(\p gis)
+		a,,16[ r cis r e r a] r cis[ r a] r fis'!8( gis)
+		a( e) r4 r2 %70
+		\time 1/4 R4
+		\time 4/4 R1
+		\mark #15 R1
+		\crescTextCrescMolto e,16\f e e e e e e e <a, g'>\< q q q q q q q
+		\mark #16 d(\ff a d fis) a( fis d a) fis'( d fis a) d( a fis d) %75
+		\subdivQ h'([ g h g h g h g)] cis( a cis a) dis( h a h)
+		e( h e, h') e( a, g a) e'( d e d) fis( d fis d)
+		\time 2/4 e( d e d) fis( d fis d)
+		\mark #17 \dimTextDim \time 4/4 \subdivQ d([ h d h d h d h)] g4(\> a)
+		c,!2(\p h4 e,) %80
+		\time 2/4 a2
+		\time 4/4 d'4( c! h g)
+		a2 d4( d,)
+		a2 d4( d,)
+		\mark #18 << { \oneVoice a'1\pp } \\ { s2 s-\markup { \remark "dim." } } >> %85
+		<a fis'>1\fermata\ppp
+		R
+		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
+		\mark #19 \crescHairpin \dimHairpin g'8\mf^\markup { \remark "a tempo" } fis-\markup { \remark "pizz." } e d e(\<-\markup { \remark "Bogen" } g\! fis\> d\!)
+		g-\markup { \remark "pizz." } fis e d \hairpinBetweenText \markup "[" \markup "" e\<(-\markup { \remark "Bogen" } g\! \hairpinBetweenText \markup "" \markup "]" fis\> d)\! %90
+		gis(\fE a gis f) e( d cis d)
+		\time 2/4 R2
+		\mark #20 \time 4/4 \crescHairpin \dimHairpin \mvTrr h'8\mf-\markup { \remark "pizz." } a g fis gis(\<-\markup { \remark "Bogen" } h\! ais\> fis\!)
+		h-\markup { \remark "pizz." } a g fis gis(\<-\markup { \remark "Bogen" } h\! ais\> fis\!)
+		h(\f a g fis) g( f e d) %95
+		\time 2/4 c2
+		\mark #21 c'4(\mf a) d,2
+		c'4(\p a) d,2~
+		\time 2/4 d-\markup { \remarkE "rit. e dim." }
+		\mark #22 \time 4/4 \mvTr g,4(\p-\markup { \remark "a tempo" } h) e( fis) %100
+		g,( h) e( fis)
+		d1
+		d4(\pp g e fis)
+		d( g e fis)
+		fis2( d) %105
+		\mark #23 g4 r r2
+		r h4(\pp a)
+		g1
+		g
+		\mark #24 g8 r r4 r2 %110
+		e1\ppp
+		fis2( d)
+		d1~
+		d~
+		d4 r r2 \bar "|." %115 finis
 	}
 }

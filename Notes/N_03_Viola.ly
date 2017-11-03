@@ -473,7 +473,7 @@ IIViola = {
 		\mark #1 \time 4/4 e'1--\mf %5
 		e--
 		\crescHairpin e,4.( a8) f4(\< c')\!
-		\dimHairpin c8.([ a16 \parenthesizedHairpin b8\> d)]\! r2
+		\dimHairpin \parenthesizedHairpin c8.([\> a16  b8 d)]\! r2
 		\mark #2 r4 a2.\p^\markup { \remark "un poco rit." }
 		d1--\p^\markup { \remark "a tempo" } %10
 		d--
@@ -482,7 +482,7 @@ IIViola = {
 		\time 4/4 e'1--
 		e-- %15
 		e,4.( a8) f(\< a h c)\!
-		\dimHairpin c( a b\> d)\! c(\p \dimTextDim f\> e d)
+		\dimHairpin c(\> a b d)\! c(\p \dimTextDim f\> e d)
 		\mark #4 cis2(\pp d~)
 		\dimTextDimE d1~\>
 		d1\fermata\! %20
@@ -536,7 +536,7 @@ IIViola = {
 		\time 4/4 R1
 		\mark #15 \mvTrr a,16[\mf-\markup { \remark "pizz." } r a'] r r4 a,16[ r a'] r r4
 		h,16[ r h'] r r4 <a, g'>16\f r r8 r4
-		\mark #16 \crescHairpin \mvTrr <a a'>4(\ff\<-\markup { \remark "Borgen" } fis')\! e8( d cis d) %75
+		\mark #16 \crescHairpin \mvTrr <a a'>4(\ff\<-\markup { \remark "Bogen" } fis')\! e8( d cis d) %75
 		fis'( e dis e) g16-. g( fis e) dis-. dis( e fis)
 		fis-. fis( e d) cis-. cis( d e) d-. fis( e d) a-. fis-. e-. d-.
 		\time 2/4 d'-. fis( e d) a-. fis-. e-. d-.

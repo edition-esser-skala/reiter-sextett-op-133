@@ -932,9 +932,9 @@ IIPianoR = {
 		R1*3
 		\time 2/4 << { e'8([ d c h)] } \\ { h4(\mp gis) } >>
 		\mark #1 \time 4/4 R1*3 %7
-		\mark #2 r2 << {
-			e'8( d c h)
-			a2~ a16 h( c cis d gis a ais)
+		r2 << {
+			e'!8( d c h)
+			\mark #2 a2~ a16 h( c cis d gis a ais)
 		} \\ {
 			a,4(\p gis)
 			e( g fis!16) s-\markup { \remark "un poco rit." } s8 s4
@@ -1034,7 +1034,7 @@ IIPianoR = {
 		\dimTextDim \subdivE d d' d, cis d\> d' d, cis \subdivE d d' d, cis d d' d, cis \subdivE d-\markup { \remark "rall." } d' d, d' d, d' d, d' \subdivE d, d' d, d' d, d' d, d'
 		\mark #19 \subdivE \mvTr <g, h>\p-\markup { \remark "a tempo" } d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE d c a d, a' c d c
 		<g h> d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE e d c a d, a' c d %90
-		<< { \subdivE e, <h' e> e, <h' e> f <h f'> f <h f'> \subdivE e, <h' e> e, <h' e> d, <a' d> d, <a' d> \subdivE c, <gis' c> c, <gis' c> h, <gis' h> h, <gis' h> \subdivE ais, <gis' ais> ais, <gis' ais> h, <gis' h> h, <gis' h> } \\ { e16 e f f e e d d c c h h ais ais h h } >>
+		<< { \subdivE e, <h' e> e, <h' e> f <h f'> f <h f'> \subdivE e, <h' e> e, <h' e> d, <a' d> d, <a' d> \subdivE c, <gis' c> c, <gis' c> h, <gis' h> h, <gis' h> \subdivE ais, <gis' ais> ais, <gis' ais> h, <gis' h> h, <gis' h> } \\ { e16\f e f f e e d d c c h h ais ais h h } >>
 		\time 2/4 <fis' cis' fis>16-^\f <g cis g'>-^ <fis cis' fis>-^ <g cis g'>-^ <fis cis' fis>-^ <e h' e>-^ <d ais' d>-^ <cis ais' cis>-\parenthesize-^
 		\mark #20 \time 4/4 \subdivE <h' d>32\pp fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE fis e cis fis, cis' e fis e
 		\subdivE <h d> fis' <a, cis> fis' <g, h> d' <fis, a> d' \subdivE <e, g> h' <d, fis> h' <cis, e> fis  <h, d> fis' \subdivE <h d> fis' <ais, cis> fis' <gis, h> fis' <ais, cis> fis' \subdivE g fis e cis fis, cis' e fis
@@ -1077,7 +1077,7 @@ IIPianoL = {
 			c'8( f e d)
 			\clef bass c2.
 		} \\ {
-			e,2
+			e,!2
 			a2( d,4)
 		} >> r4
 		\clef treble g'16 fis e d c h a g g' fis eis fis a fis d fis %10

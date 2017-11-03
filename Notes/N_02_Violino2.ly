@@ -450,7 +450,7 @@ IIViolinoII = {
 		\mark #1 \time 4/4 c2(\mf d) %5
 		e( d)
 		\crescHairpin d8.([ h16 c8. a'16)] c,4(\< f)\!
-		f2-> r
+		<< { \oneVoice f2 r } \\ { s4\> s\! s2 } >>
 		\mark #2 r4 e4(\p^\markup { \remark "un poco rit." } fis2)
 		h,2(\p^\markup { \remark "a tempo" } c) %10
 		d( c)
@@ -459,7 +459,7 @@ IIViolinoII = {
 		\time 4/4 c2( d)
 		e( d) %15
 		d8.([ h16 c8. a'16)] c,4(\< f)\!
-		f2->\! << { \oneVoice a4(\p gis) } \\ { s8 s4.-\markup { \remark "dim." } } >>
+		<< { \oneVoice f2 a4(\p gis) } \\ { s4\> s\! s8 s4.-\markup { \remark "dim." } } >>
 		\mark #4 g2(\pp gis~)
 		\dimTextDim gis1~\>
 		gis1\!\fermata %20
