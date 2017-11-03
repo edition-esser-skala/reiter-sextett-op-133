@@ -50,11 +50,17 @@
 				>>
 				\new PianoStaff <<
 					\set PianoStaff.instrumentName = "Klavier"
-					\new Staff = "RH" << \IIPianoR >>
-					\new Staff = "LH" << \IIPianoL >>
+					\new Staff = "RH" <<
+% 						\unfoldRepeats
+						\IIPianoR
+					>>
+					\new Staff = "LH" <<
+% 						\unfoldRepeats
+						\IIPianoL
+					>>
 				>>
 			>>
-% 			\layout { }
+			\layout { }
 			\midi { \tempo 4 = 50 }
 		}
 	}

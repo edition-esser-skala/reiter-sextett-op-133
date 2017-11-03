@@ -443,5 +443,115 @@ IIViolinoII = {
 	\relative c' {
 		\clef treble \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
+		h2(\mf c)
+		d( c)
+		\crescHairpin c8.(\< ais16 h4) h4(\f gis)
+		\time 2/4 R2
+		\mark #1 \time 4/4 c2(\mf d) %5
+		e( d)
+		\crescHairpin d8.([ h16 c8. a'16)] c,4(\< f)
+		f2->\! r
+		\mark #2 r4 e4(\p^\markup { \remark "un poco rit." } fis2)
+		h,2(\p^\markup { \remark "a tempo" } c) %10
+		d( c)
+		\crescHairpin c8.(\< ais16 h4) h(\f gis)
+		\mark #3 \time 2/4 R2
+		\time 4/4 c2( d)
+		e( d) %15
+		d8.([ h16 c8. a'16)] c,4(\< f)
+		f2->\! << { \oneVoice a4(\p gis) } \\ { s8 s4.-\markup { \remark "dim." } } >>
+		\mark #4 g2(\pp gis~)
+		\dimTextDim gis1~\>
+		gis1\!\fermata %20
+		\mark #5 h2\p cis
+		h4.( dis8) cis2
+		\crescTextCresc h4(\< fis') d( \crescTextPoco g!)\<
+		\crescTextAPoco c,(\< g') g-- g8-^ g-^
+		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e g g g g g g g g %25
+		g f e d c g c e g g g g g g g g
+		b b b b b b b b a a a a a a a a
+		a g f e d a d f a a a a a a a a
+		a g f e d a d f a a a a a a a a
+		h! h h h h h h h h a g fis e h e g %30
+		a a a a a a a a a g f e d a d f
+		\mark #7 b g g es es b b g g es g b es b es g
+		<b b, es,>16 r r <b, g> q q q q q q q q q q q q
+		q r r8 r4 r2
+		R1 %35
+		\mark #8 r16 a,\p a a a8 a r16 a a a a8 a
+		r16 a a a a8 a r16 d d d d8 d
+		r16 e e e e8 e r16 a a a a8 a
+		\dimHairpin r16 h, h h~ h-> a a a h2~\>
+		h~\!\fermata h16 r r8 r4 %40
+		R1
+		\mark #9 R1*3
+		a'2\p a4.( gis8) %45
+		\dimHairpin e4.( dis8\> h)\! r r4
+		\mark #10 \crescHairpin \dimHairpin \dynamicUp r16 e(\< a c\! h8^> a^>) r16 a(\< c e\! dis^> c! h\> a\!)
+		r h,(\< d f\! e8^> f^>) r16 h,(\< c d\! e^> f e\> d\!) \dynamicNeutral
+		R1
+		a'2\p a4.( gis8) %50
+		\mark #11 \crescHairpin g(\< b4.)\! a2
+		R1
+		\time 2/4 R2
+		\time 4/4 g4(\p b2.
+		a16) r r8 r4 r2 %55
+		f'2~ f8 r r4
+		\mark #12 c4(\mf\< a'4)\! g8( f e f)
+		\subdivQ e16([ d cis d c b a b)] a8( b a g)
+		f4(\p a d, e)
+		f8( a d, e) f( e d cis %60
+		a) r r4 r2
+		R1
+		\mark #13 R1*4 %66
+		r2 \subdivQ gis'16([\p h gis h gis h gis h)]
+		\mark #14 r a,[ r cis r e r a] r cis[ r e] << { d8( e) } \\ { e,4\p } >>
+		r16 a,[ r cis r e r a] r cis[ r e] << { d8( e) } \\ { e,4 } >>
+		cis8 a r4 r2 %70
+		\time 1/4 R4
+		\time 4/4 R1
+		\mark #15 r4 \mvTrr a''16[\mf-\markup { \remark "pizz." } r a,] r r4 a'16[ r a,] r
+		r4 h'16[ r h,] r <a cis'>\f r r8 r4
+		\mark #16 \mvTrr a4(\ff\<-\markup { \remark "Bogen" } fis')\! e8( d cis d) %75
+		a'( g fis g) h16-. h( a g) fis-. fis( g a)
+		a-. a( g fis) e-. e( fis g) fis-. d'( cis h) a-. fis-. e-. d-.
+		\time 2/4 fis-. d'( cis h) a-. fis-. e-. d-.
+		\mark #17 \time 4/4 \dimTextDim h' h h h g g g g fis\> fis fis fis e e e e
+		fis,2(\p g) %80
+		\time 2/4 d4( cis)
+		\time 4/4 fis2( g4 h)
+		d( cis) a8( fis d a)
+		d4( cis) d'8( a fis d)
+		\mark #18 \dimTextDim a2\pp <fis' a>\> %85
+		<d d'>1\ppp\fermata
+		R1
+		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
+		\mark #19 \subdivQ \mvTrr g'16[\mf-\markup { \remark "pizz." } fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
+		\subdivQ g[ fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis] %90
+		\mvTr h,4.(\f-\markup { \remark "Bogen" } a8) e2
+		\time 2/4 R2
+		\mark #20 \subdivQ h''16[\mfE a-\markup { \remark "pizz." } g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
+		\subdivQ h[ a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
+		\mvTr d,8(\f-\markup { \remark "Bogen" } c h a) h( g4 f8) %95
+		\dimHairpin \time 2/4 f([ e f\> e\!)]
+		\mark #21 g4(\mf e c2)
+		g'4(\p e c2~)
+		\time 2/4 c-\markup { \remark "rit. e dim." }
+		\mark #22 \time 4/4 \mvTr h4(\p-\markup { \remark "a tempo" } d) d16( h' d, a'~ a gis a fis) %100
+		h,4( d) d16( h' d, a'~ a c a c,)
+		\subdivQ c[( d c d e fis e fis] g a g a) a( e' d c)
+		h4(\pp e, g a)
+		g( e g a)
+		a2( c, %105
+		\mark #23 h4) r r a'16(\pp g a c)
+		d4( g,2 c4)
+		g'1
+		h4( g d h)
+		\mark #24 g1~\ppp %110
+		g
+		e2( fis)
+		d1~
+		d~
+		d4 r r2 \bar "|." %115 finis
 	}
 }

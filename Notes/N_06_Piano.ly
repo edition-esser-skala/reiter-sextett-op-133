@@ -950,16 +950,16 @@ IIPianoR = {
 		\mark #4 \crescHairpin \dimHairpin \mvTr b64\p-\markup { \remark "legato" } g \dynamicUp  e\< cis b[ \lh \clef treble g e cis] b cis e g \rh b[ cis e g] b\f\> g e cis b[ \lh g e cis] b cis e g \rh \tuplet 5/4 16 { b[ cis e g\! b] } \dynamicNeutral h16\p gis f d f gis h c
 		\dimTextDim r cis[\> r d r dis r e] r8 f(-. d-. e-.)
 		f\!-\markup { \remark "rall." } r r4 r2\fermata %20
-		\mark #5 \ottava #1 \repeat percent 8 { \mvTr <dis fis>64\p-\markup { \remark "a tempo" } gis <dis fis> gis } \repeat percent 8 { <e fis> gis <e fis> gis }
-		\repeat percent 8 { <dis fis> gis <dis fis> gis } \repeat percent 8 { <e fis> gis <e fis> gis }
-		\repeat percent 8 { <dis fis> gis <dis fis> gis } \repeat percent 8 { <d g> a' <d, g> a' }
-		\repeat percent 8 { <c, g'> a' <c, g'> a' } \repeat percent 4 { <h, g'> a' <h, g'> a' } \ottava #0 \tuplet 14/16 4 { g f e d c h a g f e d c h a }
+		\mark #5 \ottava #1 \repeat percent 4 { \subdivS \mvTr <dis fis>64\p-\markup { \remark "a tempo" } gis <dis fis> gis <dis fis> gis <dis fis> gis } \repeat percent 4 { \subdivS <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
+		\repeat percent 4 { \subdivS <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis } \repeat percent 4 { \subdivS <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
+		\repeat percent 4 { \subdivS <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis } \repeat percent 4 { \subdivS <d g> a' <d, g> a' <d, g> a' <d, g> a' }
+		\repeat percent 4 { \subdivS <c, g'> a' <c, g'> a' <c, g'> a' <c, g'> a' } \repeat percent 2 { \subdivS <h, g'> a' <h, g'> a' <h, g'> a' <h, g'> a' } \ottava #0 \tuplet 14/16 4 { g f e d c h a g f e d c h a }
 		\mark #6 <e g>4-^\ff <e g e'>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
 		<f g>8.[ <dis g>16 <e g>8-^ <g e'>-^] <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^]
 		<g e'>-^ <g f'>-^ <g e'>-^ <g d'>-^ <g cis>-^ <b cis>-^ <a cis>-^ <g cis>-^
 		<d f a>4-^ <f a f'>-^ <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
 		q8.[ <e a>16 <f a>8-^ <a f'>-^] <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
-		<a h>8.[ <a h g'>16 <a h fis'>8-^-\critnote <a h>-^] <fis g h>8.[ <dis g h>16 <e g h>8-\parenthesize-^ <d g h>-\parenthesize-^] %30
+		<a h!>8.[ <a h g'>16 <a h fis'>8-^-\critnote <a h>-^] <fis g h>8.[ <dis g h>16 <e g h>8-\parenthesize-^ <d g h>-\parenthesize-^] %30
 		<g a>8.[ <g a fis'!>16 <g a e'>8-^-\critnote <g a>-^] <e f a>8.[ <cis f a>16 <d f a>8-^ <c f a>-^]
 		\mark #7 <b es g>[-^ <d d'>-^ <es es'>-^ <fis fis'>-^] <g g'>[-^ <a a'>-^ <b b'>-^ <d d'>-^]
 		<es es'>8. <d, d'>16 <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'> <es es'> <fis! fis'!> <g g'> <a a'> <b b'> <d d'>
@@ -1049,7 +1049,7 @@ IIPianoR = {
 			d'16\pp d c c h h a a g g fis fis e e d d
 			cis8([ d e fis)]
 		} >>
-		\mark #22 \time 4/4 \mvTr g'16(\p-\markup { \remark "a tempo, sehr ruhig" } d h a) g( a h g) d d( d') d( d') d( d,) d %100
+		\mark #22 \time 4/4 g'16(\p^\markup { \remark "a tempo, sehr ruhig" } d h a) g( a h g) d d( d') d( d') d( d,) d %100
 		g( d h a) g( a h g) d d( d') d( d') \once \slurDashed d( d,) d(
 		d') d( d,) d( d') d( d,) d( d') \once\slurDashed d( d,) d( d') d( e fis)
 		g( d h a) r4 h'16( a g e) r4
@@ -1100,7 +1100,7 @@ IIPianoL = {
 		<b c e>-^ q-^ q-^ q-^ <a e'>-^ <g e'>-^ <f e'>-^ <e e'>-^
 		<d f a>4-^ <f a>-^ <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
 		q8.[ <e a>16 <f a>8-^ <a f'>-^] <g a>8.[ <g a f'>16 <g a e'>8-^ <g a>-^]
-		\clef treble <a h>8.[ <a h g'>16 <a h fis'>8-^ <a h>-^] \clef bass <g h>-^ q-^ q-^ q-^ %30
+		\clef treble <a h!>8.[ <a h g'>16 <a h fis'>8-^ <a h>-^] \clef bass <g h>-^ q-^ q-^ q-^ %30
 		<g a>8.[ <g a fis'!>16 <g a e'>8-^ <g a>-^] <f a>-^ q-^ q-^ <d f>-^
 		<g, b es g> q q q q q q q
 		q8. q16 q q q q q q q q q q q q

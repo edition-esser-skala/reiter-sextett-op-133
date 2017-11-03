@@ -474,7 +474,7 @@ IIViolinoI = {
 		fis8.([ eis16 fis8. gis16)] e?8.([ h'16 ais8. gis16)]
 		\crescTextCresc fis8.([\< e'16) dis8( fis,)] g8.([ e'16) \crescTextPoco d8(\< g,)]
 		\crescTextAPoco g8.([\< f'16) e8( g,)] g'-^ f-^ e-^ d-^
-		\mark #6 g16\ff-\markup { \remark "großes staccato" } f e d c g c e f e d cis d e f fis %25
+		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e f e d cis d e f fis %25
 		g f e d c g c e f e d cis d e f fis
 		g a g a g a g f e f g f e a gis g
 		\ottava #1 f g f e d a d f g f e dis e f g gis
@@ -484,8 +484,8 @@ IIViolinoI = {
 		\mark #7 g es es b b g g es es b es g b g b es
 		g r r d,, es fis! g a b d es fis! g a b d
 		es r r8 r4 r2
-		\dimHairpin es,,2.(\f\>^\markup { "rall." } d4)\! %35
-		\mark #8 \crescHairpin cis4..(\<\p^\markup { \remark "a tempo" } e16)\! d4~ d16 d(-. e-. fis-.)
+		\dimHairpin es,,2.(\f\>^\markup { \remark "rall." } d4)\! %35
+		\mark #8 \crescHairpin cis4..(\<\p^\markup { \remark "a tempo" } e16)\! d4~ d16 d(-. e-. f?-.)
 		a4~\< a16\! a( b16. a32) a4~ a16 f(-. e-. d-.)
 		\crescHairpin a'4~ a16 a(\< gis a)\! c4~-> c16 c( h a)
 		\dimHairpin e2 e~\>
@@ -543,7 +543,7 @@ IIViolinoI = {
 		\mark #21 \time 4/4 d(\mf c h a g fis e d)
 		d'(\p c h a g fis e d)
 		\time 2/4 cis([-\markup { \remark "rit. e dim." } d e fis)]
-		\mark #22 \time 4/4 g2\p \subdivQ d16([ d' d, c'~ c h c d)] %100
+		\mark #22 \time 4/4 \mvTr g2\p-\markup { \remark "a tempo" } \subdivQ d16([ d' d, c'~ c h c d)] %100
 		h4( d) \subdivQ d,16([ d' d, c'~ c e d fis,)]
 		\subdivQ a([ fis a fis c' a c a] e' c e c) fis4(
 		g8) r h,16( g fis e) r4 d''16( a fis d)

@@ -146,7 +146,7 @@ subdivE = {  % subdivide to eighths
 	\once \set beatStructure = #'(2 2 2 2)
 }
 
-subdivT = {  % subdivide to thirty-seconds
+subdivS = {  % subdivide to sixteenths
 	\once \set subdivideBeams = ##t
 	\once \set baseMoment = #(ly:make-moment 1/16)
 	\once \set beatStructure = #'(2 2 2 2 2 2 2 2)
