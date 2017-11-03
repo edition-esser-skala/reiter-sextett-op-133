@@ -445,20 +445,20 @@ IIViolinoII = {
 		\key g \major \time 4/4 \tempoII
 		h2(\mf c)
 		d( c)
-		\crescHairpin c8.(\< ais16 h4) h4(\f gis)
+		\crescHairpin c8.(\< ais16 h4)\! h4(\f gis)
 		\time 2/4 R2
 		\mark #1 \time 4/4 c2(\mf d) %5
 		e( d)
-		\crescHairpin d8.([ h16 c8. a'16)] c,4(\< f)
-		f2->\! r
+		\crescHairpin d8.([ h16 c8. a'16)] c,4(\< f)\!
+		f2-> r
 		\mark #2 r4 e4(\p^\markup { \remark "un poco rit." } fis2)
 		h,2(\p^\markup { \remark "a tempo" } c) %10
 		d( c)
-		\crescHairpin c8.(\< ais16 h4) h(\f gis)
+		\crescHairpin c8.(\< ais16 h4)\! h(\f gis)
 		\mark #3 \time 2/4 R2
 		\time 4/4 c2( d)
 		e( d) %15
-		d8.([ h16 c8. a'16)] c,4(\< f)
+		d8.([ h16 c8. a'16)] c,4(\< f)\!
 		f2->\! << { \oneVoice a4(\p gis) } \\ { s8 s4.-\markup { \remark "dim." } } >>
 		\mark #4 g2(\pp gis~)
 		\dimTextDim gis1~\>
@@ -482,7 +482,7 @@ IIViolinoII = {
 		r16 a a a a8 a r16 d d d d8 d
 		r16 e e e e8 e r16 a a a a8 a
 		\dimHairpin r16 h, h h~ h-> a a a h2~\>
-		h~\!\fermata h16 r r8 r4 %40
+		h~\!\fermata-\markup { \remark "rall." } h16-\markup { \remark "a tempo" } r r8 r4 %40
 		R1
 		\mark #9 R1*3
 		a'2\p a4.( gis8) %45
@@ -526,7 +526,7 @@ IIViolinoII = {
 		<d d'>1\ppp\fermata
 		R1
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 \subdivQ \mvTrr g'16[\mf-\markup { \remark "pizz." } fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
+		\mark #19 \subdivQ g'16[\mf^\markup { \remark "a tempo" } fis-\markup { \remark "pizz." } e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
 		\subdivQ g[ fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis] %90
 		\mvTr h,4.(\f-\markup { \remark "Bogen" } a8) e2
 		\time 2/4 R2

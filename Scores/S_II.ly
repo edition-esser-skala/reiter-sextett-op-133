@@ -16,7 +16,7 @@
 			subtitle = \markup { \vspace #3 \normal-text \larger \larger "2. Satz" }
 			composer = \markup { \larger " " }
 		}
-% 		\paper { systems-per-page = #2 }
+		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<

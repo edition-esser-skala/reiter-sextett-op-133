@@ -452,7 +452,7 @@ IIViolinoI = {
 		\key g \major \time 4/4 \tempoII
 		\crescHairpin d4(\mf\< h')\! d,8.([ h'16 a8. d,16)]
 		c8.([ ais16 h8. g'16)] d8.([ h'16 a8. d,16)]
-		\crescHairpin d4..(\< dis16) e8(\f d c h)
+		\crescHairpin d4..(\< dis16)\! e8(\f d c h)
 		\time 2/4 R2
 		\mark #1 \crescHairpin e4(\mf\< c')\! e,8.([ c'16 h8. e,16)] %5
 		d8.([ h16 c8. a'16)] e8.([ c'16 h8. e,16)]
@@ -461,12 +461,12 @@ IIViolinoI = {
 		\mark #2 r4 <c, a'>2.\p^\markup { \remark "un poco rit." }
 		\crescHairpin d4(\mf\<^\markup { \remark "a tempo, sehr ruhig" } h')\! d,8.([ h'16 a8. d,16)] %10
 		c8.([ ais16 h8. g'16)] d8.([ h'16 a8. d,16)]
-		\crescHairpin d4..(\< dis16) e8(\f d c h)
+		\crescHairpin d4..(\< dis16)\! e8(\f d c h)
 		\mark #3 \time 2/4 R2
 		e4( c') e,8.([ c'16 h8. e,16)]
 		d8.([ h16 c8. a'16)] e8.([ c'16 h8. e,16)] %15
 		\crescHairpin e2 f8.([\< c'16 d8. es16)]\!
-		\dimHairpin es8.([ cis16 d8.\> f16)] es8(\p \dimTextDim d\> c h)
+		\dimHairpin es8.([ cis16 d8.\> f16)]\! e?8(\p \dimTextDim d\> c h)
 		\mark #4 b2(\pp h~)
 		\dimTextDim h1~\>
 		h\fermata\! %20
@@ -487,9 +487,9 @@ IIViolinoI = {
 		\dimHairpin es,,2.(\f\>^\markup { \remark "rall." } d4)\! %35
 		\mark #8 \crescHairpin cis4..(\<\p^\markup { \remark "a tempo" } e16)\! d4~ d16 d(-. e-. f?-.)
 		a4~\< a16\! a( b16. a32) a4~ a16 f(-. e-. d-.)
-		\crescHairpin a'4~ a16 a(\< gis a)\! c4~-> c16 c( h a)
+		\crescHairpin a'4~\< a16 a( gis a)\! c4~-> c16 c( h a)
 		\dimHairpin e2 e~\>
-		e~\!\fermata e16 r r8 r4 %40
+		e~\!\fermata-\markup { \remark "rall." } e16-\markup { \remark "a tempo" } r r8 r4 %40
 		R1
 		\mark #9 R1*2
 		r2 \mvTr e'8(\mf\<-\markup { \remark "gesangsvoll" } c')\! h16( a gis a)

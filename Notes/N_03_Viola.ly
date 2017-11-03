@@ -466,5 +466,116 @@ IIViola = {
 		\clef treble
 % 		\clef alto
 		\key g \major \numericTimeSignature \time 4/4 \tempoII
+		d1--\mf
+		d--
+		\crescHairpin d,4.(\< dis8)\! e4(\f d)
+		\time 2/4 R2
+		\mark #1 \time 4/4 e'1--\mf %5
+		e--
+		\crescHairpin e,4.( a8) f4(\< c')\!
+		\dimHairpin c8.([ a16 \parenthesizedHairpin b8\> d)]\! r2
+		\mark #2 r4 a2.\p^\markup { \remark "un poco rit." }
+		d1--\p^\markup { \remark "a tempo" } %10
+		d--
+		\crescHairpin d,4.(\< dis8)\! e4(\f d)
+		\mark #3 \time 2/4 R2
+		\time 4/4 e'1--
+		e-- %15
+		e,4.( a8) f(\< a h c)\!
+		\dimHairpin c( a b\> d)\! c(\p \dimTextDim f\> e d)
+		\mark #4 cis2(\pp d~)
+		\dimTextDimE d1~\>
+		d1\fermata\! %20
+		\mark #5 fis!8(\p e dis fis) gis( fis e gis)
+		fis( eis fis dis) gis( fis e gis)
+		\crescTextCresc fis(\< e dis fis) h( a \crescTextPoco g\< h)
+		\crescTextAPoco g(\< f e g)] h( a g f)
+		\mark #6 \mvTrr e'16\ff-\markup { \remark "großes staccato" } d c g e c e c' d c h ais h c d dis %25
+		e d c g e d e c' d c h ais h c d dis
+		e f e f e f e d cis d e d cis a h cis
+		d e d a f e f d' e d cis his cis d e e
+		f e d a f e f d' e d cis his cis d e e
+		fis e dis cisis dis e fis fis g fis e h g fis g e' %30
+		e d cis his cis d e e f e d a f e f d'
+		\mark #7 es b b g g es es b b g b es g es g b
+		<es es, g,> r r <es, g,> q q q q q q q q q q q q
+		q r r8 r4 r2
+		R1 %35
+		\mark #8 r16 e,\p e e e8 e r16 d d d d8 d
+		r16 <g e'> q q q8 q r16 <a f'> q q q8 q
+		\crescHairpin c4~\< c16 c( h c)\! dis4~->( dis8. h16)
+		\dimHairpin d4( c) a2\>(
+		gis2~)\fermata\!-\markup { \remark "rall." } gis16-\markup { \remark "a tempo" } r r8 r4 %40
+		R1
+		\mark #9 R1*3
+		\crescHairpin \dimHairpin r2 c8(\p\< d\! f-> e16\> d)\! %45
+		c8( h) a16(\< c\! h\> a gis8)\! r r4
+		\mark #10 R1*3
+		r2 c8(\p d) e16( c d e) %50
+		\mark #11 cis4~ cis16 cis( d e) cis( d e f) e( d cis d)
+		R1
+		\time 2/4 R2
+		\time 4/4 r16 e\p e e r f f f r g g g g( e f g
+		\crescHairpin \kneeBeam a) c,,(\< f a\! h8-> c->) r16 a(\< c f\! gis8-> a) %55
+		c16( b a b a g a b a8) r r4
+		\mark #12 r2 c,4(\mf\< a')\!
+		g16( f e f e d cis d) c8( d c b)
+		a4(\p e' a, c)-\critnote
+		c8( e a, c) c( b a g %60
+		f) r r4 r2
+		R1
+		\mark #13 \crescHairpin r2 a8(\mf\< f')\! e16( d cis d)
+		a'8( g f e) d4( d,)
+		f( d) <d gis>2 %65
+		f4( d) <d gis>2
+		q\sp <e gis>\p
+		\mark #14 r16 e[ r a r cis r e] r a[ r cis] a8(\p d)
+		r16 e,,[ r a r cis r e] r a[ r cis] a8( d)
+		g( cis,) r4 r2 %70
+		\time 1/4 R4
+		\time 4/4 R1
+		\mark #15 \mvTrr a,16[\mf-\markup { \remark "pizz." } r a'] r r4 a,16[ r a'] r r4
+		h,16[ r h'] r r4 <a, g'>16\f r r8 r4
+		\mark #16 \crescHairpin \mvTrr <a a'>4(\ff\<-\markup { \remark "Borgen" } fis')\! e8( d cis d) %75
+		fis'( e dis e) g16-. g( fis e) dis-. dis( e fis)
+		fis-. fis( e d) cis-. cis( d e) d-. fis( e d) a-. fis-. e-. d-.
+		\time 2/4 d'-. fis( e d) a-. fis-. e-. d-.
+		\mark #17 \time 4/4 \dimTextDim g' g g g d d d d a\> a a a g g g g
+		d2.(\p h4) %80
+		\time 2/4 e,( g)
+		\time 4/4 d'2.( g4)
+		e( g) d8( a fis d)
+		e4( g) a'8( fis d a)
+		\mark #18 \dimTextDim fis2\pp <fis a>\> %85
+		<a fis'>1\ppp\fermata
+		R
+		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
+		\mark #19 <d, h'>2--\mf^\markup { \remark "a tempo" } <c' d>--
+		<d, h'>-- <c' d>-- %90
+		h4.(\f a8) gis2
+		\time 2/4 R2
+		\mark #20 \time 4/4 <fis d'>--_2^3\mf <e' fis>--
+		<fis, d'>-- <e' fis>--
+		g8(\f dis e h) e( h c gis) %95
+		\dimHairpin \time 2/4 d'([ c gis\> a\!)]
+		\mark #21 \time 4/4 f'(\mf e d c) h( a g fis)
+		f'(\p e d c) h( a g fis)
+		\time 2/4 eis([-\markup { \remark "rit. e dim." } fis g a)]
+		\mark #22 \time 4/4 \mvTr d,4(\p-\markup { \remark "a tempo" } g) d'2 %100
+		d,4( g) d'2
+		fis,16( a fis a) a( c a c) c( e c e) d( c h a)
+		g4(\pp h cis c)
+		h2( cis4 c)
+		c2( a4. d,8~) %105
+		\mark #23 d4 r r c'16(\pp a c e)
+		g4( e d e)
+		h'1
+		d,4( g h g
+		\mark #24 d8) r r4 r2 %110
+		cis1\ppp
+		c
+		h~
+		h~
+		h4 r r2 \bar "|." %115 finis
 	}
 }

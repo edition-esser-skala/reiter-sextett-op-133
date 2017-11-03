@@ -946,7 +946,7 @@ IIPianoR = {
 		\time 4/4 c'16 e a, c e, a d, \grace e8 c16 c' h ais h e d h e,
 		f' e dis e a e d c c h ais h f' e d e, %15
 		e' f e dis e a, e' g a f c a g f g a
-		\dimTextDim f f' f, f' f d b d \subdivE e32 f e f d\> e d e \subdivE c d c d h? c h c
+		\dimTextDim f f' f, f' f d b d \subdivE e!32 f e f d\> e d e \subdivE c d c d h? c h c
 		\mark #4 \crescHairpin \dimHairpin \mvTr b64\p-\markup { \remark "legato" } g \dynamicUp  e\< cis b[ \lh \clef treble g e cis] b cis e g \rh b[ cis e g] b\f\> g e cis b[ \lh g e cis] b cis e g \rh \tuplet 5/4 16 { b[ cis e g\! b] } \dynamicNeutral h16\p gis f d f gis h c
 		\dimTextDim r cis[\> r d r dis r e] r8 f(-. d-. e-.)
 		f\!-\markup { \remark "rall." } r r4 r2\fermata %20
@@ -966,7 +966,7 @@ IIPianoR = {
 		<es es'>8 r16 <es, b' es>[-\critnote q8] r16 <es, b' es>[ q8] r16 \clef bass <es, b' es> q8-^ q-^
 		q4 r r2 %35
 		\mark #8 R1*4
-		r2\fermata \mvTr r16\p-\markup { \remark "a tempo" } <e! e'> q q <f f'>8->( <e e'>) %40
+		r2\fermata-\markup { \remark "rall." } \mvTr r16\p-\markup { \remark "a tempo" } <e! e'> q q <f f'>8->( <e e'>) %40
 		r16 q q q <f f'>8->( <e e'>) r16 \clef treble <d' e> q q << { f8->( e) } \\ { d4-\markup { \remark "rall." } } >>
 		\mark #9 r16-\markup { \remark "a tempo" } <a' c e> q q << { f'8(-> e) } \\ { <a, c>4 } >> r16 <a c e> q q << { dis8(-> e) } \\ { <a, c>4 } >>
 		r16 <f a d> q q << { cis'8(-> d) } \\ { <f, a>4 } >> r16 <e h'> q q << { e'16( d c? h) } \\ { h8 gis } >>
@@ -1029,7 +1029,7 @@ IIPianoR = {
 		\subdivE a' e d a d e a e \subdivE a e cis a cis e a e \subdivE fis a fis d d fis d a \subdivE a d a fis fis a fis d
 		\subdivE a' e d a d e a e \subdivE a e cis a cis e a e \subdivE fis a fis d d fis d a \subdivE a d a fis fis a fis d
 		\mark #18 \subdivE fis a, d fis a d, fis a \dimTextDim \subdivE d\> fis, a d fis a, d fis\! \dimHairpin \subdivE a\> d, fis a d fis, a d \subdivE fis a, d fis a d, fis a %85
-		h16\ppp r r8 r4 r2\fermata
+		d16\ppp^\critnote r r8 r4 r2\fermata
 		\crescTextCresc \subdivE d,32\p e d e d\< e d e \subdivE d e d e d e d e \subdivE c!-> d c d, a'-> d a d,-\critnote \subdivE fis-> d' fis, d e-> d' e, d\!
 		\dimTextDim \subdivE d d' d, cis d\> d' d, cis \subdivE d d' d, cis d d' d, cis \subdivE d-\markup { \remark "rall." } d' d, d' d, d' d, d' \subdivE d, d' d, d' d, d' d, d'
 		\mark #19 \subdivE \mvTr <g, h>\p-\markup { \remark "a tempo" } d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE d c a d, a' c d c
@@ -1146,7 +1146,7 @@ IIPianoL = {
 		\subdivE <g, h> fis' <g, h> fis' <g, h> e' <g, h> e' \subdivE <g, h> dis' <g, h> dis' <g, h> e' <g, h> e' \clef treble \subdivE <a, cis> g' <a, cis> g' <a, cis> g' <a, cis> g' \subdivE <h, dis> a' <h, dis> a' <h, dis> a' <h, dis> a'
 		\clef bass \subdivE <e, h'> e' <e, h'> e' <e, h'> e' <e, h'> e' \subdivE <a, e'> g'! <a, e'> g' <a, e'> g' <a, e'> g' \subdivE <gis, d'> e' <gis, d'> e' <gis, d'> e' <gis, d'> e' \subdivE <a, d> fis' <a, d> fis' <a, d> fis' <a, d> fis'
 		\time 2/4 \subdivE <gis, d'> e' <gis, d'> e' <gis, d'> e' <gis, d'> e' \subdivE <a, d> fis' <a, d> fis' <a, d> fis' <a, d> fis'
-		\time 4/4 \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <a, e'> g' <a, e'> g' <a, e'> g' <a, e'> g' \subdivE <a, e'> g' <a, e'> g' <a, e'> g' <a, e'> g'
+		\time 4/4 \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <e, h'> d' <e, h'> d' <e, h'> d' <e, h'> d' \subdivE <a, e'> g' <a, e'> g' <a, e'> g' <a, e'> g' \subdivE <a, e'> a' <a, e'> a' <a, e'> a' <a, e'> a'
 		<c! c,!>2 <h h,>4 <e, e,> %80
 		\time 2/4 \subdivE a,32 e' g a g e a, e' \subdivE a, e' g a g e a, e'
 		\time 4/4 <d d'>4 <c! c'!> <h h'> <e, e'>
