@@ -450,5 +450,114 @@ IIViolinoI = {
 	\relative c' {
 		\clef treble \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
+		\crescHairpin d4(\mf\< h')\! d,8.([ h'16 a8. d,16)]
+		c8.([ ais16 h8. g'16)] d8.([ h'16 a8. d,16)]
+		\crescHairpin d4..(\< dis16) e8(\f d c h)
+		\time 2/4 R2
+		\mark #1 \crescHairpin e4(\mf\< c')\! e,8.([ c'16 h8. e,16)] %5
+		d8.([ h16 c8. a'16)] e8.([ c'16 h8. e,16)]
+		\crescHairpin e2 f8.([\< c'16 d8. es16])\!
+		\dimHairpin es8.([ cis16 d8.\> f16)]\! r2
+		\mark #2 r4 <c, a'>2.\p^\markup { \remark "un poco rit." }
+		\crescHairpin d4(\mf\<^\markup { \remark "a tempo, sehr ruhig" } h')\! d,8.([ h'16 a8. d,16)] %10
+		c8.([ ais16 h8. g'16)] d8.([ h'16 a8. d,16)]
+		\crescHairpin d4..(\< dis16) e8(\f d c h)
+		\mark #3 \time 2/4 R2
+		e4( c') e,8.([ c'16 h8. e,16)]
+		d8.([ h16 c8. a'16)] e8.([ c'16 h8. e,16)] %15
+		\crescHairpin e2 f8.([\< c'16 d8. es16)]\!
+		\dimHairpin es8.([ cis16 d8.\> f16)] es8(\p \dimTextDim d\> c h)
+		\mark #4 b2(\pp h~)
+		\dimTextDim h1~\>
+		h\fermata\! %20
+		\mark #5 \crescHairpin dis4(\p\< h')\! e,8.([ h'16 ais8. gis16)]
+		fis8.([ eis16 fis8. gis16)] e?8.([ h'16 ais8. gis16)]
+		\crescTextCresc fis8.([\< e'16) dis8( fis,)] g8.([ e'16) \crescTextPoco d8(\< g,)]
+		\crescTextAPoco g8.([\< f'16) e8( g,)] g'-^ f-^ e-^ d-^
+		\mark #6 g16\ff-\markup { \remark "großes staccato" } f e d c g c e f e d cis d e f fis %25
+		g f e d c g c e f e d cis d e f fis
+		g a g a g a g f e f g f e a gis g
+		\ottava #1 f g f e d a d f g f e dis e f g gis
+		a g f e d a d f g f e dis e f g gis
+		a g fis eis fis g a ais h a g fis e h e g %30
+		g fis e dis e fis g gis a g f e d a d f \ottava #0
+		\mark #7 g es es b b g g es es b es g b g b es
+		g r r d,, es fis! g a b d es fis! g a b d
+		es r r8 r4 r2
+		\dimHairpin es,,2.(\f\>^\markup { "rall." } d4)\! %35
+		\mark #8 \crescHairpin cis4..(\<\p^\markup { \remark "a tempo" } e16)\! d4~ d16 d(-. e-. fis-.)
+		a4~\< a16\! a( b16. a32) a4~ a16 f(-. e-. d-.)
+		\crescHairpin a'4~ a16 a(\< gis a)\! c4~-> c16 c( h a)
+		\dimHairpin e2 e~\>
+		e~\!\fermata e16 r r8 r4 %40
+		R1
+		\mark #9 R1*2
+		r2 \mvTr e'8(\mf\<-\markup { \remark "gesangsvoll" } c')\! h16( a gis a)
+		\crescHairpin \dimHairpin \subdivQ g([ f e f e d c h)] e( a, h c) h(\< d\! c\> h)\! %45
+		a8(\p g!) fis!16(\< a\! g\> fis e8)\! r r4
+		\mark #10 R1*2
+		r2 e'8(\mf\< c')\! h16( a gis a)
+		\crescHairpin \dimHairpin \subdivQ g([ f e f e d c h)] e( a d, a') c,( e h c) %50
+		\mark #11 \crescHairpin b8\< g'~\! g16 g( f e) g( f e d cis d e f)
+		R1
+		\time 2/4 R2
+		\time 4/4 c1~\p
+		c16 r r8 r4 r2 %55
+		e'16(\mf d cis d c b c d c8) r r4
+		\mark #12 R1*2
+		a,4(\p c f, g)
+		a8( c f, g) a( g f e %60
+		d) r r4 r2
+		R1
+		\mark #13 R1*4 %66
+		r2 \subdivQ d'16([\p e d e d e d e)]
+		\mark #14 \crescHairpin \dimHairpin r cis,[ r e r a r cis] r e[ r a] e(\< d'\! cis\> h)\!
+		r cis,,[ r e r a r cis] r e[ r a] e(\< d'\! cis\> h)\!
+		\mvTr cis-.\p-\markup { \remark "staccato mit leichtem Bogen" } e-. cis-. a-. \subdivE cis32-. d-. cis-. his-. cis16-. h-. \subdivE a32 gis fis gis a16-. cis-. \subdivE e32 fis e dis e16 d %70
+		\time 1/4 \subdivE cis32 h a h cis h cis d
+		\time 4/4 \subdivE cis32 d cis his cis d cis h \subdivE a gis fis gis a gis a cis \subdivE e fis e dis e fis e d \subdivE cis h a h cis h cis d
+		\mark #15 \subdivE e\mf d cis h cis h a gis \crescTextCresc \subdivE a\< g fis e d cis h a \subdivE e' d cis d g fis eis fis \subdivE h a gis a e' d cis d
+		\subdivE g fis e d h a g e \crescTextMolto \subdivE d\< h g h d e g h \subdivE a gis a h cis his cis d e dis e fis g fis g gis
+		\mark #16 <a a,, d,>16\ff^\critnote r r8 r4 \crescHairpin <a, a,>4\ff(\< fis')\! %75
+		a8( g fis g) h16-. h( a g) fis-. fis( g a)
+		a-. a( g fis) e-. e( fis g) fis-. fis( e d) a'-. fis-. e-. d-.
+		\time 2/4 fis-. fis( e d) a'-. fis-. e-. d-.
+		\mark #17 \time 4/4 \dimTextDim g16 g g g h, h h h cis\> cis cis cis cis cis cis cis
+		a,4(\p ais h d) %80
+		\time 2/4 a2
+		\time 4/4 a4( ais h d)
+		a'2 fis8( d a fis)
+		a2 fis'8( d a fis)
+		\mark #18 d16( eis fis gis a cis d eis) \dimTextDimE fis(\> eis fis gis a gis a cis) %85
+		d16(\pppE e^\markup { \remark "rall." } d cis d e d cis d2)\fermata
+		R1
+		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
+		\mark #19 \crescHairpin d,,4(\mf\<^\markup { \remark "a tempo" } h')\! d,8.([ h'16 a8. d,16)]
+		d4(\< h')\! d,8.([ h'16 a8. d,16)] %90
+		e'8(\f f e d) c!( h ais h)
+		\time 2/4 R2
+		\mark #20 \time 4/4 \crescHairpin fis4(\mf\< d')\! fis,8.([ d'16 cis8. fis,16)]
+		fis4(\< d')\! fis,8.([ d'16 cis8. fis,16)]
+		g'8(\f fis e dis) e( d c h) %95
+		\time 2/4 \dimHairpin gis([ a d\> c)\!]
+		\mark #21 \time 4/4 d(\mf c h a g fis e d)
+		d'(\p c h a g fis e d)
+		\time 2/4 cis([-\markup { \remark "rit. e dim." } d e fis)]
+		\mark #22 \time 4/4 g2\p \subdivQ d16([ d' d, c'~ c h c d)] %100
+		h4( d) \subdivQ d,16([ d' d, c'~ c e d fis,)]
+		\subdivQ a([ fis a fis c' a c a] e' c e c) fis4(
+		g8) r h,16( g fis e) r4 d''16( a fis d)
+		r4 h16( g fis e) r4 d''16( a fis d)
+		R1 %105
+		\mark #23 g,16( d h a) h'( a g e) d'( h a g) e'( c e g)
+		h4(\pp h, d g)
+		h1
+		d4( h g d)
+		\mark #24 h1~\ppp %110
+		h~
+		h2.(-\markup { \remark "smorz." } a4)
+		g1~
+		g~
+		g4 r r2 \bar "|." %115 finis
 	}
 }

@@ -61,6 +61,7 @@ mfE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynami
 mpE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "mp") (#:hspace -.5) (#:normal-text "]") ))
 pE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "p") (#:hspace -.5) (#:normal-text "]") ))
 ppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "pp") (#:hspace -.5) (#:normal-text "]") ))
+pppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "ppp") (#:hspace -.5) (#:normal-text "]") ))
 fpE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "fp") (#:hspace -.5) (#:normal-text "]") ))
 spE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "sp") (#:hspace -.5) (#:normal-text "]") ))
 
@@ -87,6 +88,18 @@ crescTextCrescMolto = {
 }
 crescTextMolto = {
 	\set crescendoText = "molto"
+	\set crescendoSpanner = #'text
+}
+crescTextPoco = {
+	\set crescendoText = "poco"
+	\set crescendoSpanner = #'text
+}
+crescTextAPoco = {
+	\set crescendoText = "a poco"
+	\set crescendoSpanner = #'text
+}
+dimTextDimE = {
+	\set crescendoText = "[dim.]"
 	\set crescendoSpanner = #'text
 }
 
@@ -183,6 +196,8 @@ tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 		\override DynamicTextSpanner.font-size = #-1
 % 		\override TextSpanner.style = #'none % comment to show spanner dashes
 		\override TextSpanner.font-size = #-1
+		\override RepeatSlash.thickness = #0.2
+		\override RepeatSlash.slash-negative-kern = #0.6
 	}
 	\context {
 		\Voice

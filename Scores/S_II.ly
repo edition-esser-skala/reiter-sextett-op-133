@@ -54,8 +54,8 @@
 					\new Staff = "LH" << \IIPianoL >>
 				>>
 			>>
-			\layout { }
-			\midi { \tempo 4 = 40 }
+% 			\layout { }
+			\midi { \tempo 4 = 50 }
 		}
 	}
 }

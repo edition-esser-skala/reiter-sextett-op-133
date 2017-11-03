@@ -932,11 +932,11 @@ IIPianoR = {
 		R1*3
 		\time 2/4 << { e'8([ d c h)] } \\ { h4(\mp gis) } >>
 		\mark #1 \time 4/4 R1*3 %7
-		r2 << {
+		\mark #2 r2 << {
 			e'8( d c h)
 			a2~ a16 h( c cis d gis a ais)
 		} \\ {
-			\mark #2 a,4(\p gis)
+			a,4(\p gis)
 			e( g fis!16) s-\markup { \remark "un poco rit." } s8 s4
 		} >>
 		h'16\p^\markup { \remark "a tempo" } d-\markup { \remark "sehr ruhig fließend" } g, h e, <d g> \grace d8 c16 h h' a gis a d c a d, %10
@@ -950,15 +950,10 @@ IIPianoR = {
 		\mark #4 \crescHairpin \dimHairpin \mvTr b64\p-\markup { \remark "legato" } g \dynamicUp  e\< cis b[ \lh \clef treble g e cis] b cis e g \rh b[ cis e g] b\f\> g e cis b[ \lh g e cis] b cis e g \rh \tuplet 5/4 16 { b[ cis e g\! b] } \dynamicNeutral h16\p gis f d f gis h c
 		\dimTextDim r cis[\> r d r dis r e] r8 f(-. d-. e-.)
 		f\!-\markup { \remark "rall." } r r4 r2\fermata %20
-		\mark #5 \ottava #1 \repeat percent 4 { \subdivT  \mvTr <dis fis>64\p-\markup { \remark "a tempo" } gis <dis fis> gis <dis fis> gis <dis fis> gis }
-			\repeat percent 4 { \subdivT <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
-		\repeat percent 4 { \subdivT  <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis }
-			\repeat percent 4 { \subdivT <e fis> gis <e fis> gis <e fis> gis <e fis> gis }
-		\repeat percent 4 { \subdivT  <dis fis> gis <dis fis> gis <dis fis> gis <dis fis> gis }
-			\repeat percent 4 { \subdivT <d g> a' <d, g> a' <d, g> a' <d, g> a' }
-		\repeat percent 4 { \subdivT <c, g'> a' <c, g'> a' <c, g'> a' <c, g'> a' }
-			\repeat percent 2 { \subdivT <h, g'> a' <h, g'> a' <h, g'> a' <h, g'> a' }
-			\ottava #0 \tuplet 14/16 4 { g f e d c h a g f e d c h a }
+		\mark #5 \ottava #1 \repeat percent 8 { \mvTr <dis fis>64\p-\markup { \remark "a tempo" } gis <dis fis> gis } \repeat percent 8 { <e fis> gis <e fis> gis }
+		\repeat percent 8 { <dis fis> gis <dis fis> gis } \repeat percent 8 { <e fis> gis <e fis> gis }
+		\repeat percent 8 { <dis fis> gis <dis fis> gis } \repeat percent 8 { <d g> a' <d, g> a' }
+		\repeat percent 8 { <c, g'> a' <c, g'> a' } \repeat percent 4 { <h, g'> a' <h, g'> a' } \ottava #0 \tuplet 14/16 4 { g f e d c h a g f e d c h a }
 		\mark #6 <e g>4-^\ff <e g e'>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
 		<f g>8.[ <dis g>16 <e g>8-^ <g e'>-^] <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^]
 		<g e'>-^ <g f'>-^ <g e'>-^ <g d'>-^ <g cis>-^ <b cis>-^ <a cis>-^ <g cis>-^
@@ -1036,7 +1031,7 @@ IIPianoR = {
 		\mark #18 \subdivE fis a, d fis a d, fis a \dimTextDim \subdivE d\> fis, a d fis a, d fis\! \dimHairpin \subdivE a\> d, fis a d fis, a d \subdivE fis a, d fis a d, fis a %85
 		h16\ppp r r8 r4 r2\fermata
 		\crescTextCresc \subdivE d,32\p e d e d\< e d e \subdivE d e d e d e d e \subdivE c!-> d c d, a'-> d a d,-\critnote \subdivE fis-> d' fis, d e-> d' e, d\!
-		\dimTextDim \subdivE d d' d, cis d\> d' d, cis \subdivE d d' d, cis d d' d, cis \subdivE d d' d,-\markup { \remark "rall." } d' d, d' d, d' \subdivE d, d' d, d' d, d' d, d'
+		\dimTextDim \subdivE d d' d, cis d\> d' d, cis \subdivE d d' d, cis d d' d, cis \subdivE d-\markup { \remark "rall." } d' d, d' d, d' d, d' \subdivE d, d' d, d' d, d' d, d'
 		\mark #19 \subdivE \mvTr <g, h>\p-\markup { \remark "a tempo" } d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE d c a d, a' c d c
 		<g h> d' <fis, a> d' <e, g> h' <d, fis> h' \subdivE <c, e> g' <h, d> g' <a, c> d <g, h> d' \subdivE <g h> d' <fis, a> d' <eis, gis> d' <fis, a> d' \subdivE e d c a d, a' c d %90
 		<< { \subdivE e, <h' e> e, <h' e> f <h f'> f <h f'> \subdivE e, <h' e> e, <h' e> d, <a' d> d, <a' d> \subdivE c, <gis' c> c, <gis' c> h, <gis' h> h, <gis' h> \subdivE ais, <gis' ais> ais, <gis' ais> h, <gis' h> h, <gis' h> } \\ { e16 e f f e e d d c c h h ais ais h h } >>
@@ -1098,7 +1093,7 @@ IIPianoL = {
 		d2( f)\fermata %20
 		\override Script.script-priority = #-100 fis2\trill^\markup { \tiny \sharp } fis\trill
 		fis!\trill^\markup { \tiny \sharp } fis\trill
-		fis\trill^\markup { \tiny \sharp } f\trill^\markup { \tiny \natural }
+		fis\trill^\markup { \tiny \sharp \remark "   cresc." } f\trill^\markup { \tiny \natural }
 		e\trill^\markup { \tiny \natural } \revert Script.script-priority d4\trill <f d g,>16 r r8
 		\clef bass <c,, e g>4-^-\critnote <e g>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
 		<f g>8.[ <dis g>16 <e g>8-^ <g e'>-^] <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^]
