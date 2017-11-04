@@ -440,5 +440,115 @@ IIContrabasso = {
 	\relative c {
 		\clef bass \numericTimeSignature
 		\key g \major \time 4/4 \tempoII
+		g'2(\mf d)
+		g4( h) d,2
+		R1
+		\time 2/4 R2
+		\mark #1 a'2(\mf e) %5
+		a4( c) e,2
+		R1*2
+		\mark #2 r4 a(\p^\markup { \remark "un poco rit." } d,2)
+		g(\p^\markup { \remark "a tempo" } d) %10
+		\crescHairpin g8(\< fis g h)\! d,2
+		R1
+		\mark #3 \time 2/4 R2
+		\time 4/4 a'2( e)
+		a8( gis a c) e,2 %15
+		R1*2
+		\mark #4 R1*2
+		R1\fermataMarkup %20
+		\mark #5 \clef "treble_8" \mvTr fis'!1\p-\markup { \remark "gehalten" }
+		fis
+		<< {
+			\oneVoice fis2 f
+			e \clef bass d8-^ d-^ g,-^ g-^
+			\mark #6 c,-^ h-^ a-^ g-^ g'-^ d-^ g-^ d'-^ %25
+		} \\ {
+			\override DynamicTextSpanner.style = #'dashed-line
+				\crescTextCresc s2.\< \crescTextPoco s4\<
+			\crescTextAPoco s1\<
+			s\ff \revert DynamicTextSpanner.style %25
+		} >>
+		c,8-^ h-^ a-^ g-^ g'-^ d-^ g-^ d'-^
+		b-^ g-^ b-^ e!-^ a,-^ g-^ f-^ e-^
+		d-^ c-^ b-^ a-^ a'-^ e-^ a-^ e'-^
+		d,-^ cis-^ d-^ b-^ a-^ e'-^ a-^ e'-^
+		a, a4 a8 a, a a a %30
+		a' a4 a8 a, a a a
+		\mark #7 g g g g g g g g
+		g8. g'16 g g g g g g g g g g g g
+		g r r8 r4 r2
+		R1 %35
+		\mark #8 R1*4
+		R1\fermataMarkup %40
+		r2 r4 r16^\markup { \remark "rall." } \mvTr h,\p-\markup { \remark "pizz." } h e,
+		\mark #9 a8^\markup { \remark "a tempo" } r a' r c, r c' r
+		h, r h' r e, r e' r
+		a,, r a' r c, r c' r
+		d, r h r e h e e, %45
+		a r r4 r2
+		\mark #10 a8 r a' r c, r c' r
+		h, r h' r e, r e' r
+		a,, e a e' c h c e
+		d h h d e h e e %50
+		\mark #11 R1*2
+		\time 2/4 R2
+		\time 4/4 \mvTr c'4(\p-\markup { \remark "Bogen" } d e~) e16 c( d e
+		f) r r8 f, r a, r a' r %55
+		b4( d) c8( d g, c,)
+		\mark #12 f, r r4 r2
+		R1
+		f'4(\p a d, c)
+		f8( a d, c) f,( g a4) %60
+		d8 r d-\markup { \remark "pizz." } r f, r f' r
+		e, r e' r a, r a' r
+		\mark #13 \mvTr d,2--\p-\markup { \remark "Bogen" } f--
+		g,4( a) b( f)
+		b( f) e2 %65
+		b'4( f) e2
+		e1->
+		\mark #14 a16[\p r cis r e r a] r cis[ r a] r r4
+		a,16[ r cis r e r a] r cis[ r a] r r4
+		R1 %70
+		\time 1/4 R4
+		\time 4/4 R1
+		\mark #15 R1*2
+		\mark #16 d,8-^\ff a-^ d-^ a'-^ fis-^ a-^ fis-^ fis,-^ %75
+		g g g' g a a, h h'
+		e, e, a a' gis gis( a) a(
+		\time 2/4 gis[) gis( a) a]
+		\mark #17 \dimTextDim \time 4/4 e2 a,\>
+		c!2(\p h4 e,) %80
+		\time 2/4 a2
+		\time 4/4 d'4( c! h e,)
+		a2 d4( d,)
+		a2 d
+		\mark #18 << { \oneVoice d1\pp } \\ { s2 s-\markup { \remark "dim." } } >> %85
+		d1\fermata\ppp
+		R
+		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
+		\mark #19 g8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d d2---\markup { \remark "Bogen" }
+		g8-\markup { \remark "pizz." } fis e d d2---\markup { \remark "Bogen" } %90
+		R1
+		\time 2/4 R2
+		\mark #20 \time 4/4 \mvTrr h'8\mf-\markup { \remark "pizz." } a g fis fis2---\markup { \remark "Bogen" }
+		h8-\markup { \remark "pizz." } a g fis fis2---\markup { \remark "Bogen" }
+		R1 %95
+		\time 2/4 R2
+		\mark #21 \time 4/4 R1*2
+		\time 2/4 R2
+		\mark #22 \time 4/4 g,4(\p h) d2 %100
+		g,4( h) d2
+		d1
+		g,4(\pp cis a d)
+		g,( cis a d)
+		d1 %105
+		\mark #23 g,4 r r2
+		R1*4 %110
+		\mark #24 d'1~\ppp
+		d
+		g~
+		g~
+		g4 r r2 \bar "|." %115 finis
 	}
 }

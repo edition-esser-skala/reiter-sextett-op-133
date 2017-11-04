@@ -472,9 +472,10 @@ IIViolinoI = {
 		h\fermata\! %20
 		\mark #5 \crescHairpin dis4(\p\< h')\! e,8.([ h'16 ais8. gis16)]
 		fis8.([ eis16 fis8. gis16)] e?8.([ h'16 ais8. gis16)]
-		\crescTextCresc fis8.([\< e'16) dis8( fis,)] g8.([ e'16) \crescTextPoco d8(\< g,)]
+		\override DynamicTextSpanner.style = #'dashed-line
+			\crescTextCresc fis8.([\< e'16) dis8( fis,)] g8.([ e'16) \crescTextPoco d8(\< g,)]
 		\crescTextAPoco g8.([\< f'16) e8( g,)] g'-^ f-^ e-^ d-^
-		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e f e d cis d e f fis %25
+		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e f e d cis d e f fis \revert DynamicTextSpanner.style %25
 		g f e d c g c e f e d cis d e f fis
 		g a g a g a g f e f g f e a gis g
 		\ottava #1 f g f e d a d f g f e dis e f g gis
@@ -487,12 +488,12 @@ IIViolinoI = {
 		\dimHairpin es,,2.(\f\>^\markup { \remark "rall." } d4)\! %35
 		\mark #8 \crescHairpin cis4..(\<\p^\markup { \remark "a tempo" } e16)\! d4~ d16 d(-. e-. f?-.)
 		a4~\< a16\! a( b16. a32) a4~ a16 f(-. e-. d-.)
-		\crescHairpin a'4~\< a16 a( gis a)\! c4~-> c16 c( h a)
+		\crescHairpin a'4~\< a16\! a( gis a) c4~-> c16 c( h a)
 		\dimHairpin e2 e~\>
 		e~\!\fermata-\markup { \remark "rall." } e16-\markup { \remark "a tempo" } r r8 r4 %40
 		R1
 		\mark #9 R1*2
-		r2 \mvTr e'8(\mf\<-\markup { \remark "gesangsvoll" } c')\! h16( a gis a)
+		r2 e'8(\mf\<^\markup { \remark "gesangsvoll" } c')\! h16( a gis a)
 		\crescHairpin \dimHairpin \subdivQ g([ f e f e d c h)] e( a, h c) h(\< d\! c\> h)\! %45
 		a8(\p g!) fis!16(\< a\! g\> fis e8)\! r r4
 		\mark #10 R1*2
@@ -516,10 +517,10 @@ IIViolinoI = {
 		\mvTr cis-.\p-\markup { \remark "staccato mit leichtem Bogen" } e-. cis-. a-. \subdivE cis32-. d-. cis-. his-. cis16-. h-. \subdivE a32 gis fis gis a16-. cis-. \subdivE e32 fis e dis e16 d %70
 		\time 1/4 \subdivE cis32 h a h cis h cis d
 		\time 4/4 \subdivE cis32 d cis his cis d cis h \subdivE a gis fis gis a gis a cis \subdivE e fis e dis e fis e d \subdivE cis h a h cis h cis d
-		\mark #15 \subdivE e\mf d cis h cis h a gis \crescTextCresc \subdivE a\< g fis e d cis h a \subdivE e' d cis d g fis eis fis \subdivE h a gis a e' d cis d
+		\mark #15 \override DynamicTextSpanner.style = #'dashed-line \subdivE e\mf d cis h cis h a gis \crescTextCresc \subdivE a\< g fis e d cis h a \subdivE e' d cis d g fis eis fis \subdivE h a gis a e' d cis d
 		\subdivE g fis e d h a g e \crescTextMolto \subdivE d\< h g h d e g h \subdivE a gis a h cis his cis d e dis e fis g fis g gis
 		\mark #16 <a a,, d,>16\ff^\critnote r r8 r4 \crescHairpin <a, a,>4\ff(\< fis')\! %75
-		a8( g fis g) h16-. h( a g) fis-. fis( g a)
+		a8( g fis g) h16-. h( a g) fis-. fis( g a) \revert DynamicTextSpanner.style
 		a-. a( g fis) e-. e( fis g) fis-. fis( e d) a'-. fis-. e-. d-.
 		\time 2/4 fis-. fis( e d) a'-. fis-. e-. d-.
 		\mark #17 \time 4/4 \dimTextDim g16 g g g h, h h h cis\> cis cis cis cis cis cis cis

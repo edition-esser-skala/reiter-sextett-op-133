@@ -488,26 +488,27 @@ IIVioloncello = {
 		\dimHairpin b4(\> d)\! r2
 		\mark #2 r4 a'(\p^\markup { \remark "un poco rit." } d,2)
 		\crescHairpin \dimHairpin d8(\mf\<^\markup { \remark "a tempo" } cis d dis)\! e(\> g fis d)\! %10
-		d2 e8(\> g\! fis\> d\!)
+		d2 e8(\< g\! fis\> d\!)
 		g,(\< fis g4)\! gis4(\f e)
 		\mark #3 \time 2/4 R2
 		\time 4/4 \crescHairpin \dimHairpin e'8(\<  dis e f)\! fis(\> a gis e)\!
 		e2 fis!8(\< a\! gis\> e\!) %15
 		a,( gis a4) << { \oneVoice a2 } \\ { s4\< s\! } >>
-		b4(\> d)\! << { \oneVoice e2 } \\ { s8 s4.-\markup { \remark "dim." } } >>
+		b4(\> d)\! << { \oneVoice e2\p } \\ { s8 s4.-\markup { \remark "dim." } } >>
 		\mark #4 e2(\pp f~)
 		\dimTextDimE f1~\>
 		f\!\fermata %20
 		\mark #5 \clef "treble_8" dis'8(\p cis h dis) e( dis cis e)
 		dis( cisis dis his) e( dis cis e)
-		\crescTextCresc dis(\< cis h dis) d( c \crescTextPoco h\< d)
+		\override DynamicTextSpanner.style = #'dashed-line
+			\crescTextCresc dis(\< cis h dis) d( c \crescTextPoco h\< d)
 		\crescTextAPoco e(\< d c e) d( c h a)
-		\mark #6 \crescHairpin \dimHairpin \clef bass g-^\ff h,-^ a-^ g-^ a'(\< c\! h\> g\!) %25
+		\mark #6 \crescHairpin \dimHairpin \clef bass g-^\ff h,-^ a-^ g-^ a'(\< c\! h\> g\!) \revert DynamicTextSpanner.style %25
 		c,-^ h-^ a-^ g-^ a'(\< c\! h\> g\!)
 		b-^ g-^ b-^ e!-^ a,-^ g-^ f-^ e-^
 		\crescHairpin \dimHairpin d-^ c-^ b-^ a-^ h'!(\< d\! cis\> a)\!
 		d,-^ cis-^ d-^ b-^ h'!(\< d\! cis\> a)\!
-		cis(\< e\! dis\> h)\! h,-\critnote h h h %30
+		cis(\< e\! dis\> h)\! a, a a a %30
 		h'(\< d\! cis\> a)\! a, a a a
 		\mark #7 g g g g g g g g
 		g8. <b es>16 q q q q q q q q q q q q
@@ -534,7 +535,7 @@ IIVioloncello = {
 		b4( d) c8( d g, c,)
 		\mark #12 f, r r4 r2
 		R1
-		f'4( a d, c)
+		f'4(\p a d, c)
 		f8( a d, c) f,( g a4) %60
 		d,8 r r4 r2
 		R1
@@ -564,7 +565,7 @@ IIVioloncello = {
 		<a fis'>1\fermata\ppp
 		R
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 \crescHairpin \dimHairpin g'8\mf^\markup { \remark "a tempo" } fis-\markup { \remark "pizz." } e d e(\<-\markup { \remark "Bogen" } g\! fis\> d\!)
+		\mark #19 \crescHairpin \dimHairpin g'8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d e(\<-\markup { \remark "Bogen" } g\! fis\> d\!)
 		g-\markup { \remark "pizz." } fis e d \hairpinBetweenText \markup "[" \markup "" e\<(-\markup { \remark "Bogen" } g\! \hairpinBetweenText \markup "" \markup "]" fis\> d)\! %90
 		gis(\fE a gis f) e( d cis d)
 		\time 2/4 R2

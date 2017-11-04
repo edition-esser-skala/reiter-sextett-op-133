@@ -463,8 +463,8 @@ IViola = {
 
 IIViola = {
 	\relative c' {
-		\clef treble
-% 		\clef alto
+% 		\clef treble
+		\clef alto
 		\key g \major \numericTimeSignature \time 4/4 \tempoII
 		d1--\mf
 		d--
@@ -488,9 +488,10 @@ IIViola = {
 		d1\fermata\! %20
 		\mark #5 fis!8(\p e dis fis) gis( fis e gis)
 		fis( eis fis dis) gis( fis e gis)
-		\crescTextCresc fis(\< e dis fis) h( a \crescTextPoco g\< h)
+		\override DynamicTextSpanner.style = #'dashed-line
+			\crescTextCresc fis(\< e dis fis) h( a \crescTextPoco g\< h)
 		\crescTextAPoco g(\< f e g)] h( a g f)
-		\mark #6 \mvTrr e'16\ff-\markup { \remark "großes staccato" } d c g e c e c' d c h ais h c d dis %25
+		\mark #6 \mvTrr e'16\ff-\markup { \remark "großes staccato" } d c g e c e c' d c h ais h c d dis \revert DynamicTextSpanner.style %25
 		e d c g e d e c' d c h ais h c d dis
 		e f e f e f e d cis d e d cis a h cis
 		d e d a f e f d' e d cis his cis d e e
@@ -503,7 +504,7 @@ IIViola = {
 		R1 %35
 		\mark #8 r16 e,\p e e e8 e r16 d d d d8 d
 		r16 <g e'> q q q8 q r16 <a f'> q q q8 q
-		\crescHairpin c4~\< c16 c( h c)\! dis4~->( dis8. h16)
+		\crescHairpin c4~\< c16\! c( h c) dis4~->( dis8. h16)
 		\dimHairpin d4( c) a2\>(
 		gis2~)\fermata\!-\markup { \remark "rall." } gis16-\markup { \remark "a tempo" } r r8 r4 %40
 		R1

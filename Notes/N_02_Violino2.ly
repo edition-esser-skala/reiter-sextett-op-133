@@ -465,9 +465,10 @@ IIViolinoII = {
 		gis1\!\fermata %20
 		\mark #5 h2\p cis
 		h4.( dis8) cis2
-		\crescTextCresc h4(\< fis') d( \crescTextPoco g!)\<
+		\override DynamicTextSpanner.style = #'dashed-line
+			\crescTextCresc h4(\< fis') d( \crescTextPoco g!)\<
 		\crescTextAPoco c,(\< g') g-- g8-^ g-^
-		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e g g g g g g g g %25
+		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e g g g g g g g g \revert DynamicTextSpanner.style %25
 		g f e d c g c e g g g g g g g g
 		b b b b b b b b a a a a a a a a
 		a g f e d a d f a a a a a a a a
@@ -526,11 +527,11 @@ IIViolinoII = {
 		<d d'>1\ppp\fermata
 		R1
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 \subdivQ g'16[\mf^\markup { \remark "a tempo" } fis-\markup { \remark "pizz." } e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
+		\mark #19 \subdivQ g'16[\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
 		\subdivQ g[ fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis] %90
 		\mvTr h,4.(\f-\markup { \remark "Bogen" } a8) e2
 		\time 2/4 R2
-		\mark #20 \subdivQ h''16[\mfE a-\markup { \remark "pizz." } g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
+		\mark #20 \subdivQ h''16[\mfE-\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
 		\subdivQ h[ a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
 		\mvTr d,8(\f-\markup { \remark "Bogen" } c h a) h( g4 f8) %95
 		\dimHairpin \time 2/4 f([ e f\> e\!)]

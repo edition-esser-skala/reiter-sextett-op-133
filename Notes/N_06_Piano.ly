@@ -1092,7 +1092,7 @@ IIPianoL = {
 		ais8 h c! cis d4( f)
 		d2( f)\fermata %20
 		\override Script.script-priority = #-100 fis2\trill^\markup { \tiny \sharp } fis\trill
-		fis!\trill^\markup { \tiny \sharp } fis\trill
+		fis\trill^\markup { \tiny \sharp } fis\trill
 		fis\trill^\markup { \tiny \sharp \remark "   cresc." } f\trill^\markup { \tiny \natural }
 		e\trill^\markup { \tiny \natural } \revert Script.script-priority d4\trill <f d g,>16 r r8
 		\clef bass <c,, e g>4-^-\critnote <e g>-^ <f g>8.[ <f g e'>16 <f g d'>8-^ <f g>-^] %25
