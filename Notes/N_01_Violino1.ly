@@ -562,3 +562,11 @@ IIViolinoI = {
 		g4 r r2 \bar "|." %115 finis
 	}
 }
+
+IIIViolinoI = {
+	\relative c' {
+		\clef treble
+		\key b \major \time 3/4 \tempoIII
+		
+	}
+}

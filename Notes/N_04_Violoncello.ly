@@ -594,3 +594,11 @@ IIVioloncello = {
 		d4 r r2 \bar "|." %115 finis
 	}
 }
+
+IIIVioloncello = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoIII
+		
+	}
+}

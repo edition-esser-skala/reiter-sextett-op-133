@@ -163,6 +163,8 @@ tempoMarkup =
 
 tempoI = \tempoMarkup "Kräftig belebt"
 tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
+tempoIII = \tempo \markup \medium { \larger \larger \left-column { \line { "Schnell, leicht und flüchtig;" } \line { "gespenstisch dahinhuschend," } \line { "durchwegs leise zu spielen" } } }
+tempoIIITrio = \tempoMarkup "Trio. Etwas ruhiger, sehr hell und zierlich"
 
 
 #(define afterGraceFraction (cons 7 8))
@@ -173,7 +175,7 @@ tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
 		markFormatter = #format-mark-box-numbers
-% 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -192,7 +194,7 @@ tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 		\override InstrumentName.font-shape = #'italic
 		\accidentalStyle neo-modern-voice
 		extraNatural = ##t
-		\override DynamicTextSpanner.style = #'none % comment to show spanner dashes
+% 		\override DynamicTextSpanner.style = #'none % comment to show spanner dashes
 		\override DynamicTextSpanner.font-size = #-1
 		\override TextSpanner.style = #'none % comment to show spanner dashes
 		\override TextSpanner.font-size = #-1

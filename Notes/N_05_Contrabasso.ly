@@ -552,3 +552,11 @@ IIContrabasso = {
 		g4 r r2 \bar "|." %115 finis
 	}
 }
+
+IIIContrabasso = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoIII
+		
+	}
+}

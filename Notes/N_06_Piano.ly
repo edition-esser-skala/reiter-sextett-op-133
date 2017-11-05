@@ -1182,4 +1182,445 @@ IIPianoL = {
 	}
 }
 
+IIIPianoR = {
+	\relative c' {
+		\clef treble
+		\key b \major \time 3/4 \tempoIII
+		\repeat volta 2 {
+			R2.*7 %7
+			r4 \lh \clef treble d16(\p f a b \rh d f b c
+			d4) r r
+			R2.*2 %11
+			\mark #1 r4 \lh d,,16(\p f a b \rh d f b c
+			d4) r r
+			R2.*4 %17
+			r4 \lh \tuplet 3/2 4 { es,,8( fis a \rh c es fis) }
+			R2.*3 %21
+			r4 \lh \tuplet 3/2 4 { f,8( as h \rh d f as) }
+			\mark #2 R2.
+			<< {
+				\oneVoice R2.*3 %26
+			} \\ {
+				\dimHairpin s2.\>
+				s %25
+				s2 s4\!
+			} >>
+			fis8\pp g a g fis g
+			a g fis g a fis
+			a g f e d c
+			b a g f e c %30
+			es a, c es f a
+			c es f a c es
+			\mark #3 d4 r r
+			R2.*3 %36
+			r4 \lh \clef bass d,,,16( fis b d \rh fis b d fis)
+			r4 \lh es,,16( g h es \rh g h es g)
+			r4 <as, h>-. <a c>-.
+			<b d> \lh d,16( f a b \rh d f b c %40
+			d4) \lh \clef bass d,,,16( fis b d \rh fis b d fis)
+			r4 \lh es,,16( g h es \rh g h es g)
+			r4 <as, h>-. <a c>-.
+			<b d> \lh \clef treble d,16( f a b \rh d f b c
+			\mark #4 d4) r r %45
+			R2.*3
+			r4 \lh \clef bass \tuplet 3/2 4 { f,,,8( as f' \rh as f' as) }
+			r4 \lh \tuplet 3/2 4 { as,,8( d f \rh as d as') } %50
+			\crescHairpin r4 \tuplet 3/2 4 { as8(\< d, as as' d, as
+			as' d, as as' d, as as' d, as)\! }
+			r4 \lh \clef treble \tuplet 3/2 4 { g,8( b g' \rh b g' b) }
+			r4 \lh \tuplet 3/2 4 { b,,8( e g \rh b e b') }
+			r4 \tuplet 3/2 4 { \crescHairpin b8(\< e, b b' e, b %55
+			b' e, b b' e, b b' e, b)\! }
+			\mark #5 b' d b f d b
+			d f d b f d
+			e c b c e c
+			b c e c b c %60
+			es c b c es c
+			a! c es c a c
+			d b d f b d
+			f b d b d e,
+			\mark #6 f4 r r %65
+			f,8 g a b \tuplet 3/2 4 { c d e }
+			f4 r r
+			R2.*3 %70
+			\mark #7 <a, f' a>4-. r q(->
+			<gis d' gis>-\parenthesize-.) r q(->
+			<a f' a>-\parenthesize-.) r q~
+			<a d a'> <b! d b'!>-. <a d a'>-.
+			<a e' a>-. r q(-> %75
+			<gis cis gis'>) r q(->
+			\crescHairpin <a e' a>) r q~\<
+			<a cis a'>\! <b! cis b'!>-. <a cis a'>
+			<a es'! a> r q~
+			<a c! a'> <g g'> <fis fis'> %80
+			<a d a'> <g g'> <f f'>
+			<e b'! e> <f f'> <g g'>
+			<a f'> <g e'> <f d'>
+			<e cis'> <f d'> <g e'>
+			\mark #8 <f d'> r r %85
+			R2.
+			<f' a>8-\markup { \remark "scherzando" } r d([ a] <f' a>) r
+			<f! gis> r d([ gis,] <f' gis>) r
+			<f a> r d([ a] <f' a>) r
+			<a, d a'> r <b d b'> r <a d a'> r %90
+			<e' a> r e([ a,] <e' a>) r
+			<cis gis'> r cis([ gis] <cis gis'>) r
+			<e a> r e([ a,] <e' a>) r
+			<a, cis a'> r <b! cis b'!> r <a cis a'> r
+			<es'! a> r es([ a,] <es' a>) r %95
+			<a, es' a> r <g c g'> r <fis c' fis> r
+			<a d a'> r <g g'> r <f f'> r
+			<e b'! e> r <f f'> r <g g'> r
+			<a f'> r <g e'> r <f d'> r
+			<e cis'> r <f d'> r <g e'> r %100
+			\mark #9 <f d'> r r4 r8 \clef bass d,
+			\tuplet 3/2 4 { f a r r r \clef treble d' f a d }
+			\once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { es c a f \lh es[ c a f]
+			\rh \once \override TupletNumber.Y-offset = #-5 \clef bass es c a f \lh \clef bass es[ c a f] \rh }
+			f''4 r r %105
+			R2.*3
+			\mark #10 \clef treble r4 \lh \clef bass d,16( fis b d \rh fis b d fis)
+			r4 \lh es,,16( g h es \rh g h es g) %110
+			r4 <as, h>-. <a c>-.
+			<b d> \lh d,16( f a b \rh d f b c
+			d4) \lh \clef bass d,,,16( fis b d \rh fis b d fis)
+			r4 \lh es,,16( g h es \rh g h es g)
+			r4 <as, h>-. <a c>-. %115
+			<b d> \lh \clef treble d,16( f a b \rh d f b c
+			d4) r r
+			R2.*4 %121
+			r4 \lh \clef treble \tuplet 5/4 4 { es,,!16( fis a c es \rh fis a c es! fis) }
+			R2.*3 %125
+			r4 \lh \clef treble \tuplet 5/4 4 { f,,16( as h d f \rh as h d f as) }
+			\mark #12 R2.*4 %130
+			fis,8 g a g fis g
+			a g fis g a fis
+			a g f e d c
+			b a g f e c
+			es a, c es f a %135
+			c es f a c es
+			\mark #13 d4 r r
+			\override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { b'8 g es b \lh g[ es b g]
+			\rh es'' b ges es \lh b[ ges es b]
+			\rh f''' d b f \lh d[ b f d] %140
+			\rh b'' g d b \lh g[ d b g] } \revert TupletNumber.Y-offset
+			\tuplet 3/2 4 { f b d \rh f b d f b d }
+			f4 <d, f>-. <c es f>-.
+			\mark #14 d8 f b, f' d f
+			b, f' a, f' c f %145
+			d f b, f' d f
+			b, f' a, f' c f
+			d f b, f' a, f'
+			d f b, f' a, f'
+			d f b, f' a, f' %150
+			d f b, f' a, f'
+			\mark #15 d d' b f \tuplet 3/2 4 { d b f }
+			d r r4 r
+			R2.*3 %156
+		}
+		\alternative {
+			{
+				R2.*3 \bar "||"
+				\mark \critnote \key ges \major \tempoIIITrio <b ges'b>4-.\p r q-. %160
+				q-. r q-.
+				q-. r q-.
+				q-. r q-.
+				q-\parenthesize-. r q-\parenthesize-.
+				<des ces' des>-. r q-. %165
+				q-. r q-.
+				<b ges' b> r q
+				\mark #16 q r q
+				<des ces' des> r q
+				q r q %170
+				<b ges' b> r q
+				\mark #17 b'8 des ges, des' b des
+				d f b, f' d f
+				c-. f-. a,-. f'-. c-. f-.
+				d f b, f' d f %175
+				b, f' d f b, f'
+				f as! des, as' f as
+				es as c,! as' es as
+				f as des, as' f as
+				des, as' f as des, as' %180
+				\mark #18 \once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { des ces as f des[ \lh ces as f] }
+				\tuplet 3/2 4 { des f as ces \rh des^\markup { \remark "un poco rit." } f as ces des }
+				<b,, ges' b>4^\markup { \remark "a tempo" } r q
+				<des ces' des> r q
+				q r q %185
+				<b ges' b> r q
+				q r q
+				<des ces' des> r q
+				q r q
+				<b ges' b> r q %190
+				\mark #19 b'8 des ges, des' b des
+				d f b, f' d f
+				c f a, f' c f
+				d f b, f' d f
+				b, f' d f b, f' %195
+				fis a d, a' fis a
+				e a cis, a' e a
+				fis a d, a' fis a
+				R2.
+				\mark #20 \once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { des!8 ces! as! f! des![ \lh ces! as! f!] } %200
+				\tuplet 3/2 4 { des! f as ces \rh des^\markup { \remark "un poco rit." } f as ces des }
+				<b,, ges' b>4^\markup { \remark "a tempo" } r q
+				<des ces' des> r q
+				q r q
+				<b ges' b> r q %205
+				q r q
+				<des ces' des> r q
+				q r q
+				<b ges' b> r q
+				\mark #21 q r q %210
+				q r q
+				q-. q-. <as c! ges'>-.
+				<as des f>-. r r
+				R2.*4 %217
+				\mark #22 R2.*8 %225
+				\mark #23 \once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { des''8 ces as f des[ \lh ces as f]
+				\once \override TupletNumber.Y-offset = #-5  des f as ces \rh des[ f as ces] }
+				des4-. des,-. des-.
+				des-. r r
+				<b, ges' b> r q %230
+				q r q
+				q r q
+				<des ces' des> r q
+				q r q
+				<b ges' b> r q %235
+				q r q
+				<des ces' des> r q
+				q r q
+				<b ges' b> r q
+				\mark #24 ges''8 b ges des b4 %240
+				ges'8 b ges des b des
+				ges b ges des b des
+				ges b ges des b des
+				<b des ges b>4-. q-. <ces des as'>-.
+				<b des ges>-. r r %245
+				R2.\fermataMarkup
+			} {
+				\key b \major R2.*7 %253
+				b,8 f' b f b, f'
+				b f' b f b, f' %255
+				b f' b f b, f'
+				<b, b'>4-. q-. <f f'>-.
+				<b, b'>-. r r
+				R2.\fermataMarkup \bar "|." %259 finis
+			}
+		}
+	}
+}
+
+IIIPianoL = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoIII
+		\repeat volta 2 {
+			R2.*7 %7
+			\clef treble r4 \rh r \lh r
+			R2.*3 %11
+			r4 \rh r \lh r
+			R2.*5 %17
+			r4 \rh r \lh r
+			R2.*3 %21
+			r4 \rh r \lh r
+			R2.*4 %26
+			a''8 b c b a b
+			c b a b c a
+			c b a g f e
+			\clef bass d c b a g e %30
+			a es f a c es
+			\clef treble f a c es f a
+			b4 r r
+			R2.*3 %36
+			\clef bass r4-\critnote \rh r \lh r
+			r \rh r \lh r
+			r <f,, d'>4-. <f es'>-.
+			\clef treble <b f'> \rh r \lh r %40
+			r \rh r \lh r
+			r \rh r \lh r
+			r <f d'>-. <f es'>-.
+			\clef treble <b f'> \rh r \lh r
+			R2.*4 %48
+			\clef bass r4 \rh r \lh r
+			r4 \rh r \lh r %50
+			\clef treble r \tuplet 3/2 4 { as8( d f as, d f
+			as, d f as, d f as, d f) }
+			r4 \rh r \lh r
+			r \rh r \lh r
+			r \tuplet 3/2 4 { b,8( e g b, e g %55
+			b, e g b, e g b, e g) }
+			\clef bass <f, b d>4 r r
+			q r r
+			<f, f'> r q
+			q r q %60
+			q r q
+			q r q
+			<b, b'> r r
+			R2.*2 %65
+			\clef treble a''8 b c d \tuplet 3/2 4 { e8 f e }
+			f4 r r
+			R2.*3 %70
+			\clef bass <d,, d'>4-. r q(->
+			<f f'>-.) r q(-\parenthesize->
+			<d d'>-.) r q(
+			<f f'>) r q
+			<cis cis'>-. r q(-\parenthesize-> %75
+			<e e'>) r q(-\parenthesize->
+			<cis cis'>) r q(
+			<e e'>) r q
+			<c! c'!> r q
+			<es! es'!> r q %80
+			<b! b'!> r r
+			<g g'> r r
+			<a a'> r r
+			q r r
+			<d d'> r r %85
+			R2.
+			d'8 r a'([ d] f) r
+			f, r a([ d] f) r
+			d, r a'([ d] f) r
+			f, r a([ d] f) r %90
+			cis, r cis'([ e] cis) r
+			e, r cis'([ e] cis) r
+			cis, r cis'([ e] cis) r
+			e, r cis'([ e] cis) r
+			c,! r c'([ es] c) r %95
+			es,! r c'([ es] c) r
+			b, r b'([ d] b) r
+			g, r b'([ d] b) r
+			a, r a' r d r
+			a r a, r a' r %100
+			<d,, d'> r d f a r
+			\tuplet 3/2 4 { r8 r \clef treble d' f a r } r4
+			s2.
+			s
+			\clef bass <b,, b'>4 r r %105
+			R2.*3
+			\clef bass r4 \rh r \lh r
+			r \rh r \lh r %110
+			r <f' d'>4-. <f es'>-.
+			\clef treble <b f'> \rh r \lh r
+			\clef bass r \rh r \lh r
+			r \rh r \lh r
+			r <f d'>-. <f es'>-. %115
+			\clef treble <b f'> \rh r \lh r
+			R2.*5 %121
+			\clef treble r4 \rh r \lh r
+			R2.*3 %125
+			r4 \rh r \lh r
+			R2.*4 %130
+			a'8 b c b a b
+			c b a b c a
+			c b a g f e
+			\clef bass d c b a g e
+			a es f a c es %135
+			\clef treble f a c es f a
+			b4 r r
+			s2.*5 %142
+			r4 <f,, f'>-. q-.
+			b8 f' d f b, f'
+			ges, f' f, f' a, f' %145
+			b, f' d f b, f'
+			ges, f' f, f' a, f'
+			b, f' ges, f' f, f'
+			b, f' ges, f' f, f'
+			b, f' ges, f' f, f' %150
+			b, f' ges, f' f, f'
+			b,4 r r
+			\clef bass r8 b f d b[ f]
+			b,4 r r
+			R2.*2 %156
+		}
+		\alternative {
+			{
+				R2.*3 \bar "||"
+				\key ges \major \tempoIIITrio r4 <ges' des' ges>-. r %160
+				r q-. r
+				r q-. r
+				r q-. r
+				r q-. r
+				r q-. r %165
+				r q-. r
+				r q r
+				r q r
+				r q r
+				r q r %170
+				r q r
+				\clef treble ges'8 des' b des ges, des'
+				b f' d f b, f'
+				es! f c! f es f
+				b, f' d f b, f' %175
+				d f b, f' d f
+				des as'! f as des, as'
+				ges! as es as ges as
+				des, as' f as des, as'
+				f as des, as' f as %180
+				s2.*2
+				\clef bass r4-\critnote <ges,, des' ges> r
+				r q r
+				r q r %185
+				r q r
+				r q r
+				r q r
+				r q r
+				r q r %190
+				\clef treble ges'8 des' b des ges, des'
+				b f' d f b, f'
+				es! f c! f es f
+				b, f' d f b, f'
+				d f b, f' d f %195
+				d a' fis a d, a'
+				g a e a g a
+				d, a' fis a d, a'
+				R2.
+				s2.*2 %201
+				\clef bass r4-\critnote <ges,, des' ges> r
+				r q r
+				r q r
+				r q r %205
+				r q r
+				r q r
+				r q r
+				r q r
+				r q r %210
+				r q r
+				<ges ges'>-. q-. <es es'>-.
+				<des des'>-. r r
+				R2.*4 %217
+				R2.*8 %225
+				\clef treble s4-\critnote s2
+				s2.
+				R
+				r4 des''-. des-.
+				\clef bass r-\critnote <ges,, des' ges> r %230
+				r q r
+				r q r
+				r q r
+				r q r
+				r q r %235
+				r q r
+				r q r
+				r q r
+				r q r
+				\clef treble <ges' des' ges> r q %240
+				q r q
+				q r q
+				q r q
+				q-. q-. <des' f>-.
+				<ges, des' ges>-. r r %245
+				R2.\fermataMarkup
+			} {
+				\key b \major R2.*7 %253
+				\clef bass b,,8 f' b f b, f'
+				b f' b f b, f' %255
+				b f' b f b, f'
+				<b, b'>4-. q-. <f f'>-.
+				<b, b'>-. r r
+				R2.\fermataMarkup \bar "|." %259 finis
+			}
+		}
+	}
+}
+
 % TODO

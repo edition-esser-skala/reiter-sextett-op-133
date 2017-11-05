@@ -580,3 +580,12 @@ IIViola = {
 		h4 r r2 \bar "|." %115 finis
 	}
 }
+
+IIIViola = {
+	\relative c' {
+		\clef treble
+% 		\clef alto
+		\key b \major \time 3/4 \tempoIII
+		
+	}
+}
