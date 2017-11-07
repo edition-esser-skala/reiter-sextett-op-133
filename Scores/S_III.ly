@@ -22,7 +22,7 @@
 				\new StaffGroup <<
 					\new GrandStaff <<
 						\new Staff {
-							\set Score.voltaSpannerDuration = #(ly:make-moment 6/4)
+							\set Score.voltaSpannerDuration = #(ly:make-moment 9/4)
 							\set Staff.instrumentName = "1. Geige"
 							\set Staff.midiInstrument = #"violin"
 							\IIIViolinoI
@@ -62,7 +62,7 @@
 				>>
 			>>
 			\layout { }
-% 			\midi { \tempo 2. = 60 }
+			\midi { \tempo 2. = 60 }
 		}
 	}
 }

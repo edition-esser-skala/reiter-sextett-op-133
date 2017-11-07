@@ -1611,7 +1611,7 @@ IIIPianoL = {
 				<ges, des' ges>-. r r %245
 				R2.\fermataMarkup
 			} {
-				\key b \major R2.*7 %253
+				\key b \major \tempoIIISchluss R2.*7 %253
 				\clef bass b,,8 f' b f b, f'
 				b f' b f b, f' %255
 				b f' b f b, f'

@@ -165,6 +165,7 @@ tempoI = \tempoMarkup "Kräftig belebt"
 tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 tempoIII = \tempo \markup \medium { \larger \larger \left-column { \line { "Schnell, leicht und flüchtig;" } \line { "gespenstisch dahinhuschend," } \line { "durchwegs leise zu spielen" } } }
 tempoIIITrio = \tempoMarkup "Trio. Etwas ruhiger, sehr hell und zierlich"
+tempoIIISchluss = \tempoMarkup "Schluß"
 
 
 #(define afterGraceFraction (cons 7 8))
