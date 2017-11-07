@@ -102,6 +102,10 @@ dimTextDimE = {
 	\set decrescendoText = "[dim.]"
 	\set decrescendoSpanner = #'text
 }
+dimTextRitard = {
+	\set decrescendoText = "ritard."
+	\set decrescendoSpanner = #'text
+}
 
 hairpinBetweenText =
 #(define-music-function (parser location leftText rightText) (markup? markup?)

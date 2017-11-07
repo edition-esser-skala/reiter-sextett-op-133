@@ -768,8 +768,8 @@ IIIViolinoI = {
 				des(-> ces ges)
 				es'8( des ces as f des)
 				b'( des b ges des4)
-				b'8( des b ges des4) %210
-				\mark #21 b'8( des b ges des ges
+				\mark #21 b'8( des b ges des4) %210
+				b'8( des b ges des ges
 				b ges des b) ges'( c,
 				des4) r r
 				R2.*4 %217
