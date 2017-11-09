@@ -1378,7 +1378,7 @@ IIIPianoR = {
 				R2.*4 %217
 				\mark #22 R2.*8 %225
 				\mark #23 \once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { des''8 ces as f des[ \lh ces as f]
-				\once \override TupletNumber.Y-offset = #-5  des f as ces \rh des[ f as ces] }
+				des f as ces \rh des[ f as ces] }
 				des4-. des,-. des-.
 				des-. r r
 				<b, ges' b> r q %230

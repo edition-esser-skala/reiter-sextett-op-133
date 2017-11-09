@@ -557,6 +557,269 @@ IIIContrabasso = {
 	\relative c {
 		\clef bass
 		\key b \major \time 3/4 \tempoIII
-		
+		\repeat volta 2 {
+			b4-.\p b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-. %5
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-. %10
+			b-\markup { \remark "immer staccato" } b b
+			\mark #1 b b a
+			as as as
+			g g g
+			c c d %15
+			es es d
+			c c d
+			es d c
+			d d e
+			f f e %20
+			d d e
+			f e d
+			\mark #2 es-> es fis
+			fis-> a a
+			c-> c es %25
+			es-> fis fis
+			a-. fis-. d-.
+			c-. a-. fis-.
+			e-. g-. b!-.
+			c-. e-. g-. %30
+			f-. es-. c-.
+			f,-. c-. f,-.
+			\mark #3 b b b
+			b b b
+			b b b %35
+			b b b
+			b b b
+			b b b
+			b b b
+			b b b %40
+			b b b
+			b b b
+			b b b
+			b b a
+			\mark #4 as as as %45
+			g g g
+			b b b
+			a! a a
+			d d e
+			f f e %50
+			d e f
+			f e d
+			e e e
+			g g f
+			e f g %55
+			g f e
+			\mark #5 f d c
+			b a g
+			f f f
+			f f f %60
+			f f f
+			f f f
+			b g' f
+			d b g
+			\mark #6 f f f %65
+			f f f
+			as as as
+			g g g
+			b b b
+			a! a a %70
+			\mark #7 d-\markup { \remark "pizz." } d d
+			f f f
+			d d d
+			f f f
+			cis cis cis %75
+			e e e
+			cis cis cis
+			e e e
+			c! c c
+			es! es es %80
+			b! b b
+			g g g
+			a a a
+			a a a
+			\mark #8 d b'! a %85
+			g f e
+			d r d
+			f r f
+			d r d
+			f r f %90
+			cis r cis
+			e r e
+			cis r cis
+			e r e
+			c! r c %95
+			es! r es
+			b r b
+			g r g
+			a a a
+			a a a %100
+			\mark #9 d r r
+			R2.
+			f4 r r
+			R2.
+			\mvTr b,4\p-.-\markup { \remark "Bogen" } b-. b-. %105
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			\mark #10 b-. b-. b-.
+			b-. b-. b-. %110
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-. b-. b-.
+			b-\markup { \remark "immer staccato" } b b %115
+			b b a
+			as as as
+			g g g
+			c c d
+			es es d %120
+			c d es
+			es d c
+			d d e
+			f f e
+			d e f %125
+			f e d
+			\mark #12 es-> es fis
+			fis-> a a
+			c-> c es
+			es-> fis fis %130
+			a-. fis-. d-.
+			c!-. a-. fis-.
+			e-. g-. b!-.
+			c-. e-. g-.
+			f-. es-. c-. %135
+			f,-\markup { \remark "immer staccato" } c f,
+			\mark #13 as' as as
+			g g g
+			ges ges ges
+			f f f %140
+			e e e
+			f f f
+			f f f
+			\mark #14 b, a g
+			ges f a %145
+			b a g
+			ges f a
+			b ges f
+			b ges f
+			b ges f %150
+			b ges f
+			\mark #15 b b' b
+			b b b
+			b b, b
+			b b b %155
+			b r r
+		}
+		\alternative {
+			{
+				\dimTextRitard b\> r r %157
+				b r r
+				b r r\! \bar "||" \break
+				\mark \critnote \key ges \major \tempoIIITrio ges2.~\ppE %160
+				ges~
+				ges~
+				ges~
+				ges~
+				ges~ %165
+				ges~
+				ges
+				\mark #16 ges~
+				ges~
+				ges~ %170
+				ges
+				\mark #17 ges'4-. r as-.
+				b-\parenthesize-. r r
+				f-. r r
+				b-. r r %175
+				b-. r r
+				as!-. r r
+				as-. r r
+				des!-. r r
+				des-. r r %180
+				\mark #18 des-. des-. des-.
+				des-. des-. des-.
+				ges,,2.~\pp
+				ges~
+				ges~ %185
+				ges
+				ges~
+				ges~
+				ges~
+				ges %190
+				\mark #19 ges'4-. r as-.
+				b-. r r
+				f-. r r
+				b-. r r
+				b-. r r %195
+				a-. r r
+				a-. r r
+				d-. r r
+				R2.
+				\mark #20 des!4-. des-. des-. %200
+				des-. des-. des-.
+				ges,,2.~\pp
+				ges~
+				ges~
+				ges %205
+				ges~
+				ges~
+				ges~
+				ges
+				\mark #21 ges~ %210
+				ges
+				ges'4-. ges-. es-.
+				des-. r r
+				des' des des
+				des des des %215
+				des des des
+				des des des
+				\mark #22 des des des
+				des des des
+				des des des %220
+				des des des
+				des des des
+				des des des
+				\crescTextCrescE des\< des des
+				des des des %225
+				\mark #23 des\spE r r
+				R2.*3
+				ges,,2.~\pp %230
+				ges~
+				ges~
+				ges~
+				ges~
+				ges %235
+				ges~
+				ges~
+				ges~
+				ges
+				\mark #24 ges' %240
+				ges'4 r r
+				des r r
+				b r r
+				ges-. b,-. des-.
+				ges,-. r r %245
+				R2.\fermataMarkup
+			} {
+				\key b \major \tempoIIISchluss f'4 r r
+				b, r r
+				f' f f
+				b, r r %250
+				f' f f
+				b b, b
+				f' f f
+				b, r r
+				b-\markup { \remark "pizz." } r r %255
+				b r r
+				b' b f
+				b, r r
+				R2.\fermataMarkup \bar "|." %259 finis
+			}
+		}
 	}
 }

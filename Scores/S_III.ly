@@ -16,7 +16,7 @@
 			subtitle = \markup { \vspace #3 \normal-text \larger \larger "3. Satz. Scherzo" }
 			composer = \markup { \larger " " }
 		}
-% 		\paper { systems-per-page = #2 }
+		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<
@@ -61,7 +61,7 @@
 					>>
 				>>
 			>>
-			\layout { }
+% 			\layout { }
 			\midi { \tempo 2. = 60 }
 		}
 	}
