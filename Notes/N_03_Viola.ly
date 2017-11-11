@@ -583,9 +583,246 @@ IIViola = {
 
 IIIViola = {
 	\relative c' {
-		\clef treble
-% 		\clef alto
+% 		\clef treble
+		\clef alto
 		\key b \major \time 3/4 \tempoIII
-		
+		\repeat volta 2 {
+			R2.*8 %8
+			r4 \mvTr b8-.\p-\markup { \remark "mit Dämpfer (con sordino)" } c-. d4
+			r es8-. f-. g4 %10
+			r8 f-. g-. gis-. a-. f-.
+			\mark #1 b-. g-. f-. es-. d-. c-.
+			b4 r8 b-. d-. b-.
+			es4-. f-. g-.
+			r es8-. f-. ges4 %15
+			r ges8-. f-. es4
+			r es8-. f-. ges4
+			ges8-. f-. es4-. ges-.
+			r f8-. g-. as4
+			r as8-. g-. f4 %20
+			r f8-. g-. as4
+			as8-. g-. f4-. as-.
+			\mark #2 c8-\markup { \remark "staccato" } c es es b b
+			d d a a c c
+			gis gis c c g g %25
+			c c fis, fis b b
+			fis'4-. d-. c-.
+			a-. fis-. d-.
+			c!-. e-. g-.
+			b-. c-. e-. %30
+			c-. a-. f-.
+			es!-. f-. es-.
+			\mark #3 <b d> r r
+			R2.*7 %40
+			r4 b8-. c-. d4
+			r es8-. f-. g4
+			r8 f-. g-. gis-. a-. f-.
+			b-. g-. f-. es-. d-. c-.
+			\mark #4 b4 r8 b-. d-. b-. %45
+			es4-. f-. g-.
+			c, r8 c-. e-. c-.
+			f4-. g-. a!-.
+			r f8-. g-. as4
+			r as8-. g-. f4 %50
+			r f8-. g-. as4
+			as8-. g-. f4-. as4-.
+			r g8( a b!4)
+			r b8-. a-. g4
+			r g8-. a-. b4 %55
+			b8-. a-. g4-. b-.
+			\mark #5 d8 d d d b b
+			f f d d b b
+			b b b b b b
+			b b b b b b %60
+			b b b b b b
+			a a b b c c
+			b2.
+			b4-. b-. e-.
+			\mark #6 f-. r r %65
+			R2.*2
+			d2.--\sp
+			R
+			e-\parenthesize--\sp %70
+			\mark #7 a4-. a-. a(->
+			gis-.) gis-. gis(->
+			\crescHairpin a-.) a-. a~\<
+			a\! b!-. a-.
+			a-. a-. a(-> %75
+			gis-.) gis-. gis(->
+			a-.) a-. a~\<
+			a\! b-. a-.
+			a-. a-. a~
+			a g!-. fis-. %80
+			<d d'>2.--
+			<b b'>--
+			<a a'>~
+			q
+			\mark #8 d4-\markup { \remark "pizz." } g f %85
+			e d a
+			a' r a
+			gis r gis
+			a r a
+			a b! a %90
+			a r a
+			gis r gis
+			a r a
+			a b! a
+			a r a %95
+			a g! fis
+			a g f
+			e f g
+			a g f
+			e f g %100
+			\mark #9 f r r
+			R2.
+			f4 r r
+			R2.
+			<f, d'>4 r r %105
+			R2.*3 %108
+			\mark #10 R2.*4 %112
+			r4 \mvTr b8-.\p-\markup { \remark "Bogen" } c-. d4
+			r es8-. f-. g4
+			r8 f-. g-. gis-. a-. f-. %115
+			b-. g-. f-. es-. d-. c-.
+			b4 r8 b-. d-. b-.
+			es4-. f-. g-.
+			r es8-. f-. ges4
+			r ges8-. f-. es4 %120
+			r es8-. f-. ges4
+			ges8-. f-. es4-. ges-.
+			r f8-. g-. as4
+			r as8-. g-. f4
+			r f8-. g-. as4 %125
+			as8-. g-. f4-. as-.
+			\mark #12 c8 c es es b b
+			d d a a c c
+			gis gis c c g g
+			c c fis, fis b b %130
+			fis'4-. d-. c-.
+			a-. fis-. d-.
+			c!-. e-. g-.
+			b-\parenthesize-. c-\parenthesize-. e-\parenthesize-.
+			c-. a-. f-. %135
+			es!-. f-. es-.
+			\mark #13 f8 f b b d d
+			g g es es b b
+			ges ges b b es es
+			f f d d b b %140
+			b b g! g d d
+			b b d d f f
+			b b d d es es
+			\mark #14 d d b b f f
+			b b a a c c %145
+			d d b b f f
+			b b a a c c
+			f, f b b a a
+			f f b b a a
+			f f b b a a %150
+			f f b b a a
+			\mark #15 f4-. b-. b-.
+			b-\markup { \remark "immer staccato" } b b
+			b b, b
+			b b b %155
+			b r r
+		}
+		\alternative {
+			{
+				R2.*3 \bar "||" \break %159
+				\mark \critnote \key ges \major \tempoIIITrio R2.*4_\markup { \remark "Dämpfer weg!" } %163
+				\crescHairpin \dimHairpin b'8(\p\< des c\! des\> b des)\!
+				ces2.~-> %165
+				ces(
+				b)
+				\mark #16 \crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces( %170
+				b)
+				\mark #17 r4 b,-. des-.
+				r d-. f-.
+				r es-. f-.
+				r d-. f-. %175
+				r d-. f-.
+				r f-. as!-.
+				r ges!-. as-.
+				r f-. as-.
+				r des,!-. f-. %180
+				\mark #18 f-. f-. f-.
+				f-. f-. f-.
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces( %185
+				b)
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces(
+				b) %190
+				\mark #19 r4 b,-. des-.
+				r d-. f-.
+				r es-. f-.
+				r d-. f-.
+				r d-. f-. %195
+				r fis-. a-.
+				r g-. a-.
+				r fis-. a-.
+				R2.
+				\mark #20 f!4-. f-. f-. %200
+				f-. f-. f-.
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces(
+				b) %205
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces(
+				b)
+				\mark #21 ges( %210
+				des)
+				ges
+				\crescHairpin r8 f,(\< as des f as)\!
+				as4(-- as-- as--)
+				as2(-> ges4~ %215
+				ges as ges~
+				ges f2)
+				\mark #22 as4(-- as-- as--)
+				\crescHairpin as(->\< ges f\!
+				\dimHairpin ges\> as ges)\! %220
+				ges( f2)
+				as2.
+				\crescTextCresc as\<
+				ces!
+				ces %225
+				\mark #23 des4\sp r r
+				R2.*5 %231
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces(
+				b) %235
+				\crescHairpin \dimHairpin b8(\< des c\! des\> b des)\!
+				ces2.~->
+				ces(
+				b)
+				\mark #24 ges %240
+				R
+				b8( des b ges des ges)
+				ges( b ges des b des)
+				b'4-. b-. des-.
+				ges,-. r r %245
+				R2.\fermataMarkup
+			} {
+				\key b \major \tempoIIISchluss f4 r r %247
+				b, r r
+				f' f f
+				d r r %250
+				f f f
+				b d, d
+				f f f
+				b, r r
+				b-\markup { \remark "pizz." } r r %255
+				b r r
+				b b f
+				b r r
+				R2.\fermataMarkup \bar "|." %259 finis
+			}
+		}
 	}
 }

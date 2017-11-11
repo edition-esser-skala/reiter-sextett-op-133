@@ -610,7 +610,7 @@ IIIContrabasso = {
 			f f e %50
 			d e f
 			f e d
-			e e e
+			e e f^\critnote
 			g g f
 			e f g %55
 			g f e
@@ -717,7 +717,7 @@ IIIContrabasso = {
 		}
 		\alternative {
 			{
-				\dimTextRitard b\> r r %157
+				\once \override DynamicTextSpanner.style = #'dashed-line \dimTextRitard b\> r r %157
 				b r r
 				b r r\! \bar "||" \break
 				\mark \critnote \key ges \major \tempoIIITrio ges2.~\ppE %160

@@ -123,7 +123,7 @@ IViolinoI = {
 			c4 c8( g) g4 g8( c,)
 			c( g c g' c g c g' %120
 			c,4) r r2
-			\mark #10 r r4  f8(\p c)
+			\mark #10 r r4 f8(\p c)
 			c4 c8( f,) f4 f8( c)
 			\crescTextCresc c( f, c'\< f c' f, c' f)\!
 			f2.( d8 b) %125
@@ -642,7 +642,7 @@ IIIViolinoI = {
 			\crescHairpin a-.) e-. a~\<
 			a\! b!-. a-.
 			a-. es!-. a~
-			a g-. fis-. %80
+			a g!-. fis-. %80
 			a( g f)
 			e( f g)
 			f( e d
@@ -658,7 +658,7 @@ IIIViolinoI = {
 			a r a
 			a b! a
 			a r a %95
-			a g fis
+			a g! fis
 			a g f
 			e f g
 			f e d
@@ -681,7 +681,7 @@ IIIViolinoI = {
 			h( g f)
 			es'( ges,2)
 			c4( ges2) %120
-			es'8-. es-. ges,-. ges-. h-. h-.
+			es'8-. es-. ges,-. ges-. a!-.^\critnote a-.
 			c c b b a a
 			f'4( as,2)
 			d4( as2)
@@ -701,7 +701,7 @@ IIIViolinoI = {
 			es es b b g g
 			es es ges ges b b
 			d d b b f f %140
-			g g d d b b
+			g! g d d b b
 			f f b b d d
 			f f b b a a
 			\mark #14 b b f f d d

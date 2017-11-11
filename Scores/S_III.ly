@@ -25,27 +25,32 @@
 							\set Score.voltaSpannerDuration = #(ly:make-moment 9/4)
 							\set Staff.instrumentName = "1. Geige"
 							\set Staff.midiInstrument = #"violin"
+% 							\unfoldRepeats
 							\IIIViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2. Geige"
 							\set Staff.midiInstrument = #"violin"
+% 							\unfoldRepeats
 							\IIIViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "Bratsche"
 						\set Staff.midiInstrument = #"violin"
+% 						\unfoldRepeats
 						\IIIViola
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Violoncell"
 						\set Staff.midiInstrument = #"cello"
+% 						\unfoldRepeats
 						\IIIVioloncello
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Baß"
 						\set Staff.midiInstrument = #"cello"
+% 						\unfoldRepeats
 						\IIIContrabasso
 					}
 				>>
@@ -61,8 +66,8 @@
 					>>
 				>>
 			>>
-% 			\layout { }
-			\midi { \tempo 2. = 60 }
+			\layout { }
+% 			\midi { \tempo 2. = 60 }
 		}
 	}
 }

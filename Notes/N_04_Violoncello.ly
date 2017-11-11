@@ -652,7 +652,7 @@ IIIVioloncello = {
 			f f e %50
 			d e f
 			f e d
-			e e e
+			e e f^\critnote
 			g g f
 			e f g %55
 			g f e
@@ -759,7 +759,7 @@ IIIVioloncello = {
 		}
 		\alternative {
 			{
-				\dimTextRitard b\> r r %157
+				\once \override DynamicTextSpanner.style = #'dashed-line \dimTextRitard b\> r r %157
 				b r r
 				b r r\! \bar "||" \break
 				\mark \critnote \key ges \major \tempoIIITrio R2.*4 %163
@@ -823,7 +823,7 @@ IIIVioloncello = {
 				des)
 				des
 				des
-				\clef "treble_8" \crescTextCresc ges!4(\< f es)
+				\clef "treble_8" \crescTextCresc ges!4(\< f des)^\critnote
 				ges( f des) %225
 				\mark #23 as'\sp r r
 				R2.*5 %231

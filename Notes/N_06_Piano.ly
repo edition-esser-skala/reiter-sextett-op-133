@@ -1188,15 +1188,15 @@ IIIPianoR = {
 		\key b \major \time 3/4 \tempoIII
 		\repeat volta 2 {
 			R2.*7 %7
-			r4 \lh \clef treble d16(\p f a b \rh d f b c
+			r4 \lh \clef treble \shape #'((0 . -2) (0 . 2) (0 . 0) (0 . 0)) Slur d16(\p f a b \rh d f b c
 			d4) r r
 			R2.*2 %11
-			\mark #1 r4 \lh d,,16(\p f a b \rh d f b c
+			\mark #1 r4 \lh \shape #'((0 . -2) (0 . 2) (0 . 0) (0 . 0)) Slur d,,16(\p f a b \rh d f b c
 			d4) r r
 			R2.*4 %17
-			r4 \lh \tuplet 3/2 4 { es,,8( fis a \rh c es fis) }
+			r4 \lh \tuplet 3/2 4 { \shape #'((0 . -3) (0 . 3) (0 . 1) (0 . 0)) Slur es,,8( fis a \rh c es fis) }
 			R2.*3 %21
-			r4 \lh \tuplet 3/2 4 { f,8( as h \rh d f as) }
+			r4 \lh \tuplet 3/2 4 { \shape #'((0 . -3) (0 . 3) (0 . 1) (0 . 0)) Slur f,8( as h \rh d f as) }
 			\mark #2 R2.
 			<< {
 				\oneVoice R2.*3 %26
@@ -1216,18 +1216,18 @@ IIIPianoR = {
 			r4 \lh \clef bass d,,,16( fis b d \rh fis b d fis)
 			r4 \lh es,,16( g h es \rh g h es g)
 			r4 <as, h>-. <a c>-.
-			<b d> \lh d,16( f a b \rh d f b c %40
+			<b d> \lh \shape #'((0 . -2) (0 . 2) (0 . 0) (0 . 0)) Slur d,16( f a b \rh d f b c %40
 			d4) \lh \clef bass d,,,16( fis b d \rh fis b d fis)
 			r4 \lh es,,16( g h es \rh g h es g)
 			r4 <as, h>-. <a c>-.
-			<b d> \lh \clef treble d,16( f a b \rh d f b c
+			<b d> \lh \clef treble \shape #'((0 . -2) (0 . 2) (0 . 0) (0 . 0)) Slur d,16( f a b \rh d f b c
 			\mark #4 d4) r r %45
 			R2.*3
-			r4 \lh \clef bass \tuplet 3/2 4 { f,,,8( as f' \rh as f' as) }
+			r4 \lh \clef bass \tuplet 3/2 4 { \shape #'((0 . -3) (0 . 3) (0 . 1) (0 . 0)) Slur f,,,8( as f' \rh as f' as) }
 			r4 \lh \tuplet 3/2 4 { as,,8( d f \rh as d as') } %50
 			\crescHairpin r4 \tuplet 3/2 4 { as8(\< d, as as' d, as
 			as' d, as as' d, as as' d, as)\! }
-			r4 \lh \clef treble \tuplet 3/2 4 { g,8( b g' \rh b g' b) }
+			r4 \lh \clef treble \tuplet 3/2 4 { \shape #'((0 . -3) (0 . 3) (0 . 1) (0 . 0)) Slur g,8( b g' \rh b g' b) }
 			r4 \lh \tuplet 3/2 4 { b,,8( e g \rh b e b') }
 			r4 \tuplet 3/2 4 { \crescHairpin b8(\< e, b b' e, b %55
 			b' e, b b' e, b b' e, b)\! }
@@ -1282,11 +1282,11 @@ IIIPianoR = {
 			\mark #10 \clef treble r4 \lh \clef bass d,16( fis b d \rh fis b d fis)
 			r4 \lh es,,16( g h es \rh g h es g) %110
 			r4 <as, h>-. <a c>-.
-			<b d> \lh d,16( f a b \rh d f b c
+			<b d> \lh \shape #'((0 . 0) (0 . 0) (0 . 1) (0 . 0)) Slur d,16( f a b \rh d f b c
 			d4) \lh \clef bass d,,,16( fis b d \rh fis b d fis)
 			r4 \lh es,,16( g h es \rh g h es g)
 			r4 <as, h>-. <a c>-. %115
-			<b d> \lh \clef treble d,16( f a b \rh d f b c
+			<b d> \lh \clef treble \shape #'((0 . -2) (0 . 2) (0 . 1) (0 . 0)) Slur d,16( f a b \rh d f b c
 			d4) r r
 			R2.*4 %121
 			r4 \lh \clef treble \tuplet 5/4 4 { es,,!16( fis a c es \rh fis a c es! fis) }
@@ -1378,7 +1378,7 @@ IIIPianoR = {
 				R2.*4 %217
 				\mark #22 R2.*8 %225
 				\mark #23 \once \override TupletNumber.Y-offset = #-5 \tuplet 8/6 2. { des''8 ces as f des[ \lh ces as f]
-				des f as ces \rh des[ f as ces] }
+				\once \override TupletNumber.Y-offset = #5 des f as ces \rh des[ f as ces] }
 				des4-. des,-. des-.
 				des-. r r
 				<b, ges' b> r q %230
@@ -1492,7 +1492,7 @@ IIIPianoL = {
 			a, r a' r d r
 			a r a, r a' r %100
 			<d,, d'> r d f a r
-			\tuplet 3/2 4 { r8 r \clef treble d' f a r } r4
+			\override TupletNumber.stencil = ##f \tuplet 3/2 4 { r8 r \clef treble d' f a r } r4 \revert TupletNumber.stencil
 			s2.
 			s
 			\clef bass <b,, b'>4 r r %105
@@ -1623,4 +1623,4 @@ IIIPianoL = {
 	}
 }
 
-% TODO III 53, 224
+% TODO

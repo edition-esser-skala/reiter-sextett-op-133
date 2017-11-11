@@ -570,7 +570,7 @@ IIIViolinoII = {
 			b-. b-. d,-. d-. fis-. fis-.
 			es-. es-. g,-. g-. h-. h-. %10
 			c-\markup { \remark "staccato" } c f, f a! a
-			b c d f g a
+			\mark #1 b c d f g a
 			b4( d, as')
 			g( es d)
 			c'( es,2) %15
@@ -581,7 +581,7 @@ IIIViolinoII = {
 			h4( d,2) %20
 			d'8-. d-. f,-. f-. as-. as-.
 			h-. h-. as-. as-. g-. g-.
-			es'-\markup { \remark "staccato" } es g, g d' d
+			\mark #2 es'-\markup { \remark "staccato" } es g, g d' d
 			fis, fis c' c f, f
 			c' c e, e c' c %25
 			es, es b' b d, d
@@ -591,7 +591,7 @@ IIIViolinoII = {
 			e-. g-. b-. %30
 			a-. f-. es-.
 			c-. a-. f-.
-			<d b'> r r
+			\mark #3 <d b'> r r
 			R2.*3 %36
 			b''4( d,2)
 			es4( g,2)
@@ -601,7 +601,7 @@ IIIViolinoII = {
 			es es g, g h h
 			c c f, f a! a
 			b-. c-. d-. f-. g-. a-.
-			b4( d, as') %45
+			\mark #4 b4( d, as') %45
 			g( es d)
 			c'( e, b')
 			a!( f e)
@@ -613,7 +613,7 @@ IIIViolinoII = {
 			cis4( e,2)
 			e'8 e g, g b! b %55
 			cis cis b! b a a
-			b b b b f f
+			\mark #5 b b b b f f
 			d d b b d, d
 			<c e> q q q q q
 			q q q q q q %60
@@ -621,27 +621,27 @@ IIIViolinoII = {
 			g'4(-> f es)
 			d2.
 			d4-. d-. b'-.
-			a-. r r %65
+			\mark #6 a-. r r %65
 			R2.
 			c4-. f,(\sp as~
 			as g h,)
 			d'-. g,(\sp \stemUp b!~
 			b \stemNeutral a cis,) %70
-			f'-. a,-. f'(->
+			\mark #7 f'-. a,-. f'(->
 			d-.) gis,-. d'(->
 			\crescHairpin f-.) a,-. f'(\<
-			d)-.\! d-. d-.
+			d)\! d-. d-.
 			e-. a,-. e'(-> %75
 			cis-.) gis-. cis(->
 			e-.) a,-. \parenthesizedHairpin e'(\<
-			cis-\parenthesize-.)\! cis-. cis-.
+			cis)\! cis-. cis-.
 			es!-. a,-. es'(
-			c!-\parenthesize-.) c-. c-. %80
+			c!) c-. c-. %80
 			a( g f!)
 			e( f g)
 			a( g f
 			e f g)
-			f8 f d d d d %85
+			\mark #8 f8 f d d d d %85
 			d d d d d d
 			f'4-\markup { \remark "pizz." } r f
 			d r d
@@ -657,13 +657,13 @@ IIIViolinoII = {
 			b b b
 			a a a
 			a a a, %100
-			d r r
+			\mark #9 d r r
 			R2.
 			a'4 r r
 			R2.
 			<b d,>4 r r %105
 			R2.*3
-			\mvTr b'4(\p-\markup { \remark "Bogen" } d,2)
+			\mark #10 \mvTr b'4(\p-\markup { \remark "Bogen" } d,2)
 			es4( g,2) %110
 			c4( f, a!)
 			b8-. c-. d-. f-. g-. a-.
@@ -681,7 +681,7 @@ IIIViolinoII = {
 			h4( d,2)
 			d'8 d f, f as as %125
 			h h as as g g
-			es' es g, g d' d
+			\mark #12 es' es g, g d' d
 			fis, fis c' c f, f
 			c' c e, e c' c
 			es, es b' b d, d %130
@@ -695,10 +695,10 @@ IIIViolinoII = {
 			b b g g es es
 			b b es es ges ges
 			b b f f d d %140
-			d d b b g g
+			d d b b g! g
 			d d f f b b
 			d d f f f f
-			f f d d b b
+			\mark #14 f f d d b b
 			es es es es es es %145
 			f f d d b b
 			es es es es es es
@@ -706,7 +706,7 @@ IIIViolinoII = {
 			b b es es es es
 			b b es es es es %150
 			b b es es es es
-			b4-. b'-. b-.
+			\mark #15 b4-. b'-. b-.
 			b-\markup { \remark "immer staccato" } b b
 			b b,, b
 			b b b %155
@@ -720,11 +720,11 @@ IIIViolinoII = {
 				des~ %165
 				des~
 				des
-				des~
+				\mark #16 des~
 				des~
 				des~ %170
 				des
-				b4(-\markup { \remark "stark hervortretend" } c des)
+				\mark #17 b4(-\markup { \remark "stark hervortretend" } c des)
 				\crescHairpin d(\< es f)\!
 				f( g a
 				b f b,) %175
@@ -743,7 +743,7 @@ IIIViolinoII = {
 				des~
 				des~
 				des %190
-				b4(-\markup { \remark "stark hervortretend" } c des)
+				\mark #19 b4(-\markup { \remark "stark hervortretend" } c des)
 				d( es f)
 				f( g a
 				b f b,)
@@ -762,7 +762,7 @@ IIIViolinoII = {
 				des~
 				des~
 				des
-				b( %210
+				\mark #21 b( %210
 				ges)
 				b2( as4)
 				\crescHairpin r8 as,(\< des f as des)\!
@@ -770,7 +770,7 @@ IIIViolinoII = {
 				f2(-> es4~ %215
 				\crescHairpin \dimHairpin es\< f\! es~\>
 				es\! des as)
-				f'(--\< f-- f--)\!
+				\mark #22 f'(--\< f-- f--)\!
 				\crescHairpin f(->\< es d\!
 				\dimHairpin es\> f es\!) %220
 				es( des! as)
@@ -780,7 +780,7 @@ IIIViolinoII = {
 				des %225
 				\mark #23 f4\sp r r
 				R2.*5 %231
-				des2.~\p
+				des2.~
 				des~
 				des~
 				des %235
@@ -788,7 +788,7 @@ IIIViolinoII = {
 				des~
 				des~
 				des
-				b %240
+				\mark #24 b %240
 				des8( ges des b ges b)
 				des( ges des b ges b)
 				b( des b ges des ges)
