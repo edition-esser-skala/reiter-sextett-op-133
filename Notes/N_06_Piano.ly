@@ -1707,7 +1707,7 @@ IVPianoR = {
 		} >>
 		\ottava #1 \tuplet 3/2 8 { \crescTextCresc \subdivE b''16\< c b c b c } \subdivE b32 c b c b c b c \afterGrace b2\trill\f\< { a16 b }
 		\crescTextCrescMolto \tuplet 7/4 8 { es32\ff([\< g es b g es b)] \ottava #0 es( g es b g es b) es([ g es b g es b)] \clef bass es( g es b g es b) } r32 <b es g b>[ r <es g b es> r <g b es g> r <b es g b>] \clef treble r <es g b es>[ r <g b es g> r <b es g b> r <es g b es>]
-		\mvTrr <g b es g>16\sp-\markup { \override #'(baseline-skip . 2) \remark { \left-column { \line { "Dieser Akkord muß" } \line { "mittels des Pedals" } \line { "durch den ganzen" } \line { "Takt ausklingen." } } } } r r8 r4 r2
+		\mvTrr <g b es g>16\sp-\markup { \override #'(baseline-skip . 2) \remark { \left-column { \line { "Dieser Akkord muß" } \line { "mittels des Pedals" } \line { "durch den ganzen" } \line { "Takt nachklingen." } } } } r r8 r4 r2
 		\mark #13 R1*3 %67
 		\crescHairpin \dimHairpin \time 2/4 d16(\p\< e f g\! a\> g f e\!
 		\time 4/4 d8) r r4 r2
