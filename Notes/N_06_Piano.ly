@@ -1627,7 +1627,105 @@ IVPianoR = {
 	\relative c' {
 		\clef treble \numericTimeSignature
 		\key d \minor \time 4/4 \tempoIV
-		R2.*3
+		R1*3
+		<< {
+			\oneVoice r2 r4 r16 \voiceOne a'( h cis
+			\mark #1 \crescHairpin \dimHairpin \oneVoice <a d>) a( a' a,) r a'(\< b\> a)\! r a( c! b a h cis d %5
+			\crescHairpin cis) a( a, a') r a( \acciaccatura c8 b16 a) a(\< cis d dis e f g a
+			<b! b,!>)\! f( d b f d b! f) \tuplet 3/2 8 { \subdivE \crescTextCresc es(\< b' es b es, b' \subdivE es b' es b es, b')\! }
+			\subdivQ e([ cis a g f a e a)] \tuplet 3/2 16 { \crescHairpin \subdivS g,32([\< b! cis e g b]\! \subdivS h gis f! \lh \clef treble d h gis) } \rh r16 \voiceOne <a cis>(_\markup { \remark "un poco rit." } <h d> <cis e>
+			\mark #2 \oneVoice <c d fis>8)-\markup { \remarkE "a tempo" } r r4 r2
+		} \\ {
+			s2 s4 s16 a8.(\p
+			s16) s2...
+			s1*2
+			s2. s16 a8.(
+			s1)
+		} >>
+		R1*2 %11
+		\mark #3 \tuplet 3/2 8 { \subdivE a16[-.\mp cis-. e-. a-. cis-. e-.] cis-.[ a-. e-.] } \tuplet 5/4 8 { d'32(\sp h gis f! d) } \tuplet 3/2 8 { \subdivE a16[-. cis-. e-. a-. cis-. e-.] cis-.[ a-. e-.] } \tuplet 5/4 8 { d'32(\sp h gis f! d) }
+		\tuplet 3/2 8 { e16-.[ a-. cis-.] } \tuplet 5/4 8 { d32(\sp h gis f! d) } \tuplet 3/2 8 { e16-.[ a-. cis-.] } \tuplet 5/4 8 { d32(\sp h gis f! d) } \crescTextCresc \afterGrace b'2\trill\< { a16 b }
+		\subdivE es32[ g f es d c b as g f es d \tuplet 3/2 16 { c32 b as g f es] } \tuplet 3/2 8 { \dimTextDim \subdivE b'16\> f' d b f d \subdivE es' b g a? f es
+		\time 2/4 \subdivE b'\p d, f b d b \subdivE f b f d f d } %15
+		\mark #4 \time 4/4 r16 <f, b d>[ r <b d f> r <d f b> r <f b d>] r <b, es g>[ r <es g b>] \tuplet 3/2 8 { \crescHairpin r g(\mf\< a h[ c d] }
+		es8)\! r16\p <c, es g>[ r <es g c> r <g c es>] r <c, f a>[ r <f a c>] \tuplet 3/2 8 { \subdivE r c'(\mf\< d } es32[ f g a\!]
+		b8) r16\p <d,, as' b>16[ r <f b d> r <as d f>] r <b es b'>[ r <b es g> r <g b es> r <g b c>]
+		r <f b f'>[ r <d f b> r <g b es> r <es f a>] <d f b>( d' b f d f b d)
+		\mark #5 \tuplet 3/2 8 { \subdivE c16\p a c a f a \subdivE c a c a f a \subdivE d b d b f b \subdivE d b d b f b %20
+		\subdivE f' d f d b d \subdivE f d f d b d \subdivE g es g es b es \subdivE g es g es b es
+		\subdivE f d f d b d \subdivE f d f d b d \crescTextCresc \subdivE g\< c, b g b c \subdivE g' c, b g b c
+		\subdivE f d b f b d \subdivE f d b f b d \subdivE es b g es g b\subdivE f' c a f a c }
+		\mark #6 \subdivE f32\ff d b f b d f d \subdivE f d b f fis' d b fis \subdivE fis' b, a fis g' es b g \subdivE g' f h, g h f' g f
+		\subdivE g es c g c es g es \subdivE g es c g gis' e c b \subdivE gis' e c b a' f c a \subdivE a' f c a c f a f %25
+		\subdivE b f d b d f b f \subdivE b f d b d f b f \subdivE b g es b es g b g \subdivE g es b g b es g es
+		\dimTextDim \subdivE f\> d b f b f d b \subdivE es' b g es a f es c \subdivE <b d f b>8\p f32 b d f \subdivE b, d f b d, f b d
+		\dimTextDim f,\> b d f b, d f b \subdivE d, f b d f, b d f \ottava #1 \subdivE b,\pp d b' d, b' d, b d \subdivE b d b' d, b' d, b d
+		\subdivE b d b' d, b d b' d, \subdivE b d b' d, b d b' d, <b d b'>8 q4.\fermata \ottava #0
+		\mark #7 << {
+			\crescHairpin \once \dynamicUp <b, d>4\< q8-- q--\! q8( <a c> <fis b> <fis a>) %30
+			\oneVoice R1 \voiceOne
+			<c' es>4(\p <b d>) c8( es4 a,8)
+			\time 2/4 b2
+		} \\ {
+			r16 d,8\mf d16 d d8 d16 r es8 es c c16
+			s1
+			r16 f8 f f f16 \subdivQ b[ g b g b g f es]
+			d <d f>8 q q q16
+		} >>
+		\mark #8 \time 4/4 r16\p <f, b d>[ r <b d f> r <d f b> r <f b d>] r <b, es g>[ r <es g b>] \tuplet 3/2 8 { \crescHairpin r g(\< a h[ c d] }
+		es8)\! r16 <c, es g>[ r <es g c> r <g c es>] r <c, f a>[ r <f a c>] \tuplet 3/2 8 { r \crescHairpin c'(\< d } e32[ f g a] %35
+		b8)\! r16 <d,, as' b>[ r <f b d> r <b d f>] r <b es b'>[ r <b es g> r <g b es> r <g b c>]
+		\crescHairpin r <f b f'>[ r <d f b>\< r <g b es> r <es f a>] \dimHairpin <b d e b'>2~\f\>
+		q q16\p q8 q q q16
+		\time 2/4 q16 q8 q q q16
+		\mark #9 \time 4/4 q16 q8 q q q16 q q8 q q q16 %40
+		<a e' a>16 q8 q q q16 q q8 q q q16
+		\crescTextCresc <a d a'> q8 q q q16 q16[\< q8 q16] q q8 q16
+		\crescTextCrescMolto <b d e> q8 q16 <d e g>\< q8 q16 <e g b> q8 q16 <g b d> q8 q16
+		<e b' d>8\sp r r4\fermata r2
+		\mark #10 r <b d e b'>8\p r r4 %45
+		r2 q8 r r4
+		r2 <a e' a>8 r r4
+		r2 <a d a'>8 r r4
+		R1*5 %53
+		\mark #11 R1
+		R\fermataMarkup %55
+		<< {
+			\crescHairpin <d d'>4\mp\<( <e e'>) <f f'>(\sp q8 <e e'>16 <d d'>)
+			<cis cis'>4(\< <d d'>) <dis dis'>(\sp <e e'>8 <d d'>16 <cis cis'>)
+			\crescTextCresc <d d'>4(\< <f f'>) \once\tieNeutral <a a'>~(\sp q16 <g g'> <es es'> b')
+			\dimTextDim <g cis>4( d'8\> e g[ f] e) \oneVoice r
+			\mark #12 \tuplet 3/2 8 { r16\mf a,,( a') \voiceOne r a'( a') \oneVoice r a,,,( a') \voiceOne r a'( a') \oneVoice r a,,,( a') \voiceOne r a'( a') \oneVoice \subdivE a( b a f d a) %60
+			r a,,( a') \voiceOne r a'( a') \oneVoice r a,,,( a') \voiceOne r a'( a') \oneVoice r a,,,( a') \voiceOne r a'( a') \oneVoice \subdivE a( b a g e a,) }
+		} \\ {
+			r16 a,8 a16 r a8 a16 r a8 a16 r a8 a16 %56
+			r a8 a16 r a8 a16 r a8 a16 r a8 a16
+			r b!8 b16 r b8 b16 r b8 b16 r b8 s16
+			b16 a8 a16 f a cis a e' a, d h cis8 s
+			s a16 r s8 a16 r s8 a16 r s4 %60
+			s8 a16 r s8 a16 r s8 a16 r s8
+		} >>
+		\ottava #1 \tuplet 3/2 8 { \crescTextCresc \subdivE b''16\< c b c b c } \subdivE b32 c b c b c b c \afterGrace b2\trill\f\< { a16 b }
+		\crescTextCrescMolto \tuplet 7/4 8 { es32\ff([\< g es b g es b)] \ottava #0 es( g es b g es b) es([ g es b g es b)] \clef bass es( g es b g es b) } r32 <b es g b>[ r <es g b es> r <g b es g> r <b es g b>] \clef treble r <es g b es>[ r <g b es g> r <b es g b> r <es g b es>]
+		\mvTrr <g b es g>16\sp-\markup { \override #'(baseline-skip . 2) \remark { \left-column { \line { "Dieser Akkord muß" } \line { "mittels des Pedals" } \line { "durch den ganzen" } \line { "Takt ausklingen." } } } } r r8 r4 r2
+		\mark #13 R1*3 %67
+		\crescHairpin \dimHairpin \time 2/4 d16(\p\< e f g\! a\> g f e\!
+		\time 4/4 d8) r r4 r2
+		\crescHairpin \dimHairpin \time 2/4 d,16(\p\< e f g\! a\> g f e\! %70
+		\mark #14 \time 4/4 d8) r << {
+			\crescTextCresc d'8(->\< c16 b a8) r f'16(-> e d cis
+			d8)\! r a'16(-> g f e)
+		} \\ {
+			e,4( d8) r b'4(
+			a8) r d4
+		} >> r8 <b e>16( <g cis>) r8 \dimTextDim <e b'>16(\> <cis g'>)
+		\time 2/4 r8 <cis g'>16( <b e>) r8 <b e>16( <g cis>)
+		\time 4/4 <a d>16\pp q8 q16 <a d a'> q8 q16 <a' d> q8 q16 <a d a'> q8 q16
+		\mark #15 <d a' d>8(-.\pp q-. q-. q-.) q(-.-\markup { \remark "un poco rit." } q-. q-. q-.) %75
+		q(-. q-. q-. q-.) q(-. q-. q-. q-.)
+		q4(-. q-. q-. q-.)
+		<d f a d>-.( r q-.) r
+		q1\pppE \bar "|." %79 finis
 	}
 }
 
@@ -1635,7 +1733,82 @@ IVPianoL = {
 	\relative c {
 		\clef bass \numericTimeSignature
 		\key d \minor \time 4/4 \tempoIV
-		
+		R1*3
+		r2 r4 r16 << { a'8( g16 s16) } \\ { g16( f e <d f>) } >>
+		\crescHairpin \dimHairpin \clef treble a'( a' a,) r a'(\< b\> a)\! r a( c! b a h cis d %5
+		cis) a( a, a') r a( \acciaccatura c8 b16 a) a( cis d dis e f g a)
+		r d,( b! f \clef bass d b! f d) \tuplet 3/2 8 { \subdivE b16( es b' es, b es \clef treble \subdivE b' es b' es, b es) }
+		\subdivQ cis'16[( b! g e! d a' cis, a')] \tuplet 3/2 8 { \subdivS b,!32( cis e g b! cis) } s8 r16 \clef bass << { a,8.~ a8 } \\ { g16( f e d8) } >>
+		r r4 r2
+		R1*2 %11
+		\clef treble \tuplet 3/2 8 { \subdivE cis'16[-. e-. a-. cis-. e-. a-.] e-.[ cis-. a-.] } \tuplet 5/4 8 { h32( gis f! d h) } \tuplet 3/2 8 { \subdivE cis16[-. e-. a-. cis-. e-. a-.] e-.[ cis-. a-.] } \tuplet 5/4 8 { h32( gis f! d h) }
+		\tuplet 3/2 8 { cis16-.[ e-. a-.] } \tuplet 5/4 8 { h32( gis f! d h) } \tuplet 3/2 8 { cis16-.[ e-. a-.] } \tuplet 5/4 8 { h32( gis f! d h) } \afterGrace b'2\trill { a16 b }
+		<g b es>8 r r4 \clef bass <d, f b>4 <c g' b>8 <f c'>
+		\time 2/4 \subdivE <b, f' b> \tuplet 3/2 8 { f'16 b f \subdivE d f d b d b } %15
+		<b, b'>16[ r <d d'> r <f f'> r <b b'>] r <es, es'>[ r <g g'>] r \tuplet 3/2 8 { \clef treble r16 h'( c d[ es f] }
+		g8) \clef bass <es,, es'>16[ r <g g'> r <c c'>] r <f, f'>[ r <a a'>] r \clef treble \tuplet 3/2 8 { r16 es''16( f } g32[ a b c]
+		d8) \clef bass <f,,, f'>16[ r <as as'> r <b b'>] r <g g'>[ r <b b'> r <c, c'> r <es es'>] r
+		<d d'>[ r <g g'> r <c, c'> r <f f'>] r b( b' f d b d f b)
+		\tuplet 3/2 8 { \subdivE a f a f c f \subdivE a f a f c f \subdivE b f b f d f \subdivE b f b f d f %20
+		\subdivE d' b d b f b \subdivE d b d b f b \subdivE es b es b g b \subdivE es b es b g b
+		\subdivE d b d b f b \subdivE d b d b f b \subdivE e,! b' c e c b \subdivE e, b' c e c b
+		\subdivE d, f b d b f \subdivE d f b d b f \subdivE c g' b c b g \subdivE f a c es c a }
+		\subdivE d,32 f b d b f d f \subdivE d f b d d, fis b d \subdivE es, a b es es, g b es \subdivE d, g h d h g d g
+		\subdivE es g c es c g es g \subdivE es g c es b c e gis \subdivE f, b c e? f, a c f \subdivE es, a c es c a es a %25
+		\subdivE d, f b d b f d f \subdivE as b d f d b as b \subdivE g b es g es b g b \subdivE es, g c es c g es g
+		<d f b>8 <g, d' g> <c g' b> <f, es' f> \subdivE b,32 d f b d, f b d \subdivE f, b d f b, d f b
+		\subdivE d, f b d f, b d f \clef treble \subdivE b, d f b d, f b d <b d>8[ r16 f <b d>8 r16 f]
+		\subdivQ <b d>16[ r32 f <b d>16 r32 f <b d>16 r32 f <b d>16 r32 f] <b d>8 q4.\fermata
+		\clef bass g,,4-\critnote b8 g c4 d %30
+		R1
+		a'4( b) es,8( c4 f8)
+		\time 2/4 b,4 d8 f
+		\time 4/4 <b,, b'>16[ r <d d'> r <f f'> r <b b'>] r <es, es'>[ r <g g'>] r \tuplet 3/2 8 { \clef treble r16 h'( c d[ es f] }
+		g8) \clef bass <es,, es'>16[ r <g g'> r <c c'>] r <f, f'>[ r <a a'>] r \clef treble \tuplet 3/2 8 { r16 es''16( f } g32[ a b c] %35
+		d8) \clef bass <f,,, f'>16[ r <as as'> r <b b'>] r <g g'>[ r <b b'> r <c, c'> r <es es'>] r
+		<d d'>[ r <g g'> r <c, c'> r <f f'>] r <g g'>2~
+		q q
+		\time 2/4 q
+		\time 4/4 q q %40
+		q q
+		<f f'> q4 q
+		<e' g>16 q8 q16 <g b> q8 q16 <b d> q8 q16 <d e> q8 q16
+		<b d>8 r r4\fermata r2
+		r <g, g'>8 r r4 %45
+		r2 q8 r r4
+		r2 q8 r r4
+		r2 <f f'>8 r r4
+		R1*5 %53
+		R1
+		R\fermataMarkup %55
+		<< {
+			f'4( g) gis( a8 g16 f)
+			e4( f) fis( g8 f16 e)
+			d4( d') f( f16 es b g)
+		} \\ {
+			d2 d
+			a a
+			b!4( b') <es, b'>2
+		} >>
+		a2 d8([ gis,] a) r
+		<d,, a'> r q r q r \clef treble \tuplet 3/2 8 { \subdivE a'''16( b a f d a) } %60
+		\clef bass <a,, a'>8 r q r q r \clef treble \tuplet 3/2 8 { \subdivE a'''16( b a g e a,)
+		\subdivE b' a b a b a } \subdivE b32 a b a b a b a \afterGrace b2\trill\f { a16 b }
+		\set Staff.pedalSustainStyle = #'mixed <g b es g>16 r <g, b es g> r \clef bass <g, b es g> r <g, b es g> r q32[\sustainOn r <b es g b> r <es g b es> r <g b es g>] r <b es g b>[ r <es g b es> r <g b es g> r <b es g b>] r
+		\clef treble <es g b es>16 r r8 r4 r2\sustainOff
+		R1*3 %67
+		\time 2/4 d16( e f g a g f e
+		\time 4/4 d8) r r4 r2
+		\clef bass \time 2/4 d,16( e f g a g f e %70
+		\time 4/4 d8) r <g b>4( <f a>8) r << { d'16( e f e d8) r e( d16 cis) } \\ { g4( f8) r b4 } >>
+		r8 <g cis>16( <e b'>) r8 <g cis>16( <e b'>)
+		\time 2/4 r8 <e b'>16( <cis g'>) r8 q16( <b e>)
+		\time 4/4 <d, a' d>16_\markup { \remark "mit Pedal" } q8 q16 q q8 q16 <d' a' d> q8 q16 q q8 q16
+		\clef treble <d' a'>8(-. q-. q-. q-.) q(-. q-. q-. q-.)
+		q(-. q-. q-. q-.) q(-. q-. q-. q-.)
+		q4(-. q-. q-. q-.)
+		\once\slurDown <d f a>(-. r q-.) r
+		q1 \bar "|."
 	}
 }
 
