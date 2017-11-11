@@ -1623,4 +1623,20 @@ IIIPianoL = {
 	}
 }
 
+IVPianoR = {
+	\relative c' {
+		\clef treble \numericTimeSignature
+		\key d \minor \time 4/4 \tempoIV
+		R2.*3
+	}
+}
+
+IVPianoL = {
+	\relative c {
+		\clef bass \numericTimeSignature
+		\key d \minor \time 4/4 \tempoIV
+		
+	}
+}
+
 % TODO

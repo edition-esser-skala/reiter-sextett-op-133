@@ -816,3 +816,11 @@ IIIViolinoI = {
 		}
 	}
 }
+
+IVViolinoI = {
+	\relative c' {
+		\clef treble \numericTimeSignature
+		\key d \minor \time 4/4 \tempoIV
+		
+	}
+}

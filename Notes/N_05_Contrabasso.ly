@@ -823,3 +823,11 @@ IIIContrabasso = {
 		}
 	}
 }
+
+IVContrabasso = {
+	\relative c {
+		\clef bass \numericTimeSignature
+		\key d \minor \time 4/4 \tempoIV
+		
+	}
+}

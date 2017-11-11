@@ -826,3 +826,12 @@ IIIViola = {
 		}
 	}
 }
+
+IVViola = {
+	\relative c' {
+		\clef treble
+% 		\clef alto
+		\numericTimeSignature \key d \minor \time 4/4 \tempoIV
+		
+	}
+}
