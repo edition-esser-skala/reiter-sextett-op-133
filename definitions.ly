@@ -68,6 +68,7 @@ spE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynami
 
 mvTr = \once \override TextScript.X-offset = #2
 mvTrr = \once \override TextScript.X-offset = #3
+mvDr = \once \override DynamicText.X-offset = #2
 lh = \change Staff = "LH"
 rh = \change Staff = "RH"
 extendLV = #(define-music-function (parser location further) (number?) 

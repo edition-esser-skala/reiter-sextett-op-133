@@ -829,7 +829,7 @@ IVViolinoI = {
 		cis4(\< d)\! dis(\sp e8 d16 cis)
 		d4(\< f)\! a~(\sp a16 g es b)
 		cis4(->\< d8 e)\! g(-> f\> e)\! r
-		\mark #2 fis4( g) b~( b16 a gis a)
+		\mark #2 fis4(\p g) b~( b16 a gis a)
 		c8( b) a16( g fis g) b8(-> a) a([-> g)] %10
 		\subdivE g16(-> f) f(-> e) g(\< f\! e\> f)\! d2
 		\mark #3 \crescHairpin e4.\< g16(\sp f) e4.\< g16(\sp f)
@@ -863,14 +863,14 @@ IVViolinoI = {
 		\mark #9 \time 4/4 b,8.(\p e,!16) e4 r16 e( f g f e d e) %40
 		d4(-> cis) r2
 		\crescTextCresc r16 a(\< h cis d cis d e) \subdivQ f([ e f g) a( gis a b)]
-		\crescTextCrescMolto a8.(\ff g16) e4~ e16\< d16:32 b: g: b: g: b: d:
+		\crescTextCrescMolto a8.(\f g16) e4~ e16\< d16:32 b: g: b: g: b: d:
 		\crescHairpin <e d,>8\sp r r4\fermata r8 e,(\p\<^\markup { \remark "sehr ruhig, mit sprechendem Ausdruck" } f g)\!
 		\mark #10 \crescHairpin c4(-> b4.) g16(\< a b a d cis)\! %45
 		f4(-> e2~ e8 d)
 		d4(-> cis2.)
 		cis4(-> d2.)
 		\crescHairpin \dimHairpin d8(\< f\! e\> d)\! d4( cis)
-		c8(\< es\! d\> c)\! c4( h) %50
+		c8(\<^\markup { \remark "cresc." } es\! d\> c)\! c4( h) %50
 		b8(\f a g f) g( f e d)
 		\dimTextDim cis2(\> b!
 		\dimHairpin e2.)\p \> r4\!

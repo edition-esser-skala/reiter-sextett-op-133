@@ -818,6 +818,78 @@ IVViolinoII = {
 	\relative c' {
 		\clef treble \numericTimeSignature
 		\key d \minor \time 4/4 \tempoIV
-		
+		r16 a'8\p a16 r a8 a16 r a8 a16 r a8 a16
+		r a8 a16 r a8 a16 r a8 a16 r a8 a16
+		\crescTextCresc r b8\< b16 r b8 b16 r b8 b16 r b8 b16\!
+		\dimTextDim b( a8) a16 r a8\> a16 r a8 a16~ a8\! r
+		r16 <a a,>8 q16 r q8 q16 r q8 q16 r q8 q16 %5
+		r q8 q16 r q8 q16 r q8 q16 r q8 q16
+		\crescTextCresc r <b b,>8\< q16 r q8 q16 r q8 q16 r q8 q16\!
+		\dimHairpin q( <a a,>8) q16 r q8 q16 b8(-> gis\> a)\! r
+		r16 <c d>8\p q16 r q8 q16 r q8 q16 r q8 q16
+		r d8 d16 b4 r16 c8 c16 r b8 b16 %10
+		\crescHairpin \dimHairpin \subdivE b( a) a( g) b(\< a\! g\> a\!) r a8 a a a16
+		a a8 a a16( gis8)\sp a16 a8 a a16( gis8)\sp
+		a([-\markup { \remark "cresc." } gis)]\sp a( gis)\sp  as16\f as8 as as as16
+		\dimHairpin b8( es b es,) f(\> b4 f8)\!
+		\time 2/4 f2\p %15
+		\time 4/4 \crescHairpin r4 r8\mf b~(\< b4\sp h8 f'
+		es) r r c8~(\< c4\sp a8 f)
+		b( d f as,) b( g b4)
+		\dimTextDim b8(\> f b-.) f-. f16\p f8 f f f16
+		r2 r8 b~\p-- b r %20
+		r2 r8 es~-- es r
+		\crescTextCresc r d~-- d r r g~--\< g r
+		d r r4 r2
+		r8 f(\ff d <b b'>) q4\sp g'8( f
+		es) g([ es <c c'>)] q4\sp a'16( f c a) %25
+		\subdivQ b'([ f d f d b as b)] \subdivQ b'([ g es b es c g es)]
+		\dimTextDim \subdivQ d([\> f b f b g f es)] \subdivQ d([\p b d f b f b d)]
+		\subdivQ b([\> f b d f d f b)] \subdivQ f([\pp b, f b f' b, f b)]
+		f'8( b, f b f'2)\fermata
+		R1 %30
+		es4\f es8(-- es--) es( d h4)
+		R1
+		\time 2/4 R2
+		\time 4/4 \crescHairpin r4 r8\mf b~(\< b4\sp h8 f'
+		\crescHairpin es) r r c~(\< c4\sp a8 f) %35
+		b( d f as,) b( g b4)
+		\crescHairpin b8( f) b16(\< g f es)\! \subdivQ d([ b d e) \crescTextCresc g(\< e g b)]
+		\subdivQ d([ b d e!) g( e g b] d8)\sp r r4
+		\time 2/4 R2
+		\time 4/4 R1 %40
+		\crescHairpin \dimHairpin e,,8.(\mf a,16) a4 r16 a(\< h cis\! d\> e g f)\!
+		\crescHairpin e8.( g16 f4) a(\< d)\!
+		\crescTextCrescMolto b\f-^ b~-- b16\< g16:32 e!: d: e: d: e: g:
+		<b d,>8\sp r r4\fermata r2
+		R1 %45
+		\crescHairpin r2 r8 e,(\pE\< f g)\!
+		\dimHairpin b4(-> a~ \subdivQ a16[) e(\< f g\! a\> g f e\!)]
+		e4(-> d4.) d8(\< e f)\!
+		e4( gis8 e) e(\< b'!\! a\> g)\!
+		g4(-\markup { \remark "cresc." } fis8 d) d(\< as'\! g\> f)\! %50
+		g(\f f e d) e( d cis b!)
+		\dimTextDim a2(\> g
+		\dimHairpin a2.)\p\> r4\!
+		\mark #11 << { \oneVoice d1(\pp cis)\fermata } \\ { s1 \dimHairpin s2.\> s4\! } >> %55
+		R1*3
+		\crescHairpin r2 r4 r16 a'8.\p\<
+		r16\! <a a,>8--\mf q16 r q8-- q16 r q8-- q16 r q8-- q16 %60
+		r q8-- q16 r q8-- q16 r q8-- q16 r q8-- q16
+		\crescTextCresc r <b b,>8\< q16 r q8 q16 q\f\< q8 q16-^ q-^ q-^ q-^ q-^
+		\crescTextCrescMolto es\ff\<-^ g-^ g-^ es-^ es-^ b-^ b-^ g-^ g-^ es-^ es-^ g-^ g-^ b-^ b-^ es-^
+		<g b, es, g,>\sp r r8 r4 r2
+		R1 %65
+		r2 cis,,2\pp
+		<d d'>16 q8 q q q16 q q8 q q q16
+		\time 2/4 d4( cis)
+		\time 4/4 d16 d8 d d d16 d d8 d d d16
+		\time 2/4 d4( cis) %70
+		\time 4/4 \crescTextCresc d16 d8 d16 r4 d16\< d8 d16 r4
+		\dimTextDim f16 f8 f16\! r4 a16(\> f) r8 f16( d) r8
+		\time 2/4 d8 r a\! r
+		\time 4/4 R1
+		\mark #15 R1*4 %78
+		<a f'>1\ppp \bar "|." %79 finis
 	}
 }

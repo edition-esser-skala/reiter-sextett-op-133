@@ -1691,7 +1691,7 @@ IVPianoR = {
 		\mark #11 R1
 		R\fermataMarkup %55
 		<< {
-			\crescHairpin <d d'>4\mp\<( <e e'>) <f f'>(\sp q8 <e e'>16 <d d'>)
+			\crescHairpin <d d'>4\mp\<( <e e'>) \once \tieDashed \once \tieNeutral <f f'>(~\sp q8 <e e'>16 <d d'>)
 			<cis cis'>4(\< <d d'>) <dis dis'>(\sp <e e'>8 <d d'>16 <cis cis'>)
 			\crescTextCresc <d d'>4(\< <f f'>) \once\tieNeutral <a a'>~(\sp q16 <g g'> <es es'> b')
 			\dimTextDim <g cis>4( d'8\> e g[ f] e) \oneVoice r
@@ -1718,7 +1718,7 @@ IVPianoR = {
 		} \\ {
 			e,4( d8) r b'4(
 			a8) r d4
-		} >> r8 <b e>16( <g cis>) r8 \dimTextDim <e b'>16(\> <cis g'>)
+		} >> \dimTextDim r8 <b e>16(\> <g cis>) r8 <e b'>16( <cis g'>)
 		\time 2/4 r8 <cis g'>16( <b e>) r8 <b e>16( <g cis>)
 		\time 4/4 <a d>16\pp q8 q16 <a d a'> q8 q16 <a' d> q8 q16 <a d a'> q8 q16
 		\mark #15 <d a' d>8(-.\pp q-. q-. q-.) q(-.-\markup { \remark "un poco rit." } q-. q-. q-.) %75
