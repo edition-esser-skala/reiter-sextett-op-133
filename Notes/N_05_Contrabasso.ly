@@ -825,9 +825,65 @@ IIIContrabasso = {
 }
 
 IVContrabasso = {
-	\relative c {
+	\relative c, {
 		\clef bass \numericTimeSignature
 		\key d \minor \time 4/4 \tempoIV
-		
+		R1*4
+		\mark #1 <d a'>2--\p q-- %5
+		a-- a--
+		\crescHairpin b4(\< b')\! es,2\sp
+		\dimHairpin a d,8(-\parenthesize-> \parenthesizedHairpin e\> a)\! r
+		\mark #2 R1*3 %11
+		\mark #3 a8-.\p e-. a4-- a8-. e-. a4--
+		a8. a16 a8. a16 b!8\f b b b
+		\dimHairpin g2 f8(\> d c f)\!
+		\time 2/4 b,4\p d8-. f-. %15
+		\mark #4 \time 4/4 \mvTr b,\p-\markup { \remark "pizz." } d f b es, g d g
+		c, es g c f, a es a
+		d, f as b g b c, es
+		\dimTextDim d\> g c, f b,\p d f b
+		\mark #5 \crescHairpin \mvTr f4(\p-\markup { \remark "Bogen" } e!8 es) d4(\< f8 g)\! %20
+		as4( g8 f) g2
+		f e!
+		\crescTextCresc f\< c4( f,)
+		\mark #6 b8-.\ff d-. f-. b-. es,-. g-. d-. g-.
+		c,-. es-. g-. c-. f,-. a-. es-. a-. %25
+		d,-. f-. as-. b-. g-. b-. c,-. es-.
+		\dimTextDimE d-.\> g-. c,-. f-. b,(\p d f b)
+		\dimTextDim d(\> b f d) b4(\pp f)
+		b( f') b,2\fermata
+		\mark #7 R1*3 %32
+		\time 2/4 R2
+		\mark #8 \time 4/4 \mvTr b8\p-\markup { \remark "pizz." } d f b es, g d g
+		c, es g c f, a es a %35
+		d, f as b g b c, es
+		\crescTextCresc d g c, f g, b d\< e!
+		g b d^\critnote e! g\sp r r4
+		\time 2/4 R2
+		\mark #9 \time 4/4 R1*3 %42
+		\crescTextCrescMolto \mvTr e,,!8(\f-\markup { \remark "Bogen" } g b d) e!(\< g b e!)
+		g\sp r r4\fermata r2
+		\mark #10 R1*9 %53
+		\mark #11 R1
+		R\fermataMarkup %55
+		R1*3
+		\crescHairpin r2 r4 r16 g,16(\p\< f e)\!
+		\mark #12 <d a'>2--\mf q-- %60
+		a-- a--
+		\crescTextCresc b16\< b8 b16 b' b b b es,\f\< es8-- es16-^ es-^ es-^ es-^ es-^
+		\crescTextCrescMolto es1:32\ff\<
+		es16\sp r r8 r4 r2
+		\mark #13 R1*2 %66
+		d'4(\pp c!8 b) a4( g8 f)
+		\time 2/4 e4( a)
+		\time 4/4 d,( c8 b) a4( g8 f)
+		\time 2/4 e4( a) %70
+		\mark #14 \time 4/4 d16 d8 d16~ d4 d16 d8 d16~ d4
+		d16 d8 d16 d2.~
+		\time 2/4 d2
+		\time 4/4 d1~
+		\mark #15 d16 r r8 r4 r2 %75
+		R1*3
+		f1\ppp \bar "|." %79 finis
 	}
 }

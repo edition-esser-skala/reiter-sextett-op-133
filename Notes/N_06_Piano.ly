@@ -1633,7 +1633,7 @@ IVPianoR = {
 			\mark #1 \crescHairpin \dimHairpin \oneVoice <a d>) a( a' a,) r a'(\< b\> a)\! r a( c! b a h cis d %5
 			\crescHairpin cis) a( a, a') r a( \acciaccatura c8 b16 a) a(\< cis d dis e f g a
 			<b! b,!>)\! f( d b f d b! f) \tuplet 3/2 8 { \subdivE \crescTextCresc es(\< b' es b es, b' \subdivE es b' es b es, b')\! }
-			\subdivQ e([ cis a g f a e a)] \tuplet 3/2 16 { \crescHairpin \subdivS g,32([\< b! cis e g b]\! \subdivS h gis f! \lh \clef treble d h gis) } \rh r16 \voiceOne <a cis>(_\markup { \remark "un poco rit." } <h d> <cis e>
+			\subdivQ e([ cis a g f a e a)] \tuplet 3/2 16 { \crescHairpin \shape #'((0 . 0) (2 . 0) (0 . 1) (0 . 0)) Slur \subdivS g,32([\< b! cis e g b]\! \subdivS h gis f! \lh \clef treble d h gis) } \rh r16 \voiceOne <a cis>(_\markup { \remark "un poco rit." } <h d> <cis e>
 			\mark #2 \oneVoice <c d fis>8)-\markup { \remarkE "a tempo" } r r4 r2
 		} \\ {
 			s2 s4 s16 a8.(\p
@@ -1659,7 +1659,7 @@ IVPianoR = {
 		\subdivE g es c g c es g es \subdivE g es c g gis' e c b \subdivE gis' e c b a' f c a \subdivE a' f c a c f a f %25
 		\subdivE b f d b d f b f \subdivE b f d b d f b f \subdivE b g es b es g b g \subdivE g es b g b es g es
 		\dimTextDim \subdivE f\> d b f b f d b \subdivE es' b g es a f es c \subdivE <b d f b>8\p f32 b d f \subdivE b, d f b d, f b d
-		\dimTextDim f,\> b d f b, d f b \subdivE d, f b d f, b d f \ottava #1 \subdivE b,\pp d b' d, b' d, b d \subdivE b d b' d, b' d, b d
+		\dimTextDim \subdivE f,\> b d f b, d f b \subdivE d, f b d f, b d f \ottava #1 \subdivE b,\pp d b' d, b' d, b d \subdivE b d b' d, b' d, b d
 		\subdivE b d b' d, b d b' d, \subdivE b d b' d, b d b' d, <b d b'>8 q4.\fermata \ottava #0
 		\mark #7 << {
 			\crescHairpin \once \dynamicUp <b, d>4\< q8-- q--\! q8( <a c> <fis b> <fis a>) %30
@@ -1673,9 +1673,9 @@ IVPianoR = {
 			d <d f>8 q q q16
 		} >>
 		\mark #8 \time 4/4 r16\p <f, b d>[ r <b d f> r <d f b> r <f b d>] r <b, es g>[ r <es g b>] \tuplet 3/2 8 { \crescHairpin r g(\< a h[ c d] }
-		es8)\! r16 <c, es g>[ r <es g c> r <g c es>] r <c, f a>[ r <f a c>] \tuplet 3/2 8 { r \crescHairpin c'(\< d } e32[ f g a] %35
+		es8)\! r16 <c, es g>[ r <es g c> r <g c es>] r <c, f a>[ r <f a c>] \tuplet 3/2 8 { r \crescHairpin c'(\< d } es32[ f g a] %35
 		b8)\! r16 <d,, as' b>[ r <f b d> r <b d f>] r <b es b'>[ r <b es g> r <g b es> r <g b c>]
-		\crescHairpin r <f b f'>[ r <d f b> r\< <g b es> r <es f a>]\! \dimHairpin <b d e b'>2~\f\>
+		\crescHairpin r <f b f'>[ r <d f b> r\< <g b es> r <es f a>] \dimHairpin <b d e b'>2~\f\>
 		q q16\p q8 q q q16
 		\time 2/4 q16 q8 q q q16
 		\mark #9 \time 4/4 q16 q8 q q q16 q q8 q q q16 %40
