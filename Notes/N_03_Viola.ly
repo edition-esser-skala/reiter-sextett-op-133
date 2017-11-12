@@ -887,7 +887,7 @@ IVViola = {
 		\crescHairpin r2 r4 r16 a8(\p\< g16)\!
 		\mark #12 f4(\mf\< g)\! gis(\sp a8 g16 f) %60
 		e4(\< f)\! fis(\sp g8 f16 e)
-		d'4(\< f)\! \crescTextCrescE as16\f\< as8 as16-^ as-^ as-^ b-^ as-^
+		d'4(\< f)\! \crescTextCrescE as16\f\< as8-- as16-^ as-^ as-^ b-^ as-^
 		\crescTextCrescMolto b\ff-^\< es-^ es-^ b-^ b-^ g-^ g-^ es-^ es-^ b-^ b-^ es-^ es-^ g-^ g-^ b-^
 		<es g, b, es,>\sp r r8 r4 r2
 		\mark #13 R1 %65

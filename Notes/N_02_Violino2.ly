@@ -876,7 +876,7 @@ IVViolinoII = {
 		\crescHairpin r2 r4 r16 a'8.\p\<
 		\mark #12 r16\! <a a,>8--\mf q16 r q8-- q16 r q8-- q16 r q8-- q16 %60
 		r q8-- q16 r q8-- q16 r q8-- q16 r q8-- q16
-		\crescTextCresc r <b b,>8\< q16 r q8 q16 q\f\< q8 q16-^ q-^ q-^ q-^ q-^
+		\crescTextCresc r <b b,>8\< q16 r q8 q16 q\f\< q8-- q16-^ q-^ q-^ q-^ q-^
 		\crescTextCrescMolto es\ff\<-^ g-^ g-^ es-^ es-^ b-^ b-^ g-^ g-^ es-^ es-^ g-^ g-^ b-^ b-^ es-^
 		<g b, es, g,>\sp r r8 r4 r2
 		\mark #13 R1 %65

@@ -881,7 +881,7 @@ IVViolinoI = {
 		\crescHairpin \dimHairpin r8 a4\p a(\> h8 cis16)\! a,(\< h cis)\!
 		\mark #12 d4(\mf\< e)\! f~(\sp f8 e16 d) %60
 		cis4(\< d)\! dis(\sp e8 d16 cis)
-		d4(\< f)\! \crescTextCresc as16\f\< as8 as16 as-^ as-^ b-^ as-^
+		d4(\< f)\! \crescTextCresc as16\f\< as8-\parenthesize-- as16-\parenthesize-^ as-^ as-^ b-^ as-^
 		\crescTextCrescMolto g-^\ff\< b-^ b-^ g-^ g-^ es-^ es-^ b-^ b-^ g-^ g-^ b-^ b-^ es-^ es-^ g-^
 		<b b, es,>\sp r r8 r4 r2
 		\mark #13 cis,,2.(\p^\markup { \remark "stark zurückgehalten" } d4 %65

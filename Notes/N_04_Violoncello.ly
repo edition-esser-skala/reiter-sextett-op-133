@@ -865,6 +865,69 @@ IVVioloncello = {
 	\relative c {
 		\clef bass \numericTimeSignature
 		\key d \minor \time 4/4 \tempoIV
-		
+		d2--\p d--
+		a-- a--
+		\dimHairpin b es,\sp\>
+		a\! d,4(\> a'8)\! r
+		\mark #1 \crescHairpin f'4(\mf\<^\markup { \remark "gesangsvoll" } g)\! gis(\sp a8 g16 f) %5
+		e4(\< f)\! fis(\sp g8 f16 e)
+		\clef "treble_8" d'4(\< f)\! a4~(\sp a16 g es b)
+		\crescHairpin \dimHairpin cis4(->\< d8 e)\! cis(-\parenthesize-> h\> a)\! r
+		\mark #2 \clef bass d,2--\p d--
+		g4 c f, g %10
+		a8( b) g( a) d,4 f8-. d-.
+		\mark #3 \crescHairpin a'4.(\< h8)\sp a4.(\< h8)\sp
+		a([-\markup { \remark "cresc." } h)]\sp a( h)\sp b2--\f
+		\dimHairpin g f8(\> d c f)\!
+		\time 2/4 b,4\p d8-. f-. %15
+		\mark #4 \time 4/4 \mvTr b,\p-\markup { \remark "pizz." } d f b es, g d g
+		c, es g c f, a es a
+		d, f as b g b c, es
+		\dimTextDim d\> g c, f b,\p d f b
+		\mark #5 \crescHairpin \mvTr f4(\p-\markup { \remark "Bogen" } e!8 es) d4(\< f8 g)\! %20
+		as4( g8 f) g2
+		f e!
+		\crescTextCresc f\< c4( f,)
+		\mark #6 r16 b[\ff r d r f r b] r es,[ r g r d r g]
+		r c,[ r es r g r c] r f,[ r a r es r a] %25
+		r d,[ r f r as r b] r g[ r b r c, r es]
+		\dimTextDim r d[\> r g r c, r f] f,8(\p b d f)
+		b(\> f d b) f'2~\pp
+		f1\fermata
+		\mark #7 R1 %30
+		es4\f g8 es f4( g)
+		R1
+		\time 2/4 R2
+		\mark #8 \time 4/4 r16 \mvTr b,[\p-\markup { \remark "pizz." } r d r f r b] r es,[ r g r d r g]
+		r c,[ r es r g r c] r f,[ r a r es r a] %35
+		r d,[ r f r as r b] r g[ r b r c, r es]
+		\crescTextCresc r d[ r g r c, r f] r b,[ r d r\< e! r g]
+		r b[ r d r e! r g] b8\sp r r4
+		\time 2/4 R2
+		\mark #9 \time 4/4 R1*3 %42
+		\crescTextCrescMolto \mvTr e,,,!8:16\f-\markup { \remark "Bogen" } g: b: d: e!:\< g: b: e!:
+		g\sp r r4\fermata r2
+		\mark #10 R1*9 %53
+		\mark #11 << { \oneVoice b,,!1(\pp a)\fermata } \\ { s1 \dimHairpin s2.\> s4\! } >> %55
+		R1*3
+		\crescHairpin r2 r4 r16 g'(\p\< f e)\!
+		\mark #12 d'4(\mf\< e)\! f4(~\sp f8 e16 d) %60
+		cis4(\< d)\! dis(\sp e8 d16 cis)
+		\crescHairpin d,4(\< d')\! \crescTextCresc f16\f\< f8-\parenthesize-- f16-\parenthesize-^ f-^ f-^ g-^ f-^
+		\crescTextCrescMolto <es,, b'>1:64\ff\<
+		q16\sp r r8 r4 r2
+		\mark #13 R1 %65
+		r2 a2\pp
+		d'4( c!8 b) a4( g8 f)
+		\time 2/4 e4( a)
+		\time 4/4 d,( c8 b) a4( g8 f)
+		\time 2/4 e4( a) %70
+		\mark #14 \time 4/4 \crescTextCresc a16 a8 a16 r4 d16\< d8 d16 r4
+		\dimTextDim f16 f8 f16\! r4 a8\> r f r
+		\time 2/4 f16( d) r8 d16( a)\! r8
+		\time 4/4 R1
+		\mark #15 \subdivQ d,16([\pp cis d eis fis gis a cis] d) r r8 r4 %75
+		R1*3
+		<a d>1\ppp \bar "|." %79 finis
 	}
 }
