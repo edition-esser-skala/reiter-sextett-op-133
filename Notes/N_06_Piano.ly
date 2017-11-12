@@ -1675,7 +1675,7 @@ IVPianoR = {
 		\mark #8 \time 4/4 r16\p <f, b d>[ r <b d f> r <d f b> r <f b d>] r <b, es g>[ r <es g b>] \tuplet 3/2 8 { \crescHairpin r g(\< a h[ c d] }
 		es8)\! r16 <c, es g>[ r <es g c> r <g c es>] r <c, f a>[ r <f a c>] \tuplet 3/2 8 { r \crescHairpin c'(\< d } e32[ f g a] %35
 		b8)\! r16 <d,, as' b>[ r <f b d> r <b d f>] r <b es b'>[ r <b es g> r <g b es> r <g b c>]
-		\crescHairpin r <f b f'>[ r <d f b>\< r <g b es> r <es f a>] \dimHairpin <b d e b'>2~\f\>
+		\crescHairpin r <f b f'>[ r <d f b> r\< <g b es> r <es f a>]\! \dimHairpin <b d e b'>2~\f\>
 		q q16\p q8 q q q16
 		\time 2/4 q16 q8 q q q16
 		\mark #9 \time 4/4 q16 q8 q q q16 q q8 q q q16 %40
