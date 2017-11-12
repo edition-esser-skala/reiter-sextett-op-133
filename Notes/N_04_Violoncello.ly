@@ -931,3 +931,11 @@ IVVioloncello = {
 		<a d>1\ppp \bar "|." %79 finis
 	}
 }
+
+VVioloncello = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoV
+		
+	}
+}

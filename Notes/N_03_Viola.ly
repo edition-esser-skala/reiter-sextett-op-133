@@ -906,3 +906,12 @@ IVViola = {
 		<f, a>1\ppp \bar "|." %79 finis
 	}
 }
+
+VViola = {
+	\relative c' {
+		\clef treble
+% 		\clef alto
+		\key b \major \time 3/4 \tempoV
+		
+	}
+}

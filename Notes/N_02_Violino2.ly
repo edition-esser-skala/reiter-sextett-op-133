@@ -893,3 +893,11 @@ IVViolinoII = {
 		<a f'>1\ppp \bar "|." %79 finis
 	}
 }
+
+VViolinoII = {
+	\relative c' {
+		\clef treble
+		\key b \major \time 3/4 \tempoV
+		
+	}
+}

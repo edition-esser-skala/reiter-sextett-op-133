@@ -1812,4 +1812,20 @@ IVPianoL = {
 	}
 }
 
+VPianoR = {
+	\relative c' {
+		\clef treble
+		\key b \major \time 3/4 \tempoV
+		b16\f a b c d es f es d es d c
+	}
+}
+
+VPianoL = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoV
+		b16 a b c d es f es d es d c
+	}
+}
+
 % TODO

@@ -9,7 +9,8 @@
 % \include "Scores/S_I.ly"
 % \include "Scores/S_II.ly"
 % \include "Scores/S_III.ly"
-\include "Scores/S_IV.ly"
+% \include "Scores/S_IV.ly"
+\include "Scores/S_V.ly"
 
 
 % \include "Parts/P_Violino1.ly"

@@ -887,3 +887,11 @@ IVContrabasso = {
 		f1\ppp \bar "|." %79 finis
 	}
 }
+
+VContrabasso = {
+	\relative c {
+		\clef bass
+		\key b \major \time 3/4 \tempoV
+		
+	}
+}
