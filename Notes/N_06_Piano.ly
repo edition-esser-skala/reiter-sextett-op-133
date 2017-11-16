@@ -1817,6 +1817,346 @@ VPianoR = {
 		\clef treble
 		\key b \major \time 3/4 \tempoV
 		b16\f a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b d es f g f es b g b %5
+		g' es b es g c es c a' f es c
+		\mark #1 d b' d b d, b' d b d, b' d b
+		e, c' e c e, c' e c f, c' f c
+		d, b' d b e, b' e b e, b' e b
+		cis, a' cis a cis, a' cis a d, a' d a %10
+		a a' a, a' a, a' a, a' e, e' e, e'
+		a, cis, a cis a' cis, a cis a' cis, a cis
+		\mark #2 d b' d b d, b' d b d, b' d b
+		es, b' es b f b f' b, g b g' b,
+		f b f' b, <b b'>8 <g g'> <f f'> <e e'> %15
+		f16 b f' b, <b b'>8 <g g'> <f f'> <e e'>
+		\dimTextDim f'16\> d b f b g es g f es c es\!
+		\mark #3 r8 d(\mf g f e d
+		e d c e f e
+		d c b d e d %20
+		cis a cis e) a-. a-.
+		a-. a-. a-. a-. e'-. e-.
+		a,( e a, e' a e')
+		\mark #4 r d( g f es d)
+		b'( g es b es g) %25
+		f([ d b f)] g'( b,
+		f' b, g' b, es b
+		f' b, es g, a es)
+		<d b'>-.\p <d' f>-. <b d-.> <d f>-. <b d>-. <d f>-.
+		\mark #5 <b d>-\markup { \remark "staccato" } <d f> <b d> <d f> <b d> <d f> %30
+		<a c> <c f> <a c> <c f> <a c> <c f>
+		\ottava #1 <c es> <es g> <c es> <es g> <c es> <es g>
+		<b d> <d g> <b d> <d g> <b d> <d g> \ottava #0
+		\crescTextCresc g16\< d b g d b g b f'! es! c a
+		\mark #6 d\mfE b' d b d, b' d b d, b' d b %35
+		es, b' es b es, a es' a, es g es' g,
+		d a' d a d, a' d a d, a' d a
+		<g b>8-.\pE <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
+		\mark #7 <g b>-. <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
+		<f! a>-\markup { \remark "staccato" } <a d> <f a> <a d> <f a> <a d> %40
+		\ottava #1 <a cis> <cis e> <a cis> <cis e> <a cis> <cis e>
+		\crescTextCresc <c d>\< <d fis> <c d> <d fis> <c d> <d fis>
+		\mark #8 b16\mf g' b g b, g' b g b, g' b g
+		c, g' c g c, f c' f, c f c' f,
+		b, f' b f b, f' b f b, f' b f \ottava #0 %45
+		<es, g>8-.\p <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
+		\mark #9 <es g>-. <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
+		<f b>-\markup { \remark "staccato" } <b d> <f b> <b d> <f b> <b d>
+		\crescTextCresc <as c>\< <c f> <as c> <c f> <as c> <c f>
+		<c es> <es g> <c es> <es g> <c es> <es g> %50
+		as16\f ges es c as ges es c \lh \clef treble as ges es c
+		\tuplet 5/4 4 { as c es ges as } \rh \crescHairpin \tuplet 7/4 4 { c\< es ges as c es ges } \subdivE as32\! ges es c as ges es c
+		\mark #10 <des f>8-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
+		<des f>-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
+		<es as>-\markup { \remark "staccato" } <as c> <es as> <as c> <es as> <as c> %55
+		\crescTextCresc <ges b>\< <b es> <ges b> <b es> <ges b> <b es>
+		<b des> <des f> <b des> <des f> <b des> <des f>
+		fis16\fE e cis ais fis \lh e cis ais fis ais cis e \rh
+		\tuplet 5/4 4 { fis' e cis ais fis fis' e cis ais fis fis' e cis ais fis }
+		\mark #11 <h d>8 r <g g'>4.\sp <fis fis'>8-. %60
+		<e e'>-. <g g'>-. <fis fis'>-. <e e'>-. <fis fis'>-. <e e'>-.
+		<dis dis'>-. r <e e'>4. <d d'>8-.
+		<cis cis'>-\parenthesize-. <e e'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-.
+		<h h'> r r4 r
+		R2.*2 %66
+		<as es' as>8\f q q q <as d as'> q
+		R2.
+		<as es' as>8 q q q <as d as'> q
+		\mark #12 <a es' a>4-^ q4.-- q8 %70
+		<b d b'>4-^ q4.-- q8
+		<a es' a>8-. q-. q-. q-. q-. q-.
+		<b d b'> q q q <a' a'> <f f'>
+		<b d b'> r r4 r
+		R2.*3 %77
+		\mark #13 R2.*2
+		b,,16\p a b c d es f es d es d c %80
+		\crescTextCresc b\< a b c d es f es d es d c
+		b\mf a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b\f a b d es f g f es b g b
+		g' es b es g c es c a' f es c %85
+		\mark #14 d b' d b d, b' d b d, b' d b
+		e, c' e c e, c' e c f, c' f c
+		d, b' d b e, b' e b e, b' e b
+		cis, a' cis a cis, a' cis a d, a' d a
+		a a' a, a' a, a' a, a' e, e' e, e' %90
+		a, cis, a cis a' cis, a cis a' cis, a cis
+		\mark #15 d b' d b d, b' d b d, b' d b
+		es, b' es b f b f' b, g b g' b,
+		f b f' b, <b b'>8-. <g g'>-. <f f'>-. <e e'>-.
+		f16 b f' b, <b b'>8-. <g g'>-. <f f'>-. <e e'>-. %95
+		f'16 d b f b g es c f es c a
+		\mark #16 <b c>8-.\p q-. q-. q-. q-. q-.
+		q-\markup { \remark "immer staccato" } q q q q q
+		q q q q q q
+		q q q q q q %100
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		\mark #17 <es! f> <es f> q q q q %105
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q %110
+		\mark #18 R2.*4
+		<as, b>8\p q q q q q %115
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q %120
+		\mark #19 <des es> q q q q q
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		\crescTextCresc q q q\< q q q %125
+		q q q q q q
+		\mark #20 <dis a'! dis>\ff r <dis a' dis>4. q8
+		\ottava #1 <a' dis a'> r q4. q8
+		<dis, a' dis> q4 q8 q q
+		<a' dis a'> q4 q8 q q %130
+		\crescTextCresc <dis, a' dis> q q q <a' dis a'>\< q
+		q q q q q q\! \ottava #0
+		\crescTextCresc r4 r8 q\< q q
+		q q q q q q
+		<a a'>-^\ff <g g'>-^ <f! f'!>-^ <d d'>-^ <c c'>-^ <h h'>-^ %135
+		<a a'>-^ <g g'>-^ <f f'>-^ <d d'>-^ <c c'>-^ <h h'>-^
+		<a a'>-^ <g g'>-^ <a a'>-^ <g g'>-^ <a a'>-^ <g g'>-^
+		\crescTextCresc <a a'>-^\< <g g'>-^ <a a'>-^ <g g'>-^ <a a'>-^ <g g'>-^\!
+		R2.
+		\mark #21 R2.*2 %141
+		\clef bass c,16\ff d e g c g e d c d e g
+		g a h d g d h a g a h d
+		\clef treble c d e g c g e d c d e g
+		g, a h d g d h a g a h d %145
+		\clef bass c, d e g c g e d c d e g
+		g a h d g d h a g a h d
+		\clef treble c d e g c g e d c d e g
+		g a h d g d h a g a h d
+		\mark #22 c, d e g c g e d c d e g %150
+		g a h d g d h a g a h d
+		c d e g c g e d c d e g
+		c g e d c d e g c g e d
+		c g' b! h c h b g c, g' b h
+		c h b g c, g' h b c h b g %155
+		\dimTextDim g\> b h c g b h c g b h c
+		g b h c g b h c g b h c
+		g\p\> b h c g b h c g b h c
+		g b h c g b h c g b h c
+		\mark #23 a\pp b h c a b h c a b h c %160
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		g b h c g b h c g b h c %165
+		a c! cis d a c cis d a c cis d
+		a c cis d a c cis d a c cis d
+		b c cis d b c cis d b c cis d
+		b c cis d b c cis d b c cis d
+		b c cis d b c cis d b c cis d %170
+		a c cis d a c cis d a c cis d
+		\mark #24 e h e, h' e h e, h' e h e, h'
+		e a, e a e' a, e a e' a, e a
+		d a d, a' d a d, a' d a d, a'
+		d g, d g d' g, d g d' g, d g %175
+		\crescTextCresc c g c, g' \tuplet 3/2 4 { d'8-.\f\< c-. b-. a-. g-. f-.
+		e-. d-. c-. b-. a-. g-. f-. e-. d-. }
+		\mark #25 c4(\f <a a'>) r8 q
+		q4( c <a a'>)
+		a'8( <c, c'> <b b'>4-.) <a a'>-. %180
+		<g g'>( <a a'>4.) <a g'>8
+		<< {
+			g'8 fis e d e fis
+			g fis g a b c
+		} \\ {
+			a,2.
+			d
+		} >>
+		d4( <b b'>) r8 q
+		q4( d <b b'>) %185
+		b'8( <d, d'> <c c'>4-.) <b b'>-.
+		<a a'>( <h h'>4.) <a a'>8
+		\mark #26 << {
+			a'8( gis fis e fis gis)
+			d'( cis g' e d cis)
+			g( fis e d e fis) %190
+			c'( h f'! d c h)
+		} \\ {
+			d,2.
+			g
+			c,! %190
+			f
+		} >>
+		<f a>8( <e g> <d f> <c e> <d f> <e g>)
+		<a c>( <g b>) <g b>( <fis a>) <fis a>( <g b>)
+		\lh \clef bass e,,16 b' c e \rh c' e g b c e g b
+		c-\markup { \remark "cresc." } b g e c b g e \lh \tuplet 5/4 4 { c b g e c } \rh %195
+		\mark #27 <f' c' f>8\fE r r4 r
+		R2.*2
+		\lh a,,16 c es! f \rh a c es f \lh \clef treble a c es f
+		\rh a c es e f es c a \lh f es c a %200
+		\rh f es c a \lh \clef bass f es c a c es f a \rh
+		\mark #28 <as' des as'>8 r r4 r
+		R2.*2
+		\lh des,,32[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des \lh as,[-\markup { \remark "cresc." } ces des f] \rh as ces des f %205
+		\lh \clef treble ces,[ des f as] \rh ces des f as \lh des,,[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des
+		<d, a' d>8-.\mf <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
+		\mark #29 <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
+		<d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
+		<d b'>-\markup { \remark "staccato" } <d d'> <d b'> <d d'> <d b'> <d d'> %210
+		<es b'> <es es'> <es b'> <es es'> <es b'> <es es'>
+		<es a> <es es'> <es a> <es es'> <es a> <es es'>
+		<d a'> <d d'> <d a'> <d d'> <d a'> <d d'>
+		<d g> <d d'> <d g> <d d'> <d g> <d d'>
+		<cis g'> <cis cis'> <cis g'> <cis cis'> <cis g'> <cis cis'> %215
+		<cis fis> <cis cis'> <cis fis> <cis cis'> <cis fis> <cis cis'>
+		<h f'> <h h'> <h f'> <h h'> <h f'> <h h'>
+		\mark #30 \crescTextCresc \tuplet 3/2 4 { b' g e c\< e g b g e
+		d' b g e g b d b g
+		f' d b g b d f d b } %220
+		\subdivQ d'16[\f c b a g f e d c b a g]
+		\subdivQ d'[ c b a g f e d c b a g]
+		\subdivQ d'[ c b a g f e d c b a g]
+		\clef bass \subdivQ d'[ c b a g f e d c b a g]
+		\mark #31 r4 c16 e g b r4 %225
+		\clef treble c'4-^ c,-^-\markup { \remark "rit." } r4
+		R2.*7 %233
+		\mark #32 R2.*2 %235
+		<e' g>4-.\mf q-. r8 q
+		<es a>4-. q-. r8 q
+		<d a'>4-. <d g>-. r8 q
+		<e c'>4-. q-. <d c'>-.
+		<d a' c>-. <d g h>-. r8 q %240
+		\crescHairpin <d a' d>4-. q-. r8 q\<
+		<d gis d'>4-. q-.\! r8 q
+		<f! gis f'!>4-. <f gis f'>-. <e g e'>-.
+		q-. <d f d'>-. r8 q
+		\dimHairpin <c e c'>4-. q-.\> <h d h'>-.\! %245
+		\mark #33 <c e c'>8 d' b a g f
+		e f g f e f
+		g f e d c b
+		a c f a c, f
+		a c f, a c f %250
+		f, b d f d b
+		g' c, b g b c
+		a c f a f a
+		\ottava #1 a, cis f a f a
+		\tuplet 3/2 4 { d, f a d, f a d, f a %255
+		d, f a d, f a d, f a
+		es! f a es f a es f a
+		es f a es f a es f h
+		es, f c' es, f c' es, f b
+		es, f a es f a es f h %260
+		es, f c' es, f a es f h
+		es, f c' es, f a es f h
+		es, f c' es, f a es f h
+		es, f c' es, f h es, f c'
+		\mark #34 es\f d\sp c b a g f es d \ottava #0 %265
+		es\sp d c b a g f es d
+		es\sp d c b a g f es d
+		\clef bass es\sp d c b a g f es d }
+		es r f,16 a c es \lh \clef bass f a c es
+		\rh \clef treble f a c es \lh \clef treble f a c es \rh \ottava #1 f a c es %270
+		\mark #35 f8 \ottava #0 r r4 r
+		R2.*53 %324
+		R2.\fermataMarkup \bar "||" %325
+		\mark #36 \tempoVFuge R2.*10 %335
+		\mark #37 R2.*10 %345
+		\mark #38 R2.*7 %352
+		\mark #39 R2.*4 %356
+		\mark #40 f,,,,8(\f a d) r r f,
+		e( d' c4-.) g-.
+		R2.
+		\lh \clef bass c,,16 e g b\rh \clef bass c e g b\lh \clef treble c e g b %360
+		\rh \clef treble c e g b c b g e \once \override TupletNumber.Y-offset = #-5 \tuplet 5/4 4 { c \lh b g e c } \rh
+		\mark #41 \tuplet 3/2 4 { a'8 b! a' a, b a' a, b a'
+		a, b a' a, b a' a, b a'
+		a, b a' a, b a' a, b a'
+		a, b a' a, b a' a, b a' %365
+		c, des c' c, des c' c, des c'
+		c, des c' c, des c' c, des c'
+		c, des c' c, des c' c, des c'
+		d, es! d' d, es d' d, es d'
+		d, es d' d, es d' d, es d' %370
+		d, es d' d, es d' d, es d'
+		e, f e' e, f e' e, f e' }
+		\mark #42 f2.\startTrillSpan
+		f
+		f %375
+		f
+		f
+		f
+		f
+		f %380
+		f\stopTrillSpan
+		\mark #43 \ottava #1 b,16\ff b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b %385
+		b, b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b
+		b, b' c b b, b' c b b, b' c b
+		d b f d b' f d b f' d b f %390
+		g' e c b e c b g c b g e \ottava #0
+		es' c a f c' a f es a f es c
+		\mark #44 <b d b'>8 r <g' d' g>4.\sp <f d' f>8
+		<f c' f>-\markup { \remark "staccato" } <e e'> <d d'> <c c'> <f f'> <a a'>
+		\ottava #1 <b d b'> q4 q8 <c e b'> q %395
+		<b g' b> q <a f' a> <g e' g> <a f' a> <b g' b>
+		<c f a c> q4 q8 <d fis a d> q
+		<es g b es> q4 q8 <d fis a d> q
+		<c f a c> q q q <d fis a d> q
+		<es g b es> q q q <d fis a d> q %400
+		<f as f'> q q q q q
+		q q <es g es'> q <c es c'> q
+		<b d b'> q <a c a'> q <g b g'> q
+		<f a f'> q <g b g'> q <a c a'> q
+		\mark #45 d'16 b f d b f d f b d f b %405
+		d b f d b f d f b d f b
+		d b f d b f d f b d f b
+		d b f d b f d f b d f b
+		d b f d b f d f b d f b
+		d b f d b f d f b d f b %410
+		d8 \ottava #0 r <d,, g b>4-^ <f a c>-^
+		<f b d>-^ <d g b>-^ <f a c>-^
+		<f b d>8 q <d g b> q <f a c> q
+		<f b d> q <d g b> q <f a c> q
+		\mark #46 \tuplet 3/2 4 { <f b d>8 f' d b d b f b f %415
+		d f d b d b f b f
+		\clef bass d f d b d b f b f
+		d f d b d b f b f }
+		b4 r r
+		\clef treble <d' g b d>2-\critnote r4 %420
+		<g c es g>2 r4
+		<b d f b>2 r4
+		<d f b d>-^ <b b'>-^ q-^
+		q-^ <b, b'>-^ q-^
+		q-^ r r \bar "|." %425 FINIS
 	}
 }
 
@@ -1825,6 +2165,7 @@ VPianoL = {
 		\clef bass
 		\key b \major \time 3/4 \tempoV
 		b16 a b c d es f es d es d c
+		s2.*424
 	}
 }
 
