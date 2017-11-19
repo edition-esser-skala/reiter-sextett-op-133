@@ -173,7 +173,8 @@ tempoIIITrio = \tempoMarkup "Trio. Etwas ruhiger, sehr hell und zierlich"
 tempoIIISchluss = \tempoMarkup "Schluß"
 tempoIV = \tempoMarkup "Mäßig langsam"
 tempoV = \tempoMarkup "Frisch und lebhaft"
-tempoVFuge = \tempoMarkup "Fuge"
+tempoVEtwasZurueckgehalten = \tempoMarkup "Etwas zurückgehalten"
+tempoVKadenz = \tempoMarkup "Kadenz"
 
 
 #(define afterGraceFraction (cons 7 8))

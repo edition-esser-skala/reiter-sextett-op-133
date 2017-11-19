@@ -29,4 +29,4 @@ Sat,171111,16:00,18:30,third movement finished
 Sat,171111,19:00,23:00,
 Sun,171112,20:00,24:00,fourth movement finished
 Thu,171116,22:00,24:00,
-Sun,171119,15:00,17:00,
+Sun,171119,15:00,20:00,

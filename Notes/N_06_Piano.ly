@@ -1877,7 +1877,7 @@ VPianoR = {
 		\tuplet 5/4 4 { fis' e cis ais fis fis' e cis ais fis fis' e cis ais fis }
 		\mark #11 <h d>8 r <g g'>4.\sp <fis fis'>8-. %60
 		<e e'>-. <g g'>-. <fis fis'>-. <e e'>-. <fis fis'>-. <e e'>-.
-		<dis dis'>-. r <e e'>4. <d d'>8-.
+		<dis dis'>-. r <e e'>4.\spE <d d'>8-.
 		<cis cis'>-\parenthesize-. <e e'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-.
 		<h h'>-\parenthesize-. r r4 r
 		R2.*2 %66
@@ -2025,15 +2025,15 @@ VPianoR = {
 		\lh des,,32[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des \lh as,[-\markup { \remark "cresc." } ces des f] \rh as ces des f %205
 		\lh \clef treble ces,[ des f as] \rh ces des f as \lh des,,[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des
 		<d, a' d>8-.\mf <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
-		\mark #29 <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
 		<d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
+		\mark #29 <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
 		<d b'>-\markup { \remark "staccato" } <d d'> <d b'> <d d'> <d b'> <d d'> %210
 		<es b'> <es es'> <es b'> <es es'> <es b'> <es es'>
 		<es a> <es es'> <es a> <es es'> <es a> <es es'>
 		<d a'> <d d'> <d a'> <d d'> <d a'> <d d'>
 		<d g> <d d'> <d g> <d d'> <d g> <d d'>
 		<cis g'> <cis cis'> <cis g'> <cis cis'> <cis g'> <cis cis'> %215
-		<cis fis> <cis cis'> <cis fis> <cis cis'> <cis fis> <cis cis'>
+		<c fis> <c c'> <c fis> <c c'> <c fis> <c c'>
 		<h f'> <h h'> <h f'> <h h'> <h f'> <h h'>
 		\mark #30 \crescTextCresc \tuplet 3/2 4 { b' g e c\< e g b g e
 		d' b g e g b d b g
@@ -2044,7 +2044,7 @@ VPianoR = {
 		\clef bass \subdivQ d'[ c b a g f e d c b a g]
 		\mark #31 r4 c16 e g b r4 %225
 		\clef treble c'4-^ c,-^-\markup { \remark "rit." } r4
-		R2.*7 %233
+		\tempoVEtwasZurueckgehalten R2.*7 %233
 		\mark #32 R2.*2 %235
 		<e' g>4-.\mf q-. r8 q
 		<es a>4-. q-. r8 q
@@ -2068,7 +2068,7 @@ VPianoR = {
 		\tuplet 3/2 4 { d, f a d, f a d, f a %255
 		d, f a d, f a d, f a
 		es! f a es f a es f a
-		es f a es f a es f h
+		\crescTextCresc es f a es\< f a es f h
 		es, f c' es, f c' es, f b
 		es, f a es f a es f h %260
 		es, f c' es, f a es f h
@@ -2081,10 +2081,10 @@ VPianoR = {
 		\clef bass es\sp d c b a g f es d }
 		es r f,16 a c es \lh \clef bass f a c es
 		\rh \clef treble f a c es \lh \clef treble f a c es \rh \ottava #1 f a c es %270
-		\mark #35 f8 \ottava #0 r r4 r
+		\mark #35 \tempoVKadenz f8 \ottava #0 r r4 r
 		R2.*53 %324
 		R2.\fermataMarkup \bar "||" %325
-		\mark #36 \tempoVFuge R2.*10 %335
+		\mark #36 R2.*10 %335
 		\mark #37 R2.*10 %345
 		\mark #38 R2.*7 %352
 		\mark #39 R2.*4 %356
