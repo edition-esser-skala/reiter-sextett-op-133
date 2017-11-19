@@ -23,32 +23,32 @@
 					\new GrandStaff <<
 						\new Staff {
 							\set Staff.instrumentName = "1. Geige"
-% 							\set Staff.midiInstrument = #"violin"
+							\set Staff.midiInstrument = #"violin"
 % 							\unfoldRepeats
 							\VViolinoI
 						}
 						\new Staff {
 							\set Staff.instrumentName = "2. Geige"
-% 							\set Staff.midiInstrument = #"violin"
+							\set Staff.midiInstrument = #"violin"
 % 							\unfoldRepeats
 							\VViolinoII
 						}
 					>>
 					\new Staff {
 						\set Staff.instrumentName = "Bratsche"
-% 						\set Staff.midiInstrument = #"violin"
+						\set Staff.midiInstrument = #"violin"
 % 						\unfoldRepeats
 						\VViola
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Violoncell"
-% 						\set Staff.midiInstrument = #"cello"
+						\set Staff.midiInstrument = #"cello"
 % 						\unfoldRepeats
 						\VVioloncello
 					}
 					\new Staff {
 						\set Staff.instrumentName = "Baß"
-% 						\set Staff.midiInstrument = #"cello"
+						\set Staff.midiInstrument = #"cello"
 % 						\unfoldRepeats
 						\VContrabasso
 					}
@@ -66,7 +66,7 @@
 				>>
 			>>
 			\layout { }
-% 			\midi { \tempo 4 = 50 }
+% 			\midi { \tempo 4 = 110 }
 		}
 	}
 }

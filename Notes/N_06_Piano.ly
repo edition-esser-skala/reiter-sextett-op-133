@@ -1879,7 +1879,7 @@ VPianoR = {
 		<e e'>-. <g g'>-. <fis fis'>-. <e e'>-. <fis fis'>-. <e e'>-.
 		<dis dis'>-. r <e e'>4. <d d'>8-.
 		<cis cis'>-\parenthesize-. <e e'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-. <d d'>-\parenthesize-. <cis cis'>-\parenthesize-.
-		<h h'> r r4 r
+		<h h'>-\parenthesize-. r r4 r
 		R2.*2 %66
 		<as es' as>8\f q q q <as d as'> q
 		R2.
@@ -1975,7 +1975,7 @@ VPianoR = {
 		g b h c g b h c g b h c %165
 		a c! cis d a c cis d a c cis d
 		a c cis d a c cis d a c cis d
-		b c cis d b c cis d b c cis d
+		b! c cis d b c cis d b c cis d
 		b c cis d b c cis d b c cis d
 		b c cis d b c cis d b c cis d %170
 		a c cis d a c cis d a c cis d
@@ -2104,15 +2104,20 @@ VPianoR = {
 		d, es d' d, es d' d, es d' %370
 		d, es d' d, es d' d, es d'
 		e, f e' e, f e' e, f e' }
-		\mark #42 f2.\startTrillSpan
-		f
-		f %375
-		f
-		f
-		f
-		f
-		f %380
-		f\stopTrillSpan
+		<< {
+			\mark #42 \oneVoice f2.
+			f
+			f %375
+			f
+			f
+			f
+			f
+			f %380
+			f
+		} \\ {
+			\oneVoice s2.*8\startTrillSpan
+			s2 s8 s16 s\stopTrillSpan
+		} >>
 		\mark #43 \ottava #1 b,16\ff b' c b b, b' c b b, b' c b
 		b, b' c b b, b' c b b, b' c b
 		b, b' c b b, b' c b b, b' c b
@@ -2125,13 +2130,13 @@ VPianoR = {
 		g' e c b e c b g c b g e \ottava #0
 		es' c a f c' a f es a f es c
 		\mark #44 <b d b'>8 r <g' d' g>4.\sp <f d' f>8
-		<f c' f>-\markup { \remark "staccato" } <e e'> <d d'> <c c'> <f f'> <a a'>
-		\ottava #1 <b d b'> q4 q8 <c e b'> q %395
-		<b g' b> q <a f' a> <g e' g> <a f' a> <b g' b>
-		<c f a c> q4 q8 <d fis a d> q
-		<es g b es> q4 q8 <d fis a d> q
-		<c f a c> q q q <d fis a d> q
-		<es g b es> q q q <d fis a d> q %400
+		<f c' f>-\markup { \remark "staccato" } <e e'> <d d'> <c c'> <f f'>[ <a a'>]
+		\ottava #1 <b d b'> q4 q8 <c e b'>[ q] %395
+		<b g' b>[ q] <a f' a> <g e' g> <a f' a> <b g' b>
+		<c f a c> q4 q8 <d fis a d>[ q]
+		<es g b es> q4 q8 <d fis a d>[ q]
+		<c f a c> q q q <d fis a d>[ q]
+		<es g b es> q q q <d fis a d>[ q] %400
 		<f as f'> q q q q q
 		q q <es g es'> q <c es c'> q
 		<b d b'> q <a c a'> q <g b g'> q
@@ -2165,8 +2170,329 @@ VPianoL = {
 		\clef bass
 		\key b \major \time 3/4 \tempoV
 		b16 a b c d es f es d es d c
-		s2.*424
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b d-\critnote es f g f es b g b %5
+		g' es b es \clef treble g c es c a' f es c
+		b d b' d, b d b' d, b d b' d,
+		\subdivQ b[ c b' c, b c b' c,] a c a' c,
+		a b a' b, \subdivQ g[ b g' b, g b g' b,]
+		\subdivQ g[ a g' a, g a g' a,] f a f' a, %10
+		\clef bass <cis, e > a' <cis, e> a' <d, f> a' <d, f> a' <b,! d> gis' <b, d> gis'
+		a, a' cis a a, a' cis a a, a' cis a
+		\clef treble as b b' b, as b b' b, as b b' b,
+		\clef bass g b es b f b d b es, b' c b
+		d, f b f <g b c> e' <g, b c> e' <g, b c> e' <g, b c> g' %15
+		d, f b f <g b c> e' <g, b c> e' <g, b c> e' <g, b c> g'
+		\clef treble f, b d f c es g es f a f a
+		r8 d,( g f e f
+		g f e g f e
+		f e d f e d %20
+		e cis e g) a-. a-.
+		a-. a-. a-. a-. e'-. e-.
+		a,( e a, e' a e')
+		r d( g f es! d)
+		g( es b g b es) %25
+		d( b f d) es[( b']
+		d, b' es, b' c, b'
+		d, b' c, b' f c')
+		<b, d>-. <d f>-. <b d>-. <d f>-. <b d>-. <d f>-.
+		<b d> <d f> <b d> <d f> <b d> <d f> %30
+		<c f> <f a> <c f> <f a> <c f> <f a>
+		<es g> <g c> <es g> <g c> <es g> <g c>
+		<g b> <b d> <g b> <b d> <g b> <b d>
+		<d, g b d>\arpeggio r r4 r
+		b16 d b' d, b d b' d, b d b' d, %35
+		c b' c b c, a' c a c, g' c g
+		d fis c' fis, d fis c' fis, d fis c' fis,
+		<g, b>8-. <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
+		<g b>-. <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
+		<a d> <d f> <a d> <d f> <a d> <d f> %40
+		<cis e> <e a> <cis e> <e a> <cis e> <e a>
+		<d fis a> <fis a c!> <d fis a> <fis a c> <d fis a> <fis a c>
+		g16 b g' b, g b g' b, g b g' b,
+		as b as' b, as c as' c, as c as' c,
+		b f' as f b, f' as f b, f' as f %45
+		<es, g>8-. <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
+		<es g>-. <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
+		<d f> <f b> <d f> <f b> <d f> <f b>
+		<f as> <as c> <f as> <as c> <f as> <as c>
+		<g c> <c es> <g c> <c es> <g c> <c es> %50
+		s2.
+		s
+		<des, f>8-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
+		<des f>-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
+		<c es> <es as> <c es> <es as> <c es> <es as> %55
+		<es ges> <ges b> <es ges> <ges b> <es ges> <ges b>
+		<f b> <des' f> <f, b> <des' f> <f, b> <des' f>
+		s2.
+		fis,16 ais cis e fis, ais cis e fis, ais cis e
+		<h d>8 r q4. q8-. %60
+		<h cis>-. q-. q-. q-. <ais cis>-. q-.
+		<a h?>-. r <g h>4. <fis h>8-.
+		<e h'>-. <g h>-. <fis h>-. <e h'>-. <fis ais>-. <e fis ais>-.
+		<d fis>-. r r4 r
+		R2.*2 %66
+		<b! f'!>8 <b f'> q q q q
+		R2.
+		<b! f'!>8 <b f'> q q q q
+		<f c' es f>4-^ q4.-- q8 %70
+		<f b d f>4-^ q4.-- q8
+		<f c' es f>8-. q-. q-. q-. q-. q-.
+		<f b d f> q q q <f c' es f> q
+		<f b d f> r r4 r
+		R2.*5 %79
+		\clef bass b,16 a b c d es f es d es d c %80
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b c d es f es d es d c
+		b a b d es f g f es b g b
+		g' es b es \clef treble g c es c a' f es c %85
+		b d b' d, b d b' d, b d b' d,
+		\subdivQ b[ c b' c, b c b' c,] a c a' c,
+		a b a' b, \subdivQ g[ b g' b, g b g' b,]
+		\subdivQ g[ a g' a, g a g' a,] f a f' a,
+		\clef bass <cis, e > a' <cis, e> a' <d, f> a' <d, f> a' <b,! d> gis' <b, d> gis' %90
+		a, a' cis a a, a' cis a a, a' cis a
+		\clef treble as b b' b, as b b' b, as b b' b,
+		\clef bass g b es b f b d b es, b' c b
+		d, f b f <g b c> e' <g, b c> e' <g, b c> e' <g, b c> g'^\critnote
+		d, f b f <g b c> e' <g, b c> e' <g, b c> e' <g, b c> g'^\critnote %95
+		\clef treble f, b d f f, c' es g f, c' es f
+		e8-. g-. e-. g-. e-. g-.
+		e g e g e g
+		e g e g e g
+		e g e g e g %100
+		e g e g e g
+		e g e g e g
+		c, g' c, g' c, g'
+		c, g' c, g' c, g'
+		a c a c a c %105
+		a c a c a c
+		a c a c a c
+		a c a c a c
+		a c a c a c
+		a c a c a c %110
+		R2.*4
+		d,8 f d f d f %115
+		d f d f d f
+		d f d f d f
+		d f d f d f
+		b, f' b, f' b, f'
+		b, f' b, f' b, f' %120
+		g b g b g b
+		g b g b g b
+		g b g b g b
+		g b g b g b
+		es, b' es, b' es, b' %125
+		es, b' es, b' es, b'
+		\clef bass <fis, a cis dis> r q4. q8
+		<h, fis' a> r q4. q8
+		<fis' a cis dis> q4 q8 q q
+		<h, fis' a> q4 q8 q q %130
+		<fis' a cis dis> q q q <h, fis' a> q
+		<fis' a cis dis> q q q <h, fis' a> q
+		r4 r8 q q q
+		q q q q q q
+		<h! d! f! g!> <h d f g> q q q q %135
+		q q q q q q
+		<g d' f> q q q q q
+		q q q q q q
+		R2.*3 %141
+		c,16 d e g c g e d c d e g
+		g a h d g d h a g a h d
+		c d e g c g e d c d e g
+		g, a h d g d h a g a h d %145
+		c, d e g c g e d c d e g
+		g a h d g d h a g a h d
+		c d e g c g e d c d e g
+		g a h d g d h a g a h d
+		c, d e g c g e d c d e g %150
+		g a h d g d h a g a h d
+		\clef treble c d e g c g e d c d e g
+		c g e d c d e g c g e d
+		c d e g b! g e d c d e g
+		b! g e d c d e g b g e d %155
+		d e g b! d, e g b d, e g b
+		e, g b! c e, g b c e, g b c
+		g b! h c g b h c g b h c
+		g b h c g b h c g b h c
+		a b h c a b h c a b h c %160
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		a b h c a b h c a b h c
+		\tuplet 3/2 4 { b8 h c b h c b h c %165
+		c! cis d c cis d c cis d
+		c cis d c cis d c cis d }
+		b!16 c cis d b c cis d b c cis d
+		b c cis d b c cis d b c cis d
+		b c cis d b c cis d b c cis d %170
+		\tuplet 3/2 4 { c8 cis d c cis d c cis d }
+		d16 h e, h' d h e, h' d h e, h'
+		a e a, e' a e a, e' a e a, e'
+		c' a d, a' c a d, a' c a d, a'
+		g d g, d' g d g, d' g d g, d' %175
+		b'! g c, g' \tuplet 3/2 4 { d'8-. c-. b-. a-. g-. f-.
+		e-. d-. c-. \clef bass b-. a-. g-. f-. e-. d-. }
+		f,8 c' f, c' f, c'
+		f, c' f, c' f, c'
+		e, c' e, c' e, c' %180
+		es, c' es, c' es, c'
+		d, a' d, a' d, a'
+		d, d' d, d' d, d'
+		g, d' g, d' g, d'
+		g, d' g, d' g, d' %185
+		fis, d' fis, d' fis, d'
+		f, d' f, d' f, d'
+		e, h' e, h' e, h'
+		a e' a, e' a, e'
+		d, a' d, a' d, a' %190
+		g d' g, d' g, d'
+		<c, g'> c' <c, g'> c' <c, g'> c'
+		<d, g> d' <d, g> d' <d, g> d'
+		s2.
+		s %195
+		<a' c es!>8 r r4 r
+		R2.*2
+		s2.*3 %202
+		<f as ces>8 r r4 r
+		R2.*2 %205
+		s2.*2
+		\clef treble fis'8-. a-. fis-. a-. fis-. a-.
+		fis-. a-. fis-. a-. fis-. a-.
+		fis-. a-. fis-. a-. fis-. a-. %210
+		g b g b g b
+		c, g' c, g' c, g'
+		f c' f, c' f, c'
+		b, f' b, f' b, f'
+		e b' e, b' e, b' %215
+		a, e' a, e' a, e'
+		d a' d, a' d, a'
+		g, d' g, d' g, d'
+		\tuplet 3/2 4 { c e g b! g e c e g
+		e g b d b g e g b %220
+		g b d f d b g b d }
+		<c, g' b> r r4 r
+		R2.*3 %225
+		\clef bass c,,16-\critnote e g b r4 \clef treble c'16 e g b
+		r4 r \clef bass c,,4-\critnote-^
+		R2.*9 %235
+		\clef treble <c' g'>4-. q-. r8 q-.
+		<c fis>4-. q-. r8 q
+		<h g'>4-. q-. r8 q
+		<a g'>4-. q-. <d fis>-.
+		g-. g-. r8 g %240
+		<f! a>4-. q-. r8 q
+		<e h'>4-. q-. r8 q
+		<d h'>4-. q-. <cis b'>-.
+		<d a'>-. q-. r8 q
+		<g, f'>4-. q-. q-. %245
+		<c b'!>8 b' g f e d
+		c d e d c d
+		e d c b a g
+		f a c f a, c
+		f a c, f a c %250
+		d, f b d b f
+		e b' c e c b
+		f a c f c f
+		a, cis f cis f cis
+		\tuplet 3/2 4 { b d f b, d f b, d f %255
+		h, d f h, d f h, d f
+		c es! f c es f c es f
+		c es f c es f c es f }
+		es f es f d f
+		c f c f d f %260
+		es f c f d f
+		es f c f d f
+		es f c f d f
+		es f d f es f
+		<f a> r r4 r %265
+		R2.*3
+		\clef bass f,,,,16-\critnote a c es s2
+		s2. %270
+		R2.*54 %324
+		R2.\fermataMarkup \bar "||" %325
+		R2.*31 %356
+		\clef bass f8( a d) r r f,
+		e( d' c4-.) g-.
+		<d d'>-. q-. <g, g'>-.
+		s2. %360
+		s
+		\clef treble a''8 b! a b a b
+		a b a b a b
+		a b a b a b
+		a b a b a b %365
+		c des c des c des
+		c des c des c des
+		c des c des c des
+		d es d es d es
+		d es d es d es %370
+		d es d es d es
+		e f e f e f
+		<< {
+			\oneVoice f2.
+			f
+			f %375
+			f
+			f
+			f
+			f
+			f %380
+			f
+		} \\ {
+			\oneVoice s2.*8\startTrillSpan
+			s4 s s8 s16 s\stopTrillSpan
+		} >>
+		as16 b d b as b d b as b d b
+		as b d b as b d b as b d b
+		as b d b as b d b as b d b
+		as b d b as b d b as b d b %385
+		<< {
+			\oneVoice b2.
+			b
+			b
+			b
+		} \\ {
+			\oneVoice s2.*3\startTrillSpan
+			s4 s s8 s16 s\stopTrillSpan
+		} >>
+		f,16 b d f f, b d f f, b d f %390
+		f, b c e f, b c e f, b c e
+		f, c' es f f, c' es f f, c' es f
+		<b, d>8 r <b d g>4. q8
+		<b c g'> q q q <a c f>[ q]
+		<g d' f> q4 q8 <c e>[ q] %395
+		<g' b>[ q] <f a> <e g> <f a> <g b>
+		\clef bass <es,! f a c> <es f a c>4 q8 <d fis a d>[ q]
+		<c g' b> q4 q8 <d fis a d>[ q]
+		<es! f a c> <es f a c> q q <d fis a d>[ q]
+		<c g' b> q q q <d fis a d>[ q] %400
+		<h f' as> q q q q q
+		<c es g> q q q <es g c>[ q]
+		\clef treble <f a c es> q q q q q
+		q q q q q q
+		f''16 d b f d b f b d f b d %405
+		f d b f d b f b d f b d
+		f d b f d b f b d f b d
+		f d b f d b f b d f b d
+		f d b f d b f b d f b d
+		f d b f d b f b d f b d %410
+		f8 r <g,, g'>4-^ <f f'>-^
+		<b b'>-^ <g g'>-^ <f f'>-^
+		<b b'>8 q <g g'> q <f f'> q
+		<b b'> q <g g'> q <f f'> q
+		\tuplet 3/2 4 { <b b'> f'' d b d b f b f %415
+		d f d b d b f b f
+		\clef bass d f d b d b f b f
+		d f d b d b f b-\critnote f }
+		b4-\critnote r r
+		<g' d' g>2 r4 %420
+		<es b' es>2 r4
+		<c g' c>2 r4
+		<b f' b>4-^ <b' b'>-^ q-^
+		q-^ <b, b'>-^ q-^
+		q-^ r r \bar "|." %425 FINIS
 	}
 }
-
-% TODO
