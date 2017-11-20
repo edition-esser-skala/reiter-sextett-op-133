@@ -916,7 +916,7 @@ VViolinoI = {
 		d r e4.-> d8
 		cis-. e-. d-. cis-. d-. f-. %10
 		a-. a-. a-. a-. gis-. gis-.
-		\crescTextCresc a-. gis-. a-.\< gis-. a-. b-.
+		\crescTextCresc a-.\< gis-. a-. gis-. a-. b-.
 		\mark #2 <b b,>\! r g4.-> f8
 		f(-> es!) es(-> d) d(-> c)
 		\crescHairpin \dimHairpin f(\< d c\sp b a\> b\!) %15
@@ -991,7 +991,7 @@ VViolinoI = {
 		d r e4.-> d8
 		cis-. e-. d-. cis-. d-. f-.
 		a-. a-. a-. a-. gis-. gis-. %90
-		\crescTextCresc a-. gis-. a-.\< gis-. a-. b-.
+		\crescTextCresc a-.\< gis-. a-. gis-. a-. b-.
 		\mark #15 <b b,>\! r g4.-> f8
 		f(-> es!) es(-> d) d(-> c)
 		\crescHairpin \dimHairpin f(\< d c\sp b a\> b\!)
@@ -1025,14 +1025,14 @@ VViolinoI = {
 		\crescTextCresc es,16 d! es f g\< fis g as b a b d %125
 		es8( des b g es des')
 		\mark #20 <dis, dis'>\ff r q4. q8
-		<a! a''!> <a a''> q4. q8
+		<a! a''!> r <a a''>4. q8
 		<dis dis'> q4 q8 q q
 		<a a''> q4 q8 q q %130
 		\crescTextCresc <dis dis'> q q q <a a''>\< q
 		<dis dis'> q q q <a a''> q\!
 		r4 r8 q\< q q
 		q q q q q q
-		g''-!\ff f-! e-! d-! c-! h-! %135
+		a''-!\ff g-! f!-! d-! c-! h-! %135
 		a-! g-! f-! d-! c-! h-!
 		a-! g-! a-! g-! a-! g-!
 		\crescTextCresc a-!\< g-! a-! g-! a-! g-!\!
@@ -1043,8 +1043,8 @@ VViolinoI = {
 		<d, g>4-^ q4.-- q8
 		e'16 e d d c c d d e e c c
 		d4-^ d4.-- d8 %145
-		<c, c'>-. q-. q-. q-. q-. q-.
-		<d g>-\markup { \remark "staccato" } q q q q q
+		<c, c'>-\markup { \remark "staccato" } q q q q q
+		<d g> q q q q q
 		e16 e d d c c d d e e c c
 		<d, d'>8 q q q q q
 		\mark #22 c''-> c, c c c c %150
@@ -1138,7 +1138,7 @@ VViolinoI = {
 		c a h
 		c a h
 		c h c
-		\mark #34 es\fE c' f, %265
+		\mark #34 es\spE c' f, %265
 		c' f, c
 		f c f,
 		c' f, c

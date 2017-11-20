@@ -1815,7 +1815,7 @@ IVPianoL = {
 VPianoR = {
 	\relative c' {
 		\clef treble
-		\key b \major \time 3/4 \tempoV
+		\key b \major \time 3/4 \tempoV \set Score.skipTypesetting = ##f
 		b16\f a b c d es f es d es d c
 		b a b c d es f es d es d c
 		b a b c d es f es d es d c
@@ -1940,7 +1940,7 @@ VPianoR = {
 		<dis, a' dis> q4 q8 q q
 		<a' dis a'> q4 q8 q q %130
 		\crescTextCresc <dis, a' dis> q q q <a' dis a'>\< q
-		q q q q q q\! \ottava #0
+		<dis, a' dis> q q q <a' dis a'> q\! \ottava #0
 		\crescTextCresc r4 r8 q\< q q
 		q q q q q q
 		<a a'>-^\ff <g g'>-^ <f! f'!>-^ <d d'>-^ <c c'>-^ <h h'>-^ %135
@@ -2021,7 +2021,7 @@ VPianoR = {
 		\rh a c es e f es c a \lh f es c a %200
 		\rh f es c a \lh \clef bass f es c a c es f a \rh
 		\mark #28 <as' des as'>8 r r4 r
-		R2.*2
+		R2.*2 \set Score.skipTypesetting = ##f
 		\lh des,,32[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des \lh as,[-\markup { \remark "cresc." } ces des f] \rh as ces des f %205
 		\lh \clef treble ces,[ des f as] \rh ces des f as \lh des,,[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des
 		<d, a' d>8-.\mf <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
