@@ -16,7 +16,7 @@
 			subtitle = \markup { \vspace #3 \normal-text \larger \larger "5. Satz" }
 			composer = \markup { \larger " " }
 		}
-% 		\paper { systems-per-page = #2 }
+		\paper { systems-per-page = #2 }
 		\score {
 			<<
 				\new StaffGroup <<
@@ -66,7 +66,7 @@
 				>>
 			>>
 			\layout { }
-% 			\midi { \tempo 4 = 110 }
+			\midi { \tempo 4 = 110 }
 		}
 	}
 }

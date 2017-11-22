@@ -1006,7 +1006,7 @@ VViolinoII = {
 		\mark #19 R2.*4
 		\crescTextCresc \mvTrr b,4\mf-\markup { \remark "pizz." } es,\< b' %125
 		es b' es
-		\mark #20 \mvTrr <a,,! a'!>8\ff-\markup { \remark "Bogen" } r <a a'>4. q8
+		\mark #20 \mvTr <a,,! a'!>8\ff^\markup { \remark "Bogen" } r <a a'>4. q8
 		<dis, dis'> r q4. q8
 		<a' a'> q4 q8 q q
 		<dis, dis'> q4 q8 q q %130
@@ -1075,7 +1075,7 @@ VViolinoII = {
 		b( b,) b'-. b( b,) b'-. b( b,) b'-.
 		b( b,) b'-. b( b,) b'-. b( b,) b'-.
 		\crescTextCresc b(\< b,) b'-. b( b,) b'-. b( b,) b'-. } %195
-		\mark #27 <f, c' a'>\f f-\markup { \remark "staccato" } f f f f
+		\mark #27 \mvTr <f, c' a'>\f-\markup { \remark "staccato" } f f f f f
 		f(\sp d) d d d d
 		d(\sp c) c c  d d
 		es\sp r r4 r
@@ -1139,7 +1139,7 @@ VViolinoII = {
 		\mark #35 \tempoVKadenz R2.*54 %324
 		R2.\fermataMarkup \bar "||" %325
 		\mark #36 R2.*4
-		f8(\mp a d) r r f, %330
+		f8(\mp a d) r r f,-\parenthesize-. %330
 		e( d' c4-.) g-.
 		d8( a' f' g, h f')
 		c( f e d e d)

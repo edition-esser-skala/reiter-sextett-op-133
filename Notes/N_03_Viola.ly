@@ -912,6 +912,346 @@ VViola = {
 		\clef treble
 % 		\clef alto
 		\key b \major \time 3/4 \tempoV
-		
+		R2.*2
+		<d, b'>8-.\f q-. r4 r
+		<b' d>8-. q-. r4 r
+		<es es'>8-. q-. r4 r %5
+		q8-. q-. q-. q-. q-. q-.
+		\mark #1 <d d'> r <b d>4.-> q8
+		<b g'>8-\markup { \remark "staccato" } q q q <a f'> q
+		q r <g e'>4.-> q8
+		<a e'> q q q <a d> q %10
+		<a e'> q <a f'> q e' e
+		\crescTextCresc <e, e'>\< q q q q q
+		\mark #2 <b' d>\! r <b g'>4.-> <b f'>8
+		<g es'!>-\markup { \remark "staccato" } q <f d'> q <es c'> q
+		<d b'> r <g e'>2-- %15
+		<d b'>8 r <g e'>2--
+		\dimTextDim b8([\> d] c) r c r
+		\mark #3 d16\p d d d d d d d d d d d
+		e e e e e e e e f f f f
+		d d d d d d d d d d d d %20
+		cis cis cis cis cis cis cis cis d d d d
+		a a a a a a a a d, d d d
+		\crescHairpin e\< e e e e' e e e e e e e\!
+		\mark #4 \dimHairpin b-> b b b b\> b b b b b b b\!
+		b b b b b' b b b g g g g %25
+		f f f f d d d d b b b b
+		b b b b b b b b b b b b
+		b b b b b b b b a a a a
+		f8 r r4 r
+		\mark #5 R2. %30
+		f16\p e f g a g a b c h c d
+		c h c d es! d es f g fis g a
+		g, fis g a b a b c d cis d es
+		d8-. d,-. r d'-. f[-. f,]-.
+		\mark #6 b r r4 r %35
+		b'8(\mf g a b a g)
+		g([-> fis)] fis( es! d c
+		b) r r4 r
+		\mark #7 R2.
+		d,16\p cis d e f e f g a gis a b %40
+		a gis a h cis h cis d e dis e f
+		\crescTextCresc d,\< cis d e fis e fis g a fis d d
+		\mark #8 d8\! r b''4(--\mf b--)
+		b( as8 g as g)
+		f4( as f %45
+		es8) r r4 r
+		\mark #9 es,16\p d es f g as b as g f g as
+		b a b c d es f es d c d es
+		\crescTextCresc f,\< e f g as b c b as g as b
+		c h c d es f g f es d c b %50
+		as8 ges'4--\f es8-. ges-. es-.
+		es-. des-. des-. c-. c-. c-.
+		\mark #10 des r r4 r
+		des,16\p c des es f ges as ges f es f ges
+		as g as b c des es des c b c des %55
+		\crescTextCresc es,\< d! es f ges as b as ges f ges as
+		b a b c des es f es des c b as
+		ges8 e'4--\f cis8-. e-. cis-.
+		e-. d-. cis-. d-. e-. fis-.
+		\mark #11 fis-. r d4.\sp d8-. %60
+		cis-. cis-. cis-. cis-. cis-. cis-.
+		h-. r h4.\sp h8-.
+		h-. h-. h-. h-. ais-. fis-.
+		\dimTextDim fis-.\> d'-. d-\markup { \remark "staccato" } d d d
+		d\p d d d d d %65
+		h h h h h h
+		R2.
+		h8\p h h h h h
+		R2.
+		\mark #12 a'!4-^\f es'4.-- a,8 %70
+		b4-^ f'4.-- b,8
+		a-\markup { \remark "staccato" } es' es a, a es'
+		b f' f b, c c
+		b b b b b b
+		b\sp b, b b b b %75
+		b'\sp b, b b b b
+		R2.
+		\mark #13 R2.*4 %81
+		<d, b'>8-.\mf q-. r4 r
+		<b' d>8-. q-. r4 r
+		\crescTextCresc <es es'>8-.\< q-. r4 r
+		q8-.\f q-. q-. q-. q-. q-. %85
+		\mark #14 <d d'> r <b d>4.-> q8
+		<b g'>8-\markup { \remark "staccato" } q q q <a f'> q
+		q r <g e'>4.-> q8
+		<a e'> q q q <a d> q
+		<a e'> q <a f'> q e' e %90
+		\crescTextCresc <e, e'>\< q q q q q
+		\mark #15 <b' d>\! r <b g'>4.-> <b f'>8
+		<g es'!>-\markup { \remark "staccato" } q <f d'> q <es c'> q
+		<d b'> r <g e'>2--
+		<d b'>8 r <g e'>2-- %95
+		\crescHairpin b8\< d c c es es
+		\mark #16 <g b, c,>\sp r r4 r
+		R2.*5 %102
+		c,16\mf h c d e dis e f g fis g h
+		c8( b g e c b'
+		\mark #17 a) r r4 r %105
+		R2.*3
+		f16\mf e f g a gis a b c h c e
+		f8( es c a f es) %110
+		\mark #18 \mvTr as\f-\markup { \remark "staccato" } as as as as as
+		es es es es es es
+		b' as as ges ges f
+		f e f e f es
+		f r r4 r %115
+		R2.*3
+		b,16\mf a b c d cis d es f e f a!
+		b8( as f d b b' %120
+		\mark #19 des) r r4 r
+		R2.*3
+		\crescTextCresc es,16\mf\< d es f g fis g as b a b d %125
+		es8( des b g es des)
+		\mark #20 cis\ff r cis4. cis8
+		<a fis'> r q4. q8
+		cis cis4 cis8 cis cis
+		<a fis'> q4 q8 q q %130
+		\crescTextCresc cis cis cis cis <a fis'>\< q
+		cis cis cis cis <a fis'> q\!
+		\crescTextCresc r4 r8 q\< q q
+		q q q q q q
+		<f! d'>\ff <f d'> q q q q %135
+		q q q q q q
+		q q q q q q
+		q q q q q q
+		R2.
+		\mark #21 r8 a16\f a h h c c d d e e %140
+		\crescTextCresc f\< f e e f f g g a a h h
+		<c, g'>4-^\ff q4.-- q8
+		<g g'>4-^ q4.-- q8
+		c'16 c g g e e g g c c e, e
+		<g d'>4-^ q4.-- q8 %145
+		<c, g'>-\markup { \remark "staccato" } q q q q q
+		<g g'> q q q q q
+		e'16 e d d c c d d e e c c
+		<g g'>8 q q q q q
+		\mark #22 c'8-> c, c c c c %150
+		g'-> g, g g g g
+		c'-> c, c c g'[-> g,]
+		c'-> c, c c g'[-> g,]
+		c, c c c c c
+		c c c c c c %155
+		\dimTextDim c\> c c c c c
+		c c c c c c\!
+		R2.*2
+		\mark #23 f8\pp f f f f f %160
+		f f f f f f
+		f f f f f f
+		f f f f f f
+		e e e e e e
+		es es es es es es %165
+		d d d d d d
+		d d d d d d
+		g g g g g g
+		g g g g g g
+		fis fis fis fis fis fis %170
+		f f f f f f
+		\mark #24 e e e e e e
+		a a a a a a
+		d, d d d d d
+		g g g g g g %175
+		<c, g'> q q q q q
+		\crescTextCresc <c b'>\< q q q q q
+		\mark #25 \crescHairpin c'4(\f\< a')\! r8 a
+		a4( c, a')
+		a8( c b4-.) a-. %180
+		\crescHairpin g(\< a4.)\! g8
+		g8( fis e d e fis)
+		g( fis g a b c)
+		\crescHairpin d,4(\< b')\! r8 b
+		b4( d, b') %185
+		b8( d c4-.) b-.
+		a( h4.) a8
+		\mark #26 a( gis-\critnote fis e fis gis)
+		d'( cis g' e d cis)
+		g( fis e d e fis) %190
+		c'( h f'! d c h)
+		f( e d c d e)
+		a( g) g( fis) fis( g)
+		c,( e b c e g)
+		\crescTextCresc b(\< g e g b c) %195
+		\mark #27 \mvTr es,\f-\markup { \remark "staccato" } es es es es es
+		es\spE es es es es es
+		es\spE es es es es es
+		f\sp r r4 r
+		R2.*2 %201
+		\mark #28 \mvTr ces'8\f-\markup { \remark "staccato" } ces ces ces ces ces
+		ces\spE ces ces ces ces ces
+		ces\spE ces ces ces ces ces
+		des\sp r r4 r %205
+		R2.*3
+		\mark #29 R2.
+		g,,16\mf fis g a b a b c d cis d g %210
+		R2.
+		a,16 gis a b c h c e f e f a
+		R2.
+		g,16 fis g a b a b d e dis e g
+		R2.*2 %216
+		h,16 ais h c d cis d fis g fis g h
+		\mark #30 \crescTextCresc <g, e'> q q q q\< q q q q q q q
+		q q q q q q q q q q q q
+		q q q q q q q q q q q q %220
+		q8->\f g'4 g8 g g
+		b-> d,4 d8 d d
+		e-> g,4 b8 b b
+		b-> f4 f8 f f
+		\mark #31 e e e' e e' e %225
+		R2.
+		\tempoVEtwasZurueckgehalten <c,, a'>4-.\f q-. r8 q
+		q4-. q-. r8 q
+		<c b'>4-. q-. r8 q
+		q4-. q-. r8 q %230
+		<c a'>4-. q-. r8 q
+		a'4-. a-. r8 a
+		g4-. g-. b-.
+		\mark #32 a-. r r
+		R2.*11 %245
+		\mark #33 R2.*3
+		\mvTr <c, a'>4\f-\markup { \remark "pizz." } q4 r8 q
+		q4 q r8 q %250
+		<c b'>4 q r8 q
+		q4 q r8 q
+		<c a'>4 q r8 q
+		a'4 a r8 a
+		f'4 f r8 f %255
+		f4 f r8 f
+		a,4 a r8 a
+		\crescTextCresc a4 a\< h
+		c c r8 b
+		a4 a h %260
+		c a h
+		c a h
+		c a h
+		c h c
+		\mark #34 f\! r r %265
+		c'4 f, c
+		f c f,
+		c' f, f
+		<f c'> r r
+		R2.
+		\mark #35 \tempoVKadenz R2.*54 %324
+		R2.\fermataMarkup \bar "||" %325
+		\mark #36 b8(\mp d g) r r b,-.
+		a( g' f4-.) c-.
+		g8( d' b' c, e b')
+		f( b a g a g
+		f4) r8 a( h c) %330
+		r4 r8 g( a h)
+		c-. c-. d-. d-. g,-. g-.
+		c4-. g-. c,8( d
+		e f g b! a g)
+		a( g f es d c) %335
+		\mark #37 b4-. d-. e-.
+		f-. g-. a-.
+		b-. e,-. c-.
+		f8( g f e f g
+		a g f) r r4 %340
+		b!8( a g) r r4
+		f8( g a g f g)
+		e( a g f g f)
+		g2.--
+		\dimHairpin << { \oneVoice as8(\sp b a2) } \\ { s4. s4\> s8\! } >> %345
+		\mark #38 d,8(\mf f! b!) r r d,-.
+		cis( b' a4-.) e-.
+		b!8( f' d' e, gis d')
+		a( d c! h a gis
+		a) r r c,( d e) %350
+		r4 r8 h( c d)
+		dis-. dis-. fis-. fis-. h,-. h-.
+		\mark #39 e4-. b'-. a8-. a,-.
+		d4-. a'-. g8-. g,-.
+		c4-. d-. e-. %355
+		\crescHairpin f8(\< e d e f g)
+		\mark #40 f4-.\f a-. h-.
+		c d e
+		f,8( a d f, g h)
+		g,( g' e c b c) %360
+		e( g b c e g)
+		\mark #41 e16 e d d cis cis b! b a a g g
+		g g f f e e d d c c b b
+		e' e d d cis cis b! b a a g g
+		g g f f e e d d c c b b %365
+		g'' g f f e e des des c c b b
+		b b as as g g f f es es des des
+		g' g f f e e des des c c b b
+		c c a! a d,! d c c d d a' a
+		des des b! b es, es des des es es b' b %370
+		c c a a d, d c c d d a' a
+		d! d h h e, e d! d e e h' h
+		\mark #42 c8-^ f,-^ f-^ f-^ f-^ f-^
+		f-^ f,-^ f-^ f-^ f-^ f-^
+		g'4.\trill f8-. es-. d-. %375
+		g4.\trill f8-. es-. d-.
+		b'4.\trill a8-. g-. f-.
+		c'4.\trill b8-. a-. b-.
+		g16 g f f es es d d c c b b
+		es es d d c c b b g g es es %380
+		f f es es f f a a c c es es
+		\mark #43 b8(\ff d g4.) f8
+		b,( d g4.) f8
+		b,( d g f b, f')
+		g( f b, f' g f) %385
+		b16 b g g es es b b es es g g
+		es' es b b ges ges es es ges ges b b
+		f' f d d b b f f b b d d
+		g g e e des des b b g g e e
+		<b d> q <d b'> q <b d> q <d b'> q <b d> q <d b'> q %390
+		<c e> q <e c'> q <c e> q <e c'> q <c e> q <e c'> q
+		<es a> q <c es> q <es a> q <c es> q <es a> q <c es> q
+		\mark #44 <b f'>8 r  <b d>4.\sp q8
+		<b g'>-\markup { \remark "staccato" } q q q <a f'> q
+		<g f'> q4 q8 <c e>[ q] %395
+		c' c c16 c c c c c c c
+		<f, es'!> <f es'> q q q q q q <fis d'> q q q
+		<g b> q q q q q q q <fis d'> q q q
+		<f es'> q q q q q q q <fis d'> q q q
+		<g b> q q q q q q q <fis d'> q q q %400
+		<h, f'!> <h f'> q q q q q q q q q q
+		<c es> q q q q q q q q q q q
+		q q q q q q q q q q q q
+		q q q q q q q q q q q q
+		\mark #45 b8\ff d g4.\sp f8 %405
+		b, d g4.\sp f8
+		b, d f g f d
+		b d f g f d
+		b d f g f d
+		b d f g f d %410
+		b r d'16 d d d f f f f
+		f f f f d d d d f f f f
+		f f f f d d d d f f f f
+		f f f f d d d d f f f f
+		\mark #46 f f f f d d d d b b b b %415
+		f f f f b b b b f f f f
+		d d d d f f f f d d d d
+		b b b b b b b b f f f f
+		b4 r r
+		<g d'>2-- r4 %420
+		<es b'>2-- r4
+		<c g'>2-- r4
+		<b' f' d'>-^ b-^ b-^
+		b-^ b-^ b-^
+		b-^ r r \bar "|." %425 FINIS
 	}
 }

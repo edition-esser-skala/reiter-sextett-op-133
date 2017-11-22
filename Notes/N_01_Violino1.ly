@@ -996,7 +996,7 @@ VViolinoI = {
 		f(-> es!) es(-> d) d(-> c)
 		\crescHairpin \dimHairpin f(\< d c\sp b a\> b\!)
 		f'(\< d c\sp b a\> b\!) %95
-		d b es es a, a
+		\crescHairpin d\< b es es a, a
 		\mark #16 <e c' b'>\sp r r4 r
 		R2.*3 %100
 		b''8\mf r b4.( a8)
@@ -1013,7 +1013,7 @@ VViolinoI = {
 		ges f f es es des
 		des c des c des ces
 		b r r4 r %115
-		b16\p a! b c d cis d es f e f g
+		\crescTextCresc b16\p\< a! b c d cis d es f e f g
 		as8\sp r r4 r
 		R2.
 		b,16 a b c d cis d es f e f a!
@@ -1080,13 +1080,13 @@ VViolinoI = {
 		c( c,) c'-. c( c,) c'-. c( c,) c'-.
 		c( c,) c'-. c( c,) c'-. c( c,) c'-.
 		\crescTextCresc c(\< c,) c'-. c( c,) c'-. c( c,) c'-. } %195
-		\mark #27 <a, es''!>\f c-\markup { \remark "staccato" } c c c c
+		\mark #27 \mvTr <a, es''!>\f-\markup { \remark "staccato" } c c c c c
 		c(\sp b) b b b b
 		b(\sp a) a a b b
 		c\sp c,( es f a c
 		es) f,( a c es f %200
 		a) c,( es f a c
-		\mark #28 des) as-\markup { \remark "staccato" } as as as as
+		\mark #28 \mvTrr des)\fE-\markup { \remark "staccato" } as as as as as
 		\once \slurDashed as(\sp ges) ges ges ges ges
 		\once \slurDashed ges(\sp f) f f ges ges
 		as\sp f,( as ces des f %205
