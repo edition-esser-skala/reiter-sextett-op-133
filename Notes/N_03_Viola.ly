@@ -909,8 +909,8 @@ IVViola = {
 
 VViola = {
 	\relative c' {
-		\clef treble
-% 		\clef alto
+% 		\clef treble
+		\clef alto
 		\key b \major \time 3/4 \tempoV
 		R2.*2
 		<d, b'>8-.\f q-. r4 r
@@ -974,7 +974,7 @@ VViola = {
 		cis-. cis-. cis-. cis-. cis-. cis-.
 		h-. r h4.\sp h8-.
 		h-. h-. h-. h-. ais-. fis-.
-		\dimTextDim fis-.\> d'-. d-\markup { \remark "staccato" } d d d
+		\dimTextDim fis\>^\markup { \remark "staccato" } d' d d d d
 		d\p d d d d d %65
 		h h h h h h
 		R2.
@@ -1022,7 +1022,7 @@ VViola = {
 		b8( as f d b b' %120
 		\mark #19 des) r r4 r
 		R2.*3
-		\crescTextCresc es,16\mf\< d es f g fis g as b a b d %125
+		\crescTextCresc es,16\mf d es f g\< fis g as b a b d %125
 		es8( des b g es des)
 		\mark #20 cis\ff r cis4. cis8
 		<a fis'> r q4. q8
@@ -1035,7 +1035,7 @@ VViola = {
 		<f! d'>\ff <f d'> q q q q %135
 		q q q q q q
 		q q q q q q
-		q q q q q q
+		\crescTextCresc q\< q q q q q\!
 		R2.
 		\mark #21 r8 a16\f a h h c c d d e e %140
 		\crescTextCresc f\< f e e f f g g a a h h

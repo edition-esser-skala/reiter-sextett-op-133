@@ -2088,7 +2088,7 @@ VPianoR = {
 		\mark #37 R2.*10 %345
 		\mark #38 R2.*7 %352
 		\mark #39 R2.*4 %356
-		\mark #40 f,,,,8(\f a d) r r f,
+		\mark #40 f,,,,8(\f a d) r r f,-\parenthesize-.
 		e( d' c4-.) g-.
 		R2.
 		\lh \clef bass c,,16 e g b\rh \clef bass c e g b\lh \clef treble c e g b %360
@@ -2415,7 +2415,7 @@ VPianoL = {
 		R2.*54 %324
 		R2.\fermataMarkup \bar "||" %325
 		R2.*31 %356
-		\clef bass f8( a d) r r f,
+		\clef bass f8( a d) r r f,-\parenthesize-.
 		e( d' c4-.) g-.
 		<d d'>-. q-. <g, g'>-.
 		s2. %360

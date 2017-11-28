@@ -962,11 +962,11 @@ VViolinoI = {
 		\crescTextCresc b) r b4.(\< f8
 		ges) fis4--\f e8-. cis-. ais-.
 		cis-. h-. ais-. h-. cis-. e-.
-		\mark #11 d r g4.\sp fis8-. %60
+		\mark #11 d-. r g4.\sp fis8-. %60
 		e-. g-. fis-. e-. fis-. e-.
 		dis-. r e4.\sp d8-.
 		cis-. e-. d-. cis-. d-. cis-.
-		\dimTextDim h\>-\markup { \remark "staccato" } h h h a a
+		\dimTextDim h\>^\markup { \remark "staccato" } h h h a a
 		gis\p gis gis gis gis gis %65
 		gis gis gis gis gis gis
 		R2.
@@ -1019,7 +1019,7 @@ VViolinoI = {
 		b,16 a b c d cis d es f e f a!
 		b8( as f d b as %120
 		\mark #19 g) r r4 r
-		\crescTextCresc es'16\p d es f\< g fis g as b a b c
+		\crescTextCresc es'16\p\< d es f g fis g as b a b c
 		des8\sp r r4 r
 		R2.
 		\crescTextCresc es,16 d! es f g\< fis g as b a b d %125
@@ -1257,7 +1257,7 @@ VViolinoI = {
 		c c e e g g b b c c e e
 		es es c c a a f f es! es c c
 		\mark #44 d8 r g4.\sp f8
-		f-\markup { \remark "staccato" } e d c f[ a]
+		f-\markup { \remark "staccato" } e d c f a
 		<b, b'> q4 q8 <c b'>[ q] %395
 		q[ q] a'16 a g g a a b b
 		<f c'> q q q q q q q <d d'>[ q q q]

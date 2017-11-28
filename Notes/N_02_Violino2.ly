@@ -956,7 +956,7 @@ VViolinoII = {
 		g-. g-. g-. g-. fis-. fis-.
 		fis-. r e4.\sp d8-.
 		cis-. e-. d-. cis-. d-. cis-.
-		\dimTextDim h-.\> fis'-. fis-\markup { \remark "staccato" } fis fis fis
+		\dimTextDim h\>^\markup { \remark "staccato" } fis' fis fis fis fis
 		fis\p fis fis fis fis fis %65
 		fis fis dis dis eis eis
 		R2.
