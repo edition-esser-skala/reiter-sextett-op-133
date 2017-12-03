@@ -13,8 +13,7 @@
 \book {
 	\bookpart {
 		\header {
-			subtitle = \markup { \vspace #3 \normal-text \larger \larger "5. Satz" }
-			composer = \markup { \larger " " }
+			movement = "5. Satz"
 		}
 		\paper { systems-per-page = #2 }
 		\score {
