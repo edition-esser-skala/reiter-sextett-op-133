@@ -892,6 +892,312 @@ VContrabasso = {
 	\relative c {
 		\clef bass
 		\key b \major \time 3/4 \tempoV
-		
+		R2.*2
+		b8-.\f b-. r4 r
+		b8-. b-. r4 r
+		b8-. b-. r4 r %5
+		b8-. b-. b-. b-. b-. b-.
+		\mark #1 b r b'4.-> b8
+		b-\markup { \remarkE "staccato" } b b b a a
+		a r g4.-> g8
+		g-\markup { \remark "staccato" } g g g f f %10
+		cis cis d d b! b
+		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
+		\mark #2 as\! r as'4.-> as8
+		g-\markup { \remarkE "staccato" } g f f es es
+		d r g2-- %15
+		d8 r g2--
+		f4.-> r8 f\p r
+		\mark #3 b, r r4 r
+		R2.*5 %23
+		\mark #4 R2.*6 %29
+		\mark #5 b16\p a b c d c d es f e f g %30
+		R2.*4
+		\mark #6 r4 b(--\mf b--) %35
+		c2.--
+		d--
+		g,8 r r4 r
+		\mark #7 g,16\p fis g a b a b c d cis d es
+		R2.*3 %42
+		\mark #8 R2.*4 %46
+		\mark #9 R2.*6 %52
+		\mark #10 R2.*6 %58
+		r4 r fis8-.\f fis-.
+		\mark #11 h-. r h4.->\sp h8-. %60
+		h-. h-. h-. h-. ais-. ais-.
+		a-. r g4.\sp fis8-.
+		e-. g-. fis-. e-. fis-. e-.
+		h r r4 r
+		R2.*5 %69
+		\mark #12 f4-^\f f'4.-- f,8 %70
+		b4-^ b'4.-\parenthesize-- b,8
+		f-\markup { \remark "staccato" } f' f f, f f'
+		b, b' b b, f f
+		b r r4 r
+		R2.*2 %76
+		b'8\sp b, b b b b
+		\mark #13 b\p b b b b b
+		b b b b b b
+		b b b b b b %80
+		b b b b b b
+		b b b b b b
+		\crescTextCresc b\< b b b b b
+		b b b b b b
+		b\f b b b b b %85
+		\mark #14 b r b'4.-> b8
+		b-\markup { \remark "staccato" } b b b a a
+		a r g4.-> g8
+		g-\markup { \remarkE "staccato" } g g g f f
+		cis cis d d b! b %90
+		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
+		\mark #15 as\! r as'4.-> as8
+		g-\markup { \remarkE "staccato" } g f f es es
+		d r g2--
+		d8 r g2-- %95
+		\crescHairpin \parenthesizedHairpin f8\< f f f f f
+		\mark #16 g\sp r r4 r
+		R2.*7 %104
+		\mark #17 R2.*6 %110
+		\mark #18 R2.*2
+		\mvTr des'8\f-\markup { \remark "staccato" } des es! es f f
+		f f f f f des
+		d r r4 r %115
+		R2.*3
+		\mvTrr b4\mf-\markup { \remark "pizz." } f b
+		f b, f' %120
+		\mark #19 R2.*4
+		\crescTextCresc \mvTrr es'4\mf-\markup { \remark "pizz." } b\< es %125
+		b es, b'
+		\mark #20 \mvTrr fis8\ff-\markup { \remark "Bogen" } r fis4. fis8
+		h, r h4. h8
+		fis' fis4 fis8 fis fis
+		h, h4 h8 h h %130
+		\crescTextCresc fis' fis fis fis h,\< h
+		fis' fis fis fis h, h\!
+		r4 r8 h\< h h
+		h h h h h h
+		h\ff h h h h h %135
+		h h h h h h
+		g g g g g g
+		\crescTextCresc g\< g g g g g\!
+		R2.
+		\mark #21 R2.*2 %141
+		c4-^\ff c4.-- c8
+		g4-^ g4.-- g8
+		c c c c c c
+		g'4-^ g4.-- g8 %145
+		c,-\markup { \remark "staccato" } c c c c c
+		g g g g g g
+		c c c c c c
+		g' g g g g g
+		\mark #22 c c c c c c %150
+		g g g g g g
+		c-> c, c c g'[-> g,]
+		c'-> c, c c g'[-> g,]
+		R2.*6 %159
+		\mark #23 R2.*12 %171
+		\mark #24 R2.*6 %177
+		\mark #25 f'8\f f f f f f
+		f f f f f f
+		e e e e e e %180
+		es es es es es es
+		d d d d d d
+		d d d d d d
+		g g g g g g
+		g g g g g g %185
+		fis fis fis fis fis fis
+		f f f f f f
+		\mark #26 e e e e e e
+		a a a a a a
+		d, d d d d d %190
+		g g g g g g
+		c, c c c c c
+		d d d d d d
+		e e g g b b
+		\crescTextCresc c\< c e e g g %195
+		\mark #27 a,\fE r r4 r
+		R2.*2
+		f,8-\markup { \remark "pizz." } g a b c d
+		es d f e g f %200
+		es d es c a c
+		\mark #28 des r r4 r
+		R2.*2
+		des8-\markup { \remark "pizz." } es f ges as b %205
+		ces des ces des es f
+		fis r r4 r
+		R2.
+		\mark #29 fis,4-\markup { \remark "pizz." } a d
+		b d g %210
+		c,, d es
+		f g a
+		b c d
+		e, f g
+		a h cis %215
+		d, e fis
+		g a h
+		\mark #30 \crescTextCrescE c g\< c,
+		g' c, g
+		c g' c %220
+		c,\fE r r
+		R2.*3
+		\mark #31 R2.*2 %226
+		\tempoVEtwasZurueckgehalten f4-.\f f-. r8 f
+		f4-\parenthesize-. f-\parenthesize-. r8 f
+		f4-\parenthesize-. f-\parenthesize-. r8 f
+		f4-. f-. r8 f %230
+		f4-\parenthesize-. f-\parenthesize-. r8 f
+		a4-\parenthesize-. a-\parenthesize-. r8 a
+		b4-. b-. c-.
+		\mark #32 f,-. r r
+		R2.*11 %245
+		\mark #33 R2.*3
+		\mvTr f4\f-\markup { \remark "pizz." } f r8 f
+		f4 f r8 f %250
+		f4 f r8 f
+		f4 f r8 f
+		f4 f r8 f
+		a4 a r8 a
+		b!4 b r8 b %255
+		h4 h r8 h
+		c4 c r8 c
+		\crescTextCresc c4 \once \override DynamicTextSpanner.style = #'dashed-line  c\< d
+		es! es r8 d
+		c4 c d %260
+		es c d
+		es c d
+		es c d
+		es d es
+		\mark #34 f\spE r r %265
+		R2.*3
+		\mvTr f,,2.~\p-\markup { \remark "Bogen" }
+		f~ %270
+		\mark #35 \tempoVKadenz f~
+		f~
+		f~
+		f~
+		f~ %275
+		f~
+		f~
+		f~
+		f~
+		f~ %280
+		f~
+		f~
+		f~
+		f~
+		f~ %285
+		f~
+		f~
+		f~
+		f~
+		f~ %290
+		f~
+		f~
+		f~
+		f~
+		f~ %295
+		f~
+		f~
+		f~
+		f~
+		f~ %300
+		f~
+		f~
+		f~
+		f~
+		f~ %305
+		f~
+		f~
+		f~
+		f~
+		f~ %310
+		f~
+		f~
+		f~
+		f~
+		f~ %315
+		f~
+		f~
+		f~
+		f~
+		f~ %320
+		f~
+		f~
+		f~
+		f~
+		f\fermata \bar "||" %325
+		\mark #36 R2.*10 %335
+		\mark #37 R2.*10 %345
+		\mark #38 R2.*7 %352
+		\mark #39 R2.*4 %356
+		\mark #40 f'8(\f a d) r r f,-.
+		e( d' c4-.) g-.
+		d-. d-. g,-.
+		c4-. e-. g-. %360
+		b!-. c-. c,-.
+		\mark #41 cis8( e a4.) cis,8
+		d( f b4.) d,8
+		cis( e a) cis,( e a)
+		d,( f b) d,( f b) %365
+		e,( g c4.) e,8
+		f( as des4.) f,8
+		e( g c) e,( g c)
+		fis,( a d) fis,( a d)
+		g,( b! es!) g,( b es) %370
+		fis,( a d) fis,( a d)
+		gis,( h e) gis,( h e)
+		\mark #42 a,-^ f'-^ f-^ f-^ f-^ f-^
+		f-^ f,-^ f-^ f-^ f-^ f-^
+		f, f f r r4 %375
+		f8 f f r r4
+		f8 f f r r4
+		f8 f f r r4
+		f8 f f f f f
+		f f f f f f %380
+		f f f f f f
+		\mark #43 f'4-^\ff as-^ b-^
+		f-^ as-^ b-^
+		f-^ as-^ b-^
+		f-^ as-^ b-^ %385
+		g-^ b-^ es-^
+		ges,-^ b-^ es-^
+		f,-^ b-^ d-^
+		e,-^ b'-^ des-^
+		f,8 f f f f f %390
+		f f f f f f
+		f f f f f f
+		\mark #44 b, r b'4.\sp b8
+		b-\markup { \remark "staccato" } b b b a-\critnote a
+		g g4 g8 c[ c] %395
+		f f f f f f
+		es! es4 es8 d[ d]
+		c c4 c8 d[ d]
+		es es es es d d
+		c c c c d d %400
+		h h h h h h
+		c c c c c c
+		f, f f f f f
+		f f f f f f
+		\mark #45 b,\ff d g4.\sp f8 %405
+		b, d g4. f8
+		b, d f g f d
+		b d f g f d
+		b d f g f d
+		b d f g f d %410
+		b r g'4-^ f-^
+		b-^ g-^ f-^
+		b8 b g g f f
+		b b g g f f
+		\mark #46 b b d d b b %415
+		f f b b f f
+		d d f f d d
+		b b b b f f
+		b4 r r
+		g'2-- r4 %420
+		es2-- r4
+		c2-- r4
+		b-^ b'-^ b-^
+		b-^ b,-^ b-^
+		b-^ r r \bar "|." %425 FINIS
 	}
 }

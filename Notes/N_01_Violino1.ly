@@ -1131,7 +1131,7 @@ VViolinoI = {
 		a4 a r8 a %255
 		a4 a r8 a
 		a4 a r8 a
-		\crescTextCresc a4 a\< h
+		\crescTextCresc a4 \once \override DynamicTextSpanner.style = #'dashed-line a\< h
 		c c r8 b
 		a4 a h %260
 		c a h

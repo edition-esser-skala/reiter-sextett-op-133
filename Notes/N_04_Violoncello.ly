@@ -944,7 +944,7 @@ VVioloncello = {
 		\mark #1 b r g''4.-> g8
 		c,-\markup { \remark "staccato" } c c c c c
 		b r b4.-> b8
-		g-\markup { \remarkE "staccato" } g g g f f %10
+		g-\markup { \remark "staccato" } g g g f f %10
 		cis cis d d b! b
 		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
 		\mark #2 as\! r as'4.-> as8
@@ -1015,7 +1015,7 @@ VVioloncello = {
 		b8-.\mf b-. r4 r
 		b8-. b-. r4 r
 		\crescTextCresc b8-.\< b-. r4 r
-		b8-\parenthesize-.\f b-\parenthesize-. b-\parenthesize-. b-\parenthesize-. b-\parenthesize-. b-\parenthesize-. %85
+		b8\f b b b b b %85
 		\mark #14 b r g''4.-> g8
 		c,-\markup { \remark "staccato" } c c c c c
 		b r b4.-> b8
@@ -1169,14 +1169,14 @@ VVioloncello = {
 		f4 f r8 f %255
 		f4 f r8 f
 		f4 f r8 f
-		\crescTextCresc f4 f\< f
+		\crescTextCresc f4 \once \override DynamicTextSpanner.style = #'dashed-line  f\< f
 		f f r8 f
 		f4 f f %260
 		f f f
 		f f f
 		f f f
 		f f f
-		\mark #34 c'\! r r %265
+		\mark #34 c'\spE r r %265
 		R2.*2
 		c4 f, c
 		<f, c'> r r

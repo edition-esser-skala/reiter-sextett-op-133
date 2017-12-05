@@ -7,7 +7,7 @@
 project = Reiter_Sextett_op_113
 notes = Violino1 Violino2 Viola Violoncello Contrabasso Piano
 parts = Violino1 Violino2 Viola Violoncello Contrabasso Piano
-movements = I
+movements = I II III IV V
 
 
 .DEFAULT_GOAL := info

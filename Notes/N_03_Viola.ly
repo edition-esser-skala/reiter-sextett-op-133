@@ -920,7 +920,7 @@ VViola = {
 		\mark #1 <d d'> r <b d>4.-> q8
 		<b g'>8-\markup { \remark "staccato" } q q q <a f'> q
 		q r <g e'>4.-> q8
-		<a e'> q q q <a d> q %10
+		<a e'>-\markup { \remark "staccato" } q q q <a d> q %10
 		<a e'> q <a f'> q e' e
 		\crescTextCresc <e, e'>\< q q q q q
 		\mark #2 <b' d>\! r <b g'>4.-> <b f'>8
@@ -1138,14 +1138,14 @@ VViola = {
 		f'4 f r8 f %255
 		f4 f r8 f
 		a,4 a r8 a
-		\crescTextCresc a4 a\< h
+		\crescTextCresc a4 \once \override DynamicTextSpanner.style = #'dashed-line a\< h
 		c c r8 b
 		a4 a h %260
 		c a h
 		c a h
 		c a h
 		c h c
-		\mark #34 f\! r r %265
+		\mark #34 f\spE r r %265
 		c'4 f, c
 		f c f,
 		c' f, f

@@ -1815,7 +1815,7 @@ IVPianoL = {
 VPianoR = {
 	\relative c' {
 		\clef treble
-		\key b \major \time 3/4 \tempoV \set Score.skipTypesetting = ##f
+		\key b \major \time 3/4 \tempoV
 		b16\f a b c d es f es d es d c
 		b a b c d es f es d es d c
 		b a b c d es f es d es d c
@@ -2021,7 +2021,7 @@ VPianoR = {
 		\rh a c es e f es c a \lh f es c a %200
 		\rh f es c a \lh \clef bass f es c a c es f a \rh
 		\mark #28 <as' des as'>8 r r4 r
-		R2.*2 \set Score.skipTypesetting = ##f
+		R2.*2
 		\lh des,,32[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des \lh as,[-\markup { \remark "cresc." } ces des f] \rh as ces des f %205
 		\lh \clef treble ces,[ des f as] \rh ces des f as \lh des,,[ f as ces] \rh des f as ces \lh f,,[ as ces des] \rh f as ces des
 		<d, a' d>8-.\mf <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
@@ -2068,7 +2068,7 @@ VPianoR = {
 		\tuplet 3/2 4 { d, f a d, f a d, f a %255
 		d, f a d, f a d, f a
 		es! f a es f a es f a
-		\crescTextCresc es f a es\< f a es f h
+		\crescTextCresc es f a \once \override DynamicTextSpanner.style = #'dashed-line es\< f a es f h
 		es, f c' es, f c' es, f b
 		es, f a es f a es f h %260
 		es, f c' es, f a es f h
