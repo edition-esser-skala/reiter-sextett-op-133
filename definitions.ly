@@ -27,30 +27,30 @@
 	
 	system-system-spacing =
     #'((basic-distance . 25)
-       (minimum-distance . 0)
-       (padding . 0)
+       (minimum-distance . 25)
+       (padding . -100)
        (stretchability . 0))
 	
 	top-system-spacing =
     #'((basic-distance . 22)
-       (minimum-distance . 0)
-       (padding . 0)
+       (minimum-distance . 22)
+       (padding . -100)
        (stretchability . 0))
 	
 	top-markup-spacing =
     #'((basic-distance . 0)
        (minimum-distance . 0)
-       (padding . 0)
+       (padding . -100)
        (stretchability . 0))
 		
 	markup-system-spacing =
     #'((basic-distance . 22)
-       (minimum-distance . 0)
-       (padding . 0)
+       (minimum-distance . 22)
+       (padding . -100)
        (stretchability . 0))
 	
 	last-bottom-spacing =
-    #'((basic-distance . 1)
+    #'((basic-distance . 0)
        (minimum-distance . 0)
        (padding . 0)
        (stretchability . 1.0e7))
@@ -76,23 +76,17 @@
 	bookTitleMarkup = \markup {
 		\column {
 			\fill-line {
-				" "
 				\fontsize #6 \fromproperty #'header:title
-				" "
 			}
-			\vspace #.5
+			\vspace #.3
 			\fill-line {
 				" "
 				\large \italic \fromproperty #'header:subtitle
-				" "
+				\large \fromproperty #'header:location
 			}
-			\vspace #2
+			\vspace #1
 			\fill-line {
-				\fontsize #3
-				\fromproperty #'header:movement
-			}
-			\fill-line {
-				" " \larger \fromproperty #'header:location
+				\fontsize #3 \fromproperty #'header:movement
 			}
 		}
 	}
@@ -255,14 +249,30 @@ tempoVKadenz = \tempoMarkup "Kadenz"
 	\context {
 		\StaffGroup
 		\override SystemStartBracket.collapse-height = #1
-		\override StaffGrouper.staffgroup-staff-spacing.basic-distance = #17
-		\override StaffGrouper.staff-staff-spacing.basic-distance = #12
+		\override StaffGrouper.staffgroup-staff-spacing =
+		  #'((basic-distance . 17)
+         (minimum-distance . 17)
+         (padding . -100)
+         (stretchability . 0))
+		\override StaffGrouper.staff-staff-spacing =
+		  #'((basic-distance . 12)
+         (minimum-distance . 12)
+         (padding . -100)
+         (stretchability . 0))
 	}
 	\context {
 		\PianoStaff
 		\override InstrumentName.font-shape = #'italic
-		\override StaffGrouper.staffgroup-staff-spacing.basic-distance = #15
-		\override StaffGrouper.staff-staff-spacing.basic-distance = #12
+		\override StaffGrouper.staffgroup-staff-spacing =
+		  #'((basic-distance . 15)
+         (minimum-distance . 15)
+         (padding . -100)
+         (stretchability . 0))
+		\override StaffGrouper.staff-staff-spacing =
+		  #'((basic-distance . 12)
+         (minimum-distance . 12)
+         (padding . -100)
+         (stretchability . 0))
 	}
 	\context {
 		\Staff
