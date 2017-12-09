@@ -13,7 +13,7 @@
 \book {
 	\bookpart {
 		\header {
-			title = "Sextett op. 113"
+			title = "Sextett op. 133"
 			subtitle = "Per aspera ad astra"
 			movement = "1. Satz"
 			location = "Riedegg, 17. August 1921"

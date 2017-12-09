@@ -4,7 +4,7 @@
 
 
 # change the following variables according to your project
-project = Reiter_Sextett_op_113
+project = Reiter_Sextett_op_133
 notes = Violino1 Violino2 Viola Violoncello Contrabasso Piano
 parts = Violino1 Violino2 Viola Violoncello Contrabasso Piano
 movements = I II III IV V

@@ -1,4 +1,4 @@
-# Josef Reiter: Sextett "Per aspera ad astra" op. 113
+# Josef Reiter: Sextett "Per aspera ad astra" op. 133
 
 Engraving files for LilyPond 2.18.0
 
@@ -20,14 +20,14 @@ Use the `make` tool for building scores. Specify one of the following **targets*
 
 PDF files will be stored in a subfolder *./PDF*, MIDI files in a subfolder *./MIDI*.
 
-The file *Sextett113.ly* allows you to work with an editor like Kile: Change the included movement/parts file in this script to generate files *Sextett113.pdf* and *Sextett113.midi*, which can be opened via the ViewPDF and OpenMIDI functionalities.
+The file *Sextett133.ly* allows you to work with an editor like Kile: Change the included movement/parts file in this script to generate files *Sextett133.pdf* and *Sextett133.midi*, which can be opened via the ViewPDF and OpenMIDI functionalities.
 
 
 ## Files
 
 * *Makefile* – the configuration file for make.
 * *definitions.ly* – contains general definitions.
-* *Sextett113.ly* – allows building movements/parts from within Kile.
+* *Sextett133.ly* – allows building movements/parts from within Kile.
 * Individual voices in folder *Notes*:
     * N_01_Violino1.ly
     * N_02_Violino2.ly
