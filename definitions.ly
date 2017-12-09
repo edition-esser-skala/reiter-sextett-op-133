@@ -238,6 +238,7 @@ tempoMarkup =
 tempoI = \tempoMarkup "Kräftig belebt"
 tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
 tempoIII = \tempoMarkup "Schnell, leicht und flüchtig; gespenstisch dahinhuschend, durchwegs leise zu spielen"
+% tempoIII = \tempo \markup \medium { "Schnell, leicht und flüchtig; gespenstisch dahinhuschend, durchwegs leise zu spielen" } % change to this one for parts
 tempoIIITrio = \tempoMarkup "Trio. Etwas ruhiger, sehr hell und zierlich"
 tempoIIISchluss = \tempoMarkup "Schluß"
 tempoIV = \tempoMarkup "Mäßig langsam"

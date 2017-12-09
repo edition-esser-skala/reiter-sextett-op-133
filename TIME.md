@@ -35,3 +35,5 @@ Mon,171127,21:00,22:00,
 Tue,171128,21:30,22:30,
 Mon,171204,21:30,23:00,
 Tue,171205,22:30,23:15,fifth movement finished
+Sat,171209,15:00,18:00,full score finished
+Sat,171209,18:00,20:00,parts finished
