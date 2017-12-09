@@ -13,14 +13,10 @@
 \book {
 	\bookpart {
 		\header {
-			title = \markup {
-				\medium \center-column {
-					\normal-text \larger \larger \line { Sextett op. 113 }
-					\smaller \smaller \smaller \italic \line { Per aspera ad astra }
-				}
-			}
-			subtitle = \markup { \vspace #3 \normal-text \larger \larger "1. Satz" }
-			composer = \markup { \larger "Riedegg, 17. August 1921" }
+			title = "Sextett op. 113"
+			subtitle = "Per aspera ad astra"
+			movement = "1. Satz"
+			location = "Riedegg, 17. August 1921"
 		}
 		\paper { systems-per-page = #2 }
 		\score {

@@ -194,12 +194,12 @@ IPianoR = {
 				f,-. f'-. f,-. f'-.
 				f,-. f'-. f,-.\p f'-. %190
 				f,-.\< f'-. f,-. f'-.
-				f,-. f'-. f,8\fE <f, f'>-^ <g g'>-^ <a a'>-^
+				f,-. f'-. f,8\fE <f, f'>-^ <g g'>-^ <a a'>-^ \noBreak
 				<b d b'>4-^ <b' d b'>-^ r2 %193
 			} {
 				\clef bass c,,8( f c'\> f, c f c' f,)\!
-				\spanRallMoltoATempo c\startTextSpan f c' f, e' a, e a \noBreak %195
-				d,\stopTextSpan\p d' e, e' fis, fis' a, a'
+				c-\markup { \remark "rall. molto" } f c' f, e' a, e a \noBreak %195
+				\mvTr d,\p-\markup { \remark "a tempo" } d' e, e' fis, fis' a, a'
 			}
 		}
 		\crescTextCresc \clef treble d, d' e,\< e' fis, fis' a, a'
@@ -272,7 +272,7 @@ IPianoR = {
 		\mark #20 R1*2 %265
 		r4 \lh h16 \rh d\p e d \lh gis, \rh h d h \lh e, \rh gis h gis
 		\lh d \rh e gis e \lh h \rh d e d \lh gis, \rh h d h \lh e, \rh gis h gis
-		<h cis>8 <h cis gis'>[\p^\markup { \remark "staccato" } q q] q <ais h fis'> q q
+		<h cis>8 <h cis gis'>[\p^\staccato q q] q <ais h fis'> q q
 		q <gis h eis> q q q <ais h fis'> q q
 		<h cis gis'> r \lh h'16 \rh cis eis cis \lh gis \rh h cis h \lh eis, \rh gis h gis %270
 		\lh cis, \rh eis gis eis \lh h \rh cis eis cis \lh gis \rh h cis h \lh eis, \rh gis h gis
@@ -1012,7 +1012,7 @@ IIPianoR = {
 		r <eis, cis'>16(\p <cis gis'> <eis cis'> <cis gis'> <fis cis'> <cis a'> <fis cis'> <cis a'>) <gis' e'>( <e h'> <gis e'> <e h'> %70
 		\time 1/4 <a e'> <e cis'> <a e'> <e cis'>)
 		\time 4/4 <eis cis'>( <cis gis'> <eis cis'> <cis gis'> <fis cis'> <cis a'> <fis cis'> <cis a'>) <gis' e'>( <e h'> <gis e'> <e h'> <a e'> <e a> <a e'> <e a>)
-		\mark #15 \mvTrr e'\mf-\markup { \remark "staccato" } a, cis d e g h a h a fis d e' d a fis
+		\mark #15 \mvTrr e'\mf-\staccato a, cis d e g h a h a fis d e' d a fis
 		\crescTextCrescMolto <a a'> <g g'> <e e'> <d d'> <h h'> <g g'> <h h'> <d d'> <cis cis'>\< <a a'> <cis cis'> <d d'> <e e'> <fis fis'> <g g'> <gis gis'>
 		\mark #16 \ottava #1
 			\subdivE <d' fis a>32\ff a <d fis a> a <d fis a> a <d fis a> a
@@ -1707,7 +1707,7 @@ IVPianoR = {
 		} >>
 		\ottava #1 \tuplet 3/2 8 { \crescTextCresc \subdivE b''16\< c b c b c } \subdivE b32 c b c b c b c \afterGrace b2\trill\f\< { a16 b }
 		\crescTextCrescMolto \tuplet 7/4 8 { es32\ff([\< g es b g es b)] \ottava #0 es( g es b g es b) es([ g es b g es b)] \clef bass es( g es b g es b) } r32 <b es g b>[ r <es g b es> r <g b es g> r <b es g b>] \clef treble r <es g b es>[ r <g b es g> r <b es g b> r <es g b es>]
-		\mvTrr <g b es g>16\sp-\markup { \override #'(baseline-skip . 2) \remark { \left-column { \line { "Dieser Akkord muß" } \line { "mittels des Pedals" } \line { "durch den ganzen" } \line { "Takt nachklingen." } } } } r r8 r4 r2
+		\mvTrr <g b es g>16\sp-\markup { \override #'(baseline-skip . 2) \whiteout \remark { \left-column { \line { "Dieser Akkord muß mittels des Pedals" } \line { "durch den ganzen Takt nachklingen." } } } } r r8 r4 r2
 		\mark #13 R1*3 %67
 		\crescHairpin \dimHairpin \time 2/4 d16(\p\< e f g\! a\> g f e\!
 		\time 4/4 d8) r r4 r2
@@ -1845,7 +1845,7 @@ VPianoR = {
 		f' b, g' b, es b
 		f' b, es g, a es)
 		<d b'>-.\p <d' f>-. <b d-.> <d f>-. <b d>-. <d f>-.
-		\mark #5 <b d>-\markup { \remark "staccato" } <d f> <b d> <d f> <b d> <d f> %30
+		\mark #5 <b d>-\staccato <d f> <b d> <d f> <b d> <d f> %30
 		<a c> <c f> <a c> <c f> <a c> <c f>
 		\ottava #1 <c es> <es g> <c es> <es g> <c es> <es g>
 		<b d> <d g> <b d> <d g> <b d> <d g> \ottava #0
@@ -1855,7 +1855,7 @@ VPianoR = {
 		d a' d a d, a' d a d, a' d a
 		<g b>8-.\pE <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
 		\mark #7 <g b>-. <b d>-. <g b>-. <b d>-. <g b>-. <b d>-.
-		<f! a>-\markup { \remark "staccato" } <a d> <f a> <a d> <f a> <a d> %40
+		<f! a>-\staccato <a d> <f a> <a d> <f a> <a d> %40
 		\ottava #1 <a cis> <cis e> <a cis> <cis e> <a cis> <cis e>
 		\crescTextCresc <c d>\< <d fis> <c d> <d fis> <c d> <d fis>
 		\mark #8 b16\mf g' b g b, g' b g b, g' b g
@@ -1863,14 +1863,14 @@ VPianoR = {
 		b, f' b f b, f' b f b, f' b f \ottava #0 %45
 		<es, g>8-.\p <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
 		\mark #9 <es g>-. <g b>-. <es g>-. <g b>-. <es g>-. <g b>-.
-		<f b>-\markup { \remark "staccato" } <b d> <f b> <b d> <f b> <b d>
+		<f b>-\staccato <b d> <f b> <b d> <f b> <b d>
 		\crescTextCresc <as c>\< <c f> <as c> <c f> <as c> <c f>
 		<c es> <es g> <c es> <es g> <c es> <es g> %50
 		as16\f ges es c as ges es c \lh \clef treble as ges es c
 		\tuplet 5/4 4 { as c es ges as } \rh \crescHairpin \tuplet 7/4 4 { c\< es ges as c es ges } \subdivE as32\! ges es c as ges es c
 		\mark #10 <des f>8-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
 		<des f>-. <f as>-. <des f>-. <f as>-. <des f>-. <f as>-.
-		<es as>-\markup { \remark "staccato" } <as c> <es as> <as c> <es as> <as c> %55
+		<es as>-\staccato <as c> <es as> <as c> <es as> <as c> %55
 		\crescTextCresc <ges b>\< <b es> <ges b> <b es> <ges b> <b es>
 		<b des> <des f> <b des> <des f> <b des> <des f>
 		fis16\fE e cis ais fis \lh e cis ais fis ais cis e \rh
@@ -2027,7 +2027,7 @@ VPianoR = {
 		<d, a' d>8-.\mf <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
 		<d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
 		\mark #29 <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-. <d a' d>-. <d c' d>-.
-		<d b'>-\markup { \remark "staccato" } <d d'> <d b'> <d d'> <d b'> <d d'> %210
+		<d b'>-\staccato <d d'> <d b'> <d d'> <d b'> <d d'> %210
 		<es b'> <es es'> <es b'> <es es'> <es b'> <es es'>
 		<es a> <es es'> <es a> <es es'> <es a> <es es'>
 		<d a'> <d d'> <d a'> <d d'> <d a'> <d d'>
@@ -2068,7 +2068,7 @@ VPianoR = {
 		\tuplet 3/2 4 { d, f a d, f a d, f a %255
 		d, f a d, f a d, f a
 		es! f a es f a es f a
-		\crescTextCresc es f a \once \override DynamicTextSpanner.style = #'dashed-line es\< f a es f h
+		\crescTextCresc es f a \once \spannerDashed es\< f a es f h
 		es, f c' es, f c' es, f b
 		es, f a es f a es f h %260
 		es, f c' es, f a es f h
@@ -2130,7 +2130,7 @@ VPianoR = {
 		g' e c b e c b g c b g e \ottava #0
 		es' c a f c' a f es a f es c
 		\mark #44 <b d b'>8 r <g' d' g>4.\sp <f d' f>8
-		<f c' f>-\markup { \remark "staccato" } <e e'> <d d'> <c c'> <f f'>[ <a a'>]
+		<f c' f>-\staccato <e e'> <d d'> <c c'> <f f'>[ <a a'>]
 		\ottava #1 <b d b'> q4 q8 <c e b'>[ q] %395
 		<b g' b>[ q] <a f' a> <g e' g> <a f' a> <b g' b>
 		<c f a c> q4 q8 <d fis a d>[ q]

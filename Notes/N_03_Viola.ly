@@ -116,11 +116,11 @@ IViola = {
 			<g g,>1~\f
 			q8 r r4 r2 %105
 			r4 g(--\p g-- g--)
-			\mark #9 <c, c,>(--\f q-- q-- q--)
+			\mark #9 <c, c,>(--^\f q-- q-- q--)
 			q(-- q-- q-- q--)
 			q(-- q-- q-- q--)
 			q(-- q-- q-- q--) %110
-			q\sp r r2
+			q^\sp r r2
 			R1*3
 			r4 e,8(\p f gis a h c %115
 			\crescHairpin f4) e8(\< f\! b a g\> f)\!
@@ -162,10 +162,10 @@ IViola = {
 			q
 			e'8( g f a g b f a) %160
 			e( g d\< f c h b g)\!
-			a(\< b h c)\! c,4( c'~
-			c c,) b'8(\< c d e)\!
-			a,(\< b h c)\! c,4( c'~
-			c c,) b'8(\< c d e)\! %165
+			\crescHairpin a(\< b h c)\! c,4( c'~
+			\crescTextCresc c c,) b'8(\< c d e)\!
+			\crescHairpin a,(\< b h c)\! c,4( c'~
+			\crescTextCresc c c,) b'8(\< c d e)\! %165
 			\mark #14 gis(\p a gis a) b( c b c
 			b c b c) dis( e dis e
 			dis e dis e) fis( g fis g
@@ -193,12 +193,12 @@ IViola = {
 				b4( c8 f,) des'( c4 f,8)
 				des'( c4 f,8) <a c,>\p q q q %190
 				q\< q q q <c es,> q q q
-				q q q q q\f f,-^ g-^ a-^
+				q q q q q\f f,-^ g-^ a-^ \noBreak
 				<b d,> r d,4(\mf es f)
 			} {
 				\dimTextDim f,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f,-.\startTextSpan c'-. a-. e'-. \noBreak %195
-				d,8\stopTextSpan(\p e fis g a g fis e)
+				f,-.-\markup { \remark "rall. molto" } c'-. a-. e'-. \noBreak %195
+				\mvTr d,8(\p-\markup { \remark "a tempo" } e fis g a g fis e)
 			}
 		}
 		d8( e fis g a g fis e)
@@ -209,10 +209,10 @@ IViola = {
 		\dimTextDim a( g a\> g a g a g)
 		a( g a g a g a g)\!
 		\mark #16 R1*2 %205
-		r4 r8 d[-\markup { \remark "pizz" } r a' r d,]
+		r4 r8 d[-\pizz r a' r d,]
 		r a'[ r d, r a' r d,]
 		r a'[ r d, r a' r d,]
-		\crescHairpin a' r r4 r \mvTr fis(\mf\<-\markup { \remark "Bogen" }
+		\crescHairpin a' r r4 r \mvTr fis(\mf\<-\arco
 		fis'-.)\sp fis2-- fis4-. %210
 		fis( d h a)
 		gis( eis gis cis)
@@ -229,7 +229,7 @@ IViola = {
 		g d
 		h1~
 		h4 r r2 %225
-		\mark #18 \mvTr ges8\f-\markup { \remark "staccato" } ges' ges ges ges f f f
+		\mark #18 \mvTr ges8\f-\staccato ges' ges ges ges f f f
 		f es es es es es es c
 		c r f,( a! c a c f)
 		a( f a f') a,( f a f
@@ -268,7 +268,7 @@ IViola = {
 		gis( fisis gis h gis fis eis cis
 		d) d'-. d-. d-. b-. b-. f-. f-.
 		ges'-. ges-. es-. es-. b-. b-. ges-. ges-.
-		\mvTr d'\f-\markup { \remark "staccato" } d b b f f b b
+		\mvTr d'\f-\staccato d b b f f b b
 		ges' ges es es b b ges ges %275
 		\mark #21 dis''\ff dis h h fis fis dis dis
 		h' h fis fis dis dis h h
@@ -427,9 +427,9 @@ IViola = {
 		\mark #37 h,(\p c h c) es( f es f
 		gis[ a)] h,( c es f gis a %440
 		h[ c)] es,( f gis a h c)
-		\crescTextCresc \tuplet 3/2 4 { es( f es f\< es f es f es f es f) }
+		\spannerDashed \crescTextCresc \tuplet 3/2 4 { es( f es f\< es f es f es f es f) }
 		\crescTextMolto gis16\<( a gis a gis a gis a gis a gis a gis a gis a)
-		\mark #38 f,,2~\p f8 f f f
+		\mark #38 f,,2~\p \spannerNormal f8 f f f
 		f2~ f8 f f f %445
 		f4 f~ f8 f f f
 		f4 f~ f8 f f f
@@ -488,10 +488,9 @@ IIViola = {
 		d1\fermata\! %20
 		\mark #5 fis!8(\p e dis fis) gis( fis e gis)
 		fis( eis fis dis) gis( fis e gis)
-		\override DynamicTextSpanner.style = #'dashed-line
-			\crescTextCresc fis(\< e dis fis) h( a \crescTextPoco g\< h)
+		\spannerDashed \crescTextCresc fis(\< e dis fis) h( a \crescTextPoco g\< h)
 		\crescTextAPoco g(\< f e g)] h( a g f)
-		\mark #6 \mvTrr e'16\ff-\markup { \remark "großes staccato" } d c g e c e c' d c h ais h c d dis \revert DynamicTextSpanner.style %25
+		\mark #6 \mvTrr e'16\ff-\markup { \remark "großes staccato" } d c g e c e c' d c h ais h c d dis \spannerNormal %25
 		e d c g e d e c' d c h ais h c d dis
 		e f e f e f e d cis d e d cis a h cis
 		d e d a f e f d' e d cis his cis d e e
@@ -535,9 +534,9 @@ IIViola = {
 		g( cis,) r4 r2 %70
 		\time 1/4 R4
 		\time 4/4 R1
-		\mark #15 \mvTrr a,16[\mf-\markup { \remark "pizz." } r a'] r r4 a,16[ r a'] r r4
+		\mark #15 \mvTrr a,16[\mf-\pizz r a'] r r4 a,16[ r a'] r r4
 		h,16[ r h'] r r4 <a, g'>16\f r r8 r4
-		\mark #16 \crescHairpin \mvTrr <a a'>4(\ff\<-\markup { \remark "Bogen" } fis')\! e8( d cis d) %75
+		\mark #16 \crescHairpin \mvTrr <a a'>4(\ff\<-\arco fis')\! e8( d cis d) %75
 		fis'( e dis e) g16-. g( fis e) dis-. dis( e fis)
 		fis-. fis( e d) cis-. cis( d e) d-. fis( e d) a-. fis-. e-. d-.
 		\time 2/4 d'-. fis( e d) a-. fis-. e-. d-.
@@ -588,7 +587,7 @@ IIIViola = {
 		\key b \major \time 3/4 \tempoIII
 		\repeat volta 2 {
 			R2.*8 %8
-			r4 \mvTr b8-.\p-\markup { \remark "mit Dämpfer (con sordino)" } c-. d4
+			r4 \mvTr b8-.\p-\markup { \whiteout \remark "mit Dämpfer (con sordino)" } c-. d4
 			r es8-. f-. g4 %10
 			r8 f-. g-. gis-. a-. f-.
 			\mark #1 b-. g-. f-. es-. d-. c-.
@@ -602,7 +601,7 @@ IIIViola = {
 			r as8-. g-. f4 %20
 			r f8-. g-. as4
 			as8-. g-. f4-. as-.
-			\mark #2 c8-\markup { \remark "staccato" } c es es b b
+			\mark #2 c8-\staccato c es es b b
 			d d a a c c
 			gis gis c c g g %25
 			c c fis, fis b b
@@ -657,7 +656,7 @@ IIIViola = {
 			<b b'>--
 			<a a'>~
 			q
-			\mark #8 d4-\markup { \remark "pizz." } g f %85
+			\mark #8 d4-\pizz g f %85
 			e d a
 			a' r a
 			gis r gis
@@ -680,7 +679,7 @@ IIIViola = {
 			<f, d'>4 r r %105
 			R2.*3 %108
 			\mark #10 R2.*4 %112
-			r4 \mvTr b8-.\p-\markup { \remark "Bogen" } c-. d4
+			r4 \mvTr b8-.\p-\arco c-. d4
 			r es8-. f-. g4
 			r8 f-. g-. gis-. a-. f-. %115
 			b-. g-. f-. es-. d-. c-.
@@ -817,7 +816,7 @@ IIIViola = {
 				b d, d
 				f f f
 				b, r r
-				b-\markup { \remark "pizz." } r r %255
+				b-\pizz r r %255
 				b r r
 				b b f
 				b r r
@@ -918,13 +917,13 @@ VViola = {
 		<es es'>8-. q-. r4 r %5
 		q8-. q-. q-. q-. q-. q-.
 		\mark #1 <d d'> r <b d>4.-> q8
-		<b g'>8-\markup { \remark "staccato" } q q q <a f'> q
+		<b g'>8-\staccato q q q <a f'> q
 		q r <g e'>4.-> q8
-		<a e'>-\markup { \remark "staccato" } q q q <a d> q %10
+		<a e'>-\staccato q q q <a d> q %10
 		<a e'> q <a f'> q e' e
 		\crescTextCresc <e, e'>\< q q q q q
 		\mark #2 <b' d>\! r <b g'>4.-> <b f'>8
-		<g es'!>-\markup { \remark "staccato" } q <f d'> q <es c'> q
+		<g es'!>-\staccato q <f d'> q <es c'> q
 		<d b'> r <g e'>2-- %15
 		<d b'>8 r <g e'>2--
 		\dimTextDim b8([\> d] c) r c r
@@ -974,7 +973,7 @@ VViola = {
 		cis-. cis-. cis-. cis-. cis-. cis-.
 		h-. r h4.\sp h8-.
 		h-. h-. h-. h-. ais-. fis-.
-		\dimTextDim fis\>^\markup { \remark "staccato" } d' d d d d
+		\dimTextDim fis\>^\staccato d' d d d d
 		d\p d d d d d %65
 		h h h h h h
 		R2.
@@ -982,7 +981,7 @@ VViola = {
 		R2.
 		\mark #12 a'!4-^\f es'4.-- a,8 %70
 		b4-^ f'4.-- b,8
-		a-\markup { \remark "staccato" } es' es a, a es'
+		a-\staccato es' es a, a es'
 		b f' f b, c c
 		b b b b b b
 		b\sp b, b b b b %75
@@ -994,13 +993,13 @@ VViola = {
 		\crescTextCresc <es es'>8-.\< q-. r4 r
 		q8-.\f q-. q-. q-. q-. q-. %85
 		\mark #14 <d d'> r <b d>4.-> q8
-		<b g'>8-\markup { \remark "staccato" } q q q <a f'> q
+		<b g'>8-\staccato q q q <a f'> q
 		q r <g e'>4.-> q8
 		<a e'> q q q <a d> q
 		<a e'> q <a f'> q e' e %90
 		\crescTextCresc <e, e'>\< q q q q q
 		\mark #15 <b' d>\! r <b g'>4.-> <b f'>8
-		<g es'!>-\markup { \remark "staccato" } q <f d'> q <es c'> q
+		<g es'!>-\staccato q <f d'> q <es c'> q
 		<d b'> r <g e'>2--
 		<d b'>8 r <g e'>2-- %95
 		\crescHairpin b8\< d c c es es
@@ -1012,7 +1011,7 @@ VViola = {
 		R2.*3
 		f16\mf e f g a gis a b c h c e
 		f8( es c a f es) %110
-		\mark #18 \mvTr as\f-\markup { \remark "staccato" } as as as as as
+		\mark #18 \mvTr as\f-\staccato as as as as as
 		es es es es es es
 		b' as as ges ges f
 		f e f e f es
@@ -1043,7 +1042,7 @@ VViola = {
 		<g g'>4-^ q4.-- q8
 		c'16 c g g e e g g c c e, e
 		<g d'>4-^ q4.-- q8 %145
-		<c, g'>-\markup { \remark "staccato" } q q q q q
+		<c, g'>-\staccato q q q q q
 		<g g'> q q q q q
 		e'16 e d d c c d d e e c c
 		<g g'>8 q q q q q
@@ -1092,12 +1091,12 @@ VViola = {
 		a( g) g( fis) fis( g)
 		c,( e b c e g)
 		\crescTextCresc b(\< g e g b c) %195
-		\mark #27 \mvTr es,\f-\markup { \remark "staccato" } es es es es es
+		\mark #27 \mvTr es,\f-\staccato es es es es es
 		es\spE es es es es es
 		es\spE es es es es es
 		f\sp r r4 r
 		R2.*2 %201
-		\mark #28 \mvTr ces'8\f-\markup { \remark "staccato" } ces ces ces ces ces
+		\mark #28 \mvTr ces'8\f-\staccato ces ces ces ces ces
 		ces\spE ces ces ces ces ces
 		ces\spE ces ces ces ces ces
 		des\sp r r4 r %205
@@ -1129,7 +1128,7 @@ VViola = {
 		\mark #32 a-. r r
 		R2.*11 %245
 		\mark #33 R2.*3
-		\mvTr <c, a'>4\f-\markup { \remark "pizz." } q4 r8 q
+		\mvTr <c, a'>4\f-\pizz q4 r8 q
 		q4 q r8 q %250
 		<c b'>4 q r8 q
 		q4 q r8 q
@@ -1138,7 +1137,7 @@ VViola = {
 		f'4 f r8 f %255
 		f4 f r8 f
 		a,4 a r8 a
-		\crescTextCresc a4 \once \override DynamicTextSpanner.style = #'dashed-line a\< h
+		\crescTextCresc a4 \once \spannerDashed a\< h
 		c c r8 b
 		a4 a h %260
 		c a h
@@ -1221,7 +1220,7 @@ VViola = {
 		<c e> q <e c'> q <c e> q <e c'> q <c e> q <e c'> q
 		<es a> q <c es> q <es a> q <c es> q <es a> q <c es> q
 		\mark #44 <b f'>8 r  <b d>4.\sp q8
-		<b g'>-\markup { \remark "staccato" } q q q <a f'> q
+		<b g'>-\staccato q q q <a f'> q
 		<g f'> q4 q8 <c e>[ q] %395
 		c' c c16 c c c c c c c
 		<f, es'!> <f es'> q q q q q q <fis d'> q q q

@@ -123,10 +123,10 @@ IVioloncello = {
 			\mark #9 d8(\f c) b-. a-. g-. f-. e-. d-.
 			g( f) e-. d-. c-. b-. a-. g-.
 			e'(\< dis e fis g fis g h)
-			c( h c dis e dis e g %110
+			\clef "treble_8" c( h c dis e dis e g %110
 			b4)\spE r r2
 			R1*2
-			\crescHairpin r4 e,,,8(\mf\< f gis a h c\!
+			\crescHairpin \clef bass r4 e,,,8(\mf\< f gis a h c\!
 			f4) r r2 %115
 			r4 gis8(\< a\! d c b\> a)\!
 			dis4(-> e-.) e-. e-.
@@ -201,12 +201,12 @@ IVioloncello = {
 				ges'( es f c) b'( ges a! c,)
 				b'( ges a! c,) c(\p a c a) %190
 				\clef bass a(\< f a f) f( es f es)
-				es( c es c)\! c f,-^\f g-^ a-^
+				es( c es c)\! c f,-^\f g-^ a-^ \noBreak
 				b r b'4(\mf c d)
 			} {
 				\dimTextDim f,,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. \noBreak %195
-				r\stopTextSpan a\p d a'
+				f-.-\markup { \remark "rall. molto" } c-. e-. a,-. \noBreak %195
+				r-\markup { \remark "a tempo" } a\p d a'
 			}
 		}
 		d,,8( a' d a' d, a d, a') %197
@@ -234,9 +234,9 @@ IVioloncello = {
 		f(-- f-- f-- f--)
 		f(-- f-- f-- f--)
 		\crescTextCresc f(-- f--\< f-- f--) %225
-		\mark #18 \mvTr es!8\f-\markup { \remark "staccato" } c' c c c b b b
+		\mark #18 \mvTr es!8\f-\staccato c' c c c b b b
 		b as as as as b c as
-		a r r f,[-\markup { \remarkE "Bogen" } r a r c]
+		a r r f,[ r a r c]
 		r f[ r a r c r f]
 		b,,4. f'8 b4. f'8 %230
 		b,-. f'-. b,-. f-. b,-. f'-. des-. des-.
@@ -439,9 +439,9 @@ IVioloncello = {
 			f,1
 			\mark #38 f2~ f8 f f f
 		} \\ {
-			\crescTextCresc s4 s2.\<
+			\spannerDashed \crescTextCresc s4 s2.\<
 			\crescTextMolto s1\<
-			s\p
+			s\p \spannerNormal
 		} >>
 		f2~ f8 f f f %445
 		f4 f~ f8 f f f
@@ -500,10 +500,9 @@ IIVioloncello = {
 		f\!\fermata %20
 		\mark #5 \clef "treble_8" dis'8(\p cis h dis) e( dis cis e)
 		dis( cisis dis his) e( dis cis e)
-		\override DynamicTextSpanner.style = #'dashed-line
-			\crescTextCresc dis(\< cis h dis) d( c \crescTextPoco h\< d)
+		\spannerDashed \crescTextCresc dis(\< cis h dis) d( c \crescTextPoco h\< d)
 		\crescTextAPoco e(\< d c e) d( c h a)
-		\mark #6 \crescHairpin \dimHairpin \clef bass g-^\ff h,-^ a-^ g-^ a'(\< c\! h\> g\!) \revert DynamicTextSpanner.style %25
+		\mark #6 \crescHairpin \dimHairpin \clef bass g-^\ff h,-^ a-^ g-^ a'(\< c\! h\> g\!) \spannerNormal %25
 		c,-^ h-^ a-^ g-^ a'(\< c\! h\> g\!)
 		b-^ g-^ b-^ e!-^ a,-^ g-^ f-^ e-^
 		\crescHairpin \dimHairpin d-^ c-^ b-^ a-^ h'!(\< d\! cis\> a)\!
@@ -565,12 +564,12 @@ IIVioloncello = {
 		<a fis'>1\fermata\ppp
 		R
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 \crescHairpin \dimHairpin g'8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d e(\<-\markup { \remark "Bogen" } g\! fis\> d\!)
-		g-\markup { \remark "pizz." } fis e d \hairpinBetweenText \markup "[" \markup "" e\<(-\markup { \remark "Bogen" } g\! \hairpinBetweenText \markup "" \markup "]" fis\> d)\! %90
+		\mark #19 \crescHairpin \dimHairpin g'8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\pizz fis e d e(\<-\arco g\! fis\> d\!)
+		g-\pizz fis e d \hairpinBetweenText \markup "[" \markup "" e\<(-\arco g\! \hairpinBetweenText \markup "" \markup "]" fis\> d)\! %90
 		gis(\fE a gis f) e( d cis d)
 		\time 2/4 R2
-		\mark #20 \time 4/4 \crescHairpin \dimHairpin \mvTrr h'8\mf-\markup { \remark "pizz." } a g fis gis(\<-\markup { \remark "Bogen" } h\! ais\> fis\!)
-		h-\markup { \remark "pizz." } a g fis gis(\<-\markup { \remark "Bogen" } h\! ais\> fis\!)
+		\mark #20 \time 4/4 \crescHairpin \dimHairpin \mvTrr h'8\mf-\pizz a g fis gis(\<-\arco h\! ais\> fis\!)
+		h-\pizz a g fis gis(\<-\arco h\! ais\> fis\!)
 		h(\f a g fis) g( f e d) %95
 		\time 2/4 c2
 		\mark #21 c'4(\mf a) d,2
@@ -670,7 +669,7 @@ IIIVioloncello = {
 			g g g
 			b b b
 			a! a a %70
-			\mark #7 d-\markup { \remark "pizz." } d d
+			\mark #7 d-\pizz d d
 			f f f
 			d d d
 			f f f
@@ -704,7 +703,7 @@ IIIVioloncello = {
 			R2.
 			f4 r r
 			R2.
-			\mvTr b,4\p-.-\markup { \remark "Bogen" } b-. b-. %105
+			\mvTr b,4\p-.-\arco b-. b-. %105
 			b-. b-. b-.
 			b-. b-. b-.
 			b-. b-. b-.
@@ -759,7 +758,7 @@ IIIVioloncello = {
 		}
 		\alternative {
 			{
-				\once \override DynamicTextSpanner.style = #'dashed-line \dimTextRitard b\> r r %157
+				\once \spannerDashed \dimTextRitard b\> r r %157
 				b r r
 				b r r\! \bar "||" \break
 				\mark \critnote \key ges \major \tempoIIITrio R2.*4 %163
@@ -851,7 +850,7 @@ IIIVioloncello = {
 				b b, b
 				f' f f
 				b, r r
-				b-\markup { \remark "pizz." } r r %255
+				b-\pizz r r %255
 				b r r
 				b b f
 				b r r
@@ -880,11 +879,11 @@ IVVioloncello = {
 		a([-\markup { \remark "cresc." } h)]\sp a( h)\sp b2--\f
 		\dimHairpin g f8(\> d c f)\!
 		\time 2/4 b,4\p d8-. f-. %15
-		\mark #4 \time 4/4 \mvTr b,\p-\markup { \remark "pizz." } d f b es, g d g
+		\mark #4 \time 4/4 \mvTr b,\p-\pizz d f b es, g d g
 		c, es g c f, a es a
 		d, f as b g b c, es
 		\dimTextDim d\> g c, f b,\p d f b
-		\mark #5 \crescHairpin \mvTr f4(\p-\markup { \remark "Bogen" } e!8 es) d4(\< f8 g)\! %20
+		\mark #5 \crescHairpin \mvTr f4(\p-\arco e!8 es) d4(\< f8 g)\! %20
 		as4( g8 f) g2
 		f e!
 		\crescTextCresc f\< c4( f,)
@@ -898,14 +897,14 @@ IVVioloncello = {
 		es4\f g8 es f4( g)
 		R1
 		\time 2/4 R2
-		\mark #8 \time 4/4 r16 \mvTr b,[\p-\markup { \remark "pizz." } r d r f r b] r es,[ r g r d r g]
+		\mark #8 \time 4/4 r16 \mvTr b,[\p-\pizz r d r f r b] r es,[ r g r d r g]
 		r c,[ r es r g r c] r f,[ r a r es r a] %35
 		r d,[ r f r as r b] r g[ r b r c, r es]
 		\crescTextCresc r d[ r g r c, r f] r b,[ r d r\< e! r g]
 		r b[ r d r e! r g] b8\sp r r4
 		\time 2/4 R2
 		\mark #9 \time 4/4 R1*3 %42
-		\crescTextCrescMolto \mvTr e,,,!8:16\f-\markup { \remark "Bogen" } g: b: d: e!:\< g: b: e!:
+		\crescTextCrescMolto \mvTr e,,,!8:16\f-\arco g: b: d: e!:\< g: b: e!:
 		g\sp r r4\fermata r2
 		\mark #10 R1*9 %53
 		\mark #11 << { \oneVoice b,,!1(\pp a)\fermata } \\ { s1 \dimHairpin s2.\> s4\! } >> %55
@@ -942,13 +941,13 @@ VVioloncello = {
 		b8-. b-. r4 r %5
 		b8-. b-. b-. b-. b-. b-.
 		\mark #1 b r g''4.-> g8
-		c,-\markup { \remark "staccato" } c c c c c
+		c,-\staccato c c c c c
 		b r b4.-> b8
-		g-\markup { \remark "staccato" } g g g f f %10
+		g-\staccato g g g f f %10
 		cis cis d d b! b
 		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
 		\mark #2 as\! r as'4.-> as8
-		b-\markup { \remark "staccato" } b b b b b
+		b-\staccato b b b b b
 		f r b2-- %15
 		f8 r b2--
 		f4.-> r8 f\p r
@@ -996,7 +995,7 @@ VVioloncello = {
 		h-. h-. h-. h-. ais-. ais-.
 		a-. r g4.\sp fis8-.
 		e-. g-. fis-. e-. fis-. e-.
-		\dimTextDim d\>^\markup { \remark "staccato" } h h h h h
+		\dimTextDim d\>^\staccato h h h h h
 		h\p h h h h h %65
 		cis cis cis cis cis cis
 		R2.
@@ -1004,7 +1003,7 @@ VVioloncello = {
 		R2.
 		\mark #12 f,4-^\f f'4.-- f,8 %70
 		b4-^ b'4.-\parenthesize-- b,8
-		f-\markup { \remark "staccato" } f' f f, f f'
+		f-\staccato f' f f, f f'
 		b, b' b b, f f
 		b r r4 r
 		R2. %75
@@ -1017,13 +1016,13 @@ VVioloncello = {
 		\crescTextCresc b8-.\< b-. r4 r
 		b8\f b b b b b %85
 		\mark #14 b r g''4.-> g8
-		c,-\markup { \remark "staccato" } c c c c c
+		c,-\staccato c c c c c
 		b r b4.-> b8
-		g-\markup { \remarkE "staccato" } g g g f f
+		g-\staccatoE g g g f f
 		cis cis d d b! b %90
 		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
 		\mark #15 as\! r as'4.-> as8
-		b-\markup { \remark "staccato" } b b b b b
+		b-\staccato b b b b b
 		f r b2--
 		f8 r b2-- %95
 		\crescHairpin \parenthesizedHairpin f8\< f f f f f
@@ -1033,15 +1032,15 @@ VVioloncello = {
 		\clef "treble_8" c h c d e dis e f g fis g a %100
 		b!8\sp r r4 r
 		R2.
-		\clef bass \mvTrr c,4\mf-\markup { \remark "pizz." } g c,
+		\clef bass \mvTrr c,4\mf-\pizz g c,
 		g c, g'
 		\mark #17 R2. %105
-		\crescTextCresc f'16\p\<-\markup { \remark "Bogen" } e f g a gis a b c h c d
+		\crescTextCresc f'16\p\<^\arco e f g a gis a b c h c d
 		es!8\spE r r4 r
 		R2.
-		\mvTrr f4\mf-\markup { \remark "pizz." } c f,
+		\mvTrr f4\mf-\pizz c f,
 		c f, c' %110
-		\mark #18 des'8\f^\markup { \remark "Bogen" } -\tweak TextScript.X-offset #2 -\markup { \remark "staccato" } des des des des des
+		\mark #18 des'8\f^\arco -\tweak TextScript.X-offset #2 -\staccato des des des des des
 		as as as as as as
 		as as as as as as
 		as as as as as as
@@ -1074,7 +1073,7 @@ VVioloncello = {
 		<g' d'>4-^ q4.-- q8
 		e''16 e d d c c d d e e c c
 		<g d'>4-^ q4.-- q8 %145
-		<c,, g'>-\markup { \remark "staccato" } q q q q q
+		<c,, g'>-\staccato q q q q q
 		<g' d'> q q q q q
 		c'16 c g g e e g g c c g g
 		<g, d'>8 q q q q q
@@ -1120,13 +1119,13 @@ VVioloncello = {
 		c( b) b( a) a( b)
 		b( g e g b c)
 		\crescTextCresc e(\< c b c e g) %195
-		\mark #27 \mvTr a,\f-\markup { \remark "staccato" } a a a a a
+		\mark #27 \mvTr a,\f-\staccato a a a a a
 		a(\sp g) g g g g
 		g(\sp f) f f g g
 		a\sp g,16 g a a b b c c d d
 		es es d d f f e e g g f f %200
 		es es d d es es c c a a c c
-		\mark #28 \mvTrr des8\fE-\markup { \remark "staccato" } f' f f f f
+		\mark #28 \mvTrr des8\fE-\staccato f' f f f f
 		\once \slurDashed f(\sp es) es es es es
 		\once \slurDashed es(\sp des) des des es es
 		f es,16 es f f ges ges as as b b %205
@@ -1160,7 +1159,7 @@ VVioloncello = {
 		\mark #32 f-. r r
 		R2.*11 %245
 		\mark #33 R2.*3
-		\mvTr f4\f-\markup { \remark "pizz." } f r8 f
+		\mvTr f4\f-\pizz f r8 f
 		f4 f r8 f %250
 		f'4 f r8 f
 		d4 c r8 c
@@ -1169,7 +1168,7 @@ VVioloncello = {
 		f4 f r8 f %255
 		f4 f r8 f
 		f4 f r8 f
-		\crescTextCresc f4 \once \override DynamicTextSpanner.style = #'dashed-line  f\< f
+		\crescTextCresc f4 \once \spannerDashed f\< f
 		f f r8 f
 		f4 f f %260
 		f f f
@@ -1235,7 +1234,7 @@ VVioloncello = {
 		f f f f f f
 		f f f f f f
 		\mark #44 b, r g''4.\sp g8
-		c,-\markup { \remark "staccato" } c c c c c
+		c,-\staccato c c c c c
 		g g4 g8 c[ c] %395
 		c c c c c c
 		es! es4 es8 d[ d]

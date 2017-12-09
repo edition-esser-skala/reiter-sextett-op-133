@@ -108,21 +108,31 @@
 		#{\markup \small { [ \italic #text ] } #}))
 %
 
+pizz = \markup { \remark "pizz." }
+arco = \markup { \remark "arco" }
+arcoE = \markup { \remarkE "arco" }
+staccato = \markup { \remark "staccato" }
+staccatoE = \markup { \remarkE "staccato" }
+
 fermataMarkdown = \markup { \musicglyph #'"scripts.dfermata" }
 critnote = \markup { \musicglyph #'"pedal.*" }
 extraNat = \once \override Accidental.restore-first = ##t
 kneeBeam = \once \override Beam.auto-knee-gap = #0
+spannerDashed = \override DynamicTextSpanner.style = #'dashed-line
+spannerNormal = \revert DynamicTextSpanner.style
 
+pp = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.4 #:dynamic "pp")))
+ppp = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.4 #:pad-x 0.8 #:dynamic "ppp")))
 
-ffE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "ff") (#:normal-text "]") ))
-fE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "f") (#:normal-text "]") ))
-mfE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "mf") (#:normal-text "]") ))
-mpE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "mp") (#:hspace -.5) (#:normal-text "]") ))
-pE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "p") (#:hspace -.5) (#:normal-text "]") ))
-ppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "pp") (#:hspace -.5) (#:normal-text "]") ))
-pppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.2) (#:dynamic "ppp") (#:hspace -.5) (#:normal-text "]") ))
-fpE = #(make-dynamic-script (markup (#:normal-text "[") (#:dynamic "fp") (#:hspace -.5) (#:normal-text "]") ))
-spE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.5) (#:dynamic "sp") (#:hspace -.5) (#:normal-text "]") ))
+ffE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.3) (#:dynamic "ff") (#:normal-text "]") ))
+fE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.3) (#:dynamic "f") (#:normal-text "]") ))
+mfE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.7) (#:dynamic "mf") (#:normal-text "]") ))
+mpE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.7) (#:dynamic "mp") (#:hspace -.5) (#:normal-text "]") ))
+pE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.4) (#:dynamic "p") (#:hspace -.5) (#:normal-text "]") ))
+ppE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.4) (#:dynamic "pp") (#:hspace -.5) (#:normal-text "]") ))
+pppE = #(make-dynamic-script (markup (#:normal-text "[") (#:hspace -.4) (#:whiteout #:pad-markup 0.3 #:dynamic "ppp") (#:hspace -.7) (#:normal-text "]") ))
+fpE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:dynamic "fp") (#:hspace -.5) (#:normal-text "]") ))
+spE = #(make-dynamic-script (markup (#:whiteout #:pad-markup 0.3 #:normal-text "[") (#:hspace -.8) (#:dynamic "sp") (#:hspace -.5) (#:normal-text "]") ))
 
 
 mvTr = \once \override TextScript.X-offset = #2
@@ -227,7 +237,7 @@ tempoMarkup =
 
 tempoI = \tempoMarkup "Kräftig belebt"
 tempoII = \tempoMarkup "Langsam und sehr gesangsvoll"
-tempoIII = \tempo \markup \medium { \larger \larger \left-column { \line { "Schnell, leicht und flüchtig;" } \line { "gespenstisch dahinhuschend," } \line { "durchwegs leise zu spielen" } } }
+tempoIII = \tempoMarkup "Schnell, leicht und flüchtig; gespenstisch dahinhuschend, durchwegs leise zu spielen"
 tempoIIITrio = \tempoMarkup "Trio. Etwas ruhiger, sehr hell und zierlich"
 tempoIIISchluss = \tempoMarkup "Schluß"
 tempoIV = \tempoMarkup "Mäßig langsam"

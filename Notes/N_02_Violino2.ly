@@ -186,12 +186,12 @@ IViolinoII = {
 				des( c f a,) ges'( es f c)
 				ges'( es f c) <es f,>\p q q q %190
 				q\< q q q <f a,> q q q
-				q q q q q\f f-^ g-^ a-^
+				q q q q q\f f-^ g-^ a-^ \noBreak
 				<b b, d,> r \once \lvTieDashed \extendLV #7 b,2.\mf\laissezVibrer
 			} {
 				\dimTextDim a8( g a\> g a g a g\!
-				\spanRallMoltoATempo \textSpannerUp a\startTextSpan g a g e' a, e' a,) \noBreak %195
-				fis'(\pE\stopTextSpan e d a fis a d e)
+				a-\markup { \remark "rall. molto" } g a g e' a, e' a,) \noBreak %195
+				\mvTrr fis'(\pE-\markup { \remark "a tempo" } e d a fis a d e)
 			}
 		}
 		fis( e d a fis a d e)
@@ -207,7 +207,7 @@ IViolinoII = {
 		fis( d h cis
 		d-.) d8( cis d a fis a
 		d4-.) d8( cis d cis e cis
-		d4-.) r8 h,[^\markup { \remark "pizz" } r fis' r h,] %210
+		d4-.) r8 h,[^\pizz r fis' r h,] %210
 		r fis'[ r h, r fis' r h,]
 		r gis'[ r cis, r gis r cis]
 		r gis'[ r gis, r gis' r gis,]
@@ -215,7 +215,7 @@ IViolinoII = {
 		\dimTextDim r gis[ r cis\> r gis' r cis] %215
 		\mark #17 cis4\pp r r2
 		R1
-		cis'4.(\mp^\markup { \remark "Bogen" } fis,8) fis2~
+		cis'4.(\mp^\arco fis,8) fis2~
 		fis cis
 		ais1~ %220
 		ais4 r r2
@@ -223,7 +223,7 @@ IViolinoII = {
 		g(-- g-- g-- g--)
 		g(-- g-- g-- g--)
 		\crescTextCresc g(-- g--\< g-- g--) %225
-		\mark #18 \mvTr as8\f-\markup { \remark "staccato" } as' as as as ges ges ges
+		\mark #18 \mvTr as8\f-\staccato as' as as as ges ges ges
 		ges ges ges ges ges ges ges es
 		c r c( f a! f a c)
 		f( c f c') f,( ges f es
@@ -258,7 +258,7 @@ IViolinoII = {
 		h( ais h dis h a gis eis~
 		eis) b'-. b-. b-. f-. f-. d-. d-.
 		es'-. es-. b-. b-. ges-. ges-. es-. es-.
-		\mvTr b'\f-\markup { \remark "staccato" } b f f d d f f
+		\mvTr b'\f-\staccato b f f d d f f
 		es' es b b ges ges es es %275
 		\mark #21 h''\ff h fis fis dis dis h h
 		fis' fis dis dis h h fis fis
@@ -405,9 +405,9 @@ IViolinoII = {
 		\mark #37 es,(\p f es f) gis( a gis a
 		h[ c)] es,( f gis a h c %440
 		es[ f)] gis,( a h c es f)
-		\crescTextCresc \tuplet 3/2 4 { gis( a gis a\< gis a gis a gis a gis a) }
+		\spannerDashed \crescTextCresc \tuplet 3/2 4 { gis( a gis a\< gis a gis a gis a gis a) }
 		\crescTextMolto h16(\< c h c h c h c h c h c h c h c)
-		\mark #38 b\p b f f d d c c b b f f d d c c
+		\mark #38 b\p \spannerNormal b f f d d c c b b f f d d c c
 		b b c c d d f f b b c c d d f f %445
 		b b f f d d c c b b f f d d c c
 		b b c c d d f f b b c c d d f f
@@ -465,10 +465,10 @@ IIViolinoII = {
 		gis1\!\fermata %20
 		\mark #5 h2\p cis
 		h4.( dis8) cis2
-		\override DynamicTextSpanner.style = #'dashed-line
+		\spannerDashed
 			\crescTextCresc h4(\< fis') d( \crescTextPoco g!)\<
 		\crescTextAPoco c,(\< g') g-- g8-^ g-^
-		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e g g g g g g g g \revert DynamicTextSpanner.style %25
+		\mark #6 \mvTrr g16\ff-\markup { \remark "großes staccato" } f e d c g c e g g g g g g g g \spannerNormal %25
 		g f e d c g c e g g g g g g g g
 		b b b b b b b b a a a a a a a a
 		a g f e d a d f a a a a a a a a
@@ -511,9 +511,9 @@ IIViolinoII = {
 		cis8 a r4 r2 %70
 		\time 1/4 R4
 		\time 4/4 R1
-		\mark #15 r4 \mvTrr a''16[\mf-\markup { \remark "pizz." } r a,] r r4 a'16[ r a,] r
+		\mark #15 r4 \mvTrr a''16[\mf-\pizz r a,] r r4 a'16[ r a,] r
 		r4 h'16[ r h,] r <a cis'>\f r r8 r4
-		\mark #16 \mvTrr a4(\ff\<-\markup { \remark "Bogen" } fis')\! e8( d cis d) %75
+		\mark #16 \mvTrr a4(\ff\<-\arco fis')\! e8( d cis d) %75
 		a'( g fis g) h16-. h( a g) fis-. fis( g a)
 		a-. a( g fis) e-. e( fis g) fis-. d'( cis h) a-. fis-. e-. d-.
 		\time 2/4 fis-. d'( cis h) a-. fis-. e-. d-.
@@ -527,13 +527,13 @@ IIViolinoII = {
 		<d d'>1\ppp\fermata
 		R1
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 \subdivQ g'16[\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
+		\mark #19 \subdivQ g'16[\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\pizz fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis]
 		\subdivQ g[ fis e d c h a g] \subdivQ g'[ fis eis fis a fis d fis] %90
-		\mvTr h,4.(\f-\markup { \remark "Bogen" } a8) e2
+		\mvTr h,4.(\f-\arco a8) e2
 		\time 2/4 R2
-		\mark #20 \subdivQ h''16[\mfE-\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
+		\mark #20 \subdivQ h''16[\mfE-\tweak TextScript.X-offset #3 -\pizz a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
 		\subdivQ h[ a g fis e d cis h] \subdivQ h'[ ais gis ais cis ais fis ais]
-		\mvTr d,8(\f-\markup { \remark "Bogen" } c h a) h( g4 f8) %95
+		\mvTr d,8(\f-\arco c h a) h( g4 f8) %95
 		\dimHairpin \time 2/4 f([ e f\> e\!)]
 		\mark #21 g4(\mf e c2)
 		g'4(\p e c2~)
@@ -563,13 +563,13 @@ IIIViolinoII = {
 		\key b \major \time 3/4 \tempoIII
 		\repeat volta 2 {
 			R2.*4
-			\mvTr b''4(\p-\markup { \remark "mit Dämpfer (con sordino)" } d,2) %5
+			\mvTr b''4(\p-\markup { \whiteout \remark "mit Dämpfer (con sordino)" } d,2) %5
 			es4( g,2)
 			c4( f, a!)
 			b8-. c-. d-. f-. g-. a-.
 			b-. b-. d,-. d-. fis-. fis-.
 			es-. es-. g,-. g-. h-. h-. %10
-			c-\markup { \remark "staccato" } c f, f a! a
+			c-\staccato c f, f a! a
 			\mark #1 b c d f g a
 			b4( d, as')
 			g( es d)
@@ -581,7 +581,7 @@ IIIViolinoII = {
 			h4( d,2) %20
 			d'8-. d-. f,-. f-. as-. as-.
 			h-. h-. as-. as-. g-. g-.
-			\mark #2 es'-\markup { \remark "staccato" } es g, g d' d
+			\mark #2 es'-\staccato es g, g d' d
 			fis, fis c' c f, f
 			c' c e, e c' c %25
 			es, es b' b d, d
@@ -597,7 +597,7 @@ IIIViolinoII = {
 			es4( g,2)
 			c4( f, a!)
 			b8-. c-. d-. f-. g-. a-. %40
-			b-\markup { \remark "staccato" } b d, d fis fis
+			b-\staccato b d, d fis fis
 			es es g, g h h
 			c c f, f a! a
 			b-. c-. d-. f-. g-. a-.
@@ -643,7 +643,7 @@ IIIViolinoII = {
 			e f g)
 			\mark #8 f8 f d d d d %85
 			d d d d d d
-			f'4-\markup { \remark "pizz." } r f
+			f'4-\pizz r f
 			d r d
 			f r f
 			d d d %90
@@ -663,11 +663,11 @@ IIIViolinoII = {
 			R2.
 			<b d,>4 r r %105
 			R2.*3
-			\mark #10 \mvTr b'4(\p-\markup { \remark "Bogen" } d,2)
+			\mark #10 \mvTr b'4(\p-\arco d,2)
 			es4( g,2) %110
 			c4( f, a!)
 			b8-. c-. d-. f-. g-. a-.
-			b-\markup { \remark "staccato" } b d, d fis fis
+			b-\staccato b d, d fis fis
 			es es g, g h h
 			c c f, f a! a %115
 			b-. c-. d-. f-. g-. a-.
@@ -743,7 +743,7 @@ IIIViolinoII = {
 				des~
 				des~
 				des %190
-				\mark #19 b4(-\markup { \remark "stark hervortretend" } c des)
+				\mark #19 b4(-\markup { \whiteout \remark "stark hervortretend" } c des)
 				d( es f)
 				f( g a
 				b f b,)
@@ -804,7 +804,7 @@ IIIViolinoII = {
 				d b b
 				c c c
 				b r r
-				b,-\markup { \remark "pizz." } r r %255
+				b,-\pizz r r %255
 				b r r
 				b' b f
 				b, r r
@@ -904,13 +904,13 @@ VViolinoII = {
 		<g, g'>8-. q-. r4 r %5
 		q8-. q-. c-. c-. f-. f-.
 		\mark #1 f r d'4.-> d8
-		c-\markup { \remark "staccato" } c c c c c
+		c-\staccato c c c c c
 		b r b4.-> b8
-		a-\markup { \remark "staccato" } a a a a a %10
+		a-\staccato a a a a a %10
 		<a e'> q <a f'> q d d
 		\crescTextCresc cis\< cis cis cis cis cis
 		\mark #2 <d, d'>\! r q4.-> q8
-		b'-\markup { \remark "staccato" } b b b b b
+		b'-\staccato b b b b b
 		b r c,2-- %15
 		b'8 r c,2--
 		\dimTextDim f4(\> g8) r es r
@@ -956,7 +956,7 @@ VViolinoII = {
 		g-. g-. g-. g-. fis-. fis-.
 		fis-. r e4.\sp d8-.
 		cis-. e-. d-. cis-. d-. cis-.
-		\dimTextDim h\>^\markup { \remark "staccato" } fis' fis fis fis fis
+		\dimTextDim h\>^\staccato fis' fis fis fis fis
 		fis\p fis fis fis fis fis %65
 		fis fis dis dis eis eis
 		R2.
@@ -964,7 +964,7 @@ VViolinoII = {
 		R2.
 		\mark #12 es'!4-^\f a!4.-- es8 %70
 		f4-^ b4.-- f8
-		es-\markup { \remark "staccato" } a a es es a
+		es-\staccato a a es es a
 		f b b f es es
 		d b' b b b b
 		b\sp b, b b b b %75
@@ -975,13 +975,13 @@ VViolinoII = {
 		\crescTextCresc <g, g'>8-.\< q-. r4 r
 		q8-.\f q-. c-. c-. f-. f-. %85
 		\mark #14 f r d'4.-> d8
-		c-\markup { \remark "staccato" } c c c c c
+		c-\staccato c c c c c
 		b r b4.-> b8
-		a-\markup { \remark "staccato" } a a a a a
+		a-\staccato a a a a a
 		<a e'> q <a f'> q d d %90
 		\crescTextCresc cis\< cis cis cis cis cis
 		\mark #15 <d, d'>\! r q4.-> q8
-		b'-\markup { \remark "staccato" } b b b b b
+		b'-\staccato b b b b b
 		b r c,2--
 		b'8 r c,2-- %95
 		\crescHairpin f8\< f g g f f
@@ -995,18 +995,18 @@ VViolinoII = {
 		\crescTextCresc f,16\p\< e f g a gis a b c h c d
 		es!8\sp r r4 r
 		R2.*3 %110
-		\mark #18 \mvTr ces8\f-\markup { \remark "staccato" } ces ces ces ces ces
+		\mark #18 \mvTr ces8\f-\staccato ces ces ces ces ces
 		ges ges ges ges ges ges
 		ces, ces ces ces ces ces
 		ces ces ces ces ces ces
 		b r r4 r %115
 		R2.*3
-		\mvTrr f'4\mf-\markup { \remark "pizz." } b, f'
+		\mvTrr f'4\mf-\pizz b, f'
 		b f' b %120
 		\mark #19 R2.*4
-		\crescTextCresc \mvTrr b,4\mf-\markup { \remark "pizz." } es,\< b' %125
+		\crescTextCresc \mvTrr b,4\mf-\pizz es,\< b' %125
 		es b' es
-		\mark #20 \mvTr <a,,! a'!>8\ff^\markup { \remark "Bogen" } r <a a'>4. q8
+		\mark #20 \mvTr <a,,! a'!>8\ff^\arco r <a a'>4. q8
 		<dis, dis'> r q4. q8
 		<a' a'> q4 q8 q q
 		<dis, dis'> q4 q8 q q %130
@@ -1025,7 +1025,7 @@ VViolinoII = {
 		<d, d'>4-^ q4.-- q8
 		c''16 c g g e e g g c c e, e
 		g4-^g4.-- g8 %145
-		<c, g'>-\markup { \remark "staccato" } q q q q q
+		<c, g'>-\staccato q q q q q
 		<d, d'> q q q q q
 		c'16 c g g e e g g c c e, e
 		<g, g'>8 q q q q q
@@ -1075,12 +1075,12 @@ VViolinoII = {
 		b( b,) b'-. b( b,) b'-. b( b,) b'-.
 		b( b,) b'-. b( b,) b'-. b( b,) b'-.
 		\crescTextCresc b(\< b,) b'-. b( b,) b'-. b( b,) b'-. } %195
-		\mark #27 \mvTr <f, c' a'>\f-\markup { \remark "staccato" } f f f f f
+		\mark #27 \mvTr <f, c' a'>\f-\staccato f f f f f
 		f(\sp d) d d d d
 		d(\sp c) c c  d d
 		es\sp r r4 r
 		R2.*2 %201
-		\mark #28 \mvTr des'8\f-\markup { \remark "staccato" } des des des des des
+		\mark #28 \mvTr des'8\f-\staccato des des des des des
 		\once\slurDashed des(\sp b) b b b b
 		\once\slurDashed b(\sp as) as as b b
 		ces\sp r r4 r %205
@@ -1114,7 +1114,7 @@ VViolinoII = {
 		f f c c a a c c f f a, a %235
 		R2.*10 %245
 		\mark #33 R2.*3
-		\mvTr a4\f-\markup { \remark "pizz." } a r8 a
+		\mvTr a4\f-\pizz a r8 a
 		c4 c r8 c %250
 		<b d>4 q r8 q
 		<g' b>4 q r8 q
@@ -1123,7 +1123,7 @@ VViolinoII = {
 		d4 d r8 d %255
 		d4 d r8 d
 		es!4 es r8 es
-		\crescTextCresc es4 \once \override DynamicTextSpanner.style = #'dashed-line es\< es
+		\crescTextCresc es4 \once \spannerDashed es\< es
 		es es r8 es
 		es4 es es %260
 		es es es
@@ -1202,7 +1202,7 @@ VViolinoII = {
 		e e g g b b c c e e g g
 		a a f f es es c c a a f f
 		\mark #44 <d b'>8 r d'4.\sp d8
-		c-\markup { \remark "staccato" } c c c c c
+		c-\staccato c c c c c
 		<d, d'> q4 q8 <e e'>[ q] %395
 		<c' g'> q f16 f e e f f g g
 		<c, a'> q q q q q q q <a fis'> q q q

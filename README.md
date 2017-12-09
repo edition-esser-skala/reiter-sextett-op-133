@@ -2,7 +2,7 @@
 
 Engraving files for LilyPond 2.18.0
 
-First edition, in progress
+First edition, December 2017
 
 
 ## Build instructions
@@ -37,8 +37,17 @@ The file *Sextett113.ly* allows you to work with an editor like Kile: Change the
     * N_06_Piano.ly
 * Movement definitions in folder *Scores*:
     * S_I.ly
+    * S_II.ly
+    * S_IIII.ly
+    * S_IV.ly
+    * S_V.ly
 * Parts definitions in folder *Parts*:
-    * P_ViolinoI.ly
+    * P_Violino1.ly
+    * P_Violino2.ly
+    * P_Viola.ly
+    * P_Violoncello.ly
+    * P_Contrabasso.ly
+    * P_Piano.ly
 
 
 ## Copyright

@@ -179,12 +179,12 @@ IContrabasso = {
 				f,-. c'-. f,-. c'-.
 				f,-.\! f'-. r2
 				\mark #15 R1*12 %191
-				r2 r8 f,-^\f g-^ a-^
+				r2 r8 f,-^\f g-^ a-^ \noBreak
 				b r \once \lvTieDashed \extendLV #7 b'2.\mf\laissezVibrer
 			} {
 				\dimTextDim f,4-. c'-.\> f,-. c'-.\!
-				\spanRallMoltoATempo \textSpannerUp f-.\startTextSpan c-. e-. a,-. \noBreak %195
-				r\stopTextSpan a\p d a'
+				f-.-\markup { \remark "rall. molto" } c-. e-. a,-. \noBreak %195
+				r-\markup { \remark "a tempo" } a\p d a'
 			}
 		}
 		d,4 a d a'
@@ -195,7 +195,7 @@ IContrabasso = {
 		\dimTextDim d, a\> d a'
 		d, a d a'\!
 		\mark #16 R1*2 %205
-		r4 a,-\markup { \remark "pizz" } d a'
+		r4 a,-\pizz d a'
 		d, a d a'
 		d, a d a'
 		d, a d cis
@@ -208,7 +208,7 @@ IContrabasso = {
 		\mark #17 fis\pp r r2
 		R1*9 %225
 		\mark #18 R1*2
-		r4 r8 f,,[-\markup { \remark "Bogen" } r a r c]
+		r4 r8 f,,[-\arco r a r c]
 		r f[ r a r c r f]
 		b,,4. f'8 b4. f'8 %230
 		b,-. f'-. b,-. f-. b,-. f'-. des-. des-.
@@ -403,9 +403,9 @@ IContrabasso = {
 			f,1
 			\mark #38 b2 f
 		} \\ {
-			\crescTextCresc s4 s2.\<
+			\spannerDashed \crescTextCresc s4 s2.\<
 			\crescTextMolto s1\<
-			s\p
+			s\p \spannerNormal
 		} >>
 		b2 f %445
 		b f'
@@ -464,10 +464,9 @@ IIContrabasso = {
 			e \clef bass d8-^ d-^ g,-^ g-^
 			\mark #6 c,-^ h-^ a-^ g-^ g'-^ d-^ g-^ d'-^ %25
 		} \\ {
-			\override DynamicTextSpanner.style = #'dashed-line
-				\crescTextCresc s2.\< \crescTextPoco s4\<
+			\spannerDashed \crescTextCresc s2.\< \crescTextPoco s4\<
 			\crescTextAPoco s1\<
-			s\ff \revert DynamicTextSpanner.style %25
+			s\ff \spannerNormal %25
 		} >>
 		c,8-^ h-^ a-^ g-^ g'-^ d-^ g-^ d'-^
 		b-^ g-^ b-^ e!-^ a,-^ g-^ f-^ e-^
@@ -481,7 +480,7 @@ IIContrabasso = {
 		R1 %35
 		\mark #8 R1*4
 		R1\fermataMarkup %40
-		r2 r4 r16^\markup { \remark "rall." } \mvTr h,\p-\markup { \remark "pizz." } h e,
+		r2 r4 r16^\markup { \remark "rall." } \mvTr h,\p-\pizz h e,
 		\mark #9 a8^\markup { \remark "a tempo" } r a' r c, r c' r
 		h, r h' r e, r e' r
 		a,, r a' r c, r c' r
@@ -493,16 +492,16 @@ IIContrabasso = {
 		d h h d e h e e %50
 		\mark #11 R1*2
 		\time 2/4 R2
-		\time 4/4 \mvTr c'4(\p-\markup { \remark "Bogen" } d e~) e16 c( d e
+		\time 4/4 \mvTr c'4(\p-\arco d e~) e16 c( d e
 		f) r r8 f, r a, r a' r %55
 		b4( d) c8( d g, c,)
 		\mark #12 f, r r4 r2
 		R1
 		f'4(\p a d, c)
 		f8( a d, c) f,( g a4) %60
-		d8 r d-\markup { \remark "pizz." } r f, r f' r
+		d8 r d-\pizz r f, r f' r
 		e, r e' r a, r a' r
-		\mark #13 \mvTr d,2--\p-\markup { \remark "Bogen" } f--
+		\mark #13 \mvTr d,2--\p-\arco f--
 		g,4( a) b( f)
 		b( f) e2 %65
 		b'4( f) e2
@@ -527,12 +526,12 @@ IIContrabasso = {
 		d1\fermata\ppp
 		R
 		<< { \oneVoice R1 } \\ { s2 s^\markup { \remark "rall." } } >>
-		\mark #19 g8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\markup { \remark "pizz." } fis e d d2---\markup { \remark "Bogen" }
-		g8-\markup { \remark "pizz." } fis e d d2---\markup { \remark "Bogen" } %90
+		\mark #19 g8\mf^\markup { \remark "a tempo" } -\tweak TextScript.X-offset #3 -\pizz fis e d d2---\arco
+		g8-\pizz fis e d d2---\arco %90
 		R1
 		\time 2/4 R2
-		\mark #20 \time 4/4 \mvTrr h'8\mf-\markup { \remark "pizz." } a g fis fis2---\markup { \remark "Bogen" }
-		h8-\markup { \remark "pizz." } a g fis fis2---\markup { \remark "Bogen" }
+		\mark #20 \time 4/4 \mvTrr h'8\mf-\pizz a g fis fis2---\arco
+		h8-\pizz a g fis fis2---\arco
 		R1 %95
 		\time 2/4 R2
 		\mark #21 \time 4/4 R1*2
@@ -628,7 +627,7 @@ IIIContrabasso = {
 			g g g
 			b b b
 			a! a a %70
-			\mark #7 d-\markup { \remark "pizz." } d d
+			\mark #7 d-\pizz d d
 			f f f
 			d d d
 			f f f
@@ -662,7 +661,7 @@ IIIContrabasso = {
 			R2.
 			f4 r r
 			R2.
-			\mvTr b,4\p-.-\markup { \remark "Bogen" } b-. b-. %105
+			\mvTr b,4\p-.-\arco b-. b-. %105
 			b-. b-. b-.
 			b-. b-. b-.
 			b-. b-. b-.
@@ -717,7 +716,7 @@ IIIContrabasso = {
 		}
 		\alternative {
 			{
-				\once \override DynamicTextSpanner.style = #'dashed-line \dimTextRitard b\> r r %157
+				\once \spannerDashed \dimTextRitard b\> r r %157
 				b r r
 				b r r\! \bar "||" \break
 				\mark \critnote \key ges \major \tempoIIITrio ges2.~\ppE %160
@@ -814,7 +813,7 @@ IIIContrabasso = {
 				b b, b
 				f' f f
 				b, r r
-				b-\markup { \remark "pizz." } r r %255
+				b-\pizz r r %255
 				b r r
 				b' b f
 				b, r r
@@ -838,11 +837,11 @@ IVContrabasso = {
 		a8. a16 a8. a16 b!8\f b b b
 		\dimHairpin g2 f8(\> d c f)\!
 		\time 2/4 b,4\p d8-. f-. %15
-		\mark #4 \time 4/4 \mvTr b,\p-\markup { \remark "pizz." } d f b es, g d g
+		\mark #4 \time 4/4 \mvTr b,\p-\pizz d f b es, g d g
 		c, es g c f, a es a
 		d, f as b g b c, es
 		\dimTextDim d\> g c, f b,\p d f b
-		\mark #5 \crescHairpin \mvTr f4(\p-\markup { \remark "Bogen" } e!8 es) d4(\< f8 g)\! %20
+		\mark #5 \crescHairpin \mvTr f4(\p-\arco e!8 es) d4(\< f8 g)\! %20
 		as4( g8 f) g2
 		f e!
 		\crescTextCresc f\< c4( f,)
@@ -854,14 +853,14 @@ IVContrabasso = {
 		b( f') b,2\fermata
 		\mark #7 R1*3 %32
 		\time 2/4 R2
-		\mark #8 \time 4/4 \mvTr b8\p-\markup { \remark "pizz." } d f b es, g d g
+		\mark #8 \time 4/4 \mvTr b8\p-\pizz d f b es, g d g
 		c, es g c f, a es a %35
 		d, f as b g b c, es
 		\crescTextCresc d g c, f g, b d\< e!
 		g b d^\critnote e! g\sp r r4
 		\time 2/4 R2
 		\mark #9 \time 4/4 R1*3 %42
-		\crescTextCrescMolto \mvTr e,,!8(\f-\markup { \remark "Bogen" } g b d) e!(\< g b e!)
+		\crescTextCrescMolto \mvTr e,,!8(\f-\arco g b d) e!(\< g b e!)
 		g\sp r r4\fermata r2
 		\mark #10 R1*9 %53
 		\mark #11 R1
@@ -898,13 +897,13 @@ VContrabasso = {
 		b8-. b-. r4 r %5
 		b8-. b-. b-. b-. b-. b-.
 		\mark #1 b r b'4.-> b8
-		b-\markup { \remarkE "staccato" } b b b a a
+		b-\staccatoE b b b a a
 		a r g4.-> g8
-		g-\markup { \remark "staccato" } g g g f f %10
+		g-\staccato g g g f f %10
 		cis cis d d b! b
 		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
 		\mark #2 as\! r as'4.-> as8
-		g-\markup { \remarkE "staccato" } g f f es es
+		g-\staccatoE g f f es es
 		d r g2-- %15
 		d8 r g2--
 		f4.-> r8 f\p r
@@ -931,7 +930,7 @@ VContrabasso = {
 		R2.*5 %69
 		\mark #12 f4-^\f f'4.-- f,8 %70
 		b4-^ b'4.-\parenthesize-- b,8
-		f-\markup { \remark "staccato" } f' f f, f f'
+		f-\staccato f' f f, f f'
 		b, b' b b, f f
 		b r r4 r
 		R2.*2 %76
@@ -945,13 +944,13 @@ VContrabasso = {
 		b b b b b b
 		b\f b b b b b %85
 		\mark #14 b r b'4.-> b8
-		b-\markup { \remark "staccato" } b b b a a
+		b-\staccato b b b a a
 		a r g4.-> g8
-		g-\markup { \remarkE "staccato" } g g g f f
+		g-\staccatoE g g g f f
 		cis cis d d b! b %90
 		\crescTextCresc a-.\< b-. a-. b-. a-. as-.
 		\mark #15 as\! r as'4.-> as8
-		g-\markup { \remarkE "staccato" } g f f es es
+		g-\staccatoE g f f es es
 		d r g2--
 		d8 r g2-- %95
 		\crescHairpin \parenthesizedHairpin f8\< f f f f f
@@ -959,16 +958,16 @@ VContrabasso = {
 		R2.*7 %104
 		\mark #17 R2.*6 %110
 		\mark #18 R2.*2
-		\mvTr des'8\f-\markup { \remark "staccato" } des es! es f f
+		\mvTr des'8\f-\staccato des es! es f f
 		f f f f f des
 		d r r4 r %115
 		R2.*3
-		\mvTrr b4\mf-\markup { \remark "pizz." } f b
+		\mvTrr b4\mf-\pizz f b
 		f b, f' %120
 		\mark #19 R2.*4
-		\crescTextCresc \mvTrr es'4\mf-\markup { \remark "pizz." } b\< es %125
+		\crescTextCresc \mvTrr es'4\mf-\pizz b\< es %125
 		b es, b'
-		\mark #20 \mvTrr fis8\ff-\markup { \remark "Bogen" } r fis4. fis8
+		\mark #20 \mvTrr fis8\ff-\arco r fis4. fis8
 		h, r h4. h8
 		fis' fis4 fis8 fis fis
 		h, h4 h8 h h %130
@@ -986,7 +985,7 @@ VContrabasso = {
 		g4-^ g4.-- g8
 		c c c c c c
 		g'4-^ g4.-- g8 %145
-		c,-\markup { \remark "staccato" } c c c c c
+		c,-\staccato c c c c c
 		g g g g g g
 		c c c c c c
 		g' g g g g g
@@ -1017,16 +1016,16 @@ VContrabasso = {
 		\crescTextCresc c\< c e e g g %195
 		\mark #27 a,\fE r r4 r
 		R2.*2
-		f,8-\markup { \remark "pizz." } g a b c d
+		f,8-\pizz g a b c d
 		es d f e g f %200
 		es d es c a c
 		\mark #28 des r r4 r
 		R2.*2
-		des8-\markup { \remark "pizz." } es f ges as b %205
+		des8-\pizz es f ges as b %205
 		ces des ces des es f
 		fis r r4 r
 		R2.
-		\mark #29 fis,4-\markup { \remark "pizz." } a d
+		\mark #29 fis,4-\pizz a d
 		b d g %210
 		c,, d es
 		f g a
@@ -1051,7 +1050,7 @@ VContrabasso = {
 		\mark #32 f,-. r r
 		R2.*11 %245
 		\mark #33 R2.*3
-		\mvTr f4\f-\markup { \remark "pizz." } f r8 f
+		\mvTr f4\f-\pizz f r8 f
 		f4 f r8 f %250
 		f4 f r8 f
 		f4 f r8 f
@@ -1060,7 +1059,7 @@ VContrabasso = {
 		b!4 b r8 b %255
 		h4 h r8 h
 		c4 c r8 c
-		\crescTextCresc c4 \once \override DynamicTextSpanner.style = #'dashed-line  c\< d
+		\crescTextCresc c4 \once \spannerDashed c\< d
 		es! es r8 d
 		c4 c d %260
 		es c d
@@ -1069,7 +1068,7 @@ VContrabasso = {
 		es d es
 		\mark #34 f\spE r r %265
 		R2.*3
-		\mvTr f,,2.~\p-\markup { \remark "Bogen" }
+		\mvTr f,,2.~\p-\arco
 		f~ %270
 		\mark #35 \tempoVKadenz f~
 		f~
@@ -1167,7 +1166,7 @@ VContrabasso = {
 		f f f f f f
 		f f f f f f
 		\mark #44 b, r b'4.\sp b8
-		b-\markup { \remark "staccato" } b b b a-\critnote a
+		b-\staccato b b b a-\critnote a
 		g g4 g8 c[ c] %395
 		f f f f f f
 		es! es4 es8 d[ d]
